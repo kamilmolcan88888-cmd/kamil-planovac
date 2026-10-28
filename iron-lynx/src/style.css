@@ -1,0 +1,94 @@
+/* Globálne štýly: celá obrazovka, žiadny scroll/zoom/označovanie, safe-area */
+:root {
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sat: env(safe-area-inset-top, 0px);
+  --tc-scale: 1;
+  --tc-opacity: 0.55;
+}
+html, body {
+  margin: 0; padding: 0; width: 100%; height: 100%;
+  background: #0b0e1a; overflow: hidden; overscroll-behavior: none;
+  touch-action: none; -webkit-user-select: none; user-select: none;
+  -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+  font-family: system-ui, -apple-system, sans-serif; color: #e8f4ff;
+  position: fixed; inset: 0;
+}
+#game { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+#game canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+.hidden { display: none !important; }
+
+/* ---------- dotykové ovládanie ---------- */
+#touch { position: fixed; inset: 0; pointer-events: none; z-index: 10; }
+#touch.active { pointer-events: auto; }
+.tc { position: absolute; opacity: var(--tc-opacity); }
+#dpad {
+  width: calc(132px * var(--tc-scale)); height: calc(132px * var(--tc-scale));
+  border-radius: 50%; border: 2px solid #8ec5ff; background: rgba(31, 42, 82, 0.55);
+  box-sizing: border-box;
+  background-image:
+    linear-gradient(#8ec5ff55, #8ec5ff55), linear-gradient(#8ec5ff55, #8ec5ff55);
+  background-size: 30% 90%, 90% 30%; background-position: center; background-repeat: no-repeat;
+}
+.dpad-knob {
+  position: absolute; left: 50%; top: 50%; width: 36%; height: 36%; margin: -18% 0 0 -18%;
+  border-radius: 50%; background: #4f8ce0; border: 2px solid #e8f4ff; box-sizing: border-box;
+}
+#btns { width: calc(190px * var(--tc-scale)); height: calc(130px * var(--tc-scale)); }
+.btn {
+  position: absolute; width: calc(78px * var(--tc-scale)); height: calc(78px * var(--tc-scale));
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font: bold calc(11px * var(--tc-scale)) system-ui; letter-spacing: 1px; box-sizing: border-box;
+}
+#btnJump { right: 0; top: 0; background: rgba(42, 112, 64, 0.7); border: 2px solid #9ad35a; }
+#btnFire { left: 0; bottom: 0; background: rgba(208, 96, 26, 0.7); border: 2px solid #ffd36a; }
+.btn.on { filter: brightness(1.6); transform: scale(0.94); }
+.pause {
+  position: absolute; top: calc(var(--sat) + 6px); right: calc(var(--sar) + 8px);
+  width: 34px; height: 34px; border-radius: 8px; background: rgba(31, 42, 82, 0.6);
+  border: 1px solid #8ec5ff; display: flex; align-items: center; justify-content: center;
+  font: bold 14px system-ui; opacity: 0.7;
+}
+#touch.editing .tc { outline: 2px dashed #ff6aff; opacity: 0.9; }
+#editBar {
+  position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  background: #141a33ee; border: 1px solid #b04aff; border-radius: 10px; padding: 6px 10px;
+  font-size: 13px; display: flex; gap: 8px; align-items: center; pointer-events: auto;
+}
+#editBar button, #codeForm button {
+  font: bold 14px system-ui; padding: 6px 12px; border-radius: 8px;
+  border: 1px solid #8ec5ff; background: #2b3d75; color: #fff;
+}
+
+/* ---------- zadanie kódu ---------- */
+#codeForm {
+  position: fixed; left: 50%; top: 12%; transform: translateX(-50%); z-index: 20;
+  background: #141a33f2; border: 2px solid #b04aff; border-radius: 14px; padding: 14px 18px;
+  display: flex; flex-direction: column; gap: 10px; align-items: center;
+}
+#codeForm label { font-weight: bold; letter-spacing: 2px; }
+#codeInput {
+  font: bold 32px ui-monospace, monospace; width: 5.2em; text-align: center; letter-spacing: 0.3em;
+  text-transform: uppercase; border-radius: 8px; border: 2px solid #8ec5ff; background: #0b0e1a; color: #ffd36a;
+}
+#codeForm div { display: flex; gap: 10px; }
+
+/* ---------- výzva na otočenie ---------- */
+#rotate {
+  display: none; position: fixed; inset: 0; z-index: 50; background: #0b0e1a;
+  flex-direction: column; align-items: center; justify-content: center; font-size: 18px;
+}
+@media (orientation: portrait) and (pointer: coarse) { #rotate { display: flex; } }
+#rotate .phone {
+  width: 44px; height: 78px; border: 4px solid #8ec5ff; border-radius: 10px;
+  animation: rot 2s ease-in-out infinite;
+}
+@keyframes rot { 0%, 30% { transform: rotate(0); } 60%, 100% { transform: rotate(-90deg); } }
+
+#toast {
+  position: fixed; left: 50%; bottom: calc(var(--sab) + 14px); transform: translateX(-50%);
+  background: #141a33ee; border: 1px solid #b04aff; padding: 6px 14px; border-radius: 10px;
+  font-size: 14px; z-index: 30; opacity: 0; transition: opacity .3s; pointer-events: none;
+}
+#toast.show { opacity: 1; }

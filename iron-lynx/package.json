@@ -1,0 +1,22 @@
+{
+  "name": "iron-lynx",
+  "version": "1.0.0",
+  "description": "IRON LYNX: Karpatský úder – 2D run-and-gun PWA s co-op multiplayerom",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "server": "node server/signal.js",
+    "build": "vite build",
+    "start": "node server/signal.js",
+    "assets": "python tools/gen_assets.py",
+    "test": "node tests/server.test.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "phaser": "3.90.0",
+    "vite": "^6.4.5"
+  }
+}
