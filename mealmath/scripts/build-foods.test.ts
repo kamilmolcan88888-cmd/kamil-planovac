@@ -19,6 +19,13 @@ describe('csv + matching', () => {
     const want = 'Chicken, broilers or fryers, breast, meat only, raw';
     expect(scoreMatch(want, 'Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw'))
       .toBeGreaterThan(scoreMatch(want, 'Chicken, broilers or fryers, breast, meat only, cooked, roasted'));
-    expect(scoreMatch(want, 'Turkey, breast, meat only, raw')).toBeLessThan(0.72);
+    expect(scoreMatch(want, 'Turkey, breast, meat only, raw')).toBeLessThan(0.8);
   });
+});
+
+describe('match details', () => {
+  it('ignores the Food Distribution Program suffix', () =>
+    expect(normalize("Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)")).toBe(normalize('Apples, raw, with skin')));
+  it('a missing distinguishing word drops below the threshold', () =>
+    expect(scoreMatch('Blueberries, frozen, unsweetened', 'Blueberries, frozen, sweetened')).toBeLessThan(0.8));
 });

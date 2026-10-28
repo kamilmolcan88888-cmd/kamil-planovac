@@ -106,7 +106,7 @@ redcurrant | Currants, red and white, raw | Redcurrants | Ríbezle | Johannisbee
 gooseberry | Gooseberries, raw | Gooseberries | Egreše | Stachelbeeren | produce | - | - | 4
 
 # ---------- dried fruit ----------
-raisins | Raisins, seedless | Raisins | Hrozienka | Rosinen | dry_goods | - | - | 180
+raisins | Raisins, dark, seedless | Raisins | Hrozienka | Rosinen | dry_goods | - | - | 180
 dates | Dates, medjool | Dates | Datle | Datteln | dry_goods | - | - | 180 | 24
 dried_apricot | Apricots, dried, sulfured, uncooked | Dried apricots | Sušené marhule | Getrocknete Aprikosen | dry_goods | - | - | 180
 dried_cranberry | Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program) | Dried cranberries | Sušené brusnice | Getrocknete Cranberries | dry_goods | - | - | 180
@@ -132,7 +132,7 @@ white_beans_can | Beans, white, mature seeds, canned | White beans (can) | Biela
 black_beans_can | Beans, black, mature seeds, canned, low sodium | Black beans (can) | Čierna fazuľa v plechovke | Schwarze Bohnen (Dose) | canned | - | - | 3
 baked_beans | Beans, baked, canned, plain or vegetarian | Baked beans | Fazuľa v paradajkovej omáčke | Baked Beans | canned | - | - | 3
 lentils_can | Lentils, mature seeds, cooked, boiled, without salt | Cooked lentils (can) | Šošovica v plechovke | Linsen (Dose) | canned | - | - | 3
-peas_can | Peas, green, canned, regular pack, drained solids | Peas (can) | Hrášok sterilizovaný | Erbsen (Dose) | canned | - | - | 3
+peas_can | Peas, green, canned, no salt added, drained solids | Peas (can) | Hrášok sterilizovaný | Erbsen (Dose) | canned | - | - | 3
 peach_can | Peaches, canned, juice pack, solids and liquids | Peaches in juice (can) | Broskyne v šťave | Pfirsiche in Saft (Dose) | canned | - | - | 4
 pineapple_can | Pineapple, canned, juice pack, solids and liquids | Pineapple in juice (can) | Ananás v šťave | Ananas in Saft (Dose) | canned | - | - | 4
 applesauce | Applesauce, canned, unsweetened, without added ascorbic acid | Apple purée | Jablkové pyré | Apfelmark | canned | - | - | 5
@@ -144,8 +144,8 @@ mackerel_can | Fish, mackerel, jack, canned, drained solids | Mackerel fillets (
 salmon_can | Fish, salmon, pink, canned, drained solids | Salmon (can) | Losos v plechovke | Lachs (Dose) | canned | fish | fish | 2
 
 # ---------- meat & poultry ----------
-chicken_breast | Chicken, broilers or fryers, breast, meat only, raw | Chicken breast fillet | Kuracie prsia | Hähnchenbrustfilet | meat | - | meat | 2
-chicken_thigh | Chicken, broilers or fryers, thigh, meat only, raw | Chicken thigh fillet | Kuracie stehná bez kosti | Hähnchenschenkelfilet | meat | - | meat | 2
+chicken_breast | Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw | Chicken breast fillet | Kuracie prsia | Hähnchenbrustfilet | meat | - | meat | 2
+chicken_thigh | Chicken, broilers or fryers, dark meat, thigh, meat only, raw | Chicken thigh fillet | Kuracie stehná bez kosti | Hähnchenschenkelfilet | meat | - | meat | 2
 chicken_drumstick | Chicken, broilers or fryers, drumstick, meat and skin, raw | Chicken drumsticks | Kuracie paličky | Hähnchenunterschenkel | meat | - | meat | 2
 chicken_leg | Chicken, broilers or fryers, leg, meat and skin, raw | Chicken legs | Kuracie stehná | Hähnchenschenkel | meat | - | meat | 2
 chicken_wing | Chicken, broilers or fryers, wing, meat and skin, raw | Chicken wings | Kuracie krídla | Hähnchenflügel | meat | - | meat | 2
@@ -154,15 +154,14 @@ chicken_ground | Chicken, ground, raw | Ground chicken | Mleté kuracie mäso | 
 chicken_liver | Chicken, liver, all classes, raw | Chicken liver | Kuracia pečeň | Hähnchenleber | meat | - | meat | 1
 turkey_breast | Turkey, whole, breast, meat only, raw | Turkey breast fillet | Morčacie prsia | Putenbrustfilet | meat | - | meat | 2
 turkey_ground | Turkey, ground, raw | Ground turkey | Mleté morčacie mäso | Putenhackfleisch | meat | - | meat | 1
-turkey_ham | Turkey ham, sliced, extra lean, prepackaged or deli | Turkey ham (sliced) | Morčacia šunka | Putenschinken | meat | - | meat | 5
+turkey_ham | Ham, turkey, sliced, extra lean, prepackaged or deli | Turkey ham (sliced) | Morčacia šunka | Putenschinken | meat | - | meat | 5
 turkey_deli | Turkey breast, low salt, prepackaged or deli, luncheon meat | Turkey breast (sliced) | Morčacie prsia nárezové | Putenbrust Aufschnitt | meat | - | meat | 5
 chicken_deli | Chicken breast, deli, rotisserie seasoned, sliced, prepackaged | Chicken breast (sliced) | Kuracie prsia nárezové | Hähnchenbrust Aufschnitt | meat | - | meat | 5
 beef_ground_5 | Beef, ground, 95% lean meat / 5% fat, raw | Lean ground beef (5 %) | Mleté hovädzie chudé | Rinderhack mager | meat | - | meat,red_meat | 1
-beef_ground_15 | Beef, ground, 85% lean meat / 15% fat, raw | Ground beef (15 %) | Mleté hovädzie | Rinderhackfleisch | meat | - | meat,red_meat | 1
 beef_ground_20 | Beef, ground, 80% lean meat / 20% fat, raw | Ground beef (20 %) | Mleté hovädzie 20 % | Rinderhack 20 % | meat | - | meat,red_meat | 1
 beef_sirloin | Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef steak (sirloin) | Hovädzí steak | Rindersteak | meat | - | meat,red_meat | 2
-beef_chuck | Beef, chuck, arm pot roast, separable lean only, trimmed to 0" fat, choice, raw | Beef for stew (chuck) | Hovädzie pliecko na guláš | Rindergulasch | meat | - | meat,red_meat | 2
-beef_round | Beef, round, top round, separable lean only, trimmed to 0" fat, choice, raw | Beef topside | Hovädzie stehno | Rinderoberschale | meat | - | meat,red_meat | 2
+beef_chuck | Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, raw | Beef for stew (chuck) | Hovädzie pliecko na guláš | Rindergulasch | meat | - | meat,red_meat | 2
+beef_round | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw | Beef topside | Hovädzie stehno | Rinderoberschale | meat | - | meat,red_meat | 2
 beef_flank | Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef flank steak | Hovädzí flank steak | Flanksteak | meat | - | meat,red_meat | 2
 pork_ground | Pork, fresh, ground, raw | Ground pork | Mleté bravčové | Schweinehackfleisch | meat | - | meat,pork,red_meat | 1
 pork_tenderloin | Pork, fresh, loin, tenderloin, separable lean only, raw | Pork tenderloin | Bravčová panenka | Schweinefilet | meat | - | meat,pork,red_meat | 2
@@ -172,7 +171,7 @@ pork_belly | Pork, fresh, belly, raw | Pork belly | Bravčový bôčik | Schwein
 pork_leg | Pork, fresh, leg (ham), whole, separable lean only, raw | Pork leg | Bravčové stehno | Schweineoberschale | meat | - | meat,pork,red_meat | 2
 bacon | Pork, cured, bacon, unprepared | Bacon | Slanina | Bacon | meat | - | meat,pork,red_meat | 7
 ham | Ham, sliced, pre-packaged, deli meat (96%fat free, water added) | Cooked ham (sliced) | Šunka výberová | Kochschinken | meat | - | meat,pork,red_meat | 5
-ham_cured | Ham, cured, boneless, extra lean (approximately 5% fat), roasted | Smoked ham | Údená šunka | Schinken geräuchert | meat | - | meat,pork,red_meat | 7
+ham_cured | Pork, cured, ham, boneless, extra lean (approximately 5% fat), roasted | Smoked ham | Údená šunka | Schinken geräuchert | meat | - | meat,pork,red_meat | 7
 frankfurter | Frankfurter, meat | Frankfurters | Párky | Wiener Würstchen | meat | - | meat,pork,red_meat | 7 | 50
 bratwurst | Bratwurst, pork, cooked | Bratwurst | Klobása na gril | Bratwurst | meat | - | meat,pork,red_meat | 4 | 100
 salami | Salami, Italian, pork | Salami | Saláma | Salami | meat | - | meat,pork,red_meat | 14
@@ -247,7 +246,7 @@ roll_wholewheat | Rolls, dinner, whole-wheat | Wholemeal roll | Celozrnný rožo
 tortilla | Tortillas, ready-to-bake or -fry, flour, refrigerated | Wheat tortilla wraps | Pšeničné tortilly | Weizentortillas | bakery | gluten | - | 14 | 60
 pita | Bread, pita, white, enriched | Pita bread | Pita chlieb | Pitabrot | bakery | gluten | - | 5 | 60
 crispbread | Crackers, rye, wafers, plain | Rye crispbread | Ražné chrumkavé plátky | Knäckebrot | bakery | gluten | - | 60 | 10
-rice_cakes | Snacks, rice cakes, brown rice, plain | Rice cakes | Ryžové chlebíky | Reiswaffeln | bakery | - | - | 60 | 8
+rice_cakes | Snacks, rice cakes, brown rice, plain, unsalted | Rice cakes | Ryžové chlebíky | Reiswaffeln | bakery | - | - | 60 | 8
 pretzel | Pretzels, soft | Soft pretzel | Praclík | Laugenbrezel | bakery | gluten | - | 1 | 90
 bagel | Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame) | Bagel | Bagel | Bagel | bakery | gluten,sesame | - | 4 | 90
 
@@ -256,8 +255,8 @@ oats | Cereals, oats, regular and quick, not fortified, dry | Rolled oats | Ovse
 granola | Cereals ready-to-eat, granola, homemade | Granola / crunchy muesli | Granola | Knuspermüsli | dry_goods | gluten,nuts | - | 90
 rice | Rice, white, long-grain, regular, raw, enriched | Long-grain rice | Ryža dlhozrnná | Langkornreis | dry_goods | - | - | 365
 rice_basmati | Rice, white, long-grain, regular, raw, unenriched | Basmati rice | Ryža basmati | Basmatireis | dry_goods | - | - | 365
-rice_brown | Rice, brown, long-grain, raw | Brown rice | Natural ryža | Naturreis | dry_goods | - | - | 365
-rice_round | Rice, white, short-grain, raw | Risotto / pudding rice | Guľatozrnná ryža | Rundkornreis | dry_goods | - | - | 365
+rice_brown | Rice, brown, long grain, unenriched, raw | Brown rice | Natural ryža | Naturreis | dry_goods | - | - | 365
+rice_round | Rice, white, short-grain, raw, unenriched | Risotto / pudding rice | Guľatozrnná ryža | Rundkornreis | dry_goods | - | - | 365
 pasta | Pasta, dry, enriched | Pasta | Cestoviny | Nudeln | dry_goods | gluten | - | 365
 pasta_wholewheat | Pasta, whole-wheat, dry | Wholewheat pasta | Celozrnné cestoviny | Vollkornnudeln | dry_goods | gluten | - | 365
 egg_noodles | Noodles, egg, dry, enriched | Egg noodles | Vaječné cestoviny | Eiernudeln | dry_goods | gluten,eggs | egg | 365
@@ -277,7 +276,7 @@ cornstarch | Cornstarch | Corn starch | Kukuričný škrob | Speisestärke | dry
 breadcrumbs | Bread, crumbs, dry, grated, plain | Breadcrumbs | Strúhanka | Paniermehl | dry_goods | gluten | - | 180
 wheat_bran | Wheat bran, crude | Wheat bran | Pšeničné otruby | Weizenkleie | dry_goods | gluten | - | 180
 oat_bran | Oat bran, raw | Oat bran | Ovsené otruby | Haferkleie | dry_goods | gluten | - | 180
-cornflakes | Cereals ready-to-eat, corn flakes, plain | Corn flakes | Kukuričné lupienky | Cornflakes | dry_goods | - | - | 90
+cornflakes | Cereals ready-to-eat, RALSTON Corn Flakes | Corn flakes | Kukuričné lupienky | Cornflakes | dry_goods | - | - | 90
 puffed_rice | Cereals ready-to-eat, rice, puffed, fortified | Puffed rice | Pufovaná ryža | Puffreis | dry_goods | - | - | 90
 potato_flakes | Potatoes, mashed, dehydrated, flakes without milk, dry form | Mashed potato flakes | Zemiaková kaša sušená | Kartoffelpüree-Flocken | dry_goods | - | - | 180
 
@@ -287,7 +286,7 @@ lentils | Lentils, raw | Brown lentils | Šošovica | Tellerlinsen | dry_goods |
 chickpeas | Chickpeas (garbanzo beans, bengal gram), mature seeds, raw | Dried chickpeas | Cícer sušený | Kichererbsen getrocknet | dry_goods | - | - | 365
 white_beans | Beans, white, mature seeds, raw | Dried white beans | Biela fazuľa sušená | Weiße Bohnen getrocknet | dry_goods | - | - | 365
 kidney_beans | Beans, kidney, red, mature seeds, raw | Dried kidney beans | Červená fazuľa sušená | Kidneybohnen getrocknet | dry_goods | - | - | 365
-split_peas | Peas, split, mature seeds, raw | Split peas | Lúpaný hrach | Schälerbsen | dry_goods | - | - | 365
+split_peas | Peas, green, split, mature seeds, raw | Split peas | Lúpaný hrach | Schälerbsen | dry_goods | - | - | 365
 mung_beans | Mung beans, mature seeds, raw | Mung beans | Mungo fazuľa | Mungbohnen | dry_goods | - | - | 365
 
 # ---------- dry goods: sweet & baking ----------
@@ -342,8 +341,8 @@ soy_yogurt | Tofu yogurt | Soy yogurt alternative | Sójový jogurt | Soja-Joghu
 # ---------- frozen ----------
 peas_frozen | Peas, green, frozen, unprepared | Frozen peas | Mrazený hrášok | Erbsen TK | frozen | - | - | 2
 corn_frozen | Corn, sweet, yellow, frozen, kernels cut off cob, unprepared | Frozen sweet corn | Mrazená kukurica | Mais TK | frozen | - | - | 2
-mixed_veg_frozen | Mixed vegetables, frozen, unprepared | Frozen mixed vegetables | Mrazená zeleninová zmes | Gemüsemischung TK | frozen | - | - | 2
-broccoli_frozen | Broccoli, frozen, chopped or diced, unprepared | Frozen broccoli | Mrazená brokolica | Brokkoli TK | frozen | - | - | 2
+mixed_veg_frozen | Vegetables, mixed, frozen, unprepared | Frozen mixed vegetables | Mrazená zeleninová zmes | Gemüsemischung TK | frozen | - | - | 2
+broccoli_frozen | Broccoli, frozen, chopped, unprepared | Frozen broccoli | Mrazená brokolica | Brokkoli TK | frozen | - | - | 2
 spinach_frozen | Spinach, frozen, chopped or leaf, unprepared | Frozen spinach | Mrazený špenát | Blattspinat TK | frozen | - | - | 2
 green_beans_frozen | Beans, snap, green, frozen, all styles, unprepared | Frozen green beans | Mrazené zelené fazuľky | Grüne Bohnen TK | frozen | - | - | 2
 cauliflower_frozen | Cauliflower, frozen, unprepared | Frozen cauliflower | Mrazený karfiol | Blumenkohl TK | frozen | - | - | 2

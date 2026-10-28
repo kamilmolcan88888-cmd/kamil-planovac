@@ -1,0 +1,656 @@
+[
+  {
+    "id": "chicken-paprikash",
+    "name": { "en": "Chicken paprikash with pasta", "sk": "Kurací paprikáš s cestovinami", "de": "Hähnchen-Paprikasch mit Nudeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["stove"], "tags": ["classic", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "chicken_breast", "g": 180, "min": 120, "max": 320 },
+      { "food": "onion", "g": 60, "min": 40, "max": 80 },
+      { "food": "pepper_red", "g": 60, "min": 40, "max": 100 },
+      { "food": "paprika", "g": 4, "min": 4, "max": 4 },
+      { "food": "sour_cream", "g": 40, "min": 20, "max": 60 },
+      { "food": "flour", "g": 5, "min": 5, "max": 5 },
+      { "food": "pasta", "g": 80, "min": 50, "max": 140 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 8 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Na oleji speň nadrobno nakrájanú cibuľu, pridaj mäso na kocky a opeč.", "Odstav, vmiešaj papriku, pridaj nakrájanú čerstvú papriku a podlej vodou.", "Duste 20 minút. Smotanu rozmiešaj s múkou a zahusti omáčku.", "Medzitým uvar cestoviny a podávaj spolu."],
+      "de": ["Zwiebel fein würfeln und im Öl anschwitzen, Fleischwürfel dazugeben und anbraten.", "Vom Herd nehmen, Paprikapulver einrühren, frische Paprika zugeben und mit Wasser ablöschen.", "20 Minuten schmoren. Saure Sahne mit Mehl verrühren und die Sauce damit binden.", "Inzwischen Nudeln kochen und zusammen servieren."]
+    }
+  },
+  {
+    "id": "bryndza-halusky",
+    "name": { "en": "Potato dumplings with bryndza and bacon", "sk": "Bryndzové halušky so slaninkou", "de": "Brimsen-Nockerl mit Speck" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["stove"], "tags": ["classic"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "potato", "g": 200, "min": 150, "max": 300 },
+      { "food": "flour", "g": 80, "min": 60, "max": 120 },
+      { "food": "egg", "g": 25, "min": 25, "max": 55 },
+      { "food": "bryndza", "g": 100, "min": 80, "max": 200 },
+      { "food": "bacon", "g": 25, "min": 15, "max": 40 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky ošúp a najemno nastrúhaj, zmiešaj s múkou, vajcom a soľou na husté cesto.", "Cez haluškár ho pretlač do vriacej osolenej vody, var, kým halušky nevyplávajú.", "Slaninu nakrájaj a vyškvar dochrumkava.", "Scedené halušky premiešaj s bryndzou a posyp slaninou."],
+      "de": ["Kartoffeln schälen, fein reiben, mit Mehl, Ei und Salz zu einem zähen Teig mischen.", "Durch einen Spätzlehobel in kochendes Salzwasser drücken, kochen bis sie aufschwimmen.", "Speck würfeln und knusprig auslassen.", "Abgetropfte Nockerl mit Brimsen vermengen und mit Speck bestreuen."]
+    }
+  },
+  {
+    "id": "szegedin-goulash",
+    "name": { "en": "Szeged goulash with potatoes", "sk": "Segedínsky guláš so zemiakmi", "de": "Szegediner Gulasch mit Kartoffeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 75, "equipment": ["stove"], "tags": ["classic"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "pork_shoulder", "g": 160, "min": 120, "max": 280 },
+      { "food": "sauerkraut", "g": 150, "min": 100, "max": 250 },
+      { "food": "onion", "g": 50, "min": 40, "max": 80 },
+      { "food": "sour_cream", "g": 30, "min": 20, "max": 50 },
+      { "food": "flour", "g": 5, "min": 5, "max": 5 },
+      { "food": "potato", "g": 200, "min": 120, "max": 350 },
+      { "food": "paprika", "g": 3, "min": 3, "max": 3 },
+      { "food": "caraway", "g": 1, "min": 1, "max": 1 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Na oleji speň cibuľu, pridaj mäso na kocky, papriku a rascu, podlej vodou a duste 40 minút.", "Pridaj prepláchnutú kyslú kapustu a duste ďalších 20 minút.", "Zahusti smotanou rozmiešanou s múkou.", "Podávaj s varenými zemiakmi. Na druhý deň je ešte lepší."],
+      "de": ["Zwiebel im Öl anschwitzen, Fleischwürfel, Paprika und Kümmel zugeben, mit Wasser ablöschen und 40 Minuten schmoren.", "Abgespültes Sauerkraut dazugeben und weitere 20 Minuten schmoren.", "Mit Saurer Sahne und Mehl binden.", "Mit Salzkartoffeln servieren. Schmeckt am nächsten Tag noch besser."]
+    }
+  },
+  {
+    "id": "beef-goulash-bread",
+    "name": { "en": "Beef goulash with bread", "sk": "Hovädzí guláš s chlebom", "de": "Rindergulasch mit Brot" },
+    "meals": ["lunch", "dinner"], "timeMin": 120, "equipment": ["stove"], "tags": ["classic", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "beef_chuck", "g": 180, "min": 130, "max": 300 },
+      { "food": "onion", "g": 100, "min": 60, "max": 120 },
+      { "food": "potato", "g": 100, "min": 50, "max": 200 },
+      { "food": "tomato_paste", "g": 10, "min": 10, "max": 15 },
+      { "food": "paprika", "g": 5, "min": 5, "max": 5 },
+      { "food": "caraway", "g": 1, "min": 1, "max": 1 },
+      { "food": "marjoram", "g": 1, "min": 1, "max": 1 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "bread_rye", "g": 80, "min": 40, "max": 160 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Cibuľu pomaly opekaj na oleji 10 minút dozlata.", "Pridaj mäso na kocky, opeč, primiešaj papriku, pretlak a rascu, podlej vodou.", "Duste pod pokrievkou 1,5 hodiny, posledných 25 minút so zemiakmi na kocky.", "Dochuť cesnakom a majoránom, podávaj s chlebom."],
+      "de": ["Zwiebeln im Öl 10 Minuten langsam goldbraun braten.", "Fleischwürfel anbraten, Paprika, Tomatenmark und Kümmel einrühren, mit Wasser ablöschen.", "Zugedeckt 1,5 Stunden schmoren, die letzten 25 Minuten mit Kartoffelwürfeln.", "Mit Knoblauch und Majoran abschmecken, mit Brot servieren."]
+    }
+  },
+  {
+    "id": "lentil-stew-egg",
+    "name": { "en": "Sour lentil stew with egg", "sk": "Šošovicový prívarok s vajcom", "de": "Saure Linsen mit Ei" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["stove"], "tags": ["classic", "budget"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "lentils", "g": 80, "min": 60, "max": 130 },
+      { "food": "onion", "g": 40, "min": 30, "max": 60 },
+      { "food": "flour", "g": 8, "min": 8, "max": 8 },
+      { "food": "vinegar_spirit", "g": 8, "min": 8, "max": 8 },
+      { "food": "egg", "g": 110, "min": 55, "max": 165 },
+      { "food": "bread_rye", "g": 50, "min": 30, "max": 100 },
+      { "food": "bay_leaf", "g": 0.3, "min": 0.3, "max": 0.3 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Šošovicu uvar s bobkovým listom doměkka (asi 25 minút).", "Na oleji urob svetlú zápražku z múky a cibule, zalej trochou vývaru zo šošovice a vmiešaj.", "Povar 5 minút, dochuť octom a soľou.", "Podávaj s vajcom natvrdo alebo volským okom a chlebom."],
+      "de": ["Linsen mit Lorbeer weich kochen (ca. 25 Minuten).", "Im Öl aus Mehl und Zwiebel eine helle Mehlschwitze machen, mit etwas Linsenwasser ablöschen und unterrühren.", "5 Minuten köcheln, mit Essig und Salz abschmecken.", "Mit gekochtem Ei oder Spiegelei und Brot servieren."]
+    }
+  },
+  {
+    "id": "cabbage-soup-sausage",
+    "name": { "en": "Sauerkraut soup with pork and mushrooms", "sk": "Kapustnica s mäsom a hubami", "de": "Krautsuppe mit Schweinefleisch und Pilzen" },
+    "meals": ["lunch", "dinner"], "timeMin": 70, "equipment": ["stove"], "tags": ["classic"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "sauerkraut", "g": 200, "min": 150, "max": 300 },
+      { "food": "pork_shoulder", "g": 120, "min": 80, "max": 220 },
+      { "food": "frankfurter", "g": 50, "min": 0, "max": 100 },
+      { "food": "mushroom", "g": 60, "min": 40, "max": 100 },
+      { "food": "potato", "g": 100, "min": 50, "max": 200 },
+      { "food": "sour_cream", "g": 20, "min": 15, "max": 40 },
+      { "food": "paprika", "g": 2, "min": 2, "max": 2 },
+      { "food": "bay_leaf", "g": 0.3, "min": 0.3, "max": 0.3 },
+      { "food": "bread_rye", "g": 40, "min": 0, "max": 100 }
+    ],
+    "steps": {
+      "sk": ["Mäso na kocky var 30 minút s bobkovým listom.", "Pridaj kyslú kapustu, huby, papriku a zemiaky, var ďalších 25 minút.", "Pridaj nakrájané párky a 5 minút povar.", "Podávaj so smotanou a chlebom."],
+      "de": ["Fleischwürfel mit Lorbeer 30 Minuten kochen.", "Sauerkraut, Pilze, Paprika und Kartoffeln zugeben und 25 Minuten weiterkochen.", "Würstchen in Scheiben zugeben und 5 Minuten ziehen lassen.", "Mit Saurer Sahne und Brot servieren."]
+    }
+  },
+  {
+    "id": "chicken-veg-rice",
+    "name": { "en": "Chicken with rice and broccoli", "sk": "Kuracie prsia s ryžou a brokolicou", "de": "Hähnchen mit Reis und Brokkoli" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["meal_prep", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "chicken_breast", "g": 180, "min": 120, "max": 350 },
+      { "food": "rice", "g": 70, "min": 40, "max": 150 },
+      { "food": "broccoli", "g": 150, "min": 100, "max": 300 },
+      { "food": "olive_oil", "g": 6, "min": 5, "max": 10 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 },
+      { "food": "garlic_powder", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Ryžu uvar podľa návodu.", "Mäso okoreň paprikou, cesnakom a soľou, opeč na oleji 5–6 minút z každej strany.", "Brokolicu var na pare 5 minút.", "Rozdeľ do krabičiek, vydrží 4 dni."],
+      "de": ["Reis nach Packungsangabe kochen.", "Fleisch mit Paprika, Knoblauch und Salz würzen, im Öl je Seite 5–6 Minuten braten.", "Brokkoli 5 Minuten dämpfen.", "In Dosen portionieren, hält 4 Tage."]
+    }
+  },
+  {
+    "id": "cheese-bake-potatoes",
+    "name": { "en": "Oven-crumbed cheese with potatoes", "sk": "Syr v strúhanke z rúry so zemiakmi", "de": "Panierter Käse aus dem Ofen mit Kartoffeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["oven"], "tags": ["classic", "kids"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "edam", "g": 100, "min": 80, "max": 140 },
+      { "food": "egg", "g": 30, "min": 30, "max": 55 },
+      { "food": "flour", "g": 10, "min": 10, "max": 10 },
+      { "food": "breadcrumbs", "g": 20, "min": 20, "max": 30 },
+      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 200 },
+      { "food": "greek_0", "g": 0, "min": 0, "max": 200 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 }
+    ],
+    "steps": {
+      "sk": ["Rúru predhrej na 200 °C, zemiaky uvar v šupke.", "Syr obaľ v múke, vajci a strúhanke, pokvapkaj olejom.", "Peč na papieri 10–12 minút, kým nezozlatne (nie dlhšie, inak vytečie).", "Podávaj so zemiakmi a uhorkovým šalátom (s gréckym jogurtom ako dresingom)."],
+      "de": ["Ofen auf 200 °C vorheizen, Kartoffeln mit Schale kochen.", "Käse in Mehl, Ei und Paniermehl wenden, mit Öl beträufeln.", "Auf Backpapier 10–12 Minuten goldbraun backen (nicht länger, sonst läuft er aus).", "Mit Kartoffeln und Gurkensalat (Joghurt als Dressing) servieren."]
+    }
+  },
+  {
+    "id": "chicken-risotto-peas",
+    "name": { "en": "Chicken risotto with peas", "sk": "Kuracie rizoto s hráškom", "de": "Hähnchen-Risotto mit Erbsen" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["stove"], "tags": ["classic", "kids"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "chicken_breast", "g": 160, "min": 120, "max": 300 },
+      { "food": "rice_round", "g": 70, "min": 50, "max": 130 },
+      { "food": "peas_frozen", "g": 80, "min": 50, "max": 150 },
+      { "food": "onion", "g": 40, "min": 30, "max": 50 },
+      { "food": "broth_chicken", "g": 250, "min": 200, "max": 400 },
+      { "food": "parmesan", "g": 10, "min": 10, "max": 25 },
+      { "food": "butter", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Na masle speň cibuľu, pridaj mäso na kocky a opeč.", "Pridaj ryžu, krátko orestuj a postupne podlievaj horúcim vývarom.", "Po 15 minútach pridaj hrášok a var ešte 5 minút.", "Vmiešaj parmezán a podávaj."],
+      "de": ["Zwiebel in Butter anschwitzen, Fleischwürfel zugeben und anbraten.", "Reis kurz mitrösten und nach und nach mit heißer Brühe aufgießen.", "Nach 15 Minuten Erbsen zugeben und 5 Minuten weiterkochen.", "Parmesan unterrühren und servieren."]
+    }
+  },
+  {
+    "id": "spinach-egg-potatoes",
+    "name": { "en": "Creamed spinach with eggs and potatoes", "sk": "Špenát s vajcom a zemiakmi", "de": "Rahmspinat mit Spiegelei und Kartoffeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["classic", "budget"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "spinach_frozen", "g": 200, "min": 150, "max": 300 },
+      { "food": "milk_semi", "g": 50, "min": 50, "max": 80 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "egg", "g": 110, "min": 110, "max": 220 },
+      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "quark_lean", "g": 0, "min": 0, "max": 200 },
+      { "food": "butter", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky uvar v osolenej vode.", "Špenát rozmraz s mliekom a cesnakom, povar 5 minút a dochuť soľou.", "Vajcia priprav na masle ako volské oko.", "Podávaj spolu; tvaroh môžeš vmiešať do špenátu pre viac bielkovín."],
+      "de": ["Kartoffeln in Salzwasser kochen.", "Spinat mit Milch und Knoblauch auftauen, 5 Minuten köcheln und salzen.", "Eier in Butter als Spiegeleier braten.", "Zusammen servieren; für mehr Eiweiß Quark in den Spinat rühren."]
+    }
+  },
+  {
+    "id": "roast-chicken-legs-potatoes",
+    "name": { "en": "Roast chicken legs with caraway potatoes", "sk": "Pečené kuracie stehná s rascovými zemiakmi", "de": "Ofen-Hähnchenschenkel mit Kümmelkartoffeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 60, "equipment": ["oven"], "tags": ["classic", "kids"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "chicken_leg", "g": 250, "min": 200, "max": 400 },
+      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "caraway", "g": 1, "min": 1, "max": 1 },
+      { "food": "paprika", "g": 2, "min": 2, "max": 2 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 200 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Rúru predhrej na 200 °C.", "Stehná potri cesnakom, paprikou a soľou.", "Zemiaky nakrájaj na štvrtiny, premiešaj s olejom, rascou a soľou.", "Peč všetko na plechu 45–50 minút, podávaj s uhorkou. Gramy sú s kosťou."],
+      "de": ["Ofen auf 200 °C vorheizen.", "Schenkel mit Knoblauch, Paprika und Salz einreiben.", "Kartoffeln vierteln, mit Öl, Kümmel und Salz mischen.", "Alles auf einem Blech 45–50 Minuten backen, mit Gurke servieren. Gramm inklusive Knochen."]
+    }
+  },
+  {
+    "id": "pork-tenderloin-roast-veg",
+    "name": { "en": "Pork tenderloin with roasted vegetables", "sk": "Bravčová panenka s pečenou zeleninou", "de": "Schweinefilet mit Ofengemüse" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["oven", "stove"], "tags": ["high_protein"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "pork_tenderloin", "g": 180, "min": 130, "max": 320 },
+      { "food": "potato", "g": 200, "min": 100, "max": 300 },
+      { "food": "carrot", "g": 100, "min": 60, "max": 150 },
+      { "food": "zucchini", "g": 120, "min": 80, "max": 200 },
+      { "food": "olive_oil", "g": 8, "min": 6, "max": 10 },
+      { "food": "rosemary", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 },
+      { "food": "pepper_black", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Zeleninu nakrájaj, premiešaj s olejom, rozmarínom a soľou, peč 30 minút pri 200 °C.", "Panenku okoreň a na panvici opeč zo všetkých strán.", "Prelož ju k zelenine a peč 12–15 minút.", "Nechaj 5 minút odpočinúť a nakrájaj."],
+      "de": ["Gemüse schneiden, mit Öl, Rosmarin und Salz mischen und 30 Minuten bei 200 °C backen.", "Filet würzen und in der Pfanne rundum anbraten.", "Zum Gemüse legen und 12–15 Minuten garen.", "5 Minuten ruhen lassen und aufschneiden."]
+    }
+  },
+  {
+    "id": "barley-mushroom-risotto",
+    "name": { "en": "Pearl barley with mushrooms and egg", "sk": "Krúpy s hubami a vajcom", "de": "Graupen mit Pilzen und Ei" },
+    "meals": ["lunch", "dinner"], "timeMin": 45, "equipment": ["stove"], "tags": ["budget", "classic"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "barley", "g": 70, "min": 50, "max": 120 },
+      { "food": "mushroom", "g": 150, "min": 100, "max": 250 },
+      { "food": "onion", "g": 50, "min": 30, "max": 60 },
+      { "food": "egg", "g": 110, "min": 55, "max": 165 },
+      { "food": "parmesan", "g": 10, "min": 10, "max": 25 },
+      { "food": "caraway", "g": 0.5, "min": 0.5, "max": 0.5 },
+      { "food": "parsley", "g": 5, "min": 5, "max": 5 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Krúpy uvar doměkka (30 minút).", "Na oleji opeč cibuľu a huby s rascou 8 minút.", "Pridaj krúpy, vmiešaj rozšľahané vajcia a nechaj stuhnúť ako praženicu.", "Posyp parmezánom a petržlenovou vňaťou."],
+      "de": ["Graupen weich kochen (30 Minuten).", "Zwiebel und Pilze mit Kümmel im Öl 8 Minuten braten.", "Graupen zugeben, verquirlte Eier unterrühren und stocken lassen.", "Mit Parmesan und Petersilie bestreuen."]
+    }
+  },
+  {
+    "id": "buckwheat-chicken-veg",
+    "name": { "en": "Buckwheat with chicken and vegetables", "sk": "Pohánka s kuracím mäsom a zeleninou", "de": "Buchweizen mit Hähnchen und Gemüse" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["high_protein", "meal_prep"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "buckwheat", "g": 70, "min": 50, "max": 120 },
+      { "food": "chicken_breast", "g": 170, "min": 120, "max": 320 },
+      { "food": "carrot", "g": 80, "min": 50, "max": 120 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 120 },
+      { "food": "onion", "g": 40, "min": 30, "max": 60 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 8 },
+      { "food": "soy_sauce", "g": 10, "min": 10, "max": 10 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Pohánku uvar v osolenej vode 12 minút.", "Mäso nakrájaj na prúžky a opeč na oleji.", "Pridaj cibuľu, mrkvu a papriku, restuj 5 minút.", "Vmiešaj pohánku a sójovú omáčku."],
+      "de": ["Buchweizen 12 Minuten in Salzwasser kochen.", "Fleisch in Streifen schneiden und im Öl anbraten.", "Zwiebel, Karotte und Paprika 5 Minuten mitbraten.", "Buchweizen und Sojasauce unterrühren."]
+    }
+  },
+  {
+    "id": "meatballs-tomato-rice",
+    "name": { "en": "Beef meatballs in tomato sauce with rice", "sk": "Mäsové guľky v paradajkovej omáčke s ryžou", "de": "Rinderhackbällchen in Tomatensauce mit Reis" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["stove"], "tags": ["kids", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "beef_ground_5", "g": 170, "min": 120, "max": 300 },
+      { "food": "egg", "g": 15, "min": 15, "max": 25 },
+      { "food": "breadcrumbs", "g": 10, "min": 10, "max": 15 },
+      { "food": "passata", "g": 200, "min": 150, "max": 300 },
+      { "food": "onion", "g": 40, "min": 30, "max": 50 },
+      { "food": "rice", "g": 70, "min": 40, "max": 140 },
+      { "food": "sugar", "g": 3, "min": 3, "max": 3 },
+      { "food": "basil_dried", "g": 0.5, "min": 0.5, "max": 0.5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Mäso zmiešaj s vajcom, strúhankou, polovicou cibule a soľou, vytvaruj guľky.", "Zvyšok cibule speň, zalej passatou, pridaj cukor a bazalku.", "Guľky vlož do omáčky a duste 20 minút pod pokrievkou.", "Podávaj s ryžou."],
+      "de": ["Hack mit Ei, Paniermehl, der Hälfte der Zwiebel und Salz mischen, Bällchen formen.", "Restliche Zwiebel anschwitzen, Passata, Zucker und Basilikum zugeben.", "Bällchen in die Sauce legen und zugedeckt 20 Minuten schmoren.", "Mit Reis servieren."]
+    }
+  },
+  {
+    "id": "salmon-potatoes-cucumber",
+    "name": { "en": "Salmon with potatoes and cucumber salad", "sk": "Losos so zemiakmi a uhorkovým šalátom", "de": "Lachs mit Kartoffeln und Gurkensalat" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["omega3"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "salmon", "g": 130, "min": 100, "max": 220 },
+      { "food": "potato", "g": 200, "min": 120, "max": 300 },
+      { "food": "cucumber", "g": 150, "min": 100, "max": 250 },
+      { "food": "greek_0", "g": 60, "min": 40, "max": 150 },
+      { "food": "dill", "g": 3, "min": 3, "max": 3 },
+      { "food": "lemon", "g": 10, "min": 10, "max": 10 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky uvar v osolenej vode.", "Lososa osoľ a opeč na suchej panvici kožou dole 5 minút, otoč a 2 minúty dopeč.", "Uhorku nakrájaj, zmiešaj s jogurtom, kôprom a soľou.", "Podávaj s citrónom."],
+      "de": ["Kartoffeln in Salzwasser kochen.", "Lachs salzen und in der trockenen Pfanne auf der Hautseite 5 Minuten braten, wenden, 2 Minuten fertig garen.", "Gurke hobeln, mit Joghurt, Dill und Salz mischen.", "Mit Zitrone servieren."]
+    }
+  },
+  {
+    "id": "cod-butter-rice-peas",
+    "name": { "en": "Pan-fried cod with rice and peas", "sk": "Treska na masle s ryžou a hráškom", "de": "Gebratener Kabeljau mit Reis und Erbsen" },
+    "meals": ["lunch", "dinner"], "timeMin": 20, "equipment": ["stove"], "tags": ["high_protein", "quick"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "cod", "g": 200, "min": 150, "max": 350 },
+      { "food": "rice", "g": 70, "min": 40, "max": 140 },
+      { "food": "peas_frozen", "g": 100, "min": 60, "max": 150 },
+      { "food": "butter", "g": 8, "min": 6, "max": 10 },
+      { "food": "lemon", "g": 10, "min": 10, "max": 10 },
+      { "food": "parsley", "g": 3, "min": 3, "max": 3 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Ryžu uvar, posledné 4 minúty k nej pridaj hrášok.", "Tresku osoľ a opeč na masle 3–4 minúty z každej strany.", "Pokvapkaj citrónom a posyp petržlenovou vňaťou."],
+      "de": ["Reis kochen, die letzten 4 Minuten die Erbsen mitgaren.", "Kabeljau salzen und in Butter je Seite 3–4 Minuten braten.", "Mit Zitrone beträufeln und mit Petersilie bestreuen."]
+    }
+  },
+  {
+    "id": "schnitzel-potato-salad",
+    "name": { "en": "Oven pork schnitzel with potato salad", "sk": "Rezeň z rúry so zemiakovým šalátom", "de": "Ofenschnitzel mit Kartoffelsalat" },
+    "meals": ["lunch", "dinner"], "timeMin": 45, "equipment": ["oven", "stove"], "tags": ["classic", "kids"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "pork_loin", "g": 150, "min": 120, "max": 260 },
+      { "food": "egg", "g": 20, "min": 20, "max": 30 },
+      { "food": "flour", "g": 8, "min": 8, "max": 8 },
+      { "food": "breadcrumbs", "g": 20, "min": 20, "max": 30 },
+      { "food": "potato", "g": 200, "min": 150, "max": 320 },
+      { "food": "pickles", "g": 40, "min": 30, "max": 60 },
+      { "food": "onion", "g": 20, "min": 20, "max": 30 },
+      { "food": "broth_veg", "g": 50, "min": 50, "max": 50 },
+      { "food": "vinegar_spirit", "g": 8, "min": 8, "max": 8 },
+      { "food": "rapeseed_oil", "g": 10, "min": 8, "max": 12 },
+      { "food": "mustard", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky uvar v šupke, ošúp a nakrájaj na kolieska.", "Zalej teplým vývarom s octom, horčicou a polovicou oleja, pridaj cibuľu a uhorky, nechaj 30 minút odstáť.", "Mäso naklep, osoľ, obaľ v múke, vajci a strúhanke, pokvapkaj zvyškom oleja.", "Peč pri 220 °C 18–20 minút, v polovici otoč."],
+      "de": ["Kartoffeln mit Schale kochen, pellen und in Scheiben schneiden.", "Mit warmer Brühe, Essig, Senf und der Hälfte des Öls übergießen, Zwiebel und Gurken zugeben, 30 Minuten ziehen lassen.", "Fleisch klopfen, salzen, in Mehl, Ei und Paniermehl wenden, mit restlichem Öl beträufeln.", "Bei 220 °C 18–20 Minuten backen, nach der Hälfte wenden."]
+    }
+  },
+  {
+    "id": "turkey-mushroom-cream-rice",
+    "name": { "en": "Turkey and mushroom stroganoff with rice", "sk": "Morčacie na hubách so smotanou a ryžou", "de": "Putengeschnetzeltes mit Champignons und Reis" },
+    "meals": ["lunch", "dinner"], "timeMin": 30, "equipment": ["stove"], "tags": ["high_protein", "classic"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "turkey_breast", "g": 180, "min": 130, "max": 330 },
+      { "food": "mushroom", "g": 120, "min": 80, "max": 200 },
+      { "food": "onion", "g": 40, "min": 30, "max": 60 },
+      { "food": "cream_light", "g": 50, "min": 30, "max": 80 },
+      { "food": "rice", "g": 70, "min": 40, "max": 140 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Ryžu uvar.", "Morčacie na prúžky opeč na oleji, vyber.", "Na tej istej panvici opeč cibuľu a huby, pridaj smotanu a papriku.", "Vráť mäso, 3 minúty povar a podávaj s ryžou."],
+      "de": ["Reis kochen.", "Putenstreifen im Öl anbraten und herausnehmen.", "In derselben Pfanne Zwiebel und Pilze braten, Sahne und Paprika zugeben.", "Fleisch zurückgeben, 3 Minuten köcheln, mit Reis servieren."]
+    }
+  },
+  {
+    "id": "frikadellen-mash",
+    "name": { "en": "Meat patties with mashed potatoes", "sk": "Fašírky so zemiakovou kašou", "de": "Frikadellen mit Kartoffelpüree" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["stove"], "tags": ["classic", "kids"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "beef_ground_5", "g": 100, "min": 80, "max": 200 },
+      { "food": "pork_ground", "g": 60, "min": 40, "max": 100 },
+      { "food": "egg", "g": 15, "min": 15, "max": 25 },
+      { "food": "breadcrumbs", "g": 12, "min": 12, "max": 15 },
+      { "food": "onion", "g": 30, "min": 30, "max": 40 },
+      { "food": "mustard", "g": 5, "min": 5, "max": 5 },
+      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "milk_semi", "g": 60, "min": 50, "max": 80 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "marjoram", "g": 0.5, "min": 0.5, "max": 0.5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Mäso zmiešaj s vajcom, strúhankou, cibuľou, horčicou, majoránom a soľou.", "Vytvaruj placky a opeč na oleji 4–5 minút z každej strany.", "Zemiaky uvar, scedí a roztlač s teplým mliekom a soľou."],
+      "de": ["Hack mit Ei, Paniermehl, Zwiebel, Senf, Majoran und Salz vermengen.", "Frikadellen formen und im Öl je Seite 4–5 Minuten braten.", "Kartoffeln kochen, abgießen und mit warmer Milch und Salz stampfen."]
+    }
+  },
+  {
+    "id": "baked-potato-herb-quark",
+    "name": { "en": "Baked potatoes with herb quark", "sk": "Pečené zemiaky s bylinkovým tvarohom", "de": "Ofenkartoffel mit Kräuterquark" },
+    "meals": ["lunch", "dinner"], "timeMin": 50, "equipment": ["oven"], "tags": ["budget", "high_protein", "classic"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "potato", "g": 350, "min": 200, "max": 500 },
+      { "food": "quark_lean", "g": 250, "min": 150, "max": 500 },
+      { "food": "chives", "g": 5, "min": 5, "max": 5 },
+      { "food": "garlic", "g": 3, "min": 3, "max": 3 },
+      { "food": "flaxseed", "g": 0, "min": 0, "max": 15 },
+      { "food": "olive_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky prekroj na polovice, potri olejom a soľou, peč 40 minút pri 200 °C.", "Tvaroh vymiešaj s pažítkou, prelisovaným cesnakom, soľou a trochou vody.", "Podávaj zemiaky s tvarohom."],
+      "de": ["Kartoffeln halbieren, mit Öl und Salz einreiben, 40 Minuten bei 200 °C backen.", "Quark mit Schnittlauch, gepresstem Knoblauch, Salz und etwas Wasser verrühren.", "Kartoffeln mit dem Quark servieren."]
+    }
+  },
+  {
+    "id": "potato-soup-sausage",
+    "name": { "en": "Potato soup with frankfurters", "sk": "Zemiaková polievka s párkami", "de": "Kartoffelsuppe mit Würstchen" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["stove"], "tags": ["classic", "budget"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "carrot", "g": 60, "min": 40, "max": 80 },
+      { "food": "leek", "g": 50, "min": 30, "max": 70 },
+      { "food": "celeriac", "g": 40, "min": 30, "max": 50 },
+      { "food": "frankfurter", "g": 100, "min": 50, "max": 150 },
+      { "food": "broth_veg", "g": 300, "min": 250, "max": 400 },
+      { "food": "marjoram", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky a zeleninu nakrájaj na kocky, var vo vývare 20 minút.", "Časť polievky rozmixuj alebo roztlač pre hustotu.", "Pridaj párky na kolieska a majorán, 5 minút povar."],
+      "de": ["Kartoffeln und Gemüse würfeln und 20 Minuten in der Brühe kochen.", "Einen Teil pürieren oder stampfen, damit die Suppe sämig wird.", "Würstchen in Scheiben und Majoran zugeben und 5 Minuten ziehen lassen."]
+    }
+  },
+  {
+    "id": "lentil-potato-stew",
+    "name": { "en": "Lentil and potato stew", "sk": "Šošovicový eintopf so zemiakmi", "de": "Linseneintopf mit Kartoffeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 45, "equipment": ["stove"], "tags": ["classic", "budget"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "lentils", "g": 70, "min": 50, "max": 120 },
+      { "food": "potato", "g": 150, "min": 100, "max": 250 },
+      { "food": "carrot", "g": 60, "min": 40, "max": 80 },
+      { "food": "leek", "g": 40, "min": 30, "max": 60 },
+      { "food": "celeriac", "g": 30, "min": 30, "max": 40 },
+      { "food": "ham_cured", "g": 50, "min": 0, "max": 120 },
+      { "food": "broth_veg", "g": 300, "min": 250, "max": 400 },
+      { "food": "vinegar_spirit", "g": 8, "min": 8, "max": 8 },
+      { "food": "bay_leaf", "g": 0.3, "min": 0.3, "max": 0.3 }
+    ],
+    "steps": {
+      "sk": ["Šošovicu prepláchni a var vo vývare s bobkovým listom 15 minút.", "Pridaj zeleninu a zemiaky na kocky, var ďalších 20 minút.", "Vmiešaj šunku na kocky a dochuť octom."],
+      "de": ["Linsen abspülen und mit Lorbeer 15 Minuten in der Brühe kochen.", "Gemüse- und Kartoffelwürfel zugeben und 20 Minuten weiterkochen.", "Schinkenwürfel unterrühren und mit Essig abschmecken."]
+    }
+  },
+  {
+    "id": "stuffed-peppers-tomato",
+    "name": { "en": "Stuffed peppers in tomato sauce", "sk": "Plnená paprika v paradajkovej omáčke", "de": "Gefüllte Paprika in Tomatensauce" },
+    "meals": ["lunch", "dinner"], "timeMin": 60, "equipment": ["stove"], "tags": ["classic"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "pepper_green", "g": 200, "min": 150, "max": 300 },
+      { "food": "beef_ground_5", "g": 130, "min": 100, "max": 250 },
+      { "food": "rice", "g": 30, "min": 25, "max": 40 },
+      { "food": "egg", "g": 10, "min": 10, "max": 15 },
+      { "food": "passata", "g": 200, "min": 150, "max": 300 },
+      { "food": "sugar", "g": 5, "min": 5, "max": 5 },
+      { "food": "flour", "g": 5, "min": 5, "max": 5 },
+      { "food": "potato", "g": 150, "min": 0, "max": 250 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Mäso zmiešaj so surovou ryžou, vajcom a soľou, naplň vydlabané papriky.", "Passatu zrieď vodou, pridaj cukor a soľ, vlož papriky.", "Duste pod pokrievkou 45 minút, na konci zahusti múkou rozmiešanou vo vode.", "Podávaj s varenými zemiakmi."],
+      "de": ["Hack mit rohem Reis, Ei und Salz mischen und in die ausgehöhlten Paprika füllen.", "Passata mit Wasser verdünnen, Zucker und Salz zugeben, Paprika hineinsetzen.", "Zugedeckt 45 Minuten schmoren, zum Schluss mit angerührtem Mehl binden.", "Mit Salzkartoffeln servieren."]
+    }
+  },
+  {
+    "id": "beef-leek-pan-lowcarb",
+    "name": { "en": "Ground beef and leek pan (low carb)", "sk": "Mleté hovädzie s pórom (low carb)", "de": "Hackfleisch-Lauch-Pfanne (Low Carb)" },
+    "meals": ["lunch", "dinner"], "timeMin": 20, "equipment": ["stove"], "tags": ["low_carb", "high_protein", "quick"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "beef_ground_5", "g": 180, "min": 130, "max": 320 },
+      { "food": "leek", "g": 150, "min": 100, "max": 250 },
+      { "food": "cream_cheese_light", "g": 40, "min": 30, "max": 60 },
+      { "food": "broth_veg", "g": 80, "min": 80, "max": 100 },
+      { "food": "nutmeg", "g": 0.3, "min": 0.3, "max": 0.3 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Mäso opeč na oleji do hneda.", "Pridaj pór na kolieska a restuj 5 minút.", "Vmiešaj krémový syr a vývar, povar 5 minút a dochuť muškátom a soľou."],
+      "de": ["Hack im Öl krümelig braun anbraten.", "Lauchringe zugeben und 5 Minuten mitbraten.", "Frischkäse und Brühe einrühren, 5 Minuten köcheln, mit Muskat und Salz abschmecken."]
+    }
+  },
+  {
+    "id": "pasta-broccoli-ham-bake",
+    "name": { "en": "Pasta bake with broccoli and ham", "sk": "Zapekané cestoviny s brokolicou a šunkou", "de": "Nudelauflauf mit Brokkoli und Schinken" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["oven", "stove"], "tags": ["kids", "meal_prep"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "pasta", "g": 70, "min": 50, "max": 130 },
+      { "food": "broccoli", "g": 150, "min": 100, "max": 250 },
+      { "food": "ham", "g": 80, "min": 50, "max": 150 },
+      { "food": "egg", "g": 55, "min": 55, "max": 55 },
+      { "food": "milk_semi", "g": 80, "min": 60, "max": 100 },
+      { "food": "cottage", "g": 80, "min": 50, "max": 200 },
+      { "food": "edam", "g": 20, "min": 15, "max": 30 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Cestoviny uvar, posledné 3 minúty s ružičkami brokolice.", "Vajce rozšľahaj s mliekom, cottage a soľou.", "V zapekacej miske zmiešaj cestoviny, brokolicu a šunku, zalej vaječnou zmesou, posyp syrom.", "Zapekaj 20 minút pri 200 °C."],
+      "de": ["Nudeln kochen, die letzten 3 Minuten mit den Brokkoliröschen.", "Ei mit Milch, Hüttenkäse und Salz verquirlen.", "Nudeln, Brokkoli und Schinken in einer Form mischen, Eiermilch darübergießen, mit Käse bestreuen.", "20 Minuten bei 200 °C überbacken."]
+    }
+  },
+  {
+    "id": "trout-parsley-potatoes",
+    "name": { "en": "Trout with parsley potatoes", "sk": "Pstruh s petržlenovými zemiakmi", "de": "Forelle mit Petersilienkartoffeln" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["oven", "stove"], "tags": ["omega3"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "trout", "g": 180, "min": 140, "max": 300 },
+      { "food": "potato", "g": 220, "min": 150, "max": 320 },
+      { "food": "butter", "g": 8, "min": 6, "max": 10 },
+      { "food": "parsley", "g": 5, "min": 5, "max": 5 },
+      { "food": "lemon", "g": 15, "min": 15, "max": 15 },
+      { "food": "lettuce_green", "g": 60, "min": 40, "max": 100 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Pstruha osoľ, do brucha vlož plátky citróna a peč 20 minút pri 200 °C.", "Zemiaky uvar a premiešaj s maslom a nasekanou petržlenovou vňaťou.", "Podávaj so zeleným šalátom."],
+      "de": ["Forelle salzen, mit Zitronenscheiben füllen und 20 Minuten bei 200 °C backen.", "Kartoffeln kochen und mit Butter und gehackter Petersilie schwenken.", "Mit grünem Salat servieren."]
+    }
+  },
+  {
+    "id": "pork-sauerkraut-dumpling",
+    "name": { "en": "Roast pork with sauerkraut and bread dumplings", "sk": "Pečené bravčové s kapustou a knedľou", "de": "Schweinebraten mit Sauerkraut und Brot" },
+    "meals": ["lunch", "dinner"], "timeMin": 100, "equipment": ["oven"], "tags": ["classic"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "pork_leg", "g": 170, "min": 130, "max": 300 },
+      { "food": "sauerkraut", "g": 150, "min": 100, "max": 250 },
+      { "food": "onion", "g": 40, "min": 30, "max": 50 },
+      { "food": "roll", "g": 80, "min": 50, "max": 150 },
+      { "food": "caraway", "g": 1, "min": 1, "max": 1 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "sugar", "g": 4, "min": 4, "max": 4 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Mäso potri cesnakom, rascou a soľou, podlej vodou a peč pod alobalom 70 minút pri 180 °C.", "Odkry a dopeč 15 minút dozlata.", "Kapustu duste s cibuľou, rascou a cukrom 20 minút.", "Podávaj s rožkom alebo knedľou (gramy rátané ako pečivo)."],
+      "de": ["Fleisch mit Knoblauch, Kümmel und Salz einreiben, Wasser angießen und abgedeckt 70 Minuten bei 180 °C garen.", "Aufdecken und 15 Minuten goldbraun braten.", "Sauerkraut mit Zwiebel, Kümmel und Zucker 20 Minuten dünsten.", "Mit Brötchen oder Semmelknödel servieren (Gramm als Gebäck gerechnet)."]
+    }
+  },
+  {
+    "id": "fish-oven-veg",
+    "name": { "en": "Pollock with oven vegetables", "sk": "Aljašská treska s pečenou zeleninou", "de": "Seelachs mit Ofengemüse" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["oven"], "tags": ["high_protein", "budget"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "pollock", "g": 200, "min": 150, "max": 380 },
+      { "food": "potato", "g": 200, "min": 100, "max": 300 },
+      { "food": "zucchini", "g": 120, "min": 80, "max": 200 },
+      { "food": "pepper_red", "g": 100, "min": 60, "max": 150 },
+      { "food": "olive_oil", "g": 8, "min": 6, "max": 10 },
+      { "food": "lemon", "g": 10, "min": 10, "max": 10 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky a zeleninu nakrájaj, premiešaj s olejom, paprikou a soľou, peč 20 minút pri 200 °C.", "Rybu osoľ, polož na zeleninu a peč ďalších 12–15 minút.", "Pokvapkaj citrónom."],
+      "de": ["Kartoffeln und Gemüse schneiden, mit Öl, Paprika und Salz mischen, 20 Minuten bei 200 °C backen.", "Fisch salzen, aufs Gemüse legen und 12–15 Minuten weiterbacken.", "Mit Zitrone beträufeln."]
+    }
+  },
+  {
+    "id": "white-bean-goulash",
+    "name": { "en": "White bean goulash (vegan)", "sk": "Fazuľový guláš (vegánsky)", "de": "Bohnengulasch (vegan)" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["stove"], "tags": ["budget", "classic"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "white_beans_can", "g": 200, "min": 150, "max": 350 },
+      { "food": "onion", "g": 60, "min": 40, "max": 80 },
+      { "food": "potato", "g": 100, "min": 50, "max": 200 },
+      { "food": "pepper_red", "g": 60, "min": 40, "max": 100 },
+      { "food": "tomato_paste", "g": 15, "min": 15, "max": 15 },
+      { "food": "paprika", "g": 4, "min": 4, "max": 4 },
+      { "food": "caraway", "g": 1, "min": 1, "max": 1 },
+      { "food": "marjoram", "g": 1, "min": 1, "max": 1 },
+      { "food": "soy_chunks", "g": 30, "min": 0, "max": 60 },
+      { "food": "bread_rye", "g": 50, "min": 0, "max": 120 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Sójové kúsky namoč na 10 minút do horúcej vody a vyžmýkaj.", "Na oleji speň cibuľu, pridaj papriku, pretlak, rascu a sójové kúsky.", "Pridaj zemiaky, papriku, fazuľu a vodu, var 20 minút.", "Dochuť majoránom, podávaj s chlebom."],
+      "de": ["Sojaschnetzel 10 Minuten in heißem Wasser einweichen und ausdrücken.", "Zwiebel im Öl anschwitzen, Paprikapulver, Tomatenmark, Kümmel und Soja zugeben.", "Kartoffeln, Paprika, Bohnen und Wasser zugeben und 20 Minuten köcheln.", "Mit Majoran abschmecken, mit Brot servieren."]
+    }
+  },
+  {
+    "id": "egg-noodles-cheese-onion",
+    "name": { "en": "Cheese noodles with fried onions and side salad", "sk": "Syrové halušky s opraženou cibuľkou", "de": "Käsespätzle-Art mit Röstzwiebeln und Salat" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove", "oven"], "tags": ["classic", "kids"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "egg_noodles", "g": 80, "min": 60, "max": 130 },
+      { "food": "emmental", "g": 40, "min": 30, "max": 60 },
+      { "food": "cottage", "g": 100, "min": 50, "max": 250 },
+      { "food": "onion", "g": 60, "min": 40, "max": 80 },
+      { "food": "butter", "g": 6, "min": 6, "max": 6 },
+      { "food": "lettuce_green", "g": 60, "min": 40, "max": 100 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Cestoviny uvar a scedí.", "Cibuľu nakrájaj na polkolieska a opraž na masle dozlata.", "V miske vrstvi cestoviny, cottage a strúhaný syr, zapeč 10 minút pri 200 °C.", "Posyp cibuľkou, podávaj so šalátom."],
+      "de": ["Nudeln kochen und abgießen.", "Zwiebel in Halbringe schneiden und in Butter goldbraun rösten.", "Nudeln, Hüttenkäse und geriebenen Käse schichten, 10 Minuten bei 200 °C überbacken.", "Mit Röstzwiebeln bestreuen, mit Salat servieren."]
+    }
+  },
+  {
+    "id": "chicken-liver-onion-potatoes",
+    "name": { "en": "Chicken livers with onions and mash", "sk": "Kuracia pečeň na cibuľke so zemiakovou kašou", "de": "Hähnchenleber mit Zwiebeln und Püree" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["budget", "classic", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "chicken_liver", "g": 180, "min": 130, "max": 300 },
+      { "food": "onion", "g": 80, "min": 50, "max": 100 },
+      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "milk_semi", "g": 60, "min": 50, "max": 80 },
+      { "food": "marjoram", "g": 0.5, "min": 0.5, "max": 0.5 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 },
+      { "food": "pickles", "g": 40, "min": 0, "max": 80 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky uvar a roztlač s mliekom.", "Cibuľu opeč na oleji dozlata, pridaj očistenú pečeň.", "Opekaj 5–6 minút, osoľ až na konci a dochuť majoránom.", "Podávaj s kašou a uhorkou."],
+      "de": ["Kartoffeln kochen und mit Milch stampfen.", "Zwiebel im Öl goldbraun braten, geputzte Leber zugeben.", "5–6 Minuten braten, erst am Ende salzen und mit Majoran würzen.", "Mit Püree und Gurke servieren."]
+    }
+  }
+]

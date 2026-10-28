@@ -24,7 +24,7 @@ const FOUNDATION_URLS = [
   'https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2024-10-31.zip',
 ];
 const FLAGS: FoodFlag[] = ['meat', 'pork', 'red_meat', 'fish', 'dairy', 'egg', 'honey'];
-const FUZZY_MIN = 0.72;
+const FUZZY_MIN = 0.8;
 
 // USDA nutrient ids
 const N = { kcal: 1008, kcalAtwaterGeneral: 2047, kcalAtwaterSpecific: 2048, protein: 1003, fat: 1004, fatNlea: 1085, carbs: 1005 };
@@ -202,7 +202,7 @@ async function main() {
     const want = normalize(entry.usda);
     const exact = usda.filter(u => u.norm === want).sort((a, b) => (a.dataType === 'sr_legacy_food' ? -1 : 1) - (b.dataType === 'sr_legacy_food' ? -1 : 1));
     if (exact.length) return { entry, food: exact[0], how: 'exact', score: 1, alts: [] };
-    const ranked = usda.map(u => ({ u, s: scoreMatch(entry.usda, u.description) })).sort((a, b) => b.s - a.s).slice(0, 4);
+    const ranked = usda.map(u => ({ u, s: scoreMatch(entry.usda, u.description) })).sort((a, b) => b.s - a.s).slice(0, 6);
     const best = ranked[0]!;
     return best.s >= FUZZY_MIN
       ? { entry, food: best.u, how: 'fuzzy', score: best.s, alts: ranked.slice(1).map(r => r.u) }
