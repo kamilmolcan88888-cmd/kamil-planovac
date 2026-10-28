@@ -1,41 +1,14 @@
 # foods.json match report
 
-Generated 2026-10-28T20:44:20.675Z from: sr_legacy, foundation.
+Generated 2026-10-28T20:48:45.806Z from: sr_legacy, foundation.
 
-Matched: 373 / 373. Exact: 345, pinned: 0, fuzzy: 28, unmatched: 0.
+Matched: 372 / 372. Exact: 371, pinned: 0, fuzzy: 1, unmatched: 0.
 
 ## Needs review (fuzzy or unmatched)
 
 | id | wanted | got (fdcId) | score | alternatives |
 |---|---|---|---|---|
-| apple | Apples, raw, with skin | Apples, honeycrisp, with skin, raw (1105547) | 1.00 | Apples, gala, with skin, raw (1105781)<br>Apples, fuji, with skin, raw (1105897)<br>Apples, fuji, with skin, raw (1750340) |
-| raisins | Raisins, seedless | Raisins, golden, seedless (168164) | 0.95 | Raisins, seeded (168166)<br>Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program) (168165)<br>Raspberries, puree, seedless (167808) |
-| tomato_paste | Tomato products, canned, paste, without salt added | Tomato products, canned, puree, without salt added (170460) | 1.00 | Tomato products, canned, puree, with salt added (170546)<br>Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program) (170459)<br>Tomato, paste, canned, without salt added (2685580) |
-| peas_can | Peas, green, canned, regular pack, drained solids | Peas, green, canned, regular pack, solids and liquids (170421) | 0.95 | Peas, green, canned, no salt added, drained solids (170104)<br>Peas, green, canned, drained solids, rinsed in tap water (170015)<br>Peas, green, canned, seasoned, solids and liquids (170014) |
-| applesauce | Applesauce, canned, unsweetened, without added ascorbic acid | Applesauce, canned, unsweetened, with added ascorbic acid (167772) | 1.00 | Applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program) (171695)<br>Applesauce, canned, sweetened, without salt (171696)<br>Pear nectar, canned, without added ascorbic acid (169940) |
-| chicken_breast | Chicken, broilers or fryers, breast, meat only, raw | Chicken, broilers or fryers, meat only, raw (171052) | 1.00 | Chicken, broilers or fryers, dark meat, meat only, raw (171067)<br>Chicken, broilers or fryers, back, meat only, raw (171073)<br>Chicken, broilers or fryers, light meat, meat only, raw (171464) |
-| chicken_thigh | Chicken, broilers or fryers, thigh, meat only, raw | Chicken, broilers or fryers, meat only, raw (171052) | 1.00 | Chicken, broilers or fryers, dark meat, meat only, raw (171067)<br>Chicken, broilers or fryers, back, meat only, raw (171073)<br>Chicken, broilers or fryers, light meat, meat only, raw (171464) |
-| turkey_ham | Turkey ham, sliced, extra lean, prepackaged or deli | Ham, turkey, sliced, extra lean, prepackaged or deli (168092) | 0.85 | Turkey breast, sliced, prepackaged (172941)<br>Turkey breast, low salt, prepackaged or deli, luncheon meat (174572)<br>Ham, smoked, extra lean, low sodium (173881) |
-| beef_ground_15 | Beef, ground, 85% lean meat / 15% fat, raw | Beef, ground, 70% lean meat / 30% fat, raw (168652) | 0.90 | Beef, ground, 95% lean meat / 5% fat, raw (171790)<br>Beef, ground, 93% lean meat / 7% fat, raw (173110)<br>Beef, ground, 97% lean meat / 3% fat, raw (173111) |
-| beef_sirloin | Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw (168609) | 1.00 | Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (169478)<br>Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (171758)<br>Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw (174763) |
-| beef_chuck | Beef, chuck, arm pot roast, separable lean only, trimmed to 0" fat, choice, raw | Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, raw (174056) | 1.00 | Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, choice, raw (168668)<br>Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, raw (174765)<br>Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, raw (173126) |
-| beef_round | Beef, round, top round, separable lean only, trimmed to 0" fat, choice, raw | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (171758) | 1.00 | Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, raw (173126)<br>Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, choice, raw (173996)<br>Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, select, raw (171759) |
-| ham_cured | Ham, cured, boneless, extra lean (approximately 5% fat), roasted | Pork, cured, ham, boneless, extra lean (approximately 5% fat), roasted (167871) | 0.80 | Pork, cured, ham, boneless, low sodium, extra lean (approximately 5% fat), roasted (168111)<br>Pork, cured, ham, boneless, regular (approximately 11% fat), roasted (167872)<br>Pork, cured, ham, boneless, extra lean and regular, roasted (168296) |
-| rice_cakes | Snacks, rice cakes, brown rice, plain | Snacks, rice cakes, brown rice, plain, unsalted (170250) | 1.00 | Snacks, rice cracker brown rice, plain (167966)<br>Snacks, rice cakes, brown rice, buckwheat (167967)<br>Snacks, rice cakes, brown rice, rye (168855) |
-| rice_brown | Rice, brown, long-grain, raw | Rice, brown, long grain, unenriched, raw (2512380) | 1.00 | Rice, white, long grain, unenriched, raw (2512381)<br>Rice, white, long-grain, regular, raw, enriched (168877)<br>Rice, white, long-grain, regular, raw, unenriched (169756) |
-| rice_round | Rice, white, short-grain, raw | Rice, white, short-grain, raw, unenriched (168931) | 1.00 | Rice, white, medium-grain, raw, enriched (168879)<br>Rice, white, medium-grain, raw, unenriched (169760)<br>Rice, white, long grain, unenriched, raw (2512381) |
-| pasta_wholewheat | Pasta, whole-wheat, dry | Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry (168915) | 0.77 | Pasta, dry, unenriched (168927)<br>Pasta, dry, enriched (169736)<br>Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program) (169738) |
-| flour_wholewheat | Wheat flour, whole-grain | Wheat flour, whole-grain, soft wheat (168944) | 1.00 | Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program) (168893)<br>Triticale flour, whole-grain (168888)<br>Sorghum flour, whole-grain (168943) |
-| cornflakes | Cereals ready-to-eat, corn flakes, plain | Cereals ready-to-eat, RALSTON Corn Flakes (174648) | 1.00 | Cereals ready-to-eat, RALSTON Corn Biscuits (173003)<br>Cereals ready-to-eat, POST Bran Flakes (173888)<br>Cereals ready-to-eat, ALPEN (169075) |
-| split_peas | Peas, split, mature seeds, raw | Peas, green, split, mature seeds, raw (172428) | 1.00 | Peas, mature seeds, sprouted, raw (170422)<br>Peas, split, mature seeds, cooked, boiled, without salt (172429)<br>Peas, split, mature seeds, cooked, boiled, with salt (175257) |
-| peas_frozen | Peas, green, frozen, unprepared | Peas, edible-podded, frozen, unprepared (170012) | 0.82 | Peas, green, frozen, unprepared (Includes foods for USDA's Food Distribution Program) (170016)<br>Peas, green, raw (170419)<br>Peas, green, frozen, cooked, boiled, drained, without salt (170017) |
-| corn_frozen | Corn, sweet, yellow, frozen, kernels cut off cob, unprepared | Corn, sweet, white, frozen, kernels cut off cob, unprepared (168544) | 1.00 | Corn, sweet, yellow, frozen, kernels on cob, unprepared (168400)<br>Corn, sweet, white, frozen, kernels on cob, unprepared (169365)<br>Corn, sweet, yellow, frozen, kernels cut off cob, unprepared (Includes foods for USDA's Food Distribution Program) (168398) |
-| mixed_veg_frozen | Mixed vegetables, frozen, unprepared | Vegetables, mixed, frozen, unprepared (170471) | 0.85 | Edamame, frozen, unprepared (168410)<br>Asparagus, frozen, unprepared (169208)<br>Kale, frozen, unprepared (169239) |
-| broccoli_frozen | Broccoli, frozen, chopped or diced, unprepared | Broccoli, frozen, chopped, unprepared (169968) | 0.95 | Broccoli, frozen, spears, unprepared (Includes foods for USDA's Food Distribution Program) (169970)<br>Broccoli, frozen, chopped, cooked, boiled, drained, with salt (168511)<br>Broccoli, frozen, chopped, cooked, boiled, drained, without salt (169969) |
-| spinach_frozen | Spinach, frozen, chopped or leaf, unprepared | Spinach, frozen, chopped or leaf, unprepared (Includes foods for USDA's Food Distribution Program) (169287) | 0.75 | Spinach, frozen, chopped or leaf, cooked, boiled, drained, without salt (169288)<br>Spinach, frozen, chopped or leaf, cooked, boiled, drained, with salt (170124)<br>Broccoli, frozen, chopped, unprepared (169968) |
-| green_beans_frozen | Beans, snap, green, frozen, all styles, unprepared | Beans, snap, yellow, frozen, all styles, unprepared (169324) | 1.00 | Beans, snap, green, frozen, all styles, microwaved (169964)<br>Beans, snap, green, frozen, all styles, unprepared (Includes foods for USDA's Food Distribution Program) (169962)<br>Beans, pinto, immature seeds, frozen, unprepared (169958) |
-| berries_frozen | Blueberries, frozen, unsweetened | Blueberries, frozen, sweetened (173951) | 0.82 | Blueberries, wild, frozen (Alaska Native) (169799)<br>Blueberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program) (173950)<br>Nance, frozen, unsweetened (167789) |
-| strawberry_frozen | Strawberries, frozen, unsweetened | Strawberries, frozen, sweetened, sliced (168174) | 0.72 | Strawberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program) (168173)<br>Nance, frozen, unsweetened (167789)<br>Blackberries, frozen, unsweetened (171710) |
+| beef_sirloin | Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (171758) | 0.83 | Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw (174763)<br>Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (169478)<br>Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, raw (174003)<br>Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, raw (172174)<br>Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0" fat, choice, raw (173408) |
 
 ## Missing nutrients
 
@@ -109,7 +82,7 @@ none
 | chives | 169994 | Chives, raw | 30 | 3.27 | 4.35 | 0.73 |
 | cilantro | 169997 | Coriander (cilantro) leaves, raw | 23 | 2.13 | 3.67 | 0.52 |
 | mint | 173475 | Spearmint, fresh | 44 | 3.29 | 8.41 | 0.73 |
-| apple | 1105547 | Apples, honeycrisp, with skin, raw | 60 | 0.1 | 14.7 | 0.1 |
+| apple | 171688 | Apples, raw, with skin (Includes foods for USDA's Food Distribution Program) | 52 | 0.26 | 13.81 | 0.17 |
 | banana | 173944 | Bananas, raw | 89 | 1.09 | 22.84 | 0.33 |
 | orange | 169097 | Oranges, raw, all commercial varieties | 47 | 0.94 | 11.75 | 0.12 |
 | mandarin | 169105 | Tangerines, (mandarin oranges), raw | 53 | 0.81 | 13.34 | 0.31 |
@@ -134,7 +107,7 @@ none
 | fig | 173021 | Figs, raw | 74 | 0.75 | 19.18 | 0.3 |
 | redcurrant | 173964 | Currants, red and white, raw | 56 | 1.4 | 13.8 | 0.2 |
 | gooseberry | 173030 | Gooseberries, raw | 44 | 0.88 | 10.18 | 0.58 |
-| raisins | 168164 | Raisins, golden, seedless | 301 | 3.28 | 80.02 | 0.2 |
+| raisins | 168165 | Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program) | 299 | 3.3 | 79.32 | 0.25 |
 | dates | 168191 | Dates, medjool | 277 | 1.81 | 74.97 | 0.15 |
 | dried_apricot | 173941 | Apricots, dried, sulfured, uncooked | 241 | 3.39 | 62.64 | 0.51 |
 | dried_cranberry | 171723 | Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program) | 308 | 0.17 | 82.8 | 1.09 |
@@ -149,7 +122,7 @@ none
 | sundried_tomato | 169384 | Tomatoes, sun-dried, packed in oil, drained | 213 | 5.06 | 23.33 | 14.08 |
 | passata | 170460 | Tomato products, canned, puree, without salt added | 38 | 1.65 | 8.98 | 0.21 |
 | tomato_canned | 170051 | Tomatoes, red, ripe, canned, packed in tomato juice | 16 | 0.79 | 3.47 | 0.25 |
-| tomato_paste | 170460 | Tomato products, canned, puree, without salt added | 38 | 1.65 | 8.98 | 0.21 |
+| tomato_paste | 170459 | Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program) | 82 | 4.32 | 18.91 | 0.47 |
 | roasted_pepper | 168546 | Peppers, sweet, red, canned, solids and liquids | 18 | 0.8 | 3.9 | 0.3 |
 | beetroot_jar | 169966 | Beets, canned, drained solids | 31 | 0.91 | 7.21 | 0.14 |
 | chickpeas_can | 173801 | Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained, rinsed in tap water | 138 | 7.04 | 22.87 | 2.47 |
@@ -158,18 +131,18 @@ none
 | black_beans_can | 175238 | Beans, black, mature seeds, canned, low sodium | 91 | 6.03 | 16.55 | 0.29 |
 | baked_beans | 175182 | Beans, baked, canned, plain or vegetarian | 94 | 4.75 | 21.14 | 0.37 |
 | lentils_can | 172421 | Lentils, mature seeds, cooked, boiled, without salt | 116 | 9.02 | 20.13 | 0.38 |
-| peas_can | 170421 | Peas, green, canned, regular pack, solids and liquids | 58 | 3.01 | 10.6 | 0.48 |
+| peas_can | 170104 | Peas, green, canned, no salt added, drained solids | 69 | 4.42 | 12.58 | 0.35 |
 | peach_can | 169930 | Peaches, canned, juice pack, solids and liquids | 44 | 0.63 | 11.57 | 0.03 |
 | pineapple_can | 169126 | Pineapple, canned, juice pack, solids and liquids | 60 | 0.42 | 15.7 | 0.08 |
-| applesauce | 167772 | Applesauce, canned, unsweetened, with added ascorbic acid | 42 | 0.17 | 11.27 | 0.1 |
+| applesauce | 171695 | Applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program) | 42 | 0.17 | 11.27 | 0.1 |
 | coconut_milk | 170173 | Nuts, coconut milk, canned (liquid expressed from grated meat and water) | 197 | 2.02 | 2.81 | 21.33 |
-| tuna_water | 334194 | Fish, tuna, light, canned in water, drained solids | 90 | 19 | 0.08 | 0.94 |
+| tuna_water | 173709 | Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program) | 86 | 19.44 | 0 | 0.96 |
 | tuna_oil | 173708 | Fish, tuna, light, canned in oil, drained solids | 198 | 29.13 | 0 | 8.21 |
 | sardines | 175139 | Fish, sardine, Atlantic, canned in oil, drained solids with bone | 208 | 24.62 | 0 | 11.45 |
 | mackerel_can | 175121 | Fish, mackerel, jack, canned, drained solids | 156 | 23.19 | 0 | 6.3 |
 | salmon_can | 175175 | Fish, salmon, pink, canned, drained solids | 138 | 23.1 | 0 | 5.02 |
-| chicken_breast | 171052 | Chicken, broilers or fryers, meat only, raw | 119 | 21.39 | 0 | 3.08 |
-| chicken_thigh | 171052 | Chicken, broilers or fryers, meat only, raw | 119 | 21.39 | 0 | 3.08 |
+| chicken_breast | 171077 | Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw | 120 | 22.5 | 0 | 2.62 |
+| chicken_thigh | 173627 | Chicken, broilers or fryers, dark meat, thigh, meat only, raw | 121 | 19.66 | 0 | 4.12 |
 | chicken_drumstick | 172373 | Chicken, broilers or fryers, drumstick, meat and skin, raw | 161 | 18.08 | 0.11 | 9.2 |
 | chicken_leg | 172378 | Chicken, broilers or fryers, leg, meat and skin, raw | 214 | 16.37 | 0.17 | 15.95 |
 | chicken_wing | 172390 | Chicken, broilers or fryers, wing, meat and skin, raw | 191 | 17.52 | 0 | 12.85 |
@@ -182,9 +155,8 @@ none
 | turkey_deli | 174572 | Turkey breast, low salt, prepackaged or deli, luncheon meat | 109 | 21.81 | 3.51 | 0.83 |
 | chicken_deli | 173874 | Chicken breast, deli, rotisserie seasoned, sliced, prepackaged | 98 | 17.4 | 2.92 | 1.86 |
 | beef_ground_5 | 171790 | Beef, ground, 95% lean meat / 5% fat, raw | 137 | 21.41 | 0 | 5 |
-| beef_ground_15 | 168652 | Beef, ground, 70% lean meat / 30% fat, raw | 332 | 14.35 | 0 | 30 |
 | beef_ground_20 | 174036 | Beef, ground, 80% lean meat / 20% fat, raw | 254 | 17.17 | 0 | 20 |
-| beef_sirloin | 168609 | Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw | 149 | 21.72 | 0 | 6.29 |
+| beef_sirloin | 171758 | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw | 124 | 23.59 | 0 | 3.26 |
 | beef_chuck | 174056 | Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, raw | 139 | 21.96 | 0 | 5.05 |
 | beef_round | 171758 | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw | 124 | 23.59 | 0 | 3.26 |
 | beef_flank | 168609 | Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw | 149 | 21.72 | 0 | 6.29 |
@@ -226,9 +198,9 @@ none
 | kefir | 170904 | Kefir, lowfat, plain, LIFEWAY | 43 | 3.79 | 4.77 | 1.02 |
 | yogurt_plain | 171284 | Yogurt, plain, whole milk | 61 | 3.47 | 4.66 | 3.25 |
 | yogurt_low | 170886 | Yogurt, plain, low fat | 63 | 5.25 | 7.04 | 1.55 |
-| greek_0 | 330137 | Yogurt, Greek, plain, nonfat | 61 | 10.3 | 3.64 | 0.37 |
+| greek_0 | 170894 | Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program) | 59 | 10.19 | 3.6 | 0.39 |
 | greek_full | 171304 | Yogurt, Greek, plain, whole milk | 97 | 9 | 3.98 | 5 |
-| skyr | 330137 | Yogurt, Greek, plain, nonfat | 61 | 10.3 | 3.64 | 0.37 |
+| skyr | 170894 | Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program) | 59 | 10.19 | 3.6 | 0.39 |
 | quark_lean | 172181 | Cheese, cottage, nonfat, uncreamed, dry, large or small curd | 72 | 10.34 | 6.66 | 0.29 |
 | cottage | 172182 | Cheese, cottage, lowfat, 2% milkfat | 81 | 10.45 | 4.76 | 2.27 |
 | cottage_full | 172179 | Cheese, cottage, creamed, large or small curd | 98 | 11.12 | 3.38 | 4.3 |
@@ -240,7 +212,7 @@ none
 | gouda | 171241 | Cheese, gouda | 356 | 24.94 | 2.22 | 27.44 |
 | emmental | 171251 | Cheese, swiss | 393 | 26.96 | 1.44 | 30.99 |
 | parmesan | 170848 | Cheese, parmesan, hard | 392 | 35.75 | 3.22 | 25 |
-| cheddar | 328637 | Cheese, cheddar | 408 | 23.3 | 2.44 | 34 |
+| cheddar | 173414 | Cheese, cheddar (Includes foods for USDA's Food Distribution Program) | 403 | 22.87 | 3.37 | 33.31 |
 | cream_cheese | 173418 | Cheese, cream | 350 | 6.15 | 5.52 | 34.44 |
 | cream_cheese_light | 169079 | Cheese, cream, low fat | 208 | 7.85 | 6.73 | 16.67 |
 | ricotta | 170851 | Cheese, ricotta, whole milk | 150 | 7.54 | 7.27 | 10.18 |
@@ -275,7 +247,7 @@ none
 | rice_brown | 2512380 | Rice, brown, long grain, unenriched, raw | 368.3584745 | 7.25305 | 76.68795 | 3.306 |
 | rice_round | 168931 | Rice, white, short-grain, raw, unenriched | 358 | 6.5 | 79.15 | 0.52 |
 | pasta | 169736 | Pasta, dry, enriched | 371 | 13.04 | 74.67 | 1.51 |
-| pasta_wholewheat | 168915 | Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry | 362 | 13.51 | 73.1 | 2.68 |
+| pasta_wholewheat | 169738 | Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program) | 352 | 13.87 | 73.37 | 2.93 |
 | egg_noodles | 169731 | Noodles, egg, dry, enriched | 384 | 14.16 | 71.27 | 4.44 |
 | rice_noodles | 169742 | Rice noodles, dry | 364 | 5.95 | 80.18 | 0.56 |
 | couscous | 169699 | Couscous, dry | 376 | 12.76 | 77.43 | 0.64 |
@@ -287,7 +259,7 @@ none
 | semolina | 169715 | Semolina, enriched | 360 | 12.68 | 72.83 | 1.05 |
 | polenta | 168867 | Cornmeal, degermed, enriched, yellow | 370 | 7.11 | 79.45 | 1.75 |
 | flour | 168894 | Wheat flour, white, all-purpose, enriched, bleached | 364 | 10.33 | 76.31 | 0.98 |
-| flour_wholewheat | 168944 | Wheat flour, whole-grain, soft wheat | 332 | 9.61 | 74.48 | 1.95 |
+| flour_wholewheat | 168893 | Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program) | 340 | 13.21 | 71.97 | 2.5 |
 | flour_rye | 168885 | Rye flour, dark | 325 | 15.91 | 68.63 | 2.22 |
 | cornstarch | 169698 | Cornstarch | 381 | 0.26 | 91.27 | 0.05 |
 | breadcrumbs | 174928 | Bread, crumbs, dry, grated, plain | 395 | 13.35 | 71.98 | 5.3 |
@@ -346,15 +318,15 @@ none
 | edamame | 168410 | Edamame, frozen, unprepared | 109 | 11.22 | 7.61 | 4.73 |
 | hummus | 174289 | Hummus, commercial | 237 | 7.78 | 15 | 17.82 |
 | soy_yogurt | 167722 | Tofu yogurt | 94 | 3.5 | 15.96 | 1.8 |
-| peas_frozen | 170012 | Peas, edible-podded, frozen, unprepared | 42 | 2.8 | 7.2 | 0.3 |
-| corn_frozen | 168544 | Corn, sweet, white, frozen, kernels cut off cob, unprepared | 88 | 3.02 | 20.73 | 0.77 |
+| peas_frozen | 170016 | Peas, green, frozen, unprepared (Includes foods for USDA's Food Distribution Program) | 77 | 5.22 | 13.62 | 0.4 |
+| corn_frozen | 168398 | Corn, sweet, yellow, frozen, kernels cut off cob, unprepared (Includes foods for USDA's Food Distribution Program) | 88 | 3.02 | 20.71 | 0.78 |
 | mixed_veg_frozen | 170471 | Vegetables, mixed, frozen, unprepared | 72 | 3.33 | 13.47 | 0.52 |
 | broccoli_frozen | 169968 | Broccoli, frozen, chopped, unprepared | 26 | 2.81 | 4.78 | 0.29 |
 | spinach_frozen | 169287 | Spinach, frozen, chopped or leaf, unprepared (Includes foods for USDA's Food Distribution Program) | 29 | 3.63 | 4.21 | 0.57 |
-| green_beans_frozen | 169324 | Beans, snap, yellow, frozen, all styles, unprepared | 33 | 1.8 | 7.58 | 0.21 |
+| green_beans_frozen | 169962 | Beans, snap, green, frozen, all styles, unprepared (Includes foods for USDA's Food Distribution Program) | 33 | 1.79 | 7.54 | 0.21 |
 | cauliflower_frozen | 170398 | Cauliflower, frozen, unprepared | 24 | 2.01 | 4.68 | 0.27 |
-| berries_frozen | 173951 | Blueberries, frozen, sweetened | 85 | 0.4 | 21.95 | 0.13 |
-| strawberry_frozen | 168174 | Strawberries, frozen, sweetened, sliced | 96 | 0.53 | 25.92 | 0.13 |
+| berries_frozen | 173950 | Blueberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program) | 51 | 0.42 | 12.17 | 0.64 |
+| strawberry_frozen | 168173 | Strawberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program) | 35 | 0.43 | 9.13 | 0.11 |
 | raspberry_frozen | 168209 | Raspberries, frozen, red, unsweetened | 56 | 1.15 | 12.55 | 0.81 |
 | fries_frozen | 170523 | Potatoes, french fried, all types, salt not added in processing, frozen, as purchased | 147 | 2.24 | 24.81 | 4.66 |
 | olive_oil | 171413 | Oil, olive, salad or cooking | 884 | 0 | 0 | 100 |

@@ -1,6 +1,6 @@
 {
  "source": "USDA FoodData Central (public domain), sr_legacy + foundation",
- "generatedAt": "2026-10-28T20:44:20.676Z",
+ "generatedAt": "2026-10-28T20:48:45.808Z",
  "foods": [
   {
    "id": "potato",
@@ -1380,9 +1380,9 @@
   },
   {
    "id": "apple",
-   "fdcId": 1105547,
-   "usdaDescription": "Apples, honeycrisp, with skin, raw",
-   "usdaDataType": "foundation_food",
+   "fdcId": 171688,
+   "usdaDescription": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Apple",
     "sk": "Jablko",
@@ -1394,10 +1394,10 @@
    "shelfDays": 21,
    "pieceG": 180,
    "per100": {
-    "kcal": 60,
-    "protein": 0.1,
-    "carbs": 14.7,
-    "fat": 0.1
+    "kcal": 52,
+    "protein": 0.26,
+    "carbs": 13.81,
+    "fat": 0.17
    }
   },
   {
@@ -1918,8 +1918,8 @@
   },
   {
    "id": "raisins",
-   "fdcId": 168164,
-   "usdaDescription": "Raisins, golden, seedless",
+   "fdcId": 168165,
+   "usdaDescription": "Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Raisins",
@@ -1931,10 +1931,10 @@
    "flags": [],
    "shelfDays": 180,
    "per100": {
-    "kcal": 301,
-    "protein": 3.28,
-    "carbs": 80.02,
-    "fat": 0.2
+    "kcal": 299,
+    "protein": 3.3,
+    "carbs": 79.32,
+    "fat": 0.25
    }
   },
   {
@@ -2234,8 +2234,8 @@
   },
   {
    "id": "tomato_paste",
-   "fdcId": 170460,
-   "usdaDescription": "Tomato products, canned, puree, without salt added",
+   "fdcId": 170459,
+   "usdaDescription": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Tomato paste",
@@ -2247,10 +2247,10 @@
    "flags": [],
    "shelfDays": 14,
    "per100": {
-    "kcal": 38,
-    "protein": 1.65,
-    "carbs": 8.98,
-    "fat": 0.21
+    "kcal": 82,
+    "protein": 4.32,
+    "carbs": 18.91,
+    "fat": 0.47
    }
   },
   {
@@ -2423,8 +2423,8 @@
   },
   {
    "id": "peas_can",
-   "fdcId": 170421,
-   "usdaDescription": "Peas, green, canned, regular pack, solids and liquids",
+   "fdcId": 170104,
+   "usdaDescription": "Peas, green, canned, no salt added, drained solids",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Peas (can)",
@@ -2436,10 +2436,10 @@
    "flags": [],
    "shelfDays": 3,
    "per100": {
-    "kcal": 58,
-    "protein": 3.01,
-    "carbs": 10.6,
-    "fat": 0.48
+    "kcal": 69,
+    "protein": 4.42,
+    "carbs": 12.58,
+    "fat": 0.35
    }
   },
   {
@@ -2486,8 +2486,8 @@
   },
   {
    "id": "applesauce",
-   "fdcId": 167772,
-   "usdaDescription": "Applesauce, canned, unsweetened, with added ascorbic acid",
+   "fdcId": 171695,
+   "usdaDescription": "Applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Apple purée",
@@ -2528,9 +2528,9 @@
   },
   {
    "id": "tuna_water",
-   "fdcId": 334194,
-   "usdaDescription": "Fish, tuna, light, canned in water, drained solids",
-   "usdaDataType": "foundation_food",
+   "fdcId": 173709,
+   "usdaDescription": "Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Tuna in water (can)",
     "sk": "Tuniak vo vlastnej šťave",
@@ -2545,10 +2545,10 @@
    ],
    "shelfDays": 2,
    "per100": {
-    "kcal": 90,
-    "protein": 19,
-    "carbs": 0.08,
-    "fat": 0.94
+    "kcal": 86,
+    "protein": 19.44,
+    "carbs": 0,
+    "fat": 0.96
    }
   },
   {
@@ -2653,8 +2653,8 @@
   },
   {
    "id": "chicken_breast",
-   "fdcId": 171052,
-   "usdaDescription": "Chicken, broilers or fryers, meat only, raw",
+   "fdcId": 171077,
+   "usdaDescription": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Chicken breast fillet",
@@ -2668,16 +2668,16 @@
    ],
    "shelfDays": 2,
    "per100": {
-    "kcal": 119,
-    "protein": 21.39,
+    "kcal": 120,
+    "protein": 22.5,
     "carbs": 0,
-    "fat": 3.08
+    "fat": 2.62
    }
   },
   {
    "id": "chicken_thigh",
-   "fdcId": 171052,
-   "usdaDescription": "Chicken, broilers or fryers, meat only, raw",
+   "fdcId": 173627,
+   "usdaDescription": "Chicken, broilers or fryers, dark meat, thigh, meat only, raw",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Chicken thigh fillet",
@@ -2691,10 +2691,10 @@
    ],
    "shelfDays": 2,
    "per100": {
-    "kcal": 119,
-    "protein": 21.39,
+    "kcal": 121,
+    "protein": 19.66,
     "carbs": 0,
-    "fat": 3.08
+    "fat": 4.12
    }
   },
   {
@@ -2975,30 +2975,6 @@
    }
   },
   {
-   "id": "beef_ground_15",
-   "fdcId": 168652,
-   "usdaDescription": "Beef, ground, 70% lean meat / 30% fat, raw",
-   "usdaDataType": "sr_legacy_food",
-   "name": {
-    "en": "Ground beef (15 %)",
-    "sk": "Mleté hovädzie",
-    "de": "Rinderhackfleisch"
-   },
-   "aisle": "meat",
-   "allergens": [],
-   "flags": [
-    "meat",
-    "red_meat"
-   ],
-   "shelfDays": 1,
-   "per100": {
-    "kcal": 332,
-    "protein": 14.35,
-    "carbs": 0,
-    "fat": 30
-   }
-  },
-  {
    "id": "beef_ground_20",
    "fdcId": 174036,
    "usdaDescription": "Beef, ground, 80% lean meat / 20% fat, raw",
@@ -3024,8 +3000,8 @@
   },
   {
    "id": "beef_sirloin",
-   "fdcId": 168609,
-   "usdaDescription": "Beef, flank, steak, separable lean only, trimmed to 0\" fat, choice, raw",
+   "fdcId": 171758,
+   "usdaDescription": "Beef, round, top round steak, boneless, separable lean only, trimmed to 0\" fat, choice, raw",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Beef steak (sirloin)",
@@ -3040,10 +3016,10 @@
    ],
    "shelfDays": 2,
    "per100": {
-    "kcal": 149,
-    "protein": 21.72,
+    "kcal": 124,
+    "protein": 23.59,
     "carbs": 0,
-    "fat": 6.29
+    "fat": 3.26
    }
   },
   {
@@ -4068,9 +4044,9 @@
   },
   {
    "id": "greek_0",
-   "fdcId": 330137,
-   "usdaDescription": "Yogurt, Greek, plain, nonfat",
-   "usdaDataType": "foundation_food",
+   "fdcId": 170894,
+   "usdaDescription": "Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Greek yogurt 0 %",
     "sk": "Grécky jogurt 0 %",
@@ -4085,10 +4061,10 @@
    ],
    "shelfDays": 5,
    "per100": {
-    "kcal": 61,
-    "protein": 10.3,
-    "carbs": 3.64,
-    "fat": 0.37
+    "kcal": 59,
+    "protein": 10.19,
+    "carbs": 3.6,
+    "fat": 0.39
    }
   },
   {
@@ -4118,9 +4094,9 @@
   },
   {
    "id": "skyr",
-   "fdcId": 330137,
-   "usdaDescription": "Yogurt, Greek, plain, nonfat",
-   "usdaDataType": "foundation_food",
+   "fdcId": 170894,
+   "usdaDescription": "Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Skyr",
     "sk": "Skyr",
@@ -4135,10 +4111,10 @@
    ],
    "shelfDays": 5,
    "per100": {
-    "kcal": 61,
-    "protein": 10.3,
-    "carbs": 3.64,
-    "fat": 0.37
+    "kcal": 59,
+    "protein": 10.19,
+    "carbs": 3.6,
+    "fat": 0.39
    }
   },
   {
@@ -4420,9 +4396,9 @@
   },
   {
    "id": "cheddar",
-   "fdcId": 328637,
-   "usdaDescription": "Cheese, cheddar",
-   "usdaDataType": "foundation_food",
+   "fdcId": 173414,
+   "usdaDescription": "Cheese, cheddar (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Cheddar",
     "sk": "Čedar",
@@ -4437,10 +4413,10 @@
    ],
    "shelfDays": 14,
    "per100": {
-    "kcal": 408,
-    "protein": 23.3,
-    "carbs": 2.44,
-    "fat": 34
+    "kcal": 403,
+    "protein": 22.87,
+    "carbs": 3.37,
+    "fat": 33.31
    }
   },
   {
@@ -5261,8 +5237,8 @@
   },
   {
    "id": "pasta_wholewheat",
-   "fdcId": 168915,
-   "usdaDescription": "Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry",
+   "fdcId": 169738,
+   "usdaDescription": "Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Wholewheat pasta",
@@ -5276,10 +5252,10 @@
    "flags": [],
    "shelfDays": 365,
    "per100": {
-    "kcal": 362,
-    "protein": 13.51,
-    "carbs": 73.1,
-    "fat": 2.68
+    "kcal": 352,
+    "protein": 13.87,
+    "carbs": 73.37,
+    "fat": 2.93
    }
   },
   {
@@ -5530,8 +5506,8 @@
   },
   {
    "id": "flour_wholewheat",
-   "fdcId": 168944,
-   "usdaDescription": "Wheat flour, whole-grain, soft wheat",
+   "fdcId": 168893,
+   "usdaDescription": "Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Wholewheat flour",
@@ -5545,10 +5521,10 @@
    "flags": [],
    "shelfDays": 180,
    "per100": {
-    "kcal": 332,
-    "protein": 9.61,
-    "carbs": 74.48,
-    "fat": 1.95
+    "kcal": 340,
+    "protein": 13.21,
+    "carbs": 71.97,
+    "fat": 2.5
    }
   },
   {
@@ -6837,8 +6813,8 @@
   },
   {
    "id": "peas_frozen",
-   "fdcId": 170012,
-   "usdaDescription": "Peas, edible-podded, frozen, unprepared",
+   "fdcId": 170016,
+   "usdaDescription": "Peas, green, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Frozen peas",
@@ -6850,16 +6826,16 @@
    "flags": [],
    "shelfDays": 2,
    "per100": {
-    "kcal": 42,
-    "protein": 2.8,
-    "carbs": 7.2,
-    "fat": 0.3
+    "kcal": 77,
+    "protein": 5.22,
+    "carbs": 13.62,
+    "fat": 0.4
    }
   },
   {
    "id": "corn_frozen",
-   "fdcId": 168544,
-   "usdaDescription": "Corn, sweet, white, frozen, kernels cut off cob, unprepared",
+   "fdcId": 168398,
+   "usdaDescription": "Corn, sweet, yellow, frozen, kernels cut off cob, unprepared (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Frozen sweet corn",
@@ -6873,8 +6849,8 @@
    "per100": {
     "kcal": 88,
     "protein": 3.02,
-    "carbs": 20.73,
-    "fat": 0.77
+    "carbs": 20.71,
+    "fat": 0.78
    }
   },
   {
@@ -6942,8 +6918,8 @@
   },
   {
    "id": "green_beans_frozen",
-   "fdcId": 169324,
-   "usdaDescription": "Beans, snap, yellow, frozen, all styles, unprepared",
+   "fdcId": 169962,
+   "usdaDescription": "Beans, snap, green, frozen, all styles, unprepared (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Frozen green beans",
@@ -6956,8 +6932,8 @@
    "shelfDays": 2,
    "per100": {
     "kcal": 33,
-    "protein": 1.8,
-    "carbs": 7.58,
+    "protein": 1.79,
+    "carbs": 7.54,
     "fat": 0.21
    }
   },
@@ -6984,8 +6960,8 @@
   },
   {
    "id": "berries_frozen",
-   "fdcId": 173951,
-   "usdaDescription": "Blueberries, frozen, sweetened",
+   "fdcId": 173950,
+   "usdaDescription": "Blueberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Frozen blueberries",
@@ -6997,16 +6973,16 @@
    "flags": [],
    "shelfDays": 2,
    "per100": {
-    "kcal": 85,
-    "protein": 0.4,
-    "carbs": 21.95,
-    "fat": 0.13
+    "kcal": 51,
+    "protein": 0.42,
+    "carbs": 12.17,
+    "fat": 0.64
    }
   },
   {
    "id": "strawberry_frozen",
-   "fdcId": 168174,
-   "usdaDescription": "Strawberries, frozen, sweetened, sliced",
+   "fdcId": 168173,
+   "usdaDescription": "Strawberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Frozen strawberries",
@@ -7018,10 +6994,10 @@
    "flags": [],
    "shelfDays": 2,
    "per100": {
-    "kcal": 96,
-    "protein": 0.53,
-    "carbs": 25.92,
-    "fat": 0.13
+    "kcal": 35,
+    "protein": 0.43,
+    "carbs": 9.13,
+    "fat": 0.11
    }
   },
   {
