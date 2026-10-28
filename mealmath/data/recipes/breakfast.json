@@ -1,0 +1,456 @@
+[
+  {
+    "id": "oats-skyr-banana",
+    "name": { "en": "Oat porridge with skyr and banana", "sk": "Ovsená kaša so skyrom a banánom", "de": "Haferbrei mit Skyr und Banane" },
+    "meals": ["breakfast"], "timeMin": 8, "equipment": ["stove"], "tags": ["quick", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "oats", "g": 60, "min": 40, "max": 110 },
+      { "food": "milk_semi", "g": 150, "min": 100, "max": 250 },
+      { "food": "skyr", "g": 150, "min": 100, "max": 400 },
+      { "food": "banana", "g": 100, "min": 60, "max": 150 },
+      { "food": "cinnamon", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Vločky povar s mliekom 3–4 minúty do hustej kaše.", "Odstav, nechaj minútu vychladnúť a vmiešaj skyr.", "Navrch daj nakrájaný banán a posyp škoricou."],
+      "de": ["Haferflocken mit der Milch 3–4 Minuten zu einem dicken Brei kochen.", "Vom Herd nehmen, kurz abkühlen lassen und den Skyr unterrühren.", "Mit Bananenscheiben belegen und mit Zimt bestreuen."]
+    }
+  },
+  {
+    "id": "quark-berry-bowl",
+    "name": { "en": "Quark bowl with berries and walnuts", "sk": "Tvarohová miska s lesným ovocím a orechmi", "de": "Quarkschale mit Beeren und Walnüssen" },
+    "meals": ["breakfast", "snack"], "timeMin": 5, "equipment": [], "tags": ["quick", "high_protein", "no_cook"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "quark_lean", "g": 250, "min": 150, "max": 500 },
+      { "food": "berries_frozen", "g": 100, "min": 60, "max": 200 },
+      { "food": "honey", "g": 10, "min": 5, "max": 20 },
+      { "food": "walnuts", "g": 15, "min": 10, "max": 30 }
+    ],
+    "steps": {
+      "sk": ["Mrazené ovocie nechaj večer rozmraziť v chladničke (alebo 1 min v mikrovlnke).", "Tvaroh vymiešaj s medom a trochou vody do krému.", "Pridaj ovocie a posyp nasekanými orechmi."],
+      "de": ["Die TK-Beeren über Nacht im Kühlschrank auftauen (oder 1 Min. in der Mikrowelle).", "Quark mit Honig und etwas Wasser cremig rühren.", "Beeren daraufgeben und mit gehackten Walnüssen bestreuen."]
+    }
+  },
+  {
+    "id": "veggie-omelette-rye",
+    "name": { "en": "Vegetable omelette with rye bread", "sk": "Zeleninová omeleta s ražným chlebom", "de": "Gemüse-Omelett mit Roggenbrot" },
+    "meals": ["breakfast", "dinner"], "timeMin": 12, "equipment": ["stove"], "tags": ["high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 220 },
+      { "food": "egg_white", "g": 100, "min": 0, "max": 250 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 150 },
+      { "food": "spinach", "g": 40, "min": 20, "max": 80 },
+      { "food": "bread_rye", "g": 80, "min": 40, "max": 140 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 },
+      { "food": "pepper_black", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Vajcia a bielky rozšľahaj so soľou a korením.", "Na oleji 2 minúty opeč nakrájanú papriku, pridaj špenát.", "Zalej vajíčkami a pod pokrievkou nechaj 3–4 minúty stuhnúť.", "Podávaj s chlebom."],
+      "de": ["Eier und Eiklar mit Salz und Pfeffer verquirlen.", "Gewürfelte Paprika im Öl 2 Minuten anbraten, Spinat dazugeben.", "Eimasse darübergießen und zugedeckt 3–4 Minuten stocken lassen.", "Mit Brot servieren."]
+    }
+  },
+  {
+    "id": "scrambled-eggs-ham-roll",
+    "name": { "en": "Scrambled eggs with ham and rolls", "sk": "Praženica so šunkou a rožkom", "de": "Rührei mit Schinken und Brötchen" },
+    "meals": ["breakfast"], "timeMin": 8, "equipment": ["stove"], "tags": ["quick", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 220 },
+      { "food": "ham", "g": 50, "min": 30, "max": 120 },
+      { "food": "roll", "g": 100, "min": 50, "max": 150 },
+      { "food": "butter", "g": 5, "min": 5, "max": 5 },
+      { "food": "chives", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Šunku nakrájaj na kocky a krátko opeč na masle.", "Pridaj rozšľahané vajcia so soľou a za stáleho miešania nechaj zhustnúť.", "Posyp pažítkou a podávaj s rožkom."],
+      "de": ["Schinken würfeln und kurz in Butter anbraten.", "Verquirlte, gesalzene Eier dazugeben und unter Rühren stocken lassen.", "Mit Schnittlauch bestreuen und mit Brötchen servieren."]
+    }
+  },
+  {
+    "id": "greek-yogurt-granola",
+    "name": { "en": "Greek yogurt with granola and blueberries", "sk": "Grécky jogurt s granolou a čučoriedkami", "de": "Griechischer Joghurt mit Granola und Heidelbeeren" },
+    "meals": ["breakfast", "snack"], "timeMin": 3, "equipment": [], "tags": ["quick", "no_cook"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "greek_0", "g": 250, "min": 150, "max": 450 },
+      { "food": "granola", "g": 40, "min": 25, "max": 80 },
+      { "food": "blueberry", "g": 80, "min": 50, "max": 150 }
+    ],
+    "steps": {
+      "sk": ["Jogurt daj do misky.", "Pridaj čučoriedky a granolu tesne pred jedlom, aby ostala chrumkavá."],
+      "de": ["Joghurt in eine Schale geben.", "Heidelbeeren und Granola erst kurz vor dem Essen darauf verteilen, damit es knusprig bleibt."]
+    }
+  },
+  {
+    "id": "overnight-oats-apple",
+    "name": { "en": "Overnight oats with apple and chia", "sk": "Nočné vločky s jablkom a chia", "de": "Overnight Oats mit Apfel und Chia" },
+    "meals": ["breakfast"], "timeMin": 5, "equipment": [], "tags": ["no_cook", "meal_prep", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "oats", "g": 50, "min": 40, "max": 100 },
+      { "food": "milk_semi", "g": 150, "min": 100, "max": 300 },
+      { "food": "skyr", "g": 150, "min": 100, "max": 300 },
+      { "food": "chia", "g": 10, "min": 10, "max": 20 },
+      { "food": "apple", "g": 120, "min": 80, "max": 180 },
+      { "food": "cinnamon", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Vločky, chia, mlieko, skyr a škoricu premiešaj v pohári s viečkom.", "Nechaj cez noc v chladničke.", "Ráno pridaj nastrúhané jablko. Vydrží 3 dni, jablko pridávaj čerstvé."],
+      "de": ["Haferflocken, Chia, Milch, Skyr und Zimt in einem Schraubglas verrühren.", "Über Nacht in den Kühlschrank stellen.", "Morgens den geriebenen Apfel unterheben. Hält 3 Tage, Apfel immer frisch dazugeben."]
+    }
+  },
+  {
+    "id": "cottage-toast-tomato",
+    "name": { "en": "Wholemeal bread with cottage cheese and tomato", "sk": "Celozrnný chlieb s cottage a paradajkou", "de": "Vollkornbrot mit Hüttenkäse und Tomate" },
+    "meals": ["breakfast", "dinner"], "timeMin": 5, "equipment": [], "tags": ["quick", "no_cook", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "bread_wholewheat", "g": 80, "min": 40, "max": 160 },
+      { "food": "cottage", "g": 200, "min": 150, "max": 400 },
+      { "food": "tomato", "g": 120, "min": 80, "max": 200 },
+      { "food": "chives", "g": 5, "min": 5, "max": 5 },
+      { "food": "pepper_black", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Chlieb natri cottage syrom.", "Oblož plátkami paradajky, okoreň a posyp pažítkou."],
+      "de": ["Brot mit Hüttenkäse bestreichen.", "Mit Tomatenscheiben belegen, pfeffern und mit Schnittlauch bestreuen."]
+    }
+  },
+  {
+    "id": "protein-oat-pancakes",
+    "name": { "en": "Protein oat pancakes", "sk": "Proteínové ovsené lievance", "de": "Protein-Haferpfannkuchen" },
+    "meals": ["breakfast"], "timeMin": 15, "equipment": ["stove", "blender"], "tags": ["high_protein"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "oats", "g": 50, "min": 40, "max": 90 },
+      { "food": "egg", "g": 110, "min": 55, "max": 165 },
+      { "food": "egg_white", "g": 150, "min": 100, "max": 300 },
+      { "food": "banana", "g": 100, "min": 60, "max": 120 },
+      { "food": "baking_powder", "g": 3, "min": 3, "max": 3 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 }
+    ],
+    "steps": {
+      "sk": ["Vločky, vajcia, bielky, banán a prášok do pečiva rozmixuj na hladké cesto.", "Na málo oleja peč malé lievance z oboch strán asi 2 minúty.", "Podávaj samotné alebo s ovocím."],
+      "de": ["Haferflocken, Eier, Eiklar, Banane und Backpulver glatt mixen.", "In wenig Öl kleine Pfannkuchen von beiden Seiten je ca. 2 Minuten backen.", "Pur oder mit Obst servieren."]
+    }
+  },
+  {
+    "id": "tofu-scramble-rye",
+    "name": { "en": "Tofu scramble with spinach", "sk": "Tofu praženica so špenátom", "de": "Tofu-Rührei mit Spinat" },
+    "meals": ["breakfast", "dinner"], "timeMin": 10, "equipment": ["stove"], "tags": ["high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "tofu", "g": 200, "min": 150, "max": 400 },
+      { "food": "spinach", "g": 50, "min": 30, "max": 100 },
+      { "food": "tomato", "g": 100, "min": 60, "max": 150 },
+      { "food": "bread_rye", "g": 80, "min": 40, "max": 140 },
+      { "food": "olive_oil", "g": 5, "min": 5, "max": 8 },
+      { "food": "turmeric", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Tofu rozdrob vidličkou.", "Na oleji ho opeč 4 minúty s kurkumou a soľou.", "Pridaj paradajky a špenát, nechaj zavädnúť.", "Podávaj s chlebom."],
+      "de": ["Tofu mit einer Gabel zerkrümeln.", "Im Öl mit Kurkuma und Salz 4 Minuten anbraten.", "Tomaten und Spinat zugeben und zusammenfallen lassen.", "Mit Brot servieren."]
+    }
+  },
+  {
+    "id": "avocado-egg-toast",
+    "name": { "en": "Avocado toast with eggs", "sk": "Avokádový toast s vajcom", "de": "Avocado-Toast mit Ei" },
+    "meals": ["breakfast"], "timeMin": 10, "equipment": ["stove", "toaster"], "tags": [], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "bread_wholewheat", "g": 80, "min": 40, "max": 120 },
+      { "food": "avocado", "g": 60, "min": 40, "max": 100 },
+      { "food": "egg", "g": 110, "min": 110, "max": 220 },
+      { "food": "lemon", "g": 5, "min": 5, "max": 5 },
+      { "food": "chili_flakes", "g": 0.5, "min": 0.5, "max": 0.5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Vajcia uvar 7 minút alebo priprav na volské oko.", "Avokádo roztlač s citrónom a soľou.", "Chlieb opeč, natri avokádom, pridaj vajcia a čili."],
+      "de": ["Eier 7 Minuten kochen oder als Spiegelei braten.", "Avocado mit Zitrone und Salz zerdrücken.", "Brot toasten, mit Avocado bestreichen, Eier und Chili darauf."]
+    }
+  },
+  {
+    "id": "skyr-smoothie-bowl",
+    "name": { "en": "Strawberry skyr smoothie bowl", "sk": "Jahodová skyr smoothie misa", "de": "Erdbeer-Skyr-Smoothie-Bowl" },
+    "meals": ["breakfast", "snack"], "timeMin": 5, "equipment": ["blender"], "tags": ["quick", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "skyr", "g": 250, "min": 150, "max": 450 },
+      { "food": "strawberry_frozen", "g": 120, "min": 80, "max": 200 },
+      { "food": "banana", "g": 80, "min": 60, "max": 120 },
+      { "food": "oats", "g": 30, "min": 20, "max": 70 }
+    ],
+    "steps": {
+      "sk": ["Skyr, mrazené jahody a banán rozmixuj na hustý krém.", "Prelej do misky a posyp vločkami."],
+      "de": ["Skyr, TK-Erdbeeren und Banane zu einer dicken Creme mixen.", "In eine Schale füllen und mit Haferflocken bestreuen."]
+    }
+  },
+  {
+    "id": "roll-quark-radish",
+    "name": { "en": "Rolls with herb quark and radishes", "sk": "Rožky s pažítkovým tvarohom a reďkovkami", "de": "Brötchen mit Kräuterquark und Radieschen" },
+    "meals": ["breakfast", "dinner"], "timeMin": 5, "equipment": [], "tags": ["quick", "no_cook", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "roll", "g": 100, "min": 50, "max": 150 },
+      { "food": "quark_lean", "g": 200, "min": 150, "max": 400 },
+      { "food": "radish", "g": 80, "min": 50, "max": 150 },
+      { "food": "chives", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 },
+      { "food": "pepper_black", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Tvaroh vymiešaj s pažítkou, soľou, korením a lyžicou vody.", "Rožky natri tvarohom a oblož plátkami reďkoviek."],
+      "de": ["Quark mit Schnittlauch, Salz, Pfeffer und einem Löffel Wasser verrühren.", "Brötchen mit Quark bestreichen und mit Radieschenscheiben belegen."]
+    }
+  },
+  {
+    "id": "semolina-porridge-cocoa",
+    "name": { "en": "Cocoa semolina porridge with protein", "sk": "Kakaová krupicová kaša s proteínom", "de": "Kakao-Grießbrei mit Protein" },
+    "meals": ["breakfast"], "timeMin": 8, "equipment": ["stove"], "tags": ["quick"], "cuisine": "sk",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "semolina", "g": 50, "min": 40, "max": 80 },
+      { "food": "milk_semi", "g": 300, "min": 250, "max": 450 },
+      { "food": "whey", "g": 20, "min": 0, "max": 40 },
+      { "food": "cocoa", "g": 5, "min": 5, "max": 10 },
+      { "food": "sugar", "g": 5, "min": 0, "max": 10 }
+    ],
+    "steps": {
+      "sk": ["Mlieko prives k varu, za stáleho miešania prisyp krupicu.", "Var 2–3 minúty do zhustnutia.", "Odstav, vmiešaj kakao, cukor a proteín."],
+      "de": ["Milch aufkochen, Grieß unter Rühren einrieseln lassen.", "2–3 Minuten köcheln, bis er andickt.", "Vom Herd nehmen, Kakao, Zucker und Proteinpulver einrühren."]
+    }
+  },
+  {
+    "id": "kefir-muesli",
+    "name": { "en": "Muesli with kefir, raisins and walnuts", "sk": "Müsli s kefírom, hrozienkami a orechmi", "de": "Müsli mit Kefir, Rosinen und Walnüssen" },
+    "meals": ["breakfast"], "timeMin": 3, "equipment": [], "tags": ["quick", "no_cook"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "oats", "g": 50, "min": 40, "max": 90 },
+      { "food": "kefir", "g": 250, "min": 200, "max": 400 },
+      { "food": "skyr", "g": 100, "min": 0, "max": 250 },
+      { "food": "raisins", "g": 15, "min": 10, "max": 25 },
+      { "food": "walnuts", "g": 10, "min": 10, "max": 20 }
+    ],
+    "steps": {
+      "sk": ["Vločky zalej kefírom a nechaj 5 minút napučať.", "Vmiešaj skyr, pridaj hrozienka a orechy."],
+      "de": ["Haferflocken mit Kefir übergießen und 5 Minuten quellen lassen.", "Skyr unterrühren, Rosinen und Walnüsse dazugeben."]
+    }
+  },
+  {
+    "id": "bryndza-spread-rye",
+    "name": { "en": "Bryndza spread on rye bread", "sk": "Bryndzová nátierka na ražnom chlebe", "de": "Brimsen-Aufstrich auf Roggenbrot" },
+    "meals": ["breakfast", "dinner"], "timeMin": 5, "equipment": [], "tags": ["no_cook", "high_protein"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "bryndza", "g": 50, "min": 30, "max": 80 },
+      { "food": "quark_lean", "g": 150, "min": 100, "max": 300 },
+      { "food": "spring_onion", "g": 20, "min": 15, "max": 30 },
+      { "food": "bread_rye", "g": 100, "min": 60, "max": 160 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 150 }
+    ],
+    "steps": {
+      "sk": ["Bryndzu vymiešaj s tvarohom a mletou paprikou.", "Pridaj nadrobno nakrájanú jarnú cibuľku.", "Natri na chlieb a podávaj s paprikou. Nátierka vydrží v chladničke 3 dni."],
+      "de": ["Brimsen mit Quark und Paprikapulver verrühren.", "Fein geschnittene Frühlingszwiebeln untermischen.", "Aufs Brot streichen und mit Paprika servieren. Hält im Kühlschrank 3 Tage."]
+    }
+  },
+  {
+    "id": "smoked-salmon-bagel",
+    "name": { "en": "Smoked salmon bagel", "sk": "Bagel s údeným lososom", "de": "Bagel mit Räucherlachs" },
+    "meals": ["breakfast"], "timeMin": 5, "equipment": ["toaster"], "tags": ["quick"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "bagel", "g": 90, "min": 90, "max": 180 },
+      { "food": "salmon_smoked", "g": 60, "min": 50, "max": 120 },
+      { "food": "cream_cheese_light", "g": 40, "min": 30, "max": 60 },
+      { "food": "cucumber", "g": 50, "min": 30, "max": 100 },
+      { "food": "dill", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Bagel prekroj a opeč.", "Natri krémovým syrom, oblož lososom a plátkami uhorky, posyp kôprom."],
+      "de": ["Bagel halbieren und toasten.", "Mit Frischkäse bestreichen, mit Lachs und Gurkenscheiben belegen, Dill darüber."]
+    }
+  },
+  {
+    "id": "ham-cheese-toast",
+    "name": { "en": "Ham and cheese toast", "sk": "Toast so šunkou a syrom", "de": "Schinken-Käse-Toast" },
+    "meals": ["breakfast", "dinner"], "timeMin": 8, "equipment": ["toaster"], "tags": ["quick", "kids"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "bread_white", "g": 75, "min": 50, "max": 125 },
+      { "food": "ham", "g": 60, "min": 40, "max": 140 },
+      { "food": "edam", "g": 25, "min": 20, "max": 40 },
+      { "food": "tomato", "g": 80, "min": 50, "max": 150 }
+    ],
+    "steps": {
+      "sk": ["Medzi dva plátky chleba daj šunku a syr.", "Opeč v toastovači alebo na suchej panvici dozlata.", "Podávaj s paradajkou."],
+      "de": ["Schinken und Käse zwischen zwei Toastscheiben legen.", "Im Sandwichtoaster oder in der trockenen Pfanne goldbraun rösten.", "Mit Tomate servieren."]
+    }
+  },
+  {
+    "id": "boiled-eggs-rye-veg",
+    "name": { "en": "Boiled eggs with rye bread and vegetables", "sk": "Vajcia natvrdo s ražným chlebom a zeleninou", "de": "Gekochte Eier mit Roggenbrot und Gemüse" },
+    "meals": ["breakfast", "dinner"], "timeMin": 10, "equipment": ["stove"], "tags": ["high_protein"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 275 },
+      { "food": "bread_rye", "g": 80, "min": 40, "max": 140 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 200 },
+      { "food": "pepper_yellow", "g": 80, "min": 50, "max": 150 },
+      { "food": "cottage", "g": 0, "min": 0, "max": 200 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Vajcia var 9 minút, schlaď studenou vodou.", "Zeleninu nakrájaj na prúžky.", "Podávaj s chlebom (a cottage, ak ho plán pridal). Uvarené vajcia vydržia 4 dni."],
+      "de": ["Eier 9 Minuten kochen, kalt abschrecken.", "Gemüse in Streifen schneiden.", "Mit Brot servieren (und Hüttenkäse, falls der Plan ihn vorsieht). Gekochte Eier halten 4 Tage."]
+    }
+  },
+  {
+    "id": "soy-yogurt-almond-bowl",
+    "name": { "en": "Soy yogurt bowl with almonds and hemp", "sk": "Sójový jogurt s mandľami a konopou", "de": "Soja-Joghurt-Bowl mit Mandeln und Hanf" },
+    "meals": ["breakfast", "snack"], "timeMin": 3, "equipment": [], "tags": ["quick", "no_cook"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "soy_yogurt", "g": 250, "min": 150, "max": 400 },
+      { "food": "oats", "g": 30, "min": 20, "max": 70 },
+      { "food": "hemp_seeds", "g": 20, "min": 10, "max": 40 },
+      { "food": "almonds", "g": 15, "min": 10, "max": 25 },
+      { "food": "raspberry_frozen", "g": 80, "min": 50, "max": 150 }
+    ],
+    "steps": {
+      "sk": ["Jogurt daj do misky, pridaj rozmrazené maliny.", "Posyp vločkami, konopnými semienkami a nasekanými mandľami."],
+      "de": ["Joghurt in eine Schale geben, aufgetaute Himbeeren dazu.", "Mit Haferflocken, Hanfsamen und gehackten Mandeln bestreuen."]
+    }
+  },
+  {
+    "id": "chia-pudding-soy",
+    "name": { "en": "Chia pudding with soy drink and raspberries", "sk": "Chia puding so sójovým nápojom a malinami", "de": "Chiapudding mit Sojadrink und Himbeeren" },
+    "meals": ["breakfast", "snack"], "timeMin": 5, "equipment": [], "tags": ["no_cook", "meal_prep"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "chia", "g": 30, "min": 20, "max": 40 },
+      { "food": "soy_milk", "g": 250, "min": 200, "max": 400 },
+      { "food": "hemp_seeds", "g": 15, "min": 10, "max": 40 },
+      { "food": "raspberry_frozen", "g": 100, "min": 60, "max": 150 },
+      { "food": "maple_syrup", "g": 10, "min": 5, "max": 15 }
+    ],
+    "steps": {
+      "sk": ["Chia semienka zmiešaj so sójovým nápojom a sirupom.", "Po 10 minútach ešte raz premiešaj a nechaj cez noc v chladničke.", "Podávaj s malinami a konopnými semienkami."],
+      "de": ["Chiasamen mit Sojadrink und Sirup verrühren.", "Nach 10 Minuten erneut umrühren und über Nacht kühl stellen.", "Mit Himbeeren und Hanfsamen servieren."]
+    }
+  },
+  {
+    "id": "bircher-muesli",
+    "name": { "en": "Bircher muesli with apple and hazelnuts", "sk": "Bircher müsli s jablkom a lieskovcami", "de": "Bircher Müsli mit Apfel und Haselnüssen" },
+    "meals": ["breakfast"], "timeMin": 8, "equipment": [], "tags": ["no_cook", "meal_prep"], "cuisine": "de",
+    "batch": { "ok": true, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "oats", "g": 50, "min": 40, "max": 90 },
+      { "food": "yogurt_low", "g": 150, "min": 100, "max": 250 },
+      { "food": "quark_lean", "g": 100, "min": 50, "max": 300 },
+      { "food": "apple", "g": 150, "min": 100, "max": 200 },
+      { "food": "hazelnuts", "g": 15, "min": 10, "max": 25 },
+      { "food": "lemon", "g": 5, "min": 5, "max": 5 }
+    ],
+    "steps": {
+      "sk": ["Vločky zmiešaj s jogurtom, tvarohom a trochou vody, nechaj cez noc v chladničke.", "Ráno pridaj nastrúhané jablko s citrónom.", "Posyp nasekanými lieskovcami."],
+      "de": ["Haferflocken mit Joghurt, Quark und etwas Wasser mischen und über Nacht kühl stellen.", "Morgens geriebenen Apfel mit Zitrone unterheben.", "Mit gehackten Haselnüssen bestreuen."]
+    }
+  },
+  {
+    "id": "turkey-wholewheat-roll",
+    "name": { "en": "Wholemeal roll with turkey breast", "sk": "Celozrnný rožok s morčacími prsiami", "de": "Vollkornbrötchen mit Putenbrust" },
+    "meals": ["breakfast", "dinner"], "timeMin": 5, "equipment": [], "tags": ["quick", "no_cook", "high_protein"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "roll_wholewheat", "g": 120, "min": 60, "max": 180 },
+      { "food": "turkey_deli", "g": 80, "min": 50, "max": 160 },
+      { "food": "cream_cheese_light", "g": 30, "min": 20, "max": 40 },
+      { "food": "lettuce_green", "g": 20, "min": 20, "max": 40 },
+      { "food": "tomato", "g": 80, "min": 50, "max": 150 }
+    ],
+    "steps": {
+      "sk": ["Rožky prekroj a natri krémovým syrom.", "Oblož šalátom, morčacími prsiami a paradajkou."],
+      "de": ["Brötchen aufschneiden und mit Frischkäse bestreichen.", "Mit Salat, Putenbrust und Tomate belegen."]
+    }
+  },
+  {
+    "id": "shakshuka",
+    "name": { "en": "Shakshuka with bread", "sk": "Šakšuka s chlebom", "de": "Shakshuka mit Brot" },
+    "meals": ["breakfast", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["vegetarian_classic"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 220 },
+      { "food": "tomato_canned", "g": 200, "min": 150, "max": 400 },
+      { "food": "pepper_red", "g": 100, "min": 60, "max": 150 },
+      { "food": "onion", "g": 50, "min": 30, "max": 80 },
+      { "food": "feta", "g": 20, "min": 0, "max": 50 },
+      { "food": "bread_wholewheat", "g": 60, "min": 40, "max": 120 },
+      { "food": "olive_oil", "g": 5, "min": 5, "max": 8 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 },
+      { "food": "cumin", "g": 0.5, "min": 0.5, "max": 0.5 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Na oleji opeč cibuľu a papriku 5 minút, pridaj korenie.", "Zalej paradajkami a 8 minút duste.", "Urob jamky, vbi vajcia a pod pokrievkou nechaj 6 minút stuhnúť.", "Posyp fetou a podávaj s chlebom."],
+      "de": ["Zwiebel und Paprika im Öl 5 Minuten anbraten, Gewürze zugeben.", "Tomaten dazugeben und 8 Minuten schmoren.", "Mulden formen, Eier hineinschlagen und zugedeckt 6 Minuten stocken lassen.", "Mit Feta bestreuen und mit Brot servieren."]
+    }
+  },
+  {
+    "id": "cottage-pineapple-seeds",
+    "name": { "en": "Cottage cheese with pineapple and pumpkin seeds", "sk": "Cottage s ananásom a tekvicovými semienkami", "de": "Hüttenkäse mit Ananas und Kürbiskernen" },
+    "meals": ["breakfast", "snack"], "timeMin": 3, "equipment": [], "tags": ["quick", "no_cook", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "cottage", "g": 250, "min": 150, "max": 400 },
+      { "food": "pineapple_can", "g": 120, "min": 80, "max": 200 },
+      { "food": "pumpkin_seeds", "g": 15, "min": 10, "max": 25 }
+    ],
+    "steps": {
+      "sk": ["Cottage daj do misky.", "Pridaj odkvapkaný ananás a posyp semienkami."],
+      "de": ["Hüttenkäse in eine Schale geben.", "Abgetropfte Ananas dazugeben und mit Kürbiskernen bestreuen."]
+    }
+  },
+  {
+    "id": "egg-muffins",
+    "name": { "en": "Baked egg muffins with vegetables", "sk": "Vaječné muffiny so zeleninou", "de": "Eiermuffins mit Gemüse" },
+    "meals": ["breakfast", "snack"], "timeMin": 30, "equipment": ["oven"], "tags": ["meal_prep", "high_protein", "low_carb"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 220 },
+      { "food": "egg_white", "g": 100, "min": 0, "max": 200 },
+      { "food": "pepper_red", "g": 60, "min": 40, "max": 100 },
+      { "food": "spinach", "g": 30, "min": 20, "max": 60 },
+      { "food": "edam", "g": 20, "min": 15, "max": 40 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Rúru predhrej na 180 °C.", "Vajcia, bielky a soľ rozšľahaj, pridaj nakrájanú zeleninu a syr.", "Rozlej do silikónových formičiek a peč 20 minút.", "Vydržia 4 dni v chladničke, zohrej 30 s v mikrovlnke."],
+      "de": ["Ofen auf 180 °C vorheizen.", "Eier, Eiklar und Salz verquirlen, gehacktes Gemüse und Käse zugeben.", "In Silikonförmchen füllen und 20 Minuten backen.", "Halten 4 Tage im Kühlschrank, 30 s in der Mikrowelle erwärmen."]
+    }
+  },
+  {
+    "id": "porridge-pb-whey",
+    "name": { "en": "Peanut butter protein porridge", "sk": "Proteínová kaša s arašidovým maslom", "de": "Protein-Porridge mit Erdnussbutter" },
+    "meals": ["breakfast"], "timeMin": 8, "equipment": ["stove"], "tags": ["quick", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "oats", "g": 60, "min": 40, "max": 100 },
+      { "food": "milk_skim", "g": 250, "min": 200, "max": 400 },
+      { "food": "whey", "g": 25, "min": 15, "max": 40 },
+      { "food": "peanut_butter", "g": 15, "min": 10, "max": 25 },
+      { "food": "banana", "g": 60, "min": 0, "max": 120 }
+    ],
+    "steps": {
+      "sk": ["Vločky povar s mliekom 3–4 minúty.", "Odstav a vmiešaj proteín (nie počas varu, inak sa zrazí).", "Navrch daj arašidové maslo a banán."],
+      "de": ["Haferflocken mit Milch 3–4 Minuten kochen.", "Vom Herd nehmen und das Proteinpulver einrühren (nicht kochen, sonst flockt es).", "Erdnussbutter und Banane darauf."]
+    }
+  }
+]

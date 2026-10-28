@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
-          git add data/foods-report.md data/foods.json 2>/dev/null || true
+          for f in data/foods-report.md data/foods.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "data: regenerate foods.json from USDA FoodData Central"
           git push

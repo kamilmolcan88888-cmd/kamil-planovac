@@ -12,7 +12,7 @@
 
 # ---------- produce: vegetables ----------
 potato | Potatoes, flesh and skin, raw | Potatoes | Zemiaky | Kartoffeln | produce | - | - | 21 | 150
-sweet_potato | Sweet potato, raw, unprepared | Sweet potato | Batáty | Süßkartoffel | produce | - | - | 14 | 250
+sweet_potato | Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program) | Sweet potato | Batáty | Süßkartoffel | produce | - | - | 14 | 250
 carrot | Carrots, raw | Carrots | Mrkva | Karotten | produce | - | - | 21 | 80
 onion | Onions, raw | Onion | Cibuľa | Zwiebel | produce | - | - | 30 | 110
 red_onion | Onions, raw | Red onion | Červená cibuľa | Rote Zwiebel | produce | - | - | 30 | 110
@@ -109,7 +109,7 @@ gooseberry | Gooseberries, raw | Gooseberries | Egreše | Stachelbeeren | produc
 raisins | Raisins, seedless | Raisins | Hrozienka | Rosinen | dry_goods | - | - | 180
 dates | Dates, medjool | Dates | Datle | Datteln | dry_goods | - | - | 180 | 24
 dried_apricot | Apricots, dried, sulfured, uncooked | Dried apricots | Sušené marhule | Getrocknete Aprikosen | dry_goods | - | - | 180
-dried_cranberry | Cranberries, dried, sweetened | Dried cranberries | Sušené brusnice | Getrocknete Cranberries | dry_goods | - | - | 180
+dried_cranberry | Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program) | Dried cranberries | Sušené brusnice | Getrocknete Cranberries | dry_goods | - | - | 180
 prunes | Plums, dried (prunes), uncooked | Prunes | Sušené slivky | Trockenpflaumen | dry_goods | - | - | 180
 dried_fig | Figs, dried, uncooked | Dried figs | Sušené figy | Getrocknete Feigen | dry_goods | - | - | 180
 
@@ -176,7 +176,6 @@ ham_cured | Ham, cured, boneless, extra lean (approximately 5% fat), roasted | S
 frankfurter | Frankfurter, meat | Frankfurters | Párky | Wiener Würstchen | meat | - | meat,pork,red_meat | 7 | 50
 bratwurst | Bratwurst, pork, cooked | Bratwurst | Klobása na gril | Bratwurst | meat | - | meat,pork,red_meat | 4 | 100
 salami | Salami, Italian, pork | Salami | Saláma | Salami | meat | - | meat,pork,red_meat | 14
-chorizo | Chorizo, pork and beef | Chorizo | Chorizo | Chorizo | meat | - | meat,pork,red_meat | 14
 lamb_ground | Lamb, ground, raw | Ground lamb | Mleté jahňacie | Lammhackfleisch | meat | - | meat,red_meat | 1
 duck_breast | Duck, domesticated, meat only, raw | Duck breast | Kačacie prsia | Entenbrust | meat | - | meat | 2
 venison | Game meat, deer, raw | Venison | Divina (jelenie) | Hirschfleisch | meat | - | meat,red_meat | 2
@@ -300,7 +299,7 @@ jam | Jams and preserves | Jam | Džem | Konfitüre | dry_goods | - | - | 30
 cocoa | Cocoa, dry powder, unsweetened | Cocoa powder | Kakao | Kakaopulver | dry_goods | - | - | 365
 chocolate_dark | Chocolate, dark, 70-85% cacao solids | Dark chocolate 70 %+ | Horká čokoláda 70 % | Zartbitterschokolade 70 % | dry_goods | milk,soy | - | 180
 chocolate_milk | Candies, milk chocolate | Milk chocolate | Mliečna čokoláda | Vollmilchschokolade | dry_goods | milk,soy | dairy | 180
-nutella | Spreads, chocolate-flavored hazelnut | Hazelnut cocoa spread | Orieškovo-kakaová nátierka | Nuss-Nougat-Creme | dry_goods | milk,nuts,soy | dairy | 90
+nutella | Chocolate-flavored hazelnut spread | Hazelnut cocoa spread | Orieškovo-kakaová nátierka | Nuss-Nougat-Creme | dry_goods | milk,nuts,soy | dairy | 90
 baking_powder | Leavening agents, baking powder, double-acting, sodium aluminum sulfate | Baking powder | Prášok do pečiva | Backpulver | dry_goods | - | - | 365
 yeast | Leavening agents, yeast, baker's, active dry | Dry yeast | Sušené droždie | Trockenhefe | dry_goods | - | - | 365
 vanilla | Vanilla extract | Vanilla extract | Vanilkový extrakt | Vanilleextrakt | dry_goods | - | - | 365
@@ -338,7 +337,7 @@ almond_milk | Beverages, almond milk, unsweetened, shelf stable | Almond drink |
 soy_chunks | Soy flour, defatted | Soy chunks (textured) | Sójové kúsky | Sojaschnetzel | plant_protein | soy | - | 365
 edamame | Edamame, frozen, unprepared | Edamame (frozen) | Edamame mrazené | Edamame TK | frozen | soy | - | 2
 hummus | Hummus, commercial | Hummus | Hummus | Hummus | plant_protein | sesame | - | 5
-soy_yogurt | Yogurt, soy | Soy yogurt alternative | Sójový jogurt | Soja-Joghurtalternative | plant_protein | soy | - | 5
+soy_yogurt | Tofu yogurt | Soy yogurt alternative | Sójový jogurt | Soja-Joghurtalternative | plant_protein | soy | - | 5
 
 # ---------- frozen ----------
 peas_frozen | Peas, green, frozen, unprepared | Frozen peas | Mrazený hrášok | Erbsen TK | frozen | - | - | 2
@@ -351,7 +350,6 @@ cauliflower_frozen | Cauliflower, frozen, unprepared | Frozen cauliflower | Mraz
 berries_frozen | Blueberries, frozen, unsweetened | Frozen blueberries | Mrazené čučoriedky | Heidelbeeren TK | frozen | - | - | 2
 strawberry_frozen | Strawberries, frozen, unsweetened | Frozen strawberries | Mrazené jahody | Erdbeeren TK | frozen | - | - | 2
 raspberry_frozen | Raspberries, frozen, red, unsweetened | Frozen raspberries | Mrazené maliny | Himbeeren TK | frozen | - | - | 2
-mango_frozen | Mango, frozen, unsweetened | Frozen mango | Mrazené mango | Mango TK | frozen | - | - | 2
 fries_frozen | Potatoes, french fried, all types, salt not added in processing, frozen, as purchased | Frozen oven fries | Mrazené hranolky | Pommes frites TK | frozen | - | - | 2
 
 # ---------- oils, sauces & condiments ----------
