@@ -1,14 +1,13 @@
 # foods.json match report
 
-Generated 2026-10-28T20:48:45.806Z from: sr_legacy, foundation.
+Generated 2026-10-28T20:53:28.184Z from: sr_legacy, foundation.
 
-Matched: 372 / 372. Exact: 371, pinned: 0, fuzzy: 1, unmatched: 0.
+Matched: 372 / 372. Exact: 372, pinned: 0, fuzzy: 0, unmatched: 0.
 
 ## Needs review (fuzzy or unmatched)
 
 | id | wanted | got (fdcId) | score | alternatives |
 |---|---|---|---|---|
-| beef_sirloin | Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (171758) | 0.83 | Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw (174763)<br>Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, raw (169478)<br>Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, raw (174003)<br>Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, raw (172174)<br>Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0" fat, choice, raw (173408) |
 
 ## Missing nutrients
 
@@ -156,7 +155,7 @@ none
 | chicken_deli | 173874 | Chicken breast, deli, rotisserie seasoned, sliced, prepackaged | 98 | 17.4 | 2.92 | 1.86 |
 | beef_ground_5 | 171790 | Beef, ground, 95% lean meat / 5% fat, raw | 137 | 21.41 | 0 | 5 |
 | beef_ground_20 | 174036 | Beef, ground, 80% lean meat / 20% fat, raw | 254 | 17.17 | 0 | 20 |
-| beef_sirloin | 171758 | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw | 124 | 23.59 | 0 | 3.26 |
+| beef_sirloin | 174763 | Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw | 135 | 21.91 | 0 | 4.62 |
 | beef_chuck | 174056 | Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, raw | 139 | 21.96 | 0 | 5.05 |
 | beef_round | 171758 | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw | 124 | 23.59 | 0 | 3.26 |
 | beef_flank | 168609 | Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw | 149 | 21.72 | 0 | 6.29 |

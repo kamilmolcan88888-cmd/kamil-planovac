@@ -1,6 +1,6 @@
 {
  "source": "USDA FoodData Central (public domain), sr_legacy + foundation",
- "generatedAt": "2026-10-28T20:48:45.808Z",
+ "generatedAt": "2026-10-28T20:53:28.185Z",
  "foods": [
   {
    "id": "potato",
@@ -3000,8 +3000,8 @@
   },
   {
    "id": "beef_sirloin",
-   "fdcId": 171758,
-   "usdaDescription": "Beef, round, top round steak, boneless, separable lean only, trimmed to 0\" fat, choice, raw",
+   "fdcId": 174763,
+   "usdaDescription": "Beef, top sirloin, steak, separable lean only, trimmed to 1/8\" fat, choice, raw",
    "usdaDataType": "sr_legacy_food",
    "name": {
     "en": "Beef steak (sirloin)",
@@ -3016,10 +3016,10 @@
    ],
    "shelfDays": 2,
    "per100": {
-    "kcal": 124,
-    "protein": 23.59,
+    "kcal": 135,
+    "protein": 21.91,
     "carbs": 0,
-    "fat": 3.26
+    "fat": 4.62
    }
   },
   {
