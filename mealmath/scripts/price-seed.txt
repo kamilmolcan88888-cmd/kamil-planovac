@@ -1,0 +1,414 @@
+# MealMath – initial price ESTIMATES (seed for prices/*.json, run: npm run seed:prices)
+#
+# These are rough, hand-made estimates of typical shelf prices (autumn 2026), NOT live prices
+# and NOT scraped. After seeding, prices/*.json are the source of truth and are edited directly
+# (or in the app's "Prices" screen, or via JSON export/import).
+#
+#   id | packG | price Lidl DE (EUR) | options
+#
+# options (space separated):
+#   sk=PACK/PRICE   Slovak pack size and Lidl SK price (otherwise DE pack × category factor)
+#   k=PRICE         Kaufland SK price for the SK pack (otherwise Lidl SK × 1.06)
+#   x:STORE         not sold in STORE (lidl-de, lidl-sk, kaufland-sk); x:STORE>food = suggested substitute
+#
+# packG is grams (liquids ≈ 1 ml = 1 g). Stock cubes / coffee / tea are given as prepared amount.
+
+# ---------- produce ----------
+potato | 2500 | 2.49 | sk=2000/1.99
+sweet_potato | 1000 | 2.29
+carrot | 1000 | 0.99
+onion | 1000 | 1.19
+red_onion | 500 | 0.99
+spring_onion | 120 | 0.69
+garlic | 250 | 1.29 | sk=100/0.69
+shallot | 500 | 1.49 | x:lidl-sk
+tomato | 500 | 1.49
+cherry_tomato | 250 | 1.29
+cucumber | 400 | 0.69
+pepper_red | 500 | 1.99
+pepper_green | 500 | 1.79
+pepper_yellow | 500 | 1.99
+zucchini | 500 | 1.29
+eggplant | 300 | 0.99
+broccoli | 500 | 1.49
+cauliflower | 800 | 1.99
+cabbage | 1500 | 1.49
+red_cabbage | 1000 | 1.29
+savoy | 1000 | 1.49
+chinese_cabbage | 900 | 1.49
+kohlrabi | 300 | 0.79
+spinach | 150 | 1.29
+iceberg | 500 | 0.99
+romaine | 300 | 1.29
+lettuce_green | 300 | 0.89
+cornsalad | 125 | 1.49 | x:lidl-sk>arugula
+arugula | 125 | 1.19
+kale | 250 | 1.69 | x:lidl-sk>savoy
+leek | 500 | 1.29
+celery_stalk | 500 | 1.49
+celeriac | 600 | 1.29
+parsnip | 500 | 1.49
+beetroot | 1000 | 1.29
+radish | 200 | 0.79
+mushroom | 400 | 1.59
+mushroom_brown | 250 | 1.49
+oyster_mushroom | 200 | 1.99 | x:lidl-de>mushroom_brown
+green_beans | 500 | 2.49
+asparagus | 500 | 4.99
+brussels | 500 | 1.99
+fennel | 500 | 1.79 | x:lidl-sk
+pumpkin | 1500 | 2.49
+butternut | 1200 | 2.29
+chili | 50 | 0.79
+ginger | 150 | 0.99
+avocado | 340 | 2.29 | sk=170/1.29
+corn_cob | 450 | 1.79
+radicchio | 250 | 1.29 | x:lidl-sk
+chard | 300 | 1.99 | x:lidl-de x:lidl-sk
+endive | 400 | 1.49 | x:lidl-sk
+bean_sprouts | 200 | 0.99 | x:lidl-sk
+turnip | 500 | 1.29 | x:lidl-de x:lidl-sk
+peas_snow | 150 | 1.79 | x:lidl-sk
+okra | 200 | 1.99 | x:lidl-de x:lidl-sk
+lemon | 500 | 1.49
+lime | 250 | 1.29
+parsley | 25 | 0.79
+dill | 25 | 0.79
+basil | 25 | 1.29
+chives | 25 | 0.79
+cilantro | 25 | 0.99 | x:lidl-sk
+mint | 25 | 0.99
+apple | 1000 | 1.99
+banana | 1000 | 1.39
+orange | 2000 | 2.99
+mandarin | 1000 | 1.99
+pear | 1000 | 2.49
+grapes | 500 | 2.29
+strawberry | 500 | 2.99
+blueberry | 250 | 2.49
+raspberry | 125 | 1.99
+blackberry | 125 | 1.99 | x:lidl-sk
+kiwi | 500 | 1.79
+pineapple | 1200 | 1.99
+mango | 300 | 1.49
+plum | 1000 | 2.49
+apricot | 500 | 2.49
+peach | 1000 | 2.49
+nectarine | 1000 | 2.49
+cherry | 500 | 3.99
+watermelon | 3000 | 3.99
+cantaloupe | 1000 | 1.99
+grapefruit | 500 | 0.99
+pomegranate | 300 | 1.29
+fig | 200 | 1.99 | x:lidl-sk
+redcurrant | 125 | 1.49 | x:lidl-sk
+gooseberry | 125 | 1.99 | x:lidl-de x:lidl-sk
+
+# ---------- dried fruit ----------
+raisins | 500 | 2.49 | sk=200/1.19
+dates | 200 | 1.99
+dried_apricot | 200 | 1.99
+dried_cranberry | 200 | 1.79
+prunes | 250 | 1.99
+dried_fig | 200 | 1.99
+
+# ---------- canned & jars ----------
+sauerkraut | 520 | 0.99
+mushroom_canned | 280 | 0.89
+corn_canned | 285 | 0.89
+pickles | 670 | 1.49
+olives_black | 340 | 1.29
+olives_green | 340 | 1.29
+sundried_tomato | 285 | 2.49
+passata | 500 | 0.79
+tomato_canned | 400 | 0.69
+tomato_paste | 200 | 0.89 | sk=70/0.39
+roasted_pepper | 350 | 1.79
+beetroot_jar | 330 | 0.99
+chickpeas_can | 400 | 0.89
+kidney_can | 400 | 0.89
+white_beans_can | 400 | 0.89
+black_beans_can | 400 | 0.99
+baked_beans | 400 | 0.99
+lentils_can | 400 | 0.99 | x:lidl-sk>lentils
+peas_can | 400 | 0.89
+peach_can | 820 | 1.79
+pineapple_can | 560 | 1.49
+applesauce | 720 | 1.29
+coconut_milk | 400 | 1.29
+tuna_water | 150 | 1.59
+tuna_oil | 150 | 1.59
+sardines | 125 | 1.19
+mackerel_can | 200 | 1.89
+salmon_can | 213 | 2.99 | x:lidl-sk>tuna_water
+
+# ---------- meat ----------
+chicken_breast | 1000 | 10.49 | sk=500/4.99
+chicken_thigh | 600 | 5.99 | sk=500/4.49
+chicken_drumstick | 1000 | 4.49
+chicken_leg | 1000 | 4.29
+chicken_wing | 1000 | 4.49
+chicken_whole | 1200 | 4.99
+chicken_ground | 500 | 4.49 | sk=400/2.99
+chicken_liver | 500 | 2.29 | x:lidl-de
+turkey_breast | 500 | 6.49
+turkey_ground | 400 | 3.99
+turkey_ham | 150 | 1.89
+turkey_deli | 100 | 1.79
+chicken_deli | 100 | 1.59
+beef_ground_5 | 400 | 5.49 | x:lidl-sk>beef_ground_20
+beef_ground_20 | 500 | 4.99
+beef_sirloin | 300 | 7.99
+beef_chuck | 600 | 7.99 | sk=500/6.99
+beef_round | 500 | 8.49
+beef_flank | 400 | 8.99 | x:lidl-sk x:kaufland-sk
+pork_ground | 500 | 3.49
+pork_tenderloin | 500 | 6.99
+pork_loin | 500 | 4.99
+pork_shoulder | 1000 | 6.99 | sk=600/3.99
+pork_belly | 500 | 3.99
+pork_leg | 1000 | 7.49 | sk=500/3.99
+bacon | 200 | 1.99 | sk=150/1.49
+ham | 200 | 1.99 | sk=100/1.19
+ham_cured | 200 | 2.49
+frankfurter | 400 | 2.49 | sk=300/1.99
+bratwurst | 400 | 2.99
+salami | 200 | 2.19
+lamb_ground | 400 | 5.99 | x:lidl-sk
+duck_breast | 350 | 6.99 | x:lidl-sk
+venison | 400 | 9.99 | x:lidl-sk x:lidl-de
+rabbit | 1000 | 14.99 | x:lidl-de x:lidl-sk
+
+# ---------- fish ----------
+salmon | 250 | 4.99
+salmon_smoked | 200 | 3.99 | sk=100/2.49
+cod | 400 | 5.49
+pollock | 800 | 5.99
+tilapia | 500 | 4.49
+trout | 400 | 4.99
+herring_pickled | 500 | 2.99
+mackerel | 500 | 4.49
+carp | 1000 | 6.99 | x:lidl-de
+hake | 500 | 4.99
+shrimp | 400 | 5.99 | sk=225/4.49
+fish_sticks | 450 | 2.29
+mussels | 1000 | 4.99 | x:lidl-sk
+squid | 500 | 4.49
+surimi | 250 | 1.99
+
+# ---------- dairy & eggs ----------
+milk_semi | 1000 | 1.05
+milk_whole | 1000 | 1.15
+milk_skim | 1000 | 0.99
+buttermilk | 500 | 0.79
+kefir | 500 | 1.29 | sk=950/1.39
+yogurt_plain | 500 | 0.89 | sk=380/0.79
+yogurt_low | 500 | 0.79 | sk=380/0.75
+greek_0 | 500 | 1.79 | sk=400/1.69
+greek_full | 500 | 1.99 | sk=400/1.79
+skyr | 450 | 1.29 | sk=450/1.69
+quark_lean | 500 | 1.29 | sk=250/0.99
+cottage | 200 | 0.99 | sk=180/0.99
+cottage_full | 200 | 0.99
+mozzarella | 125 | 0.85
+mozzarella_light | 125 | 0.95
+feta | 200 | 1.99
+bryndza | 125 | 1.99 | x:lidl-de>feta sk=125/1.49
+edam | 400 | 3.29 | sk=200/1.99
+gouda | 400 | 3.29 | sk=200/1.99
+emmental | 250 | 2.49
+parmesan | 200 | 3.99 | sk=80/1.89
+cheddar | 200 | 1.99
+cream_cheese | 200 | 1.19
+cream_cheese_light | 200 | 1.19
+ricotta | 250 | 1.49
+camembert | 250 | 1.99
+brie | 200 | 2.19
+blue_cheese | 150 | 1.99
+provolone | 250 | 2.49 | sk=200/2.19
+butter | 250 | 2.39
+sour_cream | 200 | 0.89 | sk=180/0.69
+cream_light | 200 | 0.99 | sk=250/1.19
+cream_heavy | 200 | 1.19 | sk=250/1.49
+whey | 750 | 12.99 | x:lidl-sk
+egg | 550 | 2.79 | sk=550/2.59
+egg_white | 500 | 2.99 | x:lidl-sk x:kaufland-sk
+
+# ---------- bakery ----------
+bread_rye | 750 | 1.79 | sk=500/1.29
+bread_wholewheat | 500 | 1.59
+bread_white | 500 | 1.19
+bread_multigrain | 500 | 1.79
+pumpernickel | 500 | 1.49 | x:lidl-sk
+roll | 500 | 1.49 | sk=400/0.80
+roll_wholewheat | 360 | 1.29 | sk=360/1.20
+tortilla | 360 | 1.49
+pita | 400 | 1.29
+crispbread | 250 | 1.29
+rice_cakes | 130 | 0.99
+pretzel | 360 | 1.49
+bagel | 340 | 1.49
+
+# ---------- dry goods ----------
+oats | 500 | 0.79
+granola | 500 | 2.49 | sk=375/1.99
+rice | 1000 | 1.79
+rice_basmati | 1000 | 2.99
+rice_brown | 1000 | 2.29
+rice_round | 500 | 1.29
+pasta | 500 | 0.89
+pasta_wholewheat | 500 | 1.19
+egg_noodles | 500 | 1.49
+rice_noodles | 250 | 1.49
+couscous | 500 | 1.29
+bulgur | 500 | 1.29
+quinoa | 400 | 2.99
+millet | 500 | 1.49
+buckwheat | 500 | 1.99
+barley | 500 | 0.99
+semolina | 500 | 0.79
+polenta | 500 | 1.29
+flour | 1000 | 0.79
+flour_wholewheat | 1000 | 1.29
+flour_rye | 1000 | 1.29
+cornstarch | 400 | 1.09
+breadcrumbs | 400 | 0.89
+wheat_bran | 500 | 1.29
+oat_bran | 500 | 1.49
+cornflakes | 375 | 1.49
+puffed_rice | 200 | 1.29
+potato_flakes | 240 | 1.49
+lentils_red | 500 | 1.79
+lentils | 500 | 1.49
+chickpeas | 500 | 1.49
+white_beans | 500 | 1.49
+kidney_beans | 500 | 1.79
+split_peas | 500 | 1.19
+mung_beans | 500 | 2.29 | x:lidl-de x:lidl-sk
+sugar | 1000 | 1.09
+sugar_powdered | 500 | 0.99
+honey | 500 | 3.99
+maple_syrup | 250 | 3.99
+jam | 450 | 1.69
+cocoa | 250 | 2.99
+chocolate_dark | 125 | 1.29
+chocolate_milk | 100 | 0.99
+nutella | 400 | 2.49
+baking_powder | 60 | 0.49
+yeast | 21 | 0.39
+vanilla | 38 | 2.49 | x:lidl-sk
+gelatin | 30 | 0.99
+pudding_powder | 111 | 0.79
+popcorn | 500 | 1.49
+
+# ---------- nuts & seeds ----------
+almonds | 200 | 2.69
+walnuts | 200 | 2.99
+hazelnuts | 200 | 2.69
+cashews | 200 | 2.99
+pistachios | 250 | 4.49
+pine_nuts | 75 | 2.99
+peanuts | 500 | 2.49
+peanuts_roasted | 200 | 1.49
+peanut_butter | 350 | 2.69
+almond_butter | 250 | 4.99 | x:lidl-sk
+sunflower_seeds | 200 | 0.99
+pumpkin_seeds | 200 | 2.29
+chia | 200 | 2.29
+flaxseed | 500 | 1.49
+sesame | 200 | 1.69
+tahini | 300 | 3.49 | x:lidl-sk
+coconut_desiccated | 200 | 1.49
+hemp_seeds | 200 | 3.99 | x:lidl-sk
+poppy | 200 | 1.99
+
+# ---------- plant protein ----------
+tofu | 400 | 1.99 | sk=180/1.29
+tofu_regular | 400 | 1.79 | x:lidl-sk
+tempeh | 200 | 2.49 | x:lidl-sk>tofu
+soy_milk | 1000 | 1.29
+almond_milk | 1000 | 1.49
+soy_chunks | 200 | 1.99 | x:lidl-sk
+edamame | 400 | 2.49
+hummus | 200 | 1.59
+soy_yogurt | 400 | 1.49 | x:lidl-sk
+
+# ---------- frozen ----------
+peas_frozen | 1000 | 2.49 | sk=450/1.29
+corn_frozen | 750 | 1.99
+mixed_veg_frozen | 1000 | 2.29 | sk=450/1.29
+broccoli_frozen | 1000 | 2.29 | sk=450/1.49
+spinach_frozen | 750 | 1.59 | sk=450/0.99
+green_beans_frozen | 1000 | 2.29
+cauliflower_frozen | 1000 | 2.29
+berries_frozen | 500 | 2.99
+strawberry_frozen | 750 | 2.99
+raspberry_frozen | 500 | 2.99
+fries_frozen | 1000 | 1.99
+
+# ---------- oils, sauces, condiments ----------
+olive_oil | 920 | 7.99 | sk=500/5.49
+rapeseed_oil | 920 | 1.99 | sk=1000/2.29
+sunflower_oil | 920 | 1.79 | sk=1000/1.99
+coconut_oil | 400 | 3.49
+sesame_oil | 250 | 2.49 | x:lidl-sk
+lard | 250 | 1.29
+mayonnaise | 500 | 1.99 | sk=420/1.59
+mayo_light | 500 | 1.79 | sk=420/1.49
+mustard | 200 | 0.59 | sk=300/0.89
+soy_sauce | 150 | 1.29
+vinegar | 1000 | 0.99
+vinegar_spirit | 1000 | 0.49
+balsamic | 500 | 1.79
+ketchup | 500 | 1.29
+pesto | 190 | 1.49
+pasta_sauce | 400 | 1.29
+bbq_sauce | 500 | 1.79
+sriracha | 200 | 1.99
+sweet_sour_sauce | 400 | 1.79
+horseradish | 200 | 0.99
+worcestershire | 150 | 1.79 | x:lidl-sk
+broth_veg | 4000 | 0.99
+broth_chicken | 4000 | 0.99
+salsa | 300 | 1.49
+hot_sauce | 150 | 1.49
+curry_ketchup | 500 | 1.29 | x:lidl-sk x:kaufland-sk
+
+# ---------- spices ----------
+salt | 500 | 0.29
+pepper_black | 50 | 1.29
+paprika | 50 | 0.99
+cumin | 40 | 1.29
+caraway | 50 | 0.79
+marjoram | 15 | 0.79
+oregano | 15 | 0.79
+thyme | 15 | 0.89
+basil_dried | 15 | 0.79
+cinnamon | 50 | 0.99
+curry | 50 | 0.99
+turmeric | 50 | 0.99
+garlic_powder | 50 | 1.29
+chili_powder | 40 | 0.99
+cayenne | 50 | 0.99
+bay_leaf | 5 | 0.79
+nutmeg | 40 | 1.49
+rosemary | 20 | 0.89
+ginger_ground | 30 | 1.19
+parsley_dried | 10 | 0.79
+dill_dried | 10 | 0.79
+allspice | 30 | 0.99
+coriander_seed | 40 | 0.99
+chili_flakes | 40 | 1.19
+onion_powder | 50 | 1.19
+mustard_seed | 50 | 1.29 | x:lidl-sk
+cloves | 25 | 1.29
+sage | 15 | 0.99 | x:lidl-sk
+tarragon | 10 | 1.29 | x:lidl-de x:lidl-sk
+fennel_seed | 40 | 1.29 | x:lidl-sk
+
+# ---------- drinks ----------
+orange_juice | 1000 | 1.99
+apple_juice | 1000 | 1.29
+tomato_juice | 1000 | 1.49
+coffee | 8000 | 5.99
+tea | 10000 | 1.49

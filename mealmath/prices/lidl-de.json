@@ -1,0 +1,2240 @@
+{
+ "store": {
+  "id": "lidl-de",
+  "name": "Lidl Deutschland",
+  "chain": "lidl",
+  "country": "DE",
+  "lang": "de",
+  "currency": "EUR",
+  "aisleOrder": [
+   "produce",
+   "bakery",
+   "meat",
+   "fish",
+   "dairy",
+   "eggs",
+   "plant_protein",
+   "dry_goods",
+   "canned",
+   "nuts_seeds",
+   "oils_sauces",
+   "spices",
+   "drinks",
+   "frozen"
+  ]
+ },
+ "estimate": true,
+ "updated": "2026-10-28",
+ "items": {
+  "potato": {
+   "name": "Kartoffeln",
+   "packG": 2500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "sweet_potato": {
+   "name": "Süßkartoffel",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "carrot": {
+   "name": "Karotten",
+   "packG": 1000,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "onion": {
+   "name": "Zwiebel",
+   "packG": 1000,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "red_onion": {
+   "name": "Rote Zwiebel",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "spring_onion": {
+   "name": "Frühlingszwiebeln",
+   "packG": 120,
+   "price": 0.69,
+   "updated": "2026-10-28"
+  },
+  "garlic": {
+   "name": "Knoblauch",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "shallot": {
+   "name": "Schalotten",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "tomato": {
+   "name": "Tomaten",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "cherry_tomato": {
+   "name": "Cherrytomaten",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "cucumber": {
+   "name": "Salatgurke",
+   "packG": 400,
+   "price": 0.69,
+   "updated": "2026-10-28"
+  },
+  "pepper_red": {
+   "name": "Paprika rot",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "pepper_green": {
+   "name": "Paprika grün",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "pepper_yellow": {
+   "name": "Paprika gelb",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "zucchini": {
+   "name": "Zucchini",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "eggplant": {
+   "name": "Aubergine",
+   "packG": 300,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "broccoli": {
+   "name": "Brokkoli",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "cauliflower": {
+   "name": "Blumenkohl",
+   "packG": 800,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "cabbage": {
+   "name": "Weißkohl",
+   "packG": 1500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "red_cabbage": {
+   "name": "Rotkohl",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "savoy": {
+   "name": "Wirsing",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "chinese_cabbage": {
+   "name": "Chinakohl",
+   "packG": 900,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "kohlrabi": {
+   "name": "Kohlrabi",
+   "packG": 300,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "spinach": {
+   "name": "Babyspinat",
+   "packG": 150,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "iceberg": {
+   "name": "Eisbergsalat",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "romaine": {
+   "name": "Romanasalat",
+   "packG": 300,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "lettuce_green": {
+   "name": "Kopfsalat",
+   "packG": 300,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "cornsalad": {
+   "name": "Feldsalat",
+   "packG": 125,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "arugula": {
+   "name": "Rucola",
+   "packG": 125,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "kale": {
+   "name": "Grünkohl",
+   "packG": 250,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "leek": {
+   "name": "Lauch",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "celery_stalk": {
+   "name": "Staudensellerie",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "celeriac": {
+   "name": "Knollensellerie",
+   "packG": 600,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "parsnip": {
+   "name": "Pastinake",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "beetroot": {
+   "name": "Rote Bete",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "radish": {
+   "name": "Radieschen",
+   "packG": 200,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "mushroom": {
+   "name": "Champignons",
+   "packG": 400,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "mushroom_brown": {
+   "name": "Braune Champignons",
+   "packG": 250,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "oyster_mushroom": {
+   "unavailable": true,
+   "substitute": "mushroom_brown",
+   "updated": "2026-10-28"
+  },
+  "green_beans": {
+   "name": "Grüne Bohnen",
+   "packG": 500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "asparagus": {
+   "name": "Spargel",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "brussels": {
+   "name": "Rosenkohl",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "fennel": {
+   "name": "Fenchel",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "pumpkin": {
+   "name": "Hokkaido-Kürbis",
+   "packG": 1500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "butternut": {
+   "name": "Butternut-Kürbis",
+   "packG": 1200,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "chili": {
+   "name": "Chilischote",
+   "packG": 50,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "ginger": {
+   "name": "Ingwer",
+   "packG": 150,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "avocado": {
+   "name": "Avocado",
+   "packG": 340,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "corn_cob": {
+   "name": "Maiskolben",
+   "packG": 450,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "radicchio": {
+   "name": "Radicchio",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "chard": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "endive": {
+   "name": "Endivie",
+   "packG": 400,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "bean_sprouts": {
+   "name": "Mungobohnensprossen",
+   "packG": 200,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "turnip": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "peas_snow": {
+   "name": "Zuckerschoten",
+   "packG": 150,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "okra": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "lemon": {
+   "name": "Zitrone",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "lime": {
+   "name": "Limette",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "parsley": {
+   "name": "Petersilie",
+   "packG": 25,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "dill": {
+   "name": "Dill",
+   "packG": 25,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "basil": {
+   "name": "Basilikum",
+   "packG": 25,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "chives": {
+   "name": "Schnittlauch",
+   "packG": 25,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "cilantro": {
+   "name": "Koriander",
+   "packG": 25,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "mint": {
+   "name": "Minze",
+   "packG": 25,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "apple": {
+   "name": "Apfel",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "banana": {
+   "name": "Banane",
+   "packG": 1000,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "orange": {
+   "name": "Orange",
+   "packG": 2000,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "mandarin": {
+   "name": "Mandarine",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "pear": {
+   "name": "Birne",
+   "packG": 1000,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "grapes": {
+   "name": "Weintrauben",
+   "packG": 500,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "strawberry": {
+   "name": "Erdbeeren",
+   "packG": 500,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "blueberry": {
+   "name": "Heidelbeeren",
+   "packG": 250,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "raspberry": {
+   "name": "Himbeeren",
+   "packG": 125,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "blackberry": {
+   "name": "Brombeeren",
+   "packG": 125,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "kiwi": {
+   "name": "Kiwi",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "pineapple": {
+   "name": "Ananas",
+   "packG": 1200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "mango": {
+   "name": "Mango",
+   "packG": 300,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "plum": {
+   "name": "Pflaumen",
+   "packG": 1000,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "apricot": {
+   "name": "Aprikosen",
+   "packG": 500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "peach": {
+   "name": "Pfirsich",
+   "packG": 1000,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "nectarine": {
+   "name": "Nektarine",
+   "packG": 1000,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "cherry": {
+   "name": "Kirschen",
+   "packG": 500,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "watermelon": {
+   "name": "Wassermelone",
+   "packG": 3000,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "cantaloupe": {
+   "name": "Honigmelone",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "grapefruit": {
+   "name": "Grapefruit",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pomegranate": {
+   "name": "Granatapfel",
+   "packG": 300,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "fig": {
+   "name": "Feigen",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "redcurrant": {
+   "name": "Johannisbeeren",
+   "packG": 125,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "gooseberry": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "raisins": {
+   "name": "Rosinen",
+   "packG": 500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "dates": {
+   "name": "Datteln",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "dried_apricot": {
+   "name": "Getrocknete Aprikosen",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "dried_cranberry": {
+   "name": "Getrocknete Cranberries",
+   "packG": 200,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "prunes": {
+   "name": "Trockenpflaumen",
+   "packG": 250,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "dried_fig": {
+   "name": "Getrocknete Feigen",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "sauerkraut": {
+   "name": "Sauerkraut",
+   "packG": 520,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "mushroom_canned": {
+   "name": "Champignons (Glas)",
+   "packG": 280,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "corn_canned": {
+   "name": "Mais (Dose)",
+   "packG": 285,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "pickles": {
+   "name": "Gewürzgurken",
+   "packG": 670,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "olives_black": {
+   "name": "Schwarze Oliven",
+   "packG": 340,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "olives_green": {
+   "name": "Grüne Oliven",
+   "packG": 340,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "sundried_tomato": {
+   "name": "Getrocknete Tomaten in Öl",
+   "packG": 285,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "passata": {
+   "name": "Passierte Tomaten",
+   "packG": 500,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "tomato_canned": {
+   "name": "Gehackte Tomaten (Dose)",
+   "packG": 400,
+   "price": 0.69,
+   "updated": "2026-10-28"
+  },
+  "tomato_paste": {
+   "name": "Tomatenmark",
+   "packG": 200,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "roasted_pepper": {
+   "name": "Geröstete Paprika (Glas)",
+   "packG": 350,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "beetroot_jar": {
+   "name": "Rote Bete (Glas)",
+   "packG": 330,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "chickpeas_can": {
+   "name": "Kichererbsen (Dose)",
+   "packG": 400,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "kidney_can": {
+   "name": "Kidneybohnen (Dose)",
+   "packG": 400,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "white_beans_can": {
+   "name": "Weiße Bohnen (Dose)",
+   "packG": 400,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "black_beans_can": {
+   "name": "Schwarze Bohnen (Dose)",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "baked_beans": {
+   "name": "Baked Beans",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "lentils_can": {
+   "name": "Linsen (Dose)",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "peas_can": {
+   "name": "Erbsen (Dose)",
+   "packG": 400,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "peach_can": {
+   "name": "Pfirsiche in Saft (Dose)",
+   "packG": 820,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "pineapple_can": {
+   "name": "Ananas in Saft (Dose)",
+   "packG": 560,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "applesauce": {
+   "name": "Apfelmark",
+   "packG": 720,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "coconut_milk": {
+   "name": "Kokosmilch",
+   "packG": 400,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "tuna_water": {
+   "name": "Thunfisch naturell",
+   "packG": 150,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "tuna_oil": {
+   "name": "Thunfisch in Öl",
+   "packG": 150,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "sardines": {
+   "name": "Sardinen in Öl",
+   "packG": 125,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "mackerel_can": {
+   "name": "Makrelenfilets (Dose)",
+   "packG": 200,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "salmon_can": {
+   "name": "Lachs (Dose)",
+   "packG": 213,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "chicken_breast": {
+   "name": "Hähnchenbrustfilet",
+   "packG": 1000,
+   "price": 10.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_thigh": {
+   "name": "Hähnchenschenkelfilet",
+   "packG": 600,
+   "price": 5.99,
+   "updated": "2026-10-28"
+  },
+  "chicken_drumstick": {
+   "name": "Hähnchenunterschenkel",
+   "packG": 1000,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_leg": {
+   "name": "Hähnchenschenkel",
+   "packG": 1000,
+   "price": 4.29,
+   "updated": "2026-10-28"
+  },
+  "chicken_wing": {
+   "name": "Hähnchenflügel",
+   "packG": 1000,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_whole": {
+   "name": "Ganzes Hähnchen",
+   "packG": 1200,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "chicken_ground": {
+   "name": "Hähnchenhackfleisch",
+   "packG": 500,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_liver": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "turkey_breast": {
+   "name": "Putenbrustfilet",
+   "packG": 500,
+   "price": 6.49,
+   "updated": "2026-10-28"
+  },
+  "turkey_ground": {
+   "name": "Putenhackfleisch",
+   "packG": 400,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "turkey_ham": {
+   "name": "Putenschinken",
+   "packG": 150,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "turkey_deli": {
+   "name": "Putenbrust Aufschnitt",
+   "packG": 100,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "chicken_deli": {
+   "name": "Hähnchenbrust Aufschnitt",
+   "packG": 100,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "beef_ground_5": {
+   "name": "Rinderhack mager",
+   "packG": 400,
+   "price": 5.49,
+   "updated": "2026-10-28"
+  },
+  "beef_ground_20": {
+   "name": "Rinderhack 20 %",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "beef_sirloin": {
+   "name": "Rindersteak",
+   "packG": 300,
+   "price": 7.99,
+   "updated": "2026-10-28"
+  },
+  "beef_chuck": {
+   "name": "Rindergulasch",
+   "packG": 600,
+   "price": 7.99,
+   "updated": "2026-10-28"
+  },
+  "beef_round": {
+   "name": "Rinderoberschale",
+   "packG": 500,
+   "price": 8.49,
+   "updated": "2026-10-28"
+  },
+  "beef_flank": {
+   "name": "Flanksteak",
+   "packG": 400,
+   "price": 8.99,
+   "updated": "2026-10-28"
+  },
+  "pork_ground": {
+   "name": "Schweinehackfleisch",
+   "packG": 500,
+   "price": 3.49,
+   "updated": "2026-10-28"
+  },
+  "pork_tenderloin": {
+   "name": "Schweinefilet",
+   "packG": 500,
+   "price": 6.99,
+   "updated": "2026-10-28"
+  },
+  "pork_loin": {
+   "name": "Schweinelachs",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "pork_shoulder": {
+   "name": "Schweineschulter",
+   "packG": 1000,
+   "price": 6.99,
+   "updated": "2026-10-28"
+  },
+  "pork_belly": {
+   "name": "Schweinebauch",
+   "packG": 500,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "pork_leg": {
+   "name": "Schweineoberschale",
+   "packG": 1000,
+   "price": 7.49,
+   "updated": "2026-10-28"
+  },
+  "bacon": {
+   "name": "Bacon",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "ham": {
+   "name": "Kochschinken",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "ham_cured": {
+   "name": "Schinken geräuchert",
+   "packG": 200,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "frankfurter": {
+   "name": "Wiener Würstchen",
+   "packG": 400,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "bratwurst": {
+   "name": "Bratwurst",
+   "packG": 400,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "salami": {
+   "name": "Salami",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "lamb_ground": {
+   "name": "Lammhackfleisch",
+   "packG": 400,
+   "price": 5.99,
+   "updated": "2026-10-28"
+  },
+  "duck_breast": {
+   "name": "Entenbrust",
+   "packG": 350,
+   "price": 6.99,
+   "updated": "2026-10-28"
+  },
+  "venison": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "rabbit": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "salmon": {
+   "name": "Lachsfilet",
+   "packG": 250,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "salmon_smoked": {
+   "name": "Räucherlachs",
+   "packG": 200,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "cod": {
+   "name": "Kabeljaufilet",
+   "packG": 400,
+   "price": 5.49,
+   "updated": "2026-10-28"
+  },
+  "pollock": {
+   "name": "Alaska-Seelachsfilet",
+   "packG": 800,
+   "price": 5.99,
+   "updated": "2026-10-28"
+  },
+  "tilapia": {
+   "name": "Tilapiafilet",
+   "packG": 500,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "trout": {
+   "name": "Regenbogenforelle",
+   "packG": 400,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "herring_pickled": {
+   "name": "Bismarckhering",
+   "packG": 500,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "mackerel": {
+   "name": "Makrele",
+   "packG": 500,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "carp": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "hake": {
+   "name": "Seehechtfilet",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "shrimp": {
+   "name": "Garnelen",
+   "packG": 400,
+   "price": 5.99,
+   "updated": "2026-10-28"
+  },
+  "fish_sticks": {
+   "name": "Fischstäbchen",
+   "packG": 450,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "mussels": {
+   "name": "Miesmuscheln",
+   "packG": 1000,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "squid": {
+   "name": "Tintenfisch",
+   "packG": 500,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "surimi": {
+   "name": "Surimi-Sticks",
+   "packG": 250,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "milk_semi": {
+   "name": "Fettarme Milch",
+   "packG": 1000,
+   "price": 1.05,
+   "updated": "2026-10-28"
+  },
+  "milk_whole": {
+   "name": "Vollmilch",
+   "packG": 1000,
+   "price": 1.15,
+   "updated": "2026-10-28"
+  },
+  "milk_skim": {
+   "name": "Magermilch",
+   "packG": 1000,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "buttermilk": {
+   "name": "Buttermilch",
+   "packG": 500,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "kefir": {
+   "name": "Kefir",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "yogurt_plain": {
+   "name": "Naturjoghurt",
+   "packG": 500,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "yogurt_low": {
+   "name": "Fettarmer Joghurt",
+   "packG": 500,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "greek_0": {
+   "name": "Griechischer Joghurt 0 %",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "greek_full": {
+   "name": "Griechischer Joghurt 10 %",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "skyr": {
+   "name": "Skyr",
+   "packG": 450,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "quark_lean": {
+   "name": "Magerquark",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "cottage": {
+   "name": "Hüttenkäse light",
+   "packG": 200,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cottage_full": {
+   "name": "Hüttenkäse",
+   "packG": 200,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "mozzarella": {
+   "name": "Mozzarella",
+   "packG": 125,
+   "price": 0.85,
+   "updated": "2026-10-28"
+  },
+  "mozzarella_light": {
+   "name": "Mozzarella light",
+   "packG": 125,
+   "price": 0.95,
+   "updated": "2026-10-28"
+  },
+  "feta": {
+   "name": "Feta",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "bryndza": {
+   "unavailable": true,
+   "substitute": "feta",
+   "updated": "2026-10-28"
+  },
+  "edam": {
+   "name": "Edamer",
+   "packG": 400,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "gouda": {
+   "name": "Gouda",
+   "packG": 400,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "emmental": {
+   "name": "Emmentaler",
+   "packG": 250,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "parmesan": {
+   "name": "Parmesan",
+   "packG": 200,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "cheddar": {
+   "name": "Cheddar",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "cream_cheese": {
+   "name": "Frischkäse",
+   "packG": 200,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "cream_cheese_light": {
+   "name": "Frischkäse light",
+   "packG": 200,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "ricotta": {
+   "name": "Ricotta",
+   "packG": 250,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "camembert": {
+   "name": "Camembert",
+   "packG": 250,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "brie": {
+   "name": "Brie",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "blue_cheese": {
+   "name": "Blauschimmelkäse",
+   "packG": 150,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "provolone": {
+   "name": "Räucherkäse",
+   "packG": 250,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "butter": {
+   "name": "Butter",
+   "packG": 250,
+   "price": 2.39,
+   "updated": "2026-10-28"
+  },
+  "sour_cream": {
+   "name": "Saure Sahne",
+   "packG": 200,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "cream_light": {
+   "name": "Kochsahne",
+   "packG": 200,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cream_heavy": {
+   "name": "Schlagsahne",
+   "packG": 200,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "whey": {
+   "name": "Whey-Proteinpulver",
+   "packG": 750,
+   "price": 12.99,
+   "updated": "2026-10-28"
+  },
+  "egg": {
+   "name": "Eier",
+   "packG": 550,
+   "price": 2.79,
+   "updated": "2026-10-28"
+  },
+  "egg_white": {
+   "name": "Flüssiges Eiklar",
+   "packG": 500,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "bread_rye": {
+   "name": "Roggenbrot",
+   "packG": 750,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "bread_wholewheat": {
+   "name": "Vollkornbrot",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "bread_white": {
+   "name": "Toastbrot",
+   "packG": 500,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "bread_multigrain": {
+   "name": "Mehrkornbrot",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "pumpernickel": {
+   "name": "Pumpernickel",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "roll": {
+   "name": "Brötchen",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "roll_wholewheat": {
+   "name": "Vollkornbrötchen",
+   "packG": 360,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "tortilla": {
+   "name": "Weizentortillas",
+   "packG": 360,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "pita": {
+   "name": "Pitabrot",
+   "packG": 400,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "crispbread": {
+   "name": "Knäckebrot",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "rice_cakes": {
+   "name": "Reiswaffeln",
+   "packG": 130,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pretzel": {
+   "name": "Laugenbrezel",
+   "packG": 360,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "bagel": {
+   "name": "Bagel",
+   "packG": 340,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "oats": {
+   "name": "Haferflocken",
+   "packG": 500,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "granola": {
+   "name": "Knuspermüsli",
+   "packG": 500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "rice": {
+   "name": "Langkornreis",
+   "packG": 1000,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "rice_basmati": {
+   "name": "Basmatireis",
+   "packG": 1000,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "rice_brown": {
+   "name": "Naturreis",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "rice_round": {
+   "name": "Rundkornreis",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "pasta": {
+   "name": "Nudeln",
+   "packG": 500,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "pasta_wholewheat": {
+   "name": "Vollkornnudeln",
+   "packG": 500,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "egg_noodles": {
+   "name": "Eiernudeln",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "rice_noodles": {
+   "name": "Reisnudeln",
+   "packG": 250,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "couscous": {
+   "name": "Couscous",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "bulgur": {
+   "name": "Bulgur",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "quinoa": {
+   "name": "Quinoa",
+   "packG": 400,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "millet": {
+   "name": "Hirse",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "buckwheat": {
+   "name": "Buchweizen",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "barley": {
+   "name": "Perlgraupen",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "semolina": {
+   "name": "Grieß",
+   "packG": 500,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "polenta": {
+   "name": "Polenta",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "flour": {
+   "name": "Weizenmehl 405",
+   "packG": 1000,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "flour_wholewheat": {
+   "name": "Vollkornmehl",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "flour_rye": {
+   "name": "Roggenmehl",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "cornstarch": {
+   "name": "Speisestärke",
+   "packG": 400,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "breadcrumbs": {
+   "name": "Paniermehl",
+   "packG": 400,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "wheat_bran": {
+   "name": "Weizenkleie",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "oat_bran": {
+   "name": "Haferkleie",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "cornflakes": {
+   "name": "Cornflakes",
+   "packG": 375,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "puffed_rice": {
+   "name": "Puffreis",
+   "packG": 200,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "potato_flakes": {
+   "name": "Kartoffelpüree-Flocken",
+   "packG": 240,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "lentils_red": {
+   "name": "Rote Linsen",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "lentils": {
+   "name": "Tellerlinsen",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "chickpeas": {
+   "name": "Kichererbsen getrocknet",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "white_beans": {
+   "name": "Weiße Bohnen getrocknet",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "kidney_beans": {
+   "name": "Kidneybohnen getrocknet",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "split_peas": {
+   "name": "Schälerbsen",
+   "packG": 500,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "mung_beans": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "sugar": {
+   "name": "Zucker",
+   "packG": 1000,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "sugar_powdered": {
+   "name": "Puderzucker",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "honey": {
+   "name": "Honig",
+   "packG": 500,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "maple_syrup": {
+   "name": "Ahornsirup",
+   "packG": 250,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "jam": {
+   "name": "Konfitüre",
+   "packG": 450,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "cocoa": {
+   "name": "Kakaopulver",
+   "packG": 250,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "chocolate_dark": {
+   "name": "Zartbitterschokolade 70 %",
+   "packG": 125,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "chocolate_milk": {
+   "name": "Vollmilchschokolade",
+   "packG": 100,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "nutella": {
+   "name": "Nuss-Nougat-Creme",
+   "packG": 400,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "baking_powder": {
+   "name": "Backpulver",
+   "packG": 60,
+   "price": 0.49,
+   "updated": "2026-10-28"
+  },
+  "yeast": {
+   "name": "Trockenhefe",
+   "packG": 21,
+   "price": 0.39,
+   "updated": "2026-10-28"
+  },
+  "vanilla": {
+   "name": "Vanilleextrakt",
+   "packG": 38,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "gelatin": {
+   "name": "Gelatine",
+   "packG": 30,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pudding_powder": {
+   "name": "Vanillepuddingpulver",
+   "packG": 111,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "popcorn": {
+   "name": "Popcornmais",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "almonds": {
+   "name": "Mandeln",
+   "packG": 200,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "walnuts": {
+   "name": "Walnüsse",
+   "packG": 200,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "hazelnuts": {
+   "name": "Haselnüsse",
+   "packG": 200,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "cashews": {
+   "name": "Cashewkerne",
+   "packG": 200,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "pistachios": {
+   "name": "Pistazien",
+   "packG": 250,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "pine_nuts": {
+   "name": "Pinienkerne",
+   "packG": 75,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "peanuts": {
+   "name": "Erdnüsse",
+   "packG": 500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "peanuts_roasted": {
+   "name": "Geröstete Erdnüsse",
+   "packG": 200,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "peanut_butter": {
+   "name": "Erdnussbutter",
+   "packG": 350,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "almond_butter": {
+   "name": "Mandelmus",
+   "packG": 250,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "sunflower_seeds": {
+   "name": "Sonnenblumenkerne",
+   "packG": 200,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pumpkin_seeds": {
+   "name": "Kürbiskerne",
+   "packG": 200,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "chia": {
+   "name": "Chiasamen",
+   "packG": 200,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "flaxseed": {
+   "name": "Leinsamen",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "sesame": {
+   "name": "Sesam",
+   "packG": 200,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "tahini": {
+   "name": "Tahini",
+   "packG": 300,
+   "price": 3.49,
+   "updated": "2026-10-28"
+  },
+  "coconut_desiccated": {
+   "name": "Kokosraspeln",
+   "packG": 200,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "hemp_seeds": {
+   "name": "Hanfsamen",
+   "packG": 200,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "poppy": {
+   "name": "Mohn",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "tofu": {
+   "name": "Tofu natur",
+   "packG": 400,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "tofu_regular": {
+   "name": "Seidentofu",
+   "packG": 400,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "tempeh": {
+   "name": "Tempeh",
+   "packG": 200,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "soy_milk": {
+   "name": "Sojadrink",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "almond_milk": {
+   "name": "Mandeldrink",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "soy_chunks": {
+   "name": "Sojaschnetzel",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "edamame": {
+   "name": "Edamame TK",
+   "packG": 400,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "hummus": {
+   "name": "Hummus",
+   "packG": 200,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "soy_yogurt": {
+   "name": "Soja-Joghurtalternative",
+   "packG": 400,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "peas_frozen": {
+   "name": "Erbsen TK",
+   "packG": 1000,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "corn_frozen": {
+   "name": "Mais TK",
+   "packG": 750,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "mixed_veg_frozen": {
+   "name": "Gemüsemischung TK",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "broccoli_frozen": {
+   "name": "Brokkoli TK",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "spinach_frozen": {
+   "name": "Blattspinat TK",
+   "packG": 750,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "green_beans_frozen": {
+   "name": "Grüne Bohnen TK",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "cauliflower_frozen": {
+   "name": "Blumenkohl TK",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "berries_frozen": {
+   "name": "Heidelbeeren TK",
+   "packG": 500,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "strawberry_frozen": {
+   "name": "Erdbeeren TK",
+   "packG": 750,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "raspberry_frozen": {
+   "name": "Himbeeren TK",
+   "packG": 500,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "fries_frozen": {
+   "name": "Pommes frites TK",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "olive_oil": {
+   "name": "Olivenöl",
+   "packG": 920,
+   "price": 7.99,
+   "updated": "2026-10-28"
+  },
+  "rapeseed_oil": {
+   "name": "Rapsöl",
+   "packG": 920,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "sunflower_oil": {
+   "name": "Sonnenblumenöl",
+   "packG": 920,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "coconut_oil": {
+   "name": "Kokosöl",
+   "packG": 400,
+   "price": 3.49,
+   "updated": "2026-10-28"
+  },
+  "sesame_oil": {
+   "name": "Sesamöl",
+   "packG": 250,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "lard": {
+   "name": "Schweineschmalz",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "mayonnaise": {
+   "name": "Mayonnaise",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "mayo_light": {
+   "name": "Salatcreme light",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "mustard": {
+   "name": "Senf",
+   "packG": 200,
+   "price": 0.59,
+   "updated": "2026-10-28"
+  },
+  "soy_sauce": {
+   "name": "Sojasauce",
+   "packG": 150,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "vinegar": {
+   "name": "Apfelessig",
+   "packG": 1000,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "vinegar_spirit": {
+   "name": "Branntweinessig",
+   "packG": 1000,
+   "price": 0.49,
+   "updated": "2026-10-28"
+  },
+  "balsamic": {
+   "name": "Balsamico",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "ketchup": {
+   "name": "Ketchup",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "pesto": {
+   "name": "Pesto Genovese",
+   "packG": 190,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "pasta_sauce": {
+   "name": "Tomatensauce",
+   "packG": 400,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "bbq_sauce": {
+   "name": "Barbecuesauce",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "sriracha": {
+   "name": "Sriracha",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "sweet_sour_sauce": {
+   "name": "Süß-Sauer-Sauce",
+   "packG": 400,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "horseradish": {
+   "name": "Meerrettich",
+   "packG": 200,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "worcestershire": {
+   "name": "Worcestershiresauce",
+   "packG": 150,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "broth_veg": {
+   "name": "Gemüsebrühe",
+   "packG": 4000,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "broth_chicken": {
+   "name": "Hühnerbrühe",
+   "packG": 4000,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "salsa": {
+   "name": "Salsa",
+   "packG": 300,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "hot_sauce": {
+   "name": "Scharfe Soße",
+   "packG": 150,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "curry_ketchup": {
+   "name": "Curry-Ketchup",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "salt": {
+   "name": "Salz",
+   "packG": 500,
+   "price": 0.29,
+   "updated": "2026-10-28"
+  },
+  "pepper_black": {
+   "name": "Schwarzer Pfeffer",
+   "packG": 50,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "paprika": {
+   "name": "Paprika edelsüß",
+   "packG": 50,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cumin": {
+   "name": "Kreuzkümmel",
+   "packG": 40,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "caraway": {
+   "name": "Kümmel",
+   "packG": 50,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "marjoram": {
+   "name": "Majoran",
+   "packG": 15,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "oregano": {
+   "name": "Oregano",
+   "packG": 15,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "thyme": {
+   "name": "Thymian",
+   "packG": 15,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "basil_dried": {
+   "name": "Basilikum getrocknet",
+   "packG": 15,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "cinnamon": {
+   "name": "Zimt",
+   "packG": 50,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "curry": {
+   "name": "Currypulver",
+   "packG": 50,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "turmeric": {
+   "name": "Kurkuma",
+   "packG": 50,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "garlic_powder": {
+   "name": "Knoblauchpulver",
+   "packG": 50,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "chili_powder": {
+   "name": "Chilipulver",
+   "packG": 40,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cayenne": {
+   "name": "Paprika scharf",
+   "packG": 50,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "bay_leaf": {
+   "name": "Lorbeerblätter",
+   "packG": 5,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "nutmeg": {
+   "name": "Muskatnuss",
+   "packG": 40,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "rosemary": {
+   "name": "Rosmarin",
+   "packG": 20,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "ginger_ground": {
+   "name": "Ingwerpulver",
+   "packG": 30,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "parsley_dried": {
+   "name": "Petersilie getrocknet",
+   "packG": 10,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "dill_dried": {
+   "name": "Dill getrocknet",
+   "packG": 10,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "allspice": {
+   "name": "Piment",
+   "packG": 30,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "coriander_seed": {
+   "name": "Koriander gemahlen",
+   "packG": 40,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "chili_flakes": {
+   "name": "Chiliflocken",
+   "packG": 40,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "onion_powder": {
+   "name": "Zwiebelpulver",
+   "packG": 50,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "mustard_seed": {
+   "name": "Senfsaat",
+   "packG": 50,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "cloves": {
+   "name": "Nelken",
+   "packG": 25,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "sage": {
+   "name": "Salbei",
+   "packG": 15,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "tarragon": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "fennel_seed": {
+   "name": "Fenchelsamen",
+   "packG": 40,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "orange_juice": {
+   "name": "Orangensaft",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "apple_juice": {
+   "name": "Apfelsaft",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "tomato_juice": {
+   "name": "Tomatensaft",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "coffee": {
+   "name": "Kaffee",
+   "packG": 8000,
+   "price": 5.99,
+   "updated": "2026-10-28"
+  },
+  "tea": {
+   "name": "Schwarzer Tee",
+   "packG": 10000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  }
+ }
+}

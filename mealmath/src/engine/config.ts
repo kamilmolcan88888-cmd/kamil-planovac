@@ -27,3 +27,11 @@ export const CONFIG = {
 export const KCAL_PER_G = { protein: 4, carbs: 4, fat: 9 } as const;
 export const LB_PER_KG = 2.2046226218;
 export const CM_PER_INCH = 2.54;
+
+export const CONFIG_SHOPPING = {
+  /** A child's portion relative to an adult's default portion. */
+  kidPortion: 0.6,
+  /** Staples most kitchens already have – listed separately, left out of checkout by default. */
+  pantryAisles: ['spices'] as string[],
+  pantryFoods: ['salt', 'olive_oil', 'rapeseed_oil', 'sunflower_oil', 'vinegar', 'vinegar_spirit', 'flour', 'sugar', 'baking_powder', 'cornstarch', 'soy_sauce'],
+};

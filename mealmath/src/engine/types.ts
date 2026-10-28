@@ -128,3 +128,58 @@ export interface Plan {
   targets: Targets;
   days: PlanDay[];
 }
+
+// ---- Stores & prices ----
+
+export interface StoreInfo {
+  id: string;            // file name without .json, e.g. "lidl-de"
+  name: string;          // "Lidl Deutschland"
+  chain: string;         // "lidl"
+  country: string;       // ISO code, e.g. "DE"
+  /** Language of product names and the shareable shopping list. */
+  lang: Lang;
+  currency: 'EUR';
+  /** Aisle order when walking through this store. */
+  aisleOrder?: Aisle[];
+}
+
+export interface PriceItem {
+  /** Product name as shown in this store (store language). */
+  name: string;
+  packG: number;
+  /** Price per pack in EUR – always an ESTIMATE, never a live price. */
+  price: number;
+  updated: string; // YYYY-MM-DD
+}
+
+export interface UnavailableItem {
+  unavailable: true;
+  /** Suggested replacement food id, if any. */
+  substitute?: string;
+  updated: string;
+}
+
+export interface PriceTable {
+  store: StoreInfo;
+  /** Always true – the app must never imply live prices. */
+  estimate: true;
+  updated: string;
+  items: Record<string, PriceItem | UnavailableItem>;
+}
+
+/** A user's local edit. Takes precedence over the bundled table. */
+export interface PriceOverride {
+  storeId: string;
+  foodId: string;
+  packG: number;
+  price: number;
+  name?: string;
+  updated: string;
+}
+
+export interface Household {
+  adults: number;   // including me
+  kids: number;
+  /** Slots I cook for the whole household; other slots are only for me. */
+  sharedSlots: MealSlot[];
+}

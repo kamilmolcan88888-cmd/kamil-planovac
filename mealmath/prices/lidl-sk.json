@@ -1,0 +1,2180 @@
+{
+ "store": {
+  "id": "lidl-sk",
+  "name": "Lidl Slovensko",
+  "chain": "lidl",
+  "country": "SK",
+  "lang": "sk",
+  "currency": "EUR",
+  "aisleOrder": [
+   "produce",
+   "bakery",
+   "meat",
+   "fish",
+   "dairy",
+   "eggs",
+   "plant_protein",
+   "dry_goods",
+   "canned",
+   "nuts_seeds",
+   "oils_sauces",
+   "spices",
+   "drinks",
+   "frozen"
+  ]
+ },
+ "estimate": true,
+ "updated": "2026-10-28",
+ "items": {
+  "potato": {
+   "name": "Zemiaky",
+   "packG": 2000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "sweet_potato": {
+   "name": "Batáty",
+   "packG": 1000,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "carrot": {
+   "name": "Mrkva",
+   "packG": 1000,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "onion": {
+   "name": "Cibuľa",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "red_onion": {
+   "name": "Červená cibuľa",
+   "packG": 500,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "spring_onion": {
+   "name": "Jarná cibuľka",
+   "packG": 120,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "garlic": {
+   "name": "Cesnak",
+   "packG": 100,
+   "price": 0.69,
+   "updated": "2026-10-28"
+  },
+  "shallot": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "tomato": {
+   "name": "Paradajky",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "cherry_tomato": {
+   "name": "Cherry paradajky",
+   "packG": 250,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "cucumber": {
+   "name": "Uhorka šalátová",
+   "packG": 400,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "pepper_red": {
+   "name": "Paprika červená",
+   "packG": 500,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "pepper_green": {
+   "name": "Paprika zelená",
+   "packG": 500,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "pepper_yellow": {
+   "name": "Paprika žltá",
+   "packG": 500,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "zucchini": {
+   "name": "Cuketa",
+   "packG": 500,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "eggplant": {
+   "name": "Baklažán",
+   "packG": 300,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "broccoli": {
+   "name": "Brokolica",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "cauliflower": {
+   "name": "Karfiol",
+   "packG": 800,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "cabbage": {
+   "name": "Kapusta biela",
+   "packG": 1500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "red_cabbage": {
+   "name": "Kapusta červená",
+   "packG": 1000,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "savoy": {
+   "name": "Kel",
+   "packG": 1000,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "chinese_cabbage": {
+   "name": "Čínska kapusta",
+   "packG": 900,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "kohlrabi": {
+   "name": "Kaleráb",
+   "packG": 300,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "spinach": {
+   "name": "Baby špenát",
+   "packG": 150,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "iceberg": {
+   "name": "Ľadový šalát",
+   "packG": 500,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "romaine": {
+   "name": "Rímsky šalát",
+   "packG": 300,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "lettuce_green": {
+   "name": "Hlávkový šalát",
+   "packG": 300,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cornsalad": {
+   "unavailable": true,
+   "substitute": "arugula",
+   "updated": "2026-10-28"
+  },
+  "arugula": {
+   "name": "Rukola",
+   "packG": 125,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "kale": {
+   "unavailable": true,
+   "substitute": "savoy",
+   "updated": "2026-10-28"
+  },
+  "leek": {
+   "name": "Pór",
+   "packG": 500,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "celery_stalk": {
+   "name": "Stopkový zeler",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "celeriac": {
+   "name": "Zeler buľvový",
+   "packG": 600,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "parsnip": {
+   "name": "Paštrnák",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "beetroot": {
+   "name": "Cvikla",
+   "packG": 1000,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "radish": {
+   "name": "Reďkovky",
+   "packG": 200,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "mushroom": {
+   "name": "Šampiňóny",
+   "packG": 400,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "mushroom_brown": {
+   "name": "Hnedé šampiňóny",
+   "packG": 250,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "oyster_mushroom": {
+   "name": "Hliva ustricová",
+   "packG": 200,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "green_beans": {
+   "name": "Zelené fazuľky",
+   "packG": 500,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "asparagus": {
+   "name": "Špargľa",
+   "packG": 500,
+   "price": 5.29,
+   "updated": "2026-10-28"
+  },
+  "brussels": {
+   "name": "Ružičkový kel",
+   "packG": 500,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "fennel": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "pumpkin": {
+   "name": "Tekvica Hokkaido",
+   "packG": 1500,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "butternut": {
+   "name": "Tekvica maslová",
+   "packG": 1200,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "chili": {
+   "name": "Čili paprička",
+   "packG": 50,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "ginger": {
+   "name": "Zázvor",
+   "packG": 150,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "avocado": {
+   "name": "Avokádo",
+   "packG": 170,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "corn_cob": {
+   "name": "Kukurica v klasoch",
+   "packG": 450,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "radicchio": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "chard": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "endive": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "bean_sprouts": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "turnip": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "peas_snow": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "okra": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "lemon": {
+   "name": "Citrón",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "lime": {
+   "name": "Limetka",
+   "packG": 250,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "parsley": {
+   "name": "Petržlenová vňať",
+   "packG": 25,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "dill": {
+   "name": "Kôpor",
+   "packG": 25,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "basil": {
+   "name": "Bazalka",
+   "packG": 25,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "chives": {
+   "name": "Pažítka",
+   "packG": 25,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "cilantro": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "mint": {
+   "name": "Mäta",
+   "packG": 25,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "apple": {
+   "name": "Jablko",
+   "packG": 1000,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "banana": {
+   "name": "Banán",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "orange": {
+   "name": "Pomaranč",
+   "packG": 2000,
+   "price": 3.19,
+   "updated": "2026-10-28"
+  },
+  "mandarin": {
+   "name": "Mandarínka",
+   "packG": 1000,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "pear": {
+   "name": "Hruška",
+   "packG": 1000,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "grapes": {
+   "name": "Hrozno",
+   "packG": 500,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "strawberry": {
+   "name": "Jahody",
+   "packG": 500,
+   "price": 3.19,
+   "updated": "2026-10-28"
+  },
+  "blueberry": {
+   "name": "Čučoriedky",
+   "packG": 250,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "raspberry": {
+   "name": "Maliny",
+   "packG": 125,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "blackberry": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "kiwi": {
+   "name": "Kiwi",
+   "packG": 500,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "pineapple": {
+   "name": "Ananás",
+   "packG": 1200,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "mango": {
+   "name": "Mango",
+   "packG": 300,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "plum": {
+   "name": "Slivky",
+   "packG": 1000,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "apricot": {
+   "name": "Marhule",
+   "packG": 500,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "peach": {
+   "name": "Broskyňa",
+   "packG": 1000,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "nectarine": {
+   "name": "Nektarinka",
+   "packG": 1000,
+   "price": 2.69,
+   "updated": "2026-10-28"
+  },
+  "cherry": {
+   "name": "Čerešne",
+   "packG": 500,
+   "price": 4.19,
+   "updated": "2026-10-28"
+  },
+  "watermelon": {
+   "name": "Melón vodový",
+   "packG": 3000,
+   "price": 4.19,
+   "updated": "2026-10-28"
+  },
+  "cantaloupe": {
+   "name": "Melón cukrový",
+   "packG": 1000,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "grapefruit": {
+   "name": "Grapefruit",
+   "packG": 500,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "pomegranate": {
+   "name": "Granátové jablko",
+   "packG": 300,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "fig": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "redcurrant": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "gooseberry": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "raisins": {
+   "name": "Hrozienka",
+   "packG": 200,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "dates": {
+   "name": "Datle",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "dried_apricot": {
+   "name": "Sušené marhule",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "dried_cranberry": {
+   "name": "Sušené brusnice",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "prunes": {
+   "name": "Sušené slivky",
+   "packG": 250,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "dried_fig": {
+   "name": "Sušené figy",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "sauerkraut": {
+   "name": "Kyslá kapusta",
+   "packG": 520,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "mushroom_canned": {
+   "name": "Šampiňóny v slanom náleve",
+   "packG": 280,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "corn_canned": {
+   "name": "Kukurica sterilizovaná",
+   "packG": 285,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pickles": {
+   "name": "Sterilizované uhorky",
+   "packG": 670,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "olives_black": {
+   "name": "Čierne olivy",
+   "packG": 340,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "olives_green": {
+   "name": "Zelené olivy",
+   "packG": 340,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "sundried_tomato": {
+   "name": "Sušené paradajky v oleji",
+   "packG": 285,
+   "price": 2.79,
+   "updated": "2026-10-28"
+  },
+  "passata": {
+   "name": "Paradajkový pretlak passata",
+   "packG": 500,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "tomato_canned": {
+   "name": "Krájané paradajky v plechovke",
+   "packG": 400,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "tomato_paste": {
+   "name": "Paradajkový pretlak",
+   "packG": 70,
+   "price": 0.39,
+   "updated": "2026-10-28"
+  },
+  "roasted_pepper": {
+   "name": "Pečená paprika v náleve",
+   "packG": 350,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "beetroot_jar": {
+   "name": "Cvikla sterilizovaná",
+   "packG": 330,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "chickpeas_can": {
+   "name": "Cícer v plechovke",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "kidney_can": {
+   "name": "Červená fazuľa v plechovke",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "white_beans_can": {
+   "name": "Biela fazuľa v plechovke",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "black_beans_can": {
+   "name": "Čierna fazuľa v plechovke",
+   "packG": 400,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "baked_beans": {
+   "name": "Fazuľa v paradajkovej omáčke",
+   "packG": 400,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "lentils_can": {
+   "unavailable": true,
+   "substitute": "lentils",
+   "updated": "2026-10-28"
+  },
+  "peas_can": {
+   "name": "Hrášok sterilizovaný",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "peach_can": {
+   "name": "Broskyne v šťave",
+   "packG": 820,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "pineapple_can": {
+   "name": "Ananás v šťave",
+   "packG": 560,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "applesauce": {
+   "name": "Jablkové pyré",
+   "packG": 720,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "coconut_milk": {
+   "name": "Kokosové mlieko",
+   "packG": 400,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "tuna_water": {
+   "name": "Tuniak vo vlastnej šťave",
+   "packG": 150,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "tuna_oil": {
+   "name": "Tuniak v oleji",
+   "packG": 150,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "sardines": {
+   "name": "Sardinky v oleji",
+   "packG": 125,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "mackerel_can": {
+   "name": "Makrela v plechovke",
+   "packG": 200,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "salmon_can": {
+   "unavailable": true,
+   "substitute": "tuna_water",
+   "updated": "2026-10-28"
+  },
+  "chicken_breast": {
+   "name": "Kuracie prsia",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "chicken_thigh": {
+   "name": "Kuracie stehná bez kosti",
+   "packG": 500,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_drumstick": {
+   "name": "Kuracie paličky",
+   "packG": 1000,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_leg": {
+   "name": "Kuracie stehná",
+   "packG": 1000,
+   "price": 4.29,
+   "updated": "2026-10-28"
+  },
+  "chicken_wing": {
+   "name": "Kuracie krídla",
+   "packG": 1000,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "chicken_whole": {
+   "name": "Celé kura",
+   "packG": 1200,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "chicken_ground": {
+   "name": "Mleté kuracie mäso",
+   "packG": 400,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "chicken_liver": {
+   "name": "Kuracia pečeň",
+   "packG": 500,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "turkey_breast": {
+   "name": "Morčacie prsia",
+   "packG": 500,
+   "price": 6.49,
+   "updated": "2026-10-28"
+  },
+  "turkey_ground": {
+   "name": "Mleté morčacie mäso",
+   "packG": 400,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "turkey_ham": {
+   "name": "Morčacia šunka",
+   "packG": 150,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "turkey_deli": {
+   "name": "Morčacie prsia nárezové",
+   "packG": 100,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "chicken_deli": {
+   "name": "Kuracie prsia nárezové",
+   "packG": 100,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "beef_ground_5": {
+   "unavailable": true,
+   "substitute": "beef_ground_20",
+   "updated": "2026-10-28"
+  },
+  "beef_ground_20": {
+   "name": "Mleté hovädzie 20 %",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "beef_sirloin": {
+   "name": "Hovädzí steak",
+   "packG": 300,
+   "price": 7.99,
+   "updated": "2026-10-28"
+  },
+  "beef_chuck": {
+   "name": "Hovädzie pliecko na guláš",
+   "packG": 500,
+   "price": 6.99,
+   "updated": "2026-10-28"
+  },
+  "beef_round": {
+   "name": "Hovädzie stehno",
+   "packG": 500,
+   "price": 8.49,
+   "updated": "2026-10-28"
+  },
+  "beef_flank": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "pork_ground": {
+   "name": "Mleté bravčové",
+   "packG": 500,
+   "price": 3.49,
+   "updated": "2026-10-28"
+  },
+  "pork_tenderloin": {
+   "name": "Bravčová panenka",
+   "packG": 500,
+   "price": 6.99,
+   "updated": "2026-10-28"
+  },
+  "pork_loin": {
+   "name": "Bravčové karé bez kosti",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "pork_shoulder": {
+   "name": "Bravčové pliecko",
+   "packG": 600,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "pork_belly": {
+   "name": "Bravčový bôčik",
+   "packG": 500,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "pork_leg": {
+   "name": "Bravčové stehno",
+   "packG": 500,
+   "price": 3.99,
+   "updated": "2026-10-28"
+  },
+  "bacon": {
+   "name": "Slanina",
+   "packG": 150,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "ham": {
+   "name": "Šunka výberová",
+   "packG": 100,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "ham_cured": {
+   "name": "Údená šunka",
+   "packG": 200,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "frankfurter": {
+   "name": "Párky",
+   "packG": 300,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "bratwurst": {
+   "name": "Klobása na gril",
+   "packG": 400,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "salami": {
+   "name": "Saláma",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "lamb_ground": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "duck_breast": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "venison": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "rabbit": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "salmon": {
+   "name": "Losos filet",
+   "packG": 250,
+   "price": 5.29,
+   "updated": "2026-10-28"
+  },
+  "salmon_smoked": {
+   "name": "Údený losos",
+   "packG": 100,
+   "price": 2.49,
+   "updated": "2026-10-28"
+  },
+  "cod": {
+   "name": "Treska filet",
+   "packG": 400,
+   "price": 5.79,
+   "updated": "2026-10-28"
+  },
+  "pollock": {
+   "name": "Aljašská treska",
+   "packG": 800,
+   "price": 6.59,
+   "updated": "2026-10-28"
+  },
+  "tilapia": {
+   "name": "Tilápia filet",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "trout": {
+   "name": "Pstruh dúhový",
+   "packG": 400,
+   "price": 5.29,
+   "updated": "2026-10-28"
+  },
+  "herring_pickled": {
+   "name": "Sleď v náleve",
+   "packG": 500,
+   "price": 3.19,
+   "updated": "2026-10-28"
+  },
+  "mackerel": {
+   "name": "Makrela",
+   "packG": 500,
+   "price": 4.79,
+   "updated": "2026-10-28"
+  },
+  "carp": {
+   "name": "Kapor",
+   "packG": 1000,
+   "price": 7.39,
+   "updated": "2026-10-28"
+  },
+  "hake": {
+   "name": "Merlúza filet",
+   "packG": 500,
+   "price": 5.49,
+   "updated": "2026-10-28"
+  },
+  "shrimp": {
+   "name": "Krevety",
+   "packG": 225,
+   "price": 4.49,
+   "updated": "2026-10-28"
+  },
+  "fish_sticks": {
+   "name": "Rybie prsty",
+   "packG": 450,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "mussels": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "squid": {
+   "name": "Kalamáre",
+   "packG": 500,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "surimi": {
+   "name": "Surimi tyčinky",
+   "packG": 250,
+   "price": 2.09,
+   "updated": "2026-10-28"
+  },
+  "milk_semi": {
+   "name": "Mlieko polotučné",
+   "packG": 1000,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "milk_whole": {
+   "name": "Mlieko plnotučné",
+   "packG": 1000,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "milk_skim": {
+   "name": "Mlieko odtučnené",
+   "packG": 1000,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "buttermilk": {
+   "name": "Cmar",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "kefir": {
+   "name": "Kefír",
+   "packG": 950,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "yogurt_plain": {
+   "name": "Biely jogurt",
+   "packG": 380,
+   "price": 0.79,
+   "updated": "2026-10-28"
+  },
+  "yogurt_low": {
+   "name": "Biely jogurt nízkotučný",
+   "packG": 380,
+   "price": 0.75,
+   "updated": "2026-10-28"
+  },
+  "greek_0": {
+   "name": "Grécky jogurt 0 %",
+   "packG": 400,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "greek_full": {
+   "name": "Grécky jogurt 10 %",
+   "packG": 400,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "skyr": {
+   "name": "Skyr",
+   "packG": 450,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "quark_lean": {
+   "name": "Tvaroh jemný netučný",
+   "packG": 250,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cottage": {
+   "name": "Cottage cheese light",
+   "packG": 180,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "cottage_full": {
+   "name": "Cottage cheese",
+   "packG": 200,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "mozzarella": {
+   "name": "Mozzarella",
+   "packG": 125,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "mozzarella_light": {
+   "name": "Mozzarella light",
+   "packG": 125,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "feta": {
+   "name": "Feta",
+   "packG": 200,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "bryndza": {
+   "name": "Bryndza",
+   "packG": 125,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "edam": {
+   "name": "Eidam",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "gouda": {
+   "name": "Gouda",
+   "packG": 200,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "emmental": {
+   "name": "Ementál",
+   "packG": 250,
+   "price": 2.89,
+   "updated": "2026-10-28"
+  },
+  "parmesan": {
+   "name": "Parmezán",
+   "packG": 80,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "cheddar": {
+   "name": "Čedar",
+   "packG": 200,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "cream_cheese": {
+   "name": "Krémový syr",
+   "packG": 200,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "cream_cheese_light": {
+   "name": "Krémový syr light",
+   "packG": 200,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "ricotta": {
+   "name": "Ricotta",
+   "packG": 250,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "camembert": {
+   "name": "Camembert",
+   "packG": 250,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "brie": {
+   "name": "Brie",
+   "packG": 200,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "blue_cheese": {
+   "name": "Plesňový syr",
+   "packG": 150,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "provolone": {
+   "name": "Údený syr (oštiepok)",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "butter": {
+   "name": "Maslo",
+   "packG": 250,
+   "price": 2.79,
+   "updated": "2026-10-28"
+  },
+  "sour_cream": {
+   "name": "Kyslá smotana",
+   "packG": 180,
+   "price": 0.69,
+   "updated": "2026-10-28"
+  },
+  "cream_light": {
+   "name": "Smotana na varenie",
+   "packG": 250,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "cream_heavy": {
+   "name": "Šľahačková smotana",
+   "packG": 250,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "whey": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "egg": {
+   "name": "Vajcia",
+   "packG": 550,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "egg_white": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "bread_rye": {
+   "name": "Ražný chlieb",
+   "packG": 500,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "bread_wholewheat": {
+   "name": "Celozrnný chlieb",
+   "packG": 500,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "bread_white": {
+   "name": "Toastový chlieb",
+   "packG": 500,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "bread_multigrain": {
+   "name": "Viaczrnný chlieb",
+   "packG": 500,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "pumpernickel": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "roll": {
+   "name": "Rožok / žemľa",
+   "packG": 400,
+   "price": 0.8,
+   "updated": "2026-10-28"
+  },
+  "roll_wholewheat": {
+   "name": "Celozrnný rožok",
+   "packG": 360,
+   "price": 1.2,
+   "updated": "2026-10-28"
+  },
+  "tortilla": {
+   "name": "Pšeničné tortilly",
+   "packG": 360,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "pita": {
+   "name": "Pita chlieb",
+   "packG": 400,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "crispbread": {
+   "name": "Ražné chrumkavé plátky",
+   "packG": 250,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "rice_cakes": {
+   "name": "Ryžové chlebíky",
+   "packG": 130,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pretzel": {
+   "name": "Praclík",
+   "packG": 360,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "bagel": {
+   "name": "Bagel",
+   "packG": 340,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "oats": {
+   "name": "Ovsené vločky",
+   "packG": 500,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "granola": {
+   "name": "Granola",
+   "packG": 375,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "rice": {
+   "name": "Ryža dlhozrnná",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "rice_basmati": {
+   "name": "Ryža basmati",
+   "packG": 1000,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "rice_brown": {
+   "name": "Natural ryža",
+   "packG": 1000,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "rice_round": {
+   "name": "Guľatozrnná ryža",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "pasta": {
+   "name": "Cestoviny",
+   "packG": 500,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "pasta_wholewheat": {
+   "name": "Celozrnné cestoviny",
+   "packG": 500,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "egg_noodles": {
+   "name": "Vaječné cestoviny",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "rice_noodles": {
+   "name": "Ryžové rezance",
+   "packG": 250,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "couscous": {
+   "name": "Kuskus",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "bulgur": {
+   "name": "Bulgur",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "quinoa": {
+   "name": "Quinoa",
+   "packG": 400,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "millet": {
+   "name": "Pšeno",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "buckwheat": {
+   "name": "Pohánka",
+   "packG": 500,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "barley": {
+   "name": "Krúpy",
+   "packG": 500,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "semolina": {
+   "name": "Detská krupica",
+   "packG": 500,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "polenta": {
+   "name": "Kukuričná krupica",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "flour": {
+   "name": "Múka hladká",
+   "packG": 1000,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "flour_wholewheat": {
+   "name": "Celozrnná múka",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "flour_rye": {
+   "name": "Ražná múka",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "cornstarch": {
+   "name": "Kukuričný škrob",
+   "packG": 400,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "breadcrumbs": {
+   "name": "Strúhanka",
+   "packG": 400,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "wheat_bran": {
+   "name": "Pšeničné otruby",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "oat_bran": {
+   "name": "Ovsené otruby",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "cornflakes": {
+   "name": "Kukuričné lupienky",
+   "packG": 375,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "puffed_rice": {
+   "name": "Pufovaná ryža",
+   "packG": 200,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "potato_flakes": {
+   "name": "Zemiaková kaša sušená",
+   "packG": 240,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "lentils_red": {
+   "name": "Červená šošovica",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "lentils": {
+   "name": "Šošovica",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "chickpeas": {
+   "name": "Cícer sušený",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "white_beans": {
+   "name": "Biela fazuľa sušená",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "kidney_beans": {
+   "name": "Červená fazuľa sušená",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "split_peas": {
+   "name": "Lúpaný hrach",
+   "packG": 500,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "mung_beans": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "sugar": {
+   "name": "Cukor",
+   "packG": 1000,
+   "price": 1.19,
+   "updated": "2026-10-28"
+  },
+  "sugar_powdered": {
+   "name": "Práškový cukor",
+   "packG": 500,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "honey": {
+   "name": "Med",
+   "packG": 500,
+   "price": 4.39,
+   "updated": "2026-10-28"
+  },
+  "maple_syrup": {
+   "name": "Javorový sirup",
+   "packG": 250,
+   "price": 4.39,
+   "updated": "2026-10-28"
+  },
+  "jam": {
+   "name": "Džem",
+   "packG": 450,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "cocoa": {
+   "name": "Kakao",
+   "packG": 250,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "chocolate_dark": {
+   "name": "Horká čokoláda 70 %",
+   "packG": 125,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "chocolate_milk": {
+   "name": "Mliečna čokoláda",
+   "packG": 100,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "nutella": {
+   "name": "Orieškovo-kakaová nátierka",
+   "packG": 400,
+   "price": 2.79,
+   "updated": "2026-10-28"
+  },
+  "baking_powder": {
+   "name": "Prášok do pečiva",
+   "packG": 60,
+   "price": 0.59,
+   "updated": "2026-10-28"
+  },
+  "yeast": {
+   "name": "Sušené droždie",
+   "packG": 21,
+   "price": 0.49,
+   "updated": "2026-10-28"
+  },
+  "vanilla": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "gelatin": {
+   "name": "Želatína",
+   "packG": 30,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "pudding_powder": {
+   "name": "Vanilkový puding (prášok)",
+   "packG": 111,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "popcorn": {
+   "name": "Popcorn (zrná)",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "almonds": {
+   "name": "Mandle",
+   "packG": 200,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "walnuts": {
+   "name": "Vlašské orechy",
+   "packG": 200,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "hazelnuts": {
+   "name": "Lieskovce",
+   "packG": 200,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "cashews": {
+   "name": "Kešu",
+   "packG": 200,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "pistachios": {
+   "name": "Pistácie",
+   "packG": 250,
+   "price": 4.99,
+   "updated": "2026-10-28"
+  },
+  "pine_nuts": {
+   "name": "Píniové oriešky",
+   "packG": 75,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "peanuts": {
+   "name": "Arašidy",
+   "packG": 500,
+   "price": 2.79,
+   "updated": "2026-10-28"
+  },
+  "peanuts_roasted": {
+   "name": "Pražené arašidy",
+   "packG": 200,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "peanut_butter": {
+   "name": "Arašidové maslo",
+   "packG": 350,
+   "price": 2.99,
+   "updated": "2026-10-28"
+  },
+  "almond_butter": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "sunflower_seeds": {
+   "name": "Slnečnicové semienka",
+   "packG": 200,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "pumpkin_seeds": {
+   "name": "Tekvicové semienka",
+   "packG": 200,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "chia": {
+   "name": "Chia semienka",
+   "packG": 200,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "flaxseed": {
+   "name": "Ľanové semienko",
+   "packG": 500,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "sesame": {
+   "name": "Sezam",
+   "packG": 200,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "tahini": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "coconut_desiccated": {
+   "name": "Kokosová strúhanka",
+   "packG": 200,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "hemp_seeds": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "poppy": {
+   "name": "Mak",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "tofu": {
+   "name": "Tofu natural",
+   "packG": 180,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "tofu_regular": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "tempeh": {
+   "unavailable": true,
+   "substitute": "tofu",
+   "updated": "2026-10-28"
+  },
+  "soy_milk": {
+   "name": "Sójový nápoj",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "almond_milk": {
+   "name": "Mandľový nápoj",
+   "packG": 1000,
+   "price": 1.79,
+   "updated": "2026-10-28"
+  },
+  "soy_chunks": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "edamame": {
+   "name": "Edamame mrazené",
+   "packG": 400,
+   "price": 2.79,
+   "updated": "2026-10-28"
+  },
+  "hummus": {
+   "name": "Hummus",
+   "packG": 200,
+   "price": 1.89,
+   "updated": "2026-10-28"
+  },
+  "soy_yogurt": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "peas_frozen": {
+   "name": "Mrazený hrášok",
+   "packG": 450,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "corn_frozen": {
+   "name": "Mrazená kukurica",
+   "packG": 750,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "mixed_veg_frozen": {
+   "name": "Mrazená zeleninová zmes",
+   "packG": 450,
+   "price": 1.29,
+   "updated": "2026-10-28"
+  },
+  "broccoli_frozen": {
+   "name": "Mrazená brokolica",
+   "packG": 450,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "spinach_frozen": {
+   "name": "Mrazený špenát",
+   "packG": 450,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "green_beans_frozen": {
+   "name": "Mrazené zelené fazuľky",
+   "packG": 1000,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "cauliflower_frozen": {
+   "name": "Mrazený karfiol",
+   "packG": 1000,
+   "price": 2.59,
+   "updated": "2026-10-28"
+  },
+  "berries_frozen": {
+   "name": "Mrazené čučoriedky",
+   "packG": 500,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "strawberry_frozen": {
+   "name": "Mrazené jahody",
+   "packG": 750,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "raspberry_frozen": {
+   "name": "Mrazené maliny",
+   "packG": 500,
+   "price": 3.29,
+   "updated": "2026-10-28"
+  },
+  "fries_frozen": {
+   "name": "Mrazené hranolky",
+   "packG": 1000,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "olive_oil": {
+   "name": "Olivový olej",
+   "packG": 500,
+   "price": 5.49,
+   "updated": "2026-10-28"
+  },
+  "rapeseed_oil": {
+   "name": "Repkový olej",
+   "packG": 1000,
+   "price": 2.29,
+   "updated": "2026-10-28"
+  },
+  "sunflower_oil": {
+   "name": "Slnečnicový olej",
+   "packG": 1000,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "coconut_oil": {
+   "name": "Kokosový olej",
+   "packG": 400,
+   "price": 3.89,
+   "updated": "2026-10-28"
+  },
+  "sesame_oil": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "lard": {
+   "name": "Bravčová masť",
+   "packG": 250,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "mayonnaise": {
+   "name": "Majonéza",
+   "packG": 420,
+   "price": 1.59,
+   "updated": "2026-10-28"
+  },
+  "mayo_light": {
+   "name": "Majonéza light",
+   "packG": 420,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "mustard": {
+   "name": "Horčica",
+   "packG": 300,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "soy_sauce": {
+   "name": "Sójová omáčka",
+   "packG": 150,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "vinegar": {
+   "name": "Jablčný ocot",
+   "packG": 1000,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "vinegar_spirit": {
+   "name": "Kvasný ocot",
+   "packG": 1000,
+   "price": 0.59,
+   "updated": "2026-10-28"
+  },
+  "balsamic": {
+   "name": "Balzamikový ocot",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "ketchup": {
+   "name": "Kečup",
+   "packG": 500,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "pesto": {
+   "name": "Bazalkové pesto",
+   "packG": 190,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "pasta_sauce": {
+   "name": "Paradajková omáčka na cestoviny",
+   "packG": 400,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "bbq_sauce": {
+   "name": "BBQ omáčka",
+   "packG": 500,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "sriracha": {
+   "name": "Sriracha",
+   "packG": 200,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "sweet_sour_sauce": {
+   "name": "Sladkokyslá omáčka",
+   "packG": 400,
+   "price": 1.99,
+   "updated": "2026-10-28"
+  },
+  "horseradish": {
+   "name": "Chren",
+   "packG": 200,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "worcestershire": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "broth_veg": {
+   "name": "Zeleninový vývar",
+   "packG": 4000,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "broth_chicken": {
+   "name": "Kurací vývar",
+   "packG": 4000,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "salsa": {
+   "name": "Salsa",
+   "packG": 300,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "hot_sauce": {
+   "name": "Pálivá omáčka",
+   "packG": 150,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "curry_ketchup": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "salt": {
+   "name": "Soľ",
+   "packG": 500,
+   "price": 0.39,
+   "updated": "2026-10-28"
+  },
+  "pepper_black": {
+   "name": "Čierne korenie",
+   "packG": 50,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "paprika": {
+   "name": "Mletá sladká paprika",
+   "packG": 50,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "cumin": {
+   "name": "Rímsky rasca",
+   "packG": 40,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "caraway": {
+   "name": "Rasca",
+   "packG": 50,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "marjoram": {
+   "name": "Majorán",
+   "packG": 15,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "oregano": {
+   "name": "Oregano",
+   "packG": 15,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "thyme": {
+   "name": "Tymián",
+   "packG": 15,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "basil_dried": {
+   "name": "Sušená bazalka",
+   "packG": 15,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "cinnamon": {
+   "name": "Škorica",
+   "packG": 50,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "curry": {
+   "name": "Kari korenie",
+   "packG": 50,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "turmeric": {
+   "name": "Kurkuma",
+   "packG": 50,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "garlic_powder": {
+   "name": "Cesnak sušený",
+   "packG": 50,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "chili_powder": {
+   "name": "Čili korenie",
+   "packG": 40,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "cayenne": {
+   "name": "Pálivá paprika",
+   "packG": 50,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "bay_leaf": {
+   "name": "Bobkový list",
+   "packG": 5,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "nutmeg": {
+   "name": "Muškátový orech",
+   "packG": 40,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "rosemary": {
+   "name": "Rozmarín",
+   "packG": 20,
+   "price": 0.99,
+   "updated": "2026-10-28"
+  },
+  "ginger_ground": {
+   "name": "Mletý zázvor",
+   "packG": 30,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "parsley_dried": {
+   "name": "Sušená petržlenová vňať",
+   "packG": 10,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "dill_dried": {
+   "name": "Sušený kôpor",
+   "packG": 10,
+   "price": 0.89,
+   "updated": "2026-10-28"
+  },
+  "allspice": {
+   "name": "Nové korenie",
+   "packG": 30,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "coriander_seed": {
+   "name": "Mletý koriander",
+   "packG": 40,
+   "price": 1.09,
+   "updated": "2026-10-28"
+  },
+  "chili_flakes": {
+   "name": "Čili vločky",
+   "packG": 40,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "onion_powder": {
+   "name": "Cibuľa sušená",
+   "packG": 50,
+   "price": 1.39,
+   "updated": "2026-10-28"
+  },
+  "mustard_seed": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "cloves": {
+   "name": "Klinčeky",
+   "packG": 25,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "sage": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "tarragon": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "fennel_seed": {
+   "unavailable": true,
+   "updated": "2026-10-28"
+  },
+  "orange_juice": {
+   "name": "Pomarančový džús",
+   "packG": 1000,
+   "price": 2.19,
+   "updated": "2026-10-28"
+  },
+  "apple_juice": {
+   "name": "Jablkový džús",
+   "packG": 1000,
+   "price": 1.49,
+   "updated": "2026-10-28"
+  },
+  "tomato_juice": {
+   "name": "Paradajková šťava",
+   "packG": 1000,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  },
+  "coffee": {
+   "name": "Káva",
+   "packG": 8000,
+   "price": 6.59,
+   "updated": "2026-10-28"
+  },
+  "tea": {
+   "name": "Čierny čaj",
+   "packG": 10000,
+   "price": 1.69,
+   "updated": "2026-10-28"
+  }
+ }
+}
