@@ -1,0 +1,120 @@
+[
+  {
+    "id": "protein-shake-banana",
+    "name": { "en": "Banana protein shake", "sk": "Proteínový shake s banánom", "de": "Bananen-Proteinshake" },
+    "meals": ["snack"], "timeMin": 3, "equipment": ["blender"], "tags": ["quick", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "whey", "g": 30, "min": 20, "max": 40 },
+      { "food": "milk_skim", "g": 250, "min": 200, "max": 350 },
+      { "food": "banana", "g": 100, "min": 60, "max": 120 }
+    ],
+    "steps": {
+      "sk": ["Všetko rozmixuj dohladka."],
+      "de": ["Alles glatt mixen."]
+    }
+  },
+  {
+    "id": "apple-peanut-butter",
+    "name": { "en": "Apple with peanut butter", "sk": "Jablko s arašidovým maslom", "de": "Apfel mit Erdnussbutter" },
+    "meals": ["snack"], "timeMin": 2, "equipment": [], "tags": ["quick", "no_cook"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "apple", "g": 180, "min": 120, "max": 200 },
+      { "food": "peanut_butter", "g": 15, "min": 10, "max": 25 }
+    ],
+    "steps": {
+      "sk": ["Jablko nakrájaj na mesiačiky a podávaj s arašidovým maslom."],
+      "de": ["Apfel in Spalten schneiden und mit Erdnussbutter servieren."]
+    }
+  },
+  {
+    "id": "rice-cakes-quark",
+    "name": { "en": "Rice cakes with quark and cucumber", "sk": "Ryžové chlebíky s tvarohom a uhorkou", "de": "Reiswaffeln mit Quark und Gurke" },
+    "meals": ["snack"], "timeMin": 3, "equipment": [], "tags": ["quick", "no_cook", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "rice_cakes", "g": 24, "min": 16, "max": 40 },
+      { "food": "quark_lean", "g": 125, "min": 100, "max": 250 },
+      { "food": "cucumber", "g": 60, "min": 40, "max": 100 },
+      { "food": "salt", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Tvaroh osoľ, natri na chlebíky a oblož uhorkou."],
+      "de": ["Quark salzen, auf die Reiswaffeln streichen und mit Gurke belegen."]
+    }
+  },
+  {
+    "id": "boiled-eggs-snack",
+    "name": { "en": "Two boiled eggs with peppers", "sk": "Dve vajcia natvrdo s paprikou", "de": "Zwei gekochte Eier mit Paprika" },
+    "meals": ["snack"], "timeMin": 10, "equipment": ["stove"], "tags": ["high_protein", "low_carb", "meal_prep"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "egg", "g": 110, "min": 110, "max": 165 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 120 },
+      { "food": "salt", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Vajcia var 9 minút, schlaď. Podávaj s paprikou."],
+      "de": ["Eier 9 Minuten kochen, abschrecken. Mit Paprika servieren."]
+    }
+  },
+  {
+    "id": "hummus-carrots",
+    "name": { "en": "Hummus with carrot sticks", "sk": "Hummus s mrkvovými tyčinkami", "de": "Hummus mit Karottensticks" },
+    "meals": ["snack"], "timeMin": 3, "equipment": [], "tags": ["quick", "no_cook"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "hummus", "g": 60, "min": 40, "max": 100 },
+      { "food": "carrot", "g": 120, "min": 80, "max": 200 }
+    ],
+    "steps": {
+      "sk": ["Mrkvu nakrájaj na tyčinky a podávaj s hummusom."],
+      "de": ["Karotten in Sticks schneiden und mit Hummus servieren."]
+    }
+  },
+  {
+    "id": "edamame-salted",
+    "name": { "en": "Salted edamame", "sk": "Solené edamame", "de": "Gesalzene Edamame" },
+    "meals": ["snack"], "timeMin": 6, "equipment": ["stove"], "tags": ["high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "edamame", "g": 150, "min": 100, "max": 250 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Edamame var 4 minúty v osolenej vode, scedí a posyp soľou."],
+      "de": ["Edamame 4 Minuten in Salzwasser kochen, abgießen und salzen."]
+    }
+  },
+  {
+    "id": "skyr-honey-walnut",
+    "name": { "en": "Skyr with honey and walnuts", "sk": "Skyr s medom a orechmi", "de": "Skyr mit Honig und Walnüssen" },
+    "meals": ["snack"], "timeMin": 2, "equipment": [], "tags": ["quick", "no_cook", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "skyr", "g": 200, "min": 150, "max": 350 },
+      { "food": "honey", "g": 8, "min": 5, "max": 12 },
+      { "food": "walnuts", "g": 10, "min": 10, "max": 20 }
+    ],
+    "steps": {
+      "sk": ["Skyr pokvapkaj medom a posyp orechmi."],
+      "de": ["Skyr mit Honig beträufeln und mit Walnüssen bestreuen."]
+    }
+  },
+  {
+    "id": "turkey-roll-ups",
+    "name": { "en": "Turkey and cream cheese roll-ups", "sk": "Morčacie rolky s krémovým syrom", "de": "Putenröllchen mit Frischkäse" },
+    "meals": ["snack"], "timeMin": 5, "equipment": [], "tags": ["quick", "no_cook", "low_carb", "high_protein"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "turkey_deli", "g": 80, "min": 60, "max": 150 },
+      { "food": "cream_cheese_light", "g": 30, "min": 20, "max": 40 },
+      { "food": "cucumber", "g": 60, "min": 40, "max": 100 }
+    ],
+    "steps": {
+      "sk": ["Plátky morčacieho natri krémovým syrom, vlož prúžok uhorky a zroluj."],
+      "de": ["Putenscheiben mit Frischkäse bestreichen, einen Gurkenstreifen hineinlegen und aufrollen."]
+    }
+  }
+]

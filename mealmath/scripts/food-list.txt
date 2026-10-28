@@ -159,7 +159,7 @@ turkey_deli | Turkey breast, low salt, prepackaged or deli, luncheon meat | Turk
 chicken_deli | Chicken breast, deli, rotisserie seasoned, sliced, prepackaged | Chicken breast (sliced) | Kuracie prsia nárezové | Hähnchenbrust Aufschnitt | meat | - | meat | 5
 beef_ground_5 | Beef, ground, 95% lean meat / 5% fat, raw | Lean ground beef (5 %) | Mleté hovädzie chudé | Rinderhack mager | meat | - | meat,red_meat | 1
 beef_ground_20 | Beef, ground, 80% lean meat / 20% fat, raw | Ground beef (20 %) | Mleté hovädzie 20 % | Rinderhack 20 % | meat | - | meat,red_meat | 1
-beef_sirloin | Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef steak (sirloin) | Hovädzí steak | Rindersteak | meat | - | meat,red_meat | 2
+beef_sirloin | Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw | Beef steak (sirloin) | Hovädzí steak | Rindersteak | meat | - | meat,red_meat | 2
 beef_chuck | Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, raw | Beef for stew (chuck) | Hovädzie pliecko na guláš | Rindergulasch | meat | - | meat,red_meat | 2
 beef_round | Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw | Beef topside | Hovädzie stehno | Rinderoberschale | meat | - | meat,red_meat | 2
 beef_flank | Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw | Beef flank steak | Hovädzí flank steak | Flanksteak | meat | - | meat,red_meat | 2
