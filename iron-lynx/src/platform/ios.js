@@ -14,14 +14,15 @@ export function lockGestures() {
   document.addEventListener('contextmenu', stop);
 }
 
-/** iOS dovolí spustiť zvuk až po gestách používateľa – odomkneme pri prvom dotyku/klávese. */
+/**
+ * iOS dovolí spustiť zvuk až po geste používateľa – odomkneme pri prvom dotyku/klávese.
+ * Poslucháč ostáva aktívny: po prerušení (hovor, prepnutie appky) iOS audio „uspí“
+ * a ďalší dotyk ho znovu prebudí.
+ */
 export function unlockAudioOnFirstGesture() {
   const unlock = () => {
-    audio.unlock();
+    if (!audio.ctx || audio.ctx.state !== 'running') audio.unlock();
     requestWakeLock();
-    if (audio.ready) {
-      for (const ev of ['pointerdown', 'touchend', 'keydown']) window.removeEventListener(ev, unlock, true);
-    }
   };
   for (const ev of ['pointerdown', 'touchend', 'keydown']) window.addEventListener(ev, unlock, true);
 }

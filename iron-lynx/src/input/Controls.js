@@ -92,7 +92,10 @@ export const EMPTY_INPUT = fromBits(0);
 /** Krátka vibrácia: telefón (Android) alebo gamepad. iOS Safari vibráciu nepodporuje – ticho ignoruje. */
 export function vibrate(ms = 40, strength = 0.6) {
   if (!settings.vibrate) return;
-  try { navigator.vibrate?.(ms); } catch { /* nepodporované */ }
+  // prehliadač dovolí vibráciu až po prvom dotyku používateľa
+  if (navigator.userActivation?.hasBeenActive !== false) {
+    try { navigator.vibrate?.(ms); } catch { /* nepodporované */ }
+  }
   const act = controls.gamepad?.vibrationActuator;
   if (act?.playEffect) {
     act.playEffect('dual-rumble', { duration: ms, strongMagnitude: strength, weakMagnitude: strength }).catch(() => {});

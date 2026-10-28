@@ -9,6 +9,8 @@ const out = process.env.OUT || '.';
 const browser = await chromium.launch();
 const mk = async (name) => {
   const ctx = await browser.newContext({ viewport: { width: 960, height: 540 } });
+  // RELAY=1: simuluje sieť, kde WebRTC nefunguje → hra musí prejsť na relay cez server
+  if (process.env.RELAY) await ctx.addInitScript(() => { delete window.RTCPeerConnection; });
   const page = await ctx.newPage();
   page.on('pageerror', (e) => console.log(`[${name}] pageerror`, e.message));
   page.on('console', (m) => { if (m.type() === 'error') console.log(`[${name}]`, m.text()); });
@@ -61,6 +63,20 @@ console.log('hostiteľ vidí hráčov:', JSON.stringify(hs));
 console.log('klient:', JSON.stringify(cs));
 await host.screenshot({ path: `${out}/coop-host.png` });
 await client.screenshot({ path: `${out}/coop-client.png` });
+
+// tretí hráč sa pripojí počas hry
+const late = await mk('late');
+await late.keyboard.press('ArrowDown');
+await late.keyboard.press('ArrowDown');
+await late.keyboard.press('Enter');
+await late.waitForTimeout(500);
+await late.fill('#codeInput', code);
+await late.press('#codeInput', 'Enter');
+await late.waitForTimeout(3000);
+const lateInfo = await late.evaluate(() => { const g = window.__game.scene.getScene('Game'); return g.sys.isActive() ? `v hre ako P${g.localSlot + 1}` : 'NIE JE V HRE'; });
+const hostCount = await host.evaluate(() => window.__game.scene.getScene('Game').players.length);
+console.log(`neskoré pripojenie: ${lateInfo}, hostiteľ má ${hostCount} hráčov`);
+await late.close({ runBeforeUnload: true });
 
 // odpojenie klienta → hostiteľ ho odstráni
 await client.close({ runBeforeUnload: true });

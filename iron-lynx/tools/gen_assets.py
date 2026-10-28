@@ -740,8 +740,8 @@ def fog(w, h, col, alpha=90):
 
 def backgrounds():
     # Level 1 – džungľa a vodopády pod Tatrami
-    save(gradient(480, 270, [PAL[1], PAL[2], PAL[3], PAL[23], PAL[17]]), 'bg1_sky.png')
-    save(mountains(480, 180, None, PAL[7], PAL[2], PAL[1], 1, height=0.8, snowline=0.18), 'bg1_far.png')
+    save(gradient(480, 270, [PAL[1], PAL[1], PAL[2], PAL[22], PAL[23], PAL[17]]), 'bg1_sky.png')
+    save(mountains(480, 180, None, PAL[7], PAL[3], PAL[2], 1, height=0.8, snowline=0.18), 'bg1_far.png')
     save(mountains(480, 140, None, None, PAL[9], PAL[8], 2, height=0.55), 'bg1_mid.png')
     save(trees(480, 120, PAL[9], PAL[8], 3), 'bg1_near.png')
     save(fog(480, 60, PAL[6], 70), 'fog.png')
