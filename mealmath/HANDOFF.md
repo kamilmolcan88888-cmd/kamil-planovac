@@ -5,7 +5,7 @@ Vlož tento súbor (alebo odkaz naň) do nového okna a napíš, čo chceš robi
 ## Kde to je
 - Repo: `kamilmolcan88888-cmd/kamil-planovac`, priečinok `mealmath/`
 - Vývojová vetva: `claude/mealmath` → PR do `main`
-- Testovací odkaz (po zlúčení PR a zapnutí Pages): https://kamilmolcan88888-cmd.github.io/kamil-planovac/
+- Testovací odkaz (po zlúčení PR a zapnutí Pages): https://kamilmolcan88888-cmd.github.io/kamil-planovac/mealmath/
 - Zapnutie Pages (raz): GitHub → Settings → Pages → Source: **GitHub Actions**
 
 ## Príkazy (v `mealmath/`)

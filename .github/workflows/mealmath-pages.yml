@@ -1,11 +1,11 @@
-# Free hosting on GitHub Pages: https://<user>.github.io/<repo>/
+# Free hosting on GitHub Pages: https://<user>.github.io/<repo>/mealmath/
 # One-time setup: repository Settings → Pages → Source: "GitHub Actions".
 name: MealMath – deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
-    paths: ['mealmath/**']
+    paths: ['mealmath/**', 'index.html', 'manifest.webmanifest', 'sw.js', '.github/workflows/mealmath-pages.yml']
   workflow_dispatch:
 
 permissions:
@@ -33,9 +33,17 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      # MealMath lives under /mealmath/ so it never collides with the older app (and its
+      # service worker) published at the site root. The root files are kept as they are.
+      - name: Assemble site
+        working-directory: .
+        run: |
+          mkdir -p _site
+          for f in index.html manifest.webmanifest sw.js; do [ -f "$f" ] && cp "$f" _site/; done
+          cp -r mealmath/dist _site/mealmath
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: mealmath/dist
+          path: _site
 
   deploy:
     needs: build
