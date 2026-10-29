@@ -35,7 +35,7 @@ npm run build     # typecheck + produkčný build do dist/
 
 ## Inštalácia na iPhone
 
-1. Otvor nasadenú adresu (napr. `https://<používateľ>.github.io/kamil-planovac/`) v **Safari**.
+1. Otvor nasadenú adresu (napr. `https://<používateľ>.github.io/kamil-planovac/mealmath/`) v **Safari**.
 2. Ťukni na **Zdieľať** → **Pridať na plochu**.
 3. Appka sa spúšťa na celú obrazovku a po prvom otvorení funguje **úplne offline** – všetky súbory,
    dáta (USDA, recepty, ceny) aj plánovač sú uložené v zariadení. Tvoje dáta ostávajú v IndexedDB
