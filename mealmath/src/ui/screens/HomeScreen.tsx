@@ -1,12 +1,12 @@
 import { CalendarPlus, Flame, Settings, Sparkles, UserRound } from 'lucide-react';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FOOD_MAP, RECIPE_MAP } from '../../data/catalog';
 import { storeConflicts } from '../../engine/shopping';
 import { validatePlan } from '../../engine/validator';
 import type { AppSettings, StoredPlan } from '../../state/db';
 import { dayPart, localISO } from '../../state/dates';
-import { createPlan, toggleDone, updateSettings, usePriceOverrides } from '../../state/store';
+import { toggleDone, updateSettings, usePriceOverrides } from '../../state/store';
 import { bookFor } from '../../workers/planRequest';
 import { AppHeader } from '../components/AppShell';
 import { MacroRing } from '../components/MacroRing';
@@ -25,26 +25,15 @@ function RingStatus({ value, target, unit }: { value: number; target: number; un
   return <p className="num mt-2 text-center text-caption font-medium text-text-2">{text}</p>;
 }
 
-export function HomeScreen({ settings, stored, onOpenRecipe, onOpenSettings }: {
-  settings: AppSettings; stored: StoredPlan | undefined | null; onOpenRecipe: (recipeId: string) => void; onOpenSettings: () => void;
+export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRecipe, onOpenSettings }: {
+  settings: AppSettings; stored: StoredPlan | undefined | null; busy: boolean; error?: string; onGenerate: () => void;
+  onOpenRecipe: (recipeId: string, date: string, slot: string) => void; onOpenSettings: () => void;
 }) {
   const { t } = useTranslation();
   const f = useFormat();
   const today = localISO();
-  const [error, setError] = useState<string>();
-  const [busy, setBusy] = useState(false);
-  const started = useRef(false);
   const overrides = usePriceOverrides(settings.storeId) ?? [];
-
-  const generate = () => {
-    setBusy(true); setError(undefined);
-    createPlan(today).catch(e => setError(String(e?.message ?? e))).finally(() => setBusy(false));
-  };
-
-  // First run: no plan yet → compute one.
-  useEffect(() => {
-    if (stored === null && !started.current) { started.current = true; generate(); }
-  }, [stored]); // eslint-disable-line react-hooks/exhaustive-deps
+  const generate = onGenerate;
 
   const plan = stored?.plan;
   const meals = useMemo(() => dayMeals(plan, today, RECIPE_MAP, FOOD_MAP), [plan, today]);
@@ -124,7 +113,7 @@ export function HomeScreen({ settings, stored, onOpenRecipe, onOpenSettings }: {
 
           <section aria-labelledby="next-title">
             <SectionTitle><span id="next-title">{t('home.nextMeal')}</span></SectionTitle>
-            {next ? <MealCard view={next} foods={FOOD_MAP} onOpen={() => next.recipe && onOpenRecipe(next.recipe.id)} />
+            {next ? <MealCard view={next} foods={FOOD_MAP} onOpen={() => next.recipe && onOpenRecipe(next.recipe.id, today, next.meal.slot)} />
               : <Card className="flex items-center gap-3"><Sparkles aria-hidden className="size-6 text-primary" /><p className="text-body">{t('home.allDone')}</p></Card>}
           </section>
 
@@ -142,7 +131,7 @@ export function HomeScreen({ settings, stored, onOpenRecipe, onOpenSettings }: {
               {meals.map(m => (
                 <MealRow key={m.meal.slot} view={m} foods={FOOD_MAP}
                   onToggle={() => void toggleDone(stored.id, today, m.meal.slot)}
-                  onOpen={() => m.recipe && onOpenRecipe(m.recipe.id)} />
+                  onOpen={() => m.recipe && onOpenRecipe(m.recipe.id, today, m.meal.slot)} />
               ))}
             </ul>
           </section>

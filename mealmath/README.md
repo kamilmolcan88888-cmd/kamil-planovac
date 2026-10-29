@@ -3,9 +3,11 @@
 Offline-first PWA na plánovanie jedál podľa makier, rozpočtu a obchodu (Lidl DE, Lidl SK, Kaufland SK).
 Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 
-> Stav: **etapa 4a** – engine (dáta, vzorce, validátor, ceny, plánovač) + dizajnový systém, navigácia a obrazovka Domov. Ostatné obrazovky prídu v ďalších etapách.
+> Stav: **etapa 4b** – engine + dizajnový systém a obrazovky Domov, Týždeň a Recept (s „Ako sme to spočítali“). Ďalšie obrazovky prídu v ďalších etapách.
 
 ![Domov – svetlý, tmavý režim, nemčina](docs/home-preview.png)
+
+![Týždeň a recept](docs/week-recipe-preview.png)
 
 ## Hlavný princíp
 

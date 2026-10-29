@@ -1,26 +1,31 @@
-import { ArrowLeft, CalendarDays, Construction, Settings, ShoppingBasket, Tag } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { CalendarDays, Construction, Settings, ShoppingBasket, Tag } from 'lucide-react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { RECIPE_MAP } from './data/catalog';
-import { loadSettings, useCurrentPlan, useSettings } from './state/store';
+import { localISO } from './state/dates';
+import { createPlan, loadSettings, useCurrentPlan, useSettings } from './state/store';
 import { AppHeader, AppShell, type Tab } from './ui/components/AppShell';
-import { EmptyState, IconButton, LoadingState } from './ui/components/primitives';
-import { useFormat } from './ui/lib/format';
+import { EmptyState, LoadingState } from './ui/components/primitives';
 import { HomeScreen } from './ui/screens/HomeScreen';
+import { RecipeScreen } from './ui/screens/RecipeScreen';
+import { WeekScreen } from './ui/screens/WeekScreen';
 
-type Route = { tab: Tab; recipeId?: string };
+type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string } };
+const TABS: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
 
 /** Hash routes keep working on GitHub Pages / Cloudflare Pages without server rewrites. */
 function parseHash(): Route {
-  const [, a, b] = (location.hash || '#/home').split('/');
-  if (a === 'recipe' && b) return { tab: 'home', recipeId: decodeURIComponent(b) };
-  const tabs: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
-  return { tab: tabs.includes(a as Tab) ? (a as Tab) : 'home' };
+  const [, a, b, c, d] = (location.hash || '#/home').split('/').map(decodeURIComponent);
+  if (a === 'recipe' && b) return { tab: 'home', recipe: { id: b, date: c, slot: d } };
+  return { tab: TABS.includes(a as Tab) ? (a as Tab) : 'home' };
 }
 
 function useHashRoute(): [Route, (hash: string) => void] {
   const [route, setRoute] = useState(parseHash);
-  useEffect(() => { const on = () => setRoute(parseHash()); window.addEventListener('hashchange', on); return () => window.removeEventListener('hashchange', on); }, []);
+  useEffect(() => {
+    const on = () => { setRoute(parseHash()); window.scrollTo(0, 0); };
+    window.addEventListener('hashchange', on);
+    return () => window.removeEventListener('hashchange', on);
+  }, []);
   return [route, (h: string) => { location.hash = h; }];
 }
 
@@ -51,37 +56,40 @@ function ComingSoon({ tab }: { tab: Tab }) {
   );
 }
 
-function RecipePlaceholder({ id, onBack }: { id: string; onBack: () => void }) {
-  const { t } = useTranslation();
-  const f = useFormat();
-  const r = RECIPE_MAP.get(id);
-  return (
-    <>
-      <div className="mb-2 pt-2"><IconButton icon={ArrowLeft} label={t('common.back')} onClick={onBack} /></div>
-      <AppHeader title={r ? f.name(r.name) : t('recipe.title')} />
-      <EmptyState icon={Construction} title={t('common.comingSoon')} text={t('common.comingSoonText')} />
-    </>
-  );
-}
-
 export function App() {
   useEffect(() => { void loadSettings(); }, []);
   const settings = useSettings();
   useThemeAndLang(settings?.theme, settings?.lang);
   const [route, go] = useHashRoute();
-  // undefined = still loading, null = no plan yet
-  const stored = useCurrentPlan(settings?.currentPlanId);
+  // A recipe keeps the tab it was opened from highlighted.
+  const lastTab = useRef<Tab>('home');
+  if (!route.recipe) lastTab.current = route.tab;
+  const activeTab = route.recipe ? lastTab.current : route.tab;
+  const stored = useCurrentPlan(settings?.currentPlanId); // undefined = loading, null = none
   const { t } = useTranslation();
 
+  // One shared "generate a week" state for every screen.
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string>();
+  const started = useRef(false);
+  const generate = useCallback((seed?: number) => {
+    setBusy(true); setError(undefined);
+    createPlan(localISO(), seed ?? (stored ? stored.seed + 1 : 1))
+      .catch(e => setError(String(e?.message ?? e)))
+      .finally(() => setBusy(false));
+  }, [stored]);
+  useEffect(() => { if (stored === null && !started.current) { started.current = true; generate(1); } }, [stored, generate]);
+
   if (!settings) return <div className="p-6"><LoadingState title={t('common.loading')} /></div>;
-  const plan = stored;
+  const openMeal = (id: string, date: string, slot: string) => go(`#/recipe/${encodeURIComponent(id)}/${date}/${slot}`);
+  const back = () => (history.length > 1 ? history.back() : go('#/home'));
 
   return (
-    <AppShell tab={route.tab} onTab={tab => go(`#/${tab}`)}>
-      {route.recipeId ? <RecipePlaceholder id={route.recipeId} onBack={() => history.back()} />
-        : route.tab === 'home'
-          ? <HomeScreen settings={settings} stored={plan} onOpenRecipe={id => go(`#/recipe/${encodeURIComponent(id)}`)} onOpenSettings={() => go('#/settings')} />
-          : <ComingSoon tab={route.tab} />}
+    <AppShell tab={activeTab} onTab={tab => go(`#/${tab}`)}>
+      {route.recipe ? <RecipeScreen recipeId={route.recipe.id} date={route.recipe.date} slot={route.recipe.slot} settings={settings} stored={stored} onBack={back} />
+        : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
+          : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()} />
+            : <ComingSoon tab={route.tab} />}
     </AppShell>
   );
 }
