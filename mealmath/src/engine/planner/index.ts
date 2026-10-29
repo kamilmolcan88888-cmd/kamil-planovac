@@ -147,7 +147,7 @@ function* moves(req: PlanRequest, sessions: CookSession[], s: CookSession, cands
   void candById;
 }
 
-function roundAll(sessions: CookSession[], lp: LpResult, candById: ReadonlyMap<string, Candidate>, step: number, only: ((s: CookSession) => boolean) | undefined, maxScale: number) {
+export function roundAll(sessions: CookSession[], lp: LpResult, candById: ReadonlyMap<string, Candidate>, step: number, only: ((s: CookSession) => boolean) | undefined, maxScale: number) {
   const out = new Map<string, Record<string, number>>();
   for (const s of sessions) {
     const raw = lp.grams.get(s.id) ?? {};

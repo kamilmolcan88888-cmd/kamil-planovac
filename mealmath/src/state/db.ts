@@ -25,6 +25,8 @@ export interface AppSettings {
   repetition: RepetitionLevel;
   slots: MealSlot[];
   currentPlanId?: string;
+  /** Length of a generated plan in days (3–7). */
+  planDays?: number;
   /** Count pantry staples (salt, oil, spices…) in the checkout total. */
   includePantry?: boolean;
 }

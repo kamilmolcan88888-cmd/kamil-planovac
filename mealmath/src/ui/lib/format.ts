@@ -18,6 +18,8 @@ export function useFormat() {
     duration: (min: number) => (min < 60 ? t('unit.minutes', { count: min }) : t('unit.hm', { h: Math.floor(min / 60), m: min % 60 })),
     eur: (n: number) => eur.format(n),
     longDate: (iso: string) => { const s = fromISO(iso).toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long' }); return s.charAt(0).toLocaleUpperCase(locale) + s.slice(1); },
+    /** Same date for use inside a sentence (no forced capital; German weekdays stay capitalised by the locale). */
+    inlineDate: (iso: string) => fromISO(iso).toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long' }),
     weekdayShort: (iso: string) => fromISO(iso).toLocaleDateString(locale, { weekday: 'short' }).replace('.', ''),
     dayOfMonth: (iso: string) => String(fromISO(iso).getDate()),
     /** 450 → "450 g", 1500 → "1,5 kg"; liquids in ml / l. */

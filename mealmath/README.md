@@ -3,13 +3,15 @@
 Offline-first PWA na plánovanie jedál podľa makier, rozpočtu a obchodu (Lidl DE, Lidl SK, Kaufland SK).
 Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 
-> Stav: **etapa 5** – engine + obrazovky Domov, Týždeň, Recept (s „Ako sme to spočítali“), Nákup a Ceny. Zmeny týždňa, onboarding, nastavenia a PWA prídu v ďalších etapách.
+> Stav: **etapa 6** – engine + obrazovky Domov, Týždeň (so zmenami týždňa), Recept, Nákup a Ceny. Onboarding, nastavenia a PWA prídu v ďalších etapách.
 
 ![Domov – svetlý, tmavý režim, nemčina](docs/home-preview.png)
 
 ![Týždeň a recept](docs/week-recipe-preview.png)
 
 ![Nákup a ceny](docs/shopping-prices-preview.png)
+
+![Zmeny týždňa](docs/changes-preview.png)
 
 ## Hlavný princíp
 
@@ -75,6 +77,15 @@ Deterministický, bez jazykového modelu (`src/engine/planner/`):
 4. **Lokálne prehľadávanie** vymieňa recepty v dňoch, ktoré nevyšli (časový limit 1,5 s).
 5. Gramy sa zaokrúhlia a **nezávislý validátor** plán prepočíta z `foods.json`. Ak deň nesedí, plán
    vráti upozornenie „X dní nesplnených o Y g“, nikdy tichý úspech.
+
+### Zmeny týždňa (`src/engine/changes.ts`)
+
+Každá zmena najprv vráti **náhľad** (rozdiel kcal, bielkovín a ceny po dňoch, zmenené jedlá) a plán sa uloží až po potvrdení.
+
+- **Vymeniť jedlo**: 6 návrhov, každý s vlastným náhľadom. Ostatné nezjedené jedlá dňa ostanú a len sa preškálujú. Ak to nestačí, smú sa zmeniť aj porcie zdieľaného hrnca (a skontrolujú sa všetky dni, ktoré kŕmi).
+- **Jem vonku**: tvoj odhad kcal/bielkovín sa započíta a zvyšok dňa sa prepočíta. Ak deň nevyjde, náhľad to povie.
+- **Začať zvyšok týždňa odznova / Vyradiť potravinu / výmena po prepnutí obchodu**: minulé dni a zjedené jedlá ostanú zamknuté, plánovač doplní iba otvorené pozície.
+- **Začiatok a dĺžka plánu** (3/5/7 dní) – nový plán okamžite.
 
 Rozpočet je mäkké obmedzenie: plánovač ho nikdy nevymení za nesplnené bielkoviny, prekročenie ohlási.
 Konštanty sú v `src/engine/config.ts` (`CONFIG_PLANNER`).

@@ -2,7 +2,7 @@ import { CalendarDays, Construction, Settings, ShoppingBasket, Tag } from 'lucid
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { localISO } from './state/dates';
-import { createPlan, loadSettings, useCurrentPlan, useSettings } from './state/store';
+import { createPlan, loadSettings, updateSettings, useCurrentPlan, useSettings } from './state/store';
 import { AppHeader, AppShell, type Tab } from './ui/components/AppShell';
 import { EmptyState, LoadingState } from './ui/components/primitives';
 import { HomeScreen } from './ui/screens/HomeScreen';
@@ -74,9 +74,9 @@ export function App() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string>();
   const started = useRef(false);
-  const generate = useCallback((seed?: number) => {
+  const generate = useCallback((seed?: number, startDate?: string) => {
     setBusy(true); setError(undefined);
-    createPlan(localISO(), seed ?? (stored ? stored.seed + 1 : 1))
+    createPlan(startDate ?? localISO(), seed ?? (stored ? stored.seed + 1 : 1))
       .catch(e => setError(String(e?.message ?? e)))
       .finally(() => setBusy(false));
   }, [stored]);
@@ -90,7 +90,8 @@ export function App() {
     <AppShell tab={activeTab} onTab={tab => go(`#/${tab}`)}>
       {route.recipe ? <RecipeScreen recipeId={route.recipe.id} date={route.recipe.date} slot={route.recipe.slot} settings={settings} stored={stored} onBack={back} />
         : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
-          : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()} />
+          : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()}
+            onNewPlan={(start, days) => void updateSettings({ planDays: days }).then(() => generate(undefined, start))} />
             : route.tab === 'shopping' ? <ShoppingScreen settings={settings} stored={stored} busy={busy} onNewWeek={() => generate()} />
               : route.tab === 'prices' ? <PricesScreen settings={settings} />
                 : <ComingSoon tab={route.tab} />}

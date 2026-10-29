@@ -1,6 +1,8 @@
 // App state hooks backed by IndexedDB (Dexie). Everything stays on the device.
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS, type AppSettings, type StoredPlan } from './db';
+import { sessionsFromPlan, type ChangePreview } from '../engine/changes';
+import type { PlanWarning } from '../engine/planner/types';
 import { planInWorker } from './planService';
 import { localISO } from './dates';
 import type { MealSlot, PriceOverride } from '../engine/types';
@@ -30,7 +32,7 @@ export async function createPlan(startDate = localISO(), seed = 1): Promise<Stor
   const r = await planInWorker({ settings, overrides, startDate, seed });
   const stored: StoredPlan = {
     id: r.plan.id + '-' + Date.now(), startDate, createdAt: new Date().toISOString(), seed,
-    storeId: settings.storeId, plan: r.plan, sessions: r.sessions, warnings: r.warnings, foodCost: r.foodCost,
+    storeId: settings.storeId, plan: r.plan, sessions: sessionsFromPlan(r.plan), warnings: r.warnings, foodCost: r.foodCost,
   };
   await db.transaction('rw', db.plans, db.settings, async () => {
     await db.plans.put(stored);
@@ -69,3 +71,22 @@ export async function toggleChecked(planId: string, foodId: string) {
 export const saveOverride = (o: PriceOverride) => db.priceOverrides.put(o);
 export const resetOverride = (storeId: string, foodId: string) => db.priceOverrides.delete([storeId, foodId]);
 export const saveOverrides = (list: PriceOverride[]) => db.priceOverrides.bulkPut(list);
+
+// ---- week changes ----
+
+/** Saves a confirmed change preview as the current plan. */
+export async function applyPlanChange(planId: string, preview: ChangePreview, settingsPatch?: Partial<AppSettings>) {
+  const failed = preview.report.days.filter(d => d.status !== 'verified');
+  const warnings: PlanWarning[] = failed.length ? [{
+    code: 'days_missed', days: failed.length, dates: failed.map(d => d.date),
+    maxProteinShortfall: Math.ceil(preview.report.maxProteinShortfall), maxKcalDeviation: Math.ceil(preview.report.maxKcalDeviation),
+  }] : [];
+  await db.transaction('rw', db.plans, db.settings, async () => {
+    const p = await db.plans.get(planId);
+    if (!p) return;
+    const settings = await db.settings.get('app');
+    await db.plans.put({ ...p, plan: preview.plan, sessions: sessionsFromPlan(preview.plan), storeId: settings?.storeId ?? p.storeId,
+      warnings: [...p.warnings.filter(w => w.code !== 'days_missed'), ...warnings], foodCost: preview.costAfter });
+    if (settingsPatch) await db.settings.update('app', settingsPatch);
+  });
+}

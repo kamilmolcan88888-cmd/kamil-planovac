@@ -1,4 +1,4 @@
-import { CalendarPlus, Check, ChefHat, Layers, Minus, Repeat, TriangleAlert, Wallet, X } from 'lucide-react';
+import { CalendarPlus, Check, ChefHat, Layers, Minus, Repeat, Repeat2, SlidersHorizontal, TriangleAlert, Wallet, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FOOD_MAP, RECIPE_MAP } from '../../data/catalog';
@@ -9,9 +9,12 @@ import { usePriceOverrides } from '../../state/store';
 import { bookFor } from '../../workers/planRequest';
 import { AppHeader } from '../components/AppShell';
 import { bandState, MacroProgress, SegmentedControl } from '../components/controls';
-import { Banner, Card, Chip, EmptyState, LoadingState, SecondaryButton } from '../components/primitives';
+import { Banner, Card, Chip, EmptyState, IconButton, LoadingState, SecondaryButton } from '../components/primitives';
 import { RecipeVisual } from '../components/RecipeVisual';
 import { cn } from '../lib/cn';
+import { MealActionsSheet, WeekChangesSheet } from '../components/changes';
+import { storeConflicts } from '../../engine/shopping';
+import type { MealSlot } from '../../engine/types';
 import { useFormat } from '../lib/format';
 import type { DayStatus } from '../viewmodel/home';
 import { weekView, type WeekDayView } from '../viewmodel/week';
@@ -28,10 +31,13 @@ const STATUS: Record<DayStatus, { Icon: typeof Check; cls: string }> = {
 /** Distinct, token-based colours for up to 6 pots so repeated meals are recognisable. */
 const POT = ['var(--c-primary)', 'var(--c-protein)', 'var(--c-warning)', 'var(--c-error)', 'var(--c-text-2)', 'var(--c-kcal)'];
 
-export function WeekScreen({ settings, stored, onOpenMeal, onNewWeek, busy }: {
+export function WeekScreen({ settings, stored, onOpenMeal, onNewWeek, onNewPlan, busy }: {
   settings: AppSettings; stored: StoredPlan | null | undefined; busy: boolean;
   onOpenMeal: (recipeId: string, date: string, slot: string) => void; onNewWeek: () => void;
+  onNewPlan: (startDate: string, days: number) => void;
 }) {
+  const [changesOpen, setChangesOpen] = useState(false);
+  const [mealTarget, setMealTarget] = useState<{ date: string; slot: MealSlot }>();
   const { t } = useTranslation();
   const f = useFormat();
   const [metric, setMetric] = useState<Metric>('protein');
@@ -59,13 +65,21 @@ export function WeekScreen({ settings, stored, onOpenMeal, onNewWeek, busy }: {
   }
 
   const targets = stored.plan.targets;
+  const conflicts = storeConflicts(stored.plan, bookFor(settings.storeId, overrides)).filter(c => c.date >= today).length;
   const first = stored.plan.days[0]!.date, last = stored.plan.days[stored.plan.days.length - 1]!.date;
   const budget = settings.budget;
   const perDayBudget = budget ? budget / 7 : undefined;
 
   return (
     <div className="flex flex-col gap-5">
-      <AppHeader title={t('week.title')} subtitle={`${f.longDate(first)} – ${f.longDate(last)}`} />
+      <AppHeader title={t('week.title')} subtitle={`${f.longDate(first)} – ${f.longDate(last)}`}
+        actions={<IconButton icon={SlidersHorizontal} label={t('changes.open')} onClick={() => setChangesOpen(true)} />} />
+      {conflicts > 0 && (
+        <Banner tone="warning">
+          {t('store.conflicts', { count: conflicts })}{' '}
+          <button type="button" onClick={() => setChangesOpen(true)} className="font-semibold text-primary underline underline-offset-2">{t('changes.open')}</button>
+        </Banner>
+      )}
 
       <Card className="grid grid-cols-2 gap-4">
         <div className="col-span-2 flex items-start justify-between gap-3">
@@ -109,19 +123,22 @@ export function WeekScreen({ settings, stored, onOpenMeal, onNewWeek, busy }: {
 
       <ol className="flex flex-col gap-3">
         {view.days.map(d => (
-          <DayCard key={d.date} day={d} metric={metric} today={today} targets={targets} perDayBudget={perDayBudget} onOpenMeal={onOpenMeal} />
+          <DayCard key={d.date} day={d} metric={metric} today={today} targets={targets} perDayBudget={perDayBudget} onOpenMeal={onOpenMeal}
+            onMealActions={(date, slot) => setMealTarget({ date, slot })} />
         ))}
       </ol>
 
       <p className="text-caption text-text-2">{t('week.perDayCostHint')}</p>
       <SecondaryButton icon={CalendarPlus} onClick={onNewWeek}>{t('week.newWeek')}</SecondaryButton>
+      <WeekChangesSheet open={changesOpen} onOpenChange={setChangesOpen} settings={settings} stored={stored} onNewPlan={onNewPlan} />
+      <MealActionsSheet target={mealTarget} settings={settings} stored={stored} onClose={() => setMealTarget(undefined)} />
     </div>
   );
 }
 
-function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal }: {
+function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal, onMealActions }: {
   day: WeekDayView; metric: Metric; today: string; targets: StoredPlan['plan']['targets']; perDayBudget?: number;
-  onOpenMeal: (recipeId: string, date: string, slot: string) => void;
+  onOpenMeal: (recipeId: string, date: string, slot: string) => void; onMealActions: (date: string, slot: MealSlot) => void;
 }) {
   const { t } = useTranslation();
   const f = useFormat();
@@ -149,9 +166,9 @@ function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal }: {
         <MacroProgress tone={metric} value={bar.value} low={bar.low} high={bar.high} valueText={bar.valueText} stateText={stateText} bandText={bar.band} />
         <ul className="mt-3 flex flex-col divide-y divide-border">
           {day.meals.map(m => (
-            <li key={m.meal.slot}>
+            <li key={m.meal.slot} className="flex items-center gap-1">
               <button type="button" disabled={!m.recipe} onClick={() => m.recipe && onOpenMeal(m.recipe.id, day.date, m.meal.slot)}
-                className="pressable flex min-h-14 w-full items-center gap-3 py-2 text-left">
+                className="pressable flex min-h-14 min-w-0 flex-1 items-center gap-3 py-2 text-left">
                 <RecipeVisual recipe={m.recipe} slot={m.meal.slot} foods={FOOD_MAP} className="size-11 shrink-0 rounded-xl" iconClass="size-5" />
                 <span className="min-w-0 flex-1">
                   <span className="flex items-center gap-1.5 text-caption font-semibold uppercase tracking-wide text-text-2">
@@ -170,6 +187,13 @@ function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal }: {
                   {f.int(m.macros.kcal)} {t('unit.kcal')}<br />{f.int(m.macros.protein)} {t('unit.g')}
                 </span>
               </button>
+              {!m.meal.done && day.date >= today && (
+                <button type="button" onClick={() => onMealActions(day.date, m.meal.slot)}
+                  aria-label={`${t('changes.mealActions')}: ${t(`slot.${m.meal.slot}`)}, ${f.longDate(day.date)}`}
+                  className="pressable -mr-2 flex size-11 shrink-0 items-center justify-center rounded-full text-primary">
+                  <Repeat2 aria-hidden className="size-5" />
+                </button>
+              )}
             </li>
           ))}
         </ul>
