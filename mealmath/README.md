@@ -28,7 +28,7 @@ npm run typecheck
 | `scripts/build-foods.ts` | Stiahne USDA SR Legacy + Foundation CSV a vytvorí `data/foods.json`. |
 | `data/foods.json` | Vygenerované, nikdy needitovať ručne. |
 | `data/foods-report.md` | Report párovania (presná / približná zhoda, fdcId, hodnoty). |
-| `data/recipes/*.json` | 115 ručne písaných receptov (SK + DE), gramy s rozsahom min–max. |
+| `data/recipes/*.json` | 117 ručne písaných receptov (SK + DE), gramy s rozsahom min–max. |
 
 ### Aktualizácia `foods.json`
 
