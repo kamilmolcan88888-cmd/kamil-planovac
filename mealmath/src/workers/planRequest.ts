@@ -5,7 +5,8 @@ import { eatOut, excludeFood, fixStoreConflicts, replanRest, swapMeal, swapOptio
 import { generatePlan, type PlanRequest, type PlanResult } from '../engine/planner';
 import { PriceBook } from '../engine/pricing';
 import { bands, computeTargets } from '../engine/targets';
-import type { MealSlot, Plan, PriceOverride, Targets } from '../engine/types';
+import type { MealSlot, Plan, PlannedMeal, PriceOverride, Targets } from '../engine/types';
+import { addDays } from '../engine/planner/sessions';
 import type { AppSettings } from '../state/db';
 
 export function targetsFor(s: Pick<AppSettings, 'profile' | 'targetsOverride'>): Targets {
@@ -17,10 +18,26 @@ export function bookFor(storeId: string, overrides: PriceOverride[]): PriceBook 
   return new PriceBook(table, overrides);
 }
 
+/** Meals the user doesn't cook become fixed "eat out" estimates on every day of the plan. */
+export function externalLocked(s: AppSettings, startDate: string, days: number): Map<string, PlannedMeal> {
+  const out = new Map<string, PlannedMeal>();
+  for (const [slot, est] of Object.entries(s.externalMeals ?? {})) {
+    if (!est || s.slots.includes(slot as MealSlot)) continue;
+    for (let i = 0; i < days; i++) {
+      const date = addDays(startDate, i);
+      out.set(`${date}|${slot}`, { slot: slot as MealSlot, recipeId: '', myGrams: {}, eatOut: { kcal: est.kcal, protein: est.protein, note: 'external' } });
+    }
+  }
+  return out;
+}
+
 export function requestFor(s: AppSettings, overrides: PriceOverride[], startDate: string, seed = 1, targets?: Targets): PlanRequest {
+  const days = s.planDays ?? 7;
+  const locked = externalLocked(s, startDate, days);
   return {
+    ...(locked.size ? { locked } : {}),
     foods: FOOD_MAP, recipes: RECIPES, targets: targets ?? targetsFor(s), book: bookFor(s.storeId, overrides),
-    startDate, days: s.planDays ?? 7, slots: s.slots, allergens: s.allergens, diets: s.diets, excludedFoods: s.excludedFoods,
+    startDate, days, slots: s.slots, allergens: s.allergens, diets: s.diets, excludedFoods: s.excludedFoods,
     favoriteFoods: s.favoriteFoods, equipment: s.equipment, household: s.household, budget: s.budget,
     repetition: s.repetition, seed,
   };

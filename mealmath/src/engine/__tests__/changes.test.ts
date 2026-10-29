@@ -102,3 +102,14 @@ describe('re-plan the rest of the week', () => {
     for (const d of de.plan.days) for (const m of d.meals) if (!bad.has(`${d.date}|${m.slot}`)) expect(meal(p.plan, d.date, m.slot)).toEqual(m);
   });
 });
+
+describe('meals I do not cook', () => {
+  it('a fixed lunch estimate is counted every day and kept when re-planning', () => {
+    const locked = new Map(plan.days.map(d => [`${d.date}|lunch`, { slot: 'lunch' as const, recipeId: '', myGrams: {}, eatOut: { kcal: 700, protein: 40, note: 'external' } }]));
+    const r = generatePlan({ ...req(), slots: ['breakfast', 'dinner'], locked });
+    expect(r.report.ok).toBe(true);
+    for (const d of r.plan.days) expect(d.meals.find(m => m.slot === 'lunch')!.eatOut!.kcal).toBe(700);
+    const p = replanRest({ ...req(), slots: ['breakfast', 'dinner'] }, r.plan, '2026-11-04', undefined, 3);
+    for (const d of p.plan.days) expect(d.meals.find(m => m.slot === 'lunch')!.eatOut!.note).toBe('external');
+  });
+});

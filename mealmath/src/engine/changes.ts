@@ -190,7 +190,7 @@ export function swapOptions(req: PlanRequest, plan: Plan, date: string, slot: Me
 export function replanRest(req: PlanRequest, plan: Plan, today: string, keep: (date: string, m: PlannedMeal) => boolean = () => false, seed = 1): ChangePreview {
   const locked = new Map<string, PlannedMeal>();
   for (const d of plan.days) for (const m of d.meals)
-    if (d.date < today || m.done || keep(d.date, m)) locked.set(posKey(d.date, m.slot), m);
+    if (d.date < today || m.done || m.eatOut || keep(d.date, m)) locked.set(posKey(d.date, m.slot), m);
   const res = generatePlan({ ...req, startDate: plan.days[0]!.date, days: plan.days.length, locked, seed });
   // New pots get ids that cannot collide with the kept ones.
   const rev = `r${seed}-${today}`;

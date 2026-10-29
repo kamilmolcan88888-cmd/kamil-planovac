@@ -14,6 +14,8 @@ export interface AppSettings {
   profile: BodyProfile;
   /** True until the user finishes onboarding – the UI labels the profile as a sample. */
   profileIsDemo: boolean;
+  /** The user skipped onboarding and keeps the sample profile. */
+  onboardingSkipped?: boolean;
   targetsOverride?: { kcal: number; protein: number };
   diets: Diet[];
   allergens: Allergen[];
@@ -25,6 +27,10 @@ export interface AppSettings {
   repetition: RepetitionLevel;
   slots: MealSlot[];
   currentPlanId?: string;
+  /** Meals I don't cook (canteen, work lunch…): my usual estimate is counted every day. */
+  externalMeals?: Partial<Record<MealSlot, { kcal: number; protein: number }>>;
+  /** Set when settings that shape the plan changed after it was generated. */
+  planStale?: boolean;
   /** Length of a generated plan in days (3–7). */
   planDays?: number;
   /** Count pantry staples (salt, oil, spices…) in the checkout total. */

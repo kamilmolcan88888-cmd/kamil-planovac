@@ -25,7 +25,7 @@ function MacroChips({ view }: { view: MealView }) {
 export function MealCard({ view, foods, onOpen }: { view: MealView; foods: FoodMap; onOpen: () => void }) {
   const { t } = useTranslation();
   const f = useFormat();
-  const title = view.recipe ? f.name(view.recipe.name) : t('home.eatOut');
+  const title = view.recipe ? f.name(view.recipe.name) : t(view.meal.eatOut?.note === 'external' ? 'home.external' : 'home.eatOut');
   return (
     <article className="overflow-hidden rounded-card bg-surface shadow-card" aria-labelledby="next-meal-title">
       <RecipeVisual recipe={view.recipe} slot={view.meal.slot} foods={foods} className="h-40" iconClass="size-16" />
@@ -45,7 +45,7 @@ export function MealRow({ view, foods, onToggle, onOpen }: { view: MealView; foo
   const f = useFormat();
   const reduce = useReducedMotion();
   const done = !!view.meal.done;
-  const title = view.recipe ? f.name(view.recipe.name) : t('home.eatOut');
+  const title = view.recipe ? f.name(view.recipe.name) : t(view.meal.eatOut?.note === 'external' ? 'home.external' : 'home.eatOut');
   const slot = t(`slot.${view.meal.slot}`);
   return (
     <li className={cn('flex items-center gap-3 rounded-card bg-surface p-3 shadow-card transition-opacity', done && 'opacity-75')}>

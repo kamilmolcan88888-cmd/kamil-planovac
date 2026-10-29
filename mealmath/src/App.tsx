@@ -10,14 +10,18 @@ import { RecipeScreen } from './ui/screens/RecipeScreen';
 import { WeekScreen } from './ui/screens/WeekScreen';
 import { ShoppingScreen } from './ui/screens/ShoppingScreen';
 import { PricesScreen } from './ui/screens/PricesScreen';
+import { SettingsScreen } from './ui/screens/SettingsScreen';
+import { TargetsScreen } from './ui/screens/TargetsScreen';
+import { Onboarding } from './ui/onboarding/Onboarding';
 
-type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string } };
+type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string }; targets?: boolean };
 const TABS: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
 
 /** Hash routes keep working on GitHub Pages / Cloudflare Pages without server rewrites. */
 function parseHash(): Route {
   const [, a, b, c, d] = (location.hash || '#/home').split('/').map(decodeURIComponent);
   if (a === 'recipe' && b) return { tab: 'home', recipe: { id: b, date: c, slot: d } };
+  if (a === 'targets') return { tab: 'settings', targets: true };
   return { tab: TABS.includes(a as Tab) ? (a as Tab) : 'home' };
 }
 
@@ -65,8 +69,10 @@ export function App() {
   const [route, go] = useHashRoute();
   // A recipe keeps the tab it was opened from highlighted.
   const lastTab = useRef<Tab>('home');
-  if (!route.recipe) lastTab.current = route.tab;
+  if (!route.recipe && !route.targets) lastTab.current = route.tab;
   const activeTab = route.recipe ? lastTab.current : route.tab;
+  const [redo, setRedo] = useState(false);
+  const showOnboarding = !!settings && ((settings.profileIsDemo && !settings.onboardingSkipped) || redo);
   const stored = useCurrentPlan(settings?.currentPlanId); // undefined = loading, null = none
   const { t } = useTranslation();
 
@@ -80,9 +86,12 @@ export function App() {
       .catch(e => setError(String(e?.message ?? e)))
       .finally(() => setBusy(false));
   }, [stored]);
-  useEffect(() => { if (stored === null && !started.current) { started.current = true; generate(1); } }, [stored, generate]);
+  useEffect(() => {
+    if (stored === null && !started.current && settings && !showOnboarding) { started.current = true; generate(1); }
+  }, [stored, generate, settings, showOnboarding]);
 
   if (!settings) return <div className="p-6"><LoadingState title={t('common.loading')} /></div>;
+  if (showOnboarding) return <Onboarding initial={settings} onDone={() => { setRedo(false); go('#/home'); }} />;
   const openMeal = (id: string, date: string, slot: string) => go(`#/recipe/${encodeURIComponent(id)}/${date}/${slot}`);
   const back = () => (history.length > 1 ? history.back() : go('#/home'));
 
@@ -92,6 +101,9 @@ export function App() {
         : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
           : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()}
             onNewPlan={(start, days) => void updateSettings({ planDays: days }).then(() => generate(undefined, start))} />
+            : route.targets ? <TargetsScreen settings={settings} onBack={back} />
+            : route.tab === 'settings' ? <SettingsScreen settings={settings} onOpenTargets={() => go('#/targets')} onOpenPrices={() => go('#/prices')}
+                onRegenerate={() => { generate(); go('#/home'); }} onRedoOnboarding={() => setRedo(true)} />
             : route.tab === 'shopping' ? <ShoppingScreen settings={settings} stored={stored} busy={busy} onNewWeek={() => generate()} />
               : route.tab === 'prices' ? <PricesScreen settings={settings} />
                 : <ComingSoon tab={route.tab} />}

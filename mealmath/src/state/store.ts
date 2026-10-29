@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS, type AppSettings, type StoredPlan } from './db';
 import { sessionsFromPlan, type ChangePreview } from '../engine/changes';
 import type { PlanWarning } from '../engine/planner/types';
+import type { PlanResult } from '../engine/planner';
 import { planInWorker } from './planService';
 import { localISO } from './dates';
 import type { MealSlot, PriceOverride } from '../engine/types';
@@ -25,20 +26,25 @@ export const useCurrentPlan = (id: string | undefined): StoredPlan | null | unde
 export const usePriceOverrides = (storeId: string | undefined) =>
   useLiveQuery(() => (storeId ? db.priceOverrides.where('storeId').equals(storeId).toArray() : []), [storeId]);
 
-/** Generates a new week starting `startDate` with the current settings and makes it current. */
-export async function createPlan(startDate = localISO(), seed = 1): Promise<StoredPlan> {
-  const settings = await loadSettings();
-  const overrides = await db.priceOverrides.where('storeId').equals(settings.storeId).toArray();
-  const r = await planInWorker({ settings, overrides, startDate, seed });
+/** Stores a planner result as the current plan. */
+export async function savePlanResult(r: PlanResult, settings: AppSettings, startDate: string, seed: number, settingsPatch?: Partial<AppSettings>): Promise<StoredPlan> {
   const stored: StoredPlan = {
     id: r.plan.id + '-' + Date.now(), startDate, createdAt: new Date().toISOString(), seed,
     storeId: settings.storeId, plan: r.plan, sessions: sessionsFromPlan(r.plan), warnings: r.warnings, foodCost: r.foodCost,
   };
   await db.transaction('rw', db.plans, db.settings, async () => {
     await db.plans.put(stored);
-    await db.settings.update('app', { currentPlanId: stored.id });
+    await db.settings.update('app', { ...settingsPatch, currentPlanId: stored.id, planStale: false });
   });
   return stored;
+}
+
+/** Generates a new week starting `startDate` with the current settings and makes it current. */
+export async function createPlan(startDate = localISO(), seed = 1): Promise<StoredPlan> {
+  const settings = await loadSettings();
+  const overrides = await db.priceOverrides.where('storeId').equals(settings.storeId).toArray();
+  const r = await planInWorker({ settings, overrides, startDate, seed });
+  return savePlanResult(r, settings, startDate, seed);
 }
 
 /** Ticks a meal as eaten (or back). Only the `done` flag changes – grams never do. */

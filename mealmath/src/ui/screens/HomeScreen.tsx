@@ -68,8 +68,14 @@ export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRe
     <div className="flex flex-col gap-6">
       <div>{header}</div>
 
-      {(settings.profileIsDemo || w.length > 0 || conflicts > 0) && (
+      {(settings.profileIsDemo || w.length > 0 || conflicts > 0 || settings.planStale) && (
         <div className="-mt-3 flex flex-col gap-2.5">
+          {settings.planStale && (
+            <Banner tone="warning">
+              {t('settings.stale')}{' '}
+              <button type="button" onClick={generate} className="font-semibold text-primary underline underline-offset-2">{t('settings.regenerate')}</button>
+            </Banner>
+          )}
           {settings.profileIsDemo && (
             <Banner tone="info" icon={UserRound}><strong className="font-semibold">{t('demo.title')}.</strong> {t('demo.text')}</Banner>
           )}

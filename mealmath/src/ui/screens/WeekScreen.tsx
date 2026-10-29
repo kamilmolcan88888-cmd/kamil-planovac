@@ -181,7 +181,7 @@ function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal, onMeal
                       </span>
                     )}
                   </span>
-                  <span className="block truncate text-support font-semibold">{m.recipe ? f.name(m.recipe.name) : t('home.eatOut')}</span>
+                  <span className="block truncate text-support font-semibold">{m.recipe ? f.name(m.recipe.name) : t(m.meal.eatOut?.note === 'external' ? 'home.external' : 'home.eatOut')}</span>
                 </span>
                 <span className="num shrink-0 text-right text-caption text-text-2">
                   {f.int(m.macros.kcal)} {t('unit.kcal')}<br />{f.int(m.macros.protein)} {t('unit.g')}

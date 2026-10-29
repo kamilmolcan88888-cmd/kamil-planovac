@@ -3,7 +3,7 @@
 Offline-first PWA na plánovanie jedál podľa makier, rozpočtu a obchodu (Lidl DE, Lidl SK, Kaufland SK).
 Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 
-> Stav: **etapa 6** – engine + obrazovky Domov, Týždeň (so zmenami týždňa), Recept, Nákup a Ceny. Onboarding, nastavenia a PWA prídu v ďalších etapách.
+> Stav: **etapa 6b** – kompletné UI: onboarding (14 krokov), Domov, Týždeň (so zmenami), Recept, Nákup, Ceny, Nastavenia. PWA a offline (etapa 7) ešte chýba.
 
 ![Domov – svetlý, tmavý režim, nemčina](docs/home-preview.png)
 
@@ -12,6 +12,10 @@ Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 ![Nákup a ceny](docs/shopping-prices-preview.png)
 
 ![Zmeny týždňa](docs/changes-preview.png)
+
+![Onboarding](docs/onboarding-preview.png)
+
+![Ciele a nastavenia](docs/settings-preview.png)
 
 ## Hlavný princíp
 
@@ -89,6 +93,14 @@ Každá zmena najprv vráti **náhľad** (rozdiel kcal, bielkovín a ceny po dň
 
 Rozpočet je mäkké obmedzenie: plánovač ho nikdy nevymení za nesplnené bielkoviny, prekročenie ohlási.
 Konštanty sú v `src/engine/config.ts` (`CONFIG_PLANNER`).
+
+## Onboarding a nastavenia
+
+14 krokov: cieľ, telo (cm/kg aj ft/lb), aktivita, obchod, rozpočet, diéta, 12 alergénov, obľúbené/nechcené suroviny,
+vybavenie, domácnosť, ktoré jedlá si varíš (jedlá mimo domu sa rátajú ako tvoj bežný odhad), miera opakovania,
+vypočítané ciele (s možnosťou ručnej úpravy a celým výpočtom „Ako sme to spočítali“) a ukážkový týždeň.
+Nastavenia používajú tie isté kroky. Zmena, ktorá ovplyvní plán, ho označí ako zastaraný a ponúkne nový týždeň.
+**Export/import všetkých dát** (nastavenia, plány, vlastné ceny) je jeden JSON súbor.
 
 ## Obchody a ceny
 
