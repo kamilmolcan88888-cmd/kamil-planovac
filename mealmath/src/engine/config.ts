@@ -35,3 +35,36 @@ export const CONFIG_SHOPPING = {
   pantryAisles: ['spices'] as string[],
   pantryFoods: ['salt', 'olive_oil', 'rapeseed_oil', 'sunflower_oil', 'vinegar', 'vinegar_spirit', 'flour', 'sugar', 'baking_powder', 'cornstarch', 'soy_sauce'],
 };
+
+export const CONFIG_PLANNER = {
+  /** Index = repetition level (0 = every meal different … 3 = cook once, eat 4×). */
+  repetition: [
+    { batchPortions: 1, maxUses: 1, breakfastUses: 2, snackUses: 2 },
+    { batchPortions: 2, maxUses: 2, breakfastUses: 3, snackUses: 3 }, // default ≈ 11 meals for 21 portions
+    { batchPortions: 3, maxUses: 3, breakfastUses: 4, snackUses: 4 },
+    { batchPortions: 4, maxUses: 4, breakfastUses: 7, snackUses: 7 },
+  ],
+  /** Below this EUR per adult per day the planner favours cheap recipes harder. */
+  tightBudgetPerPersonDay: 5,
+  /** Greedy layout weights. */
+  weights: { density: 3, defaultDensity: 1, favorite: 0.5, cost: 3, costTight: 8, reuse: 0.8, sameProtein: 1, sameCuisine: 0.3, jitter: 0.6 },
+  /** LP: the solver aims inside the band by this margin, so rounding grams cannot push a day out. */
+  lpMargin: { kcalLow: 20, kcalHigh: 10, proteinLow: 2, proteinHigh: 2, budget: 0.5, carbs: 1.5 },
+  /** LP objective weights (per kcal, per g, per EUR). */
+  lp: { kcalSlack: 3, proteinShort: 60, proteinOver: 25, budgetOver: 6, cost: 1.5, deviation: 1, deviationMinG: 25 },
+  /** Gram rounding of the final plan. */
+  roundStepG: 5,
+  /** Recipe max grams fit ~2600 kcal/day; above that, my portion's maxima grow proportionally (capped). */
+  rangeRefKcal: 2600,
+  rangeMaxScale: 1.8,
+  timeBudgetMs: 1500,
+  maxIterations: 80,
+  /** Seeded initial layouts tried before the local search (only while the plan still misses). */
+  starts: 3,
+  /** Alternatives tried per session in the local search. */
+  altsPerMove: 5,
+};
+
+/** How much the recipe maxima may be stretched for a given target (shared by planner and validator). */
+export const portionMaxScale = (kcal: number) =>
+  Math.min(CONFIG_PLANNER.rangeMaxScale, Math.max(1, kcal / CONFIG_PLANNER.rangeRefKcal));

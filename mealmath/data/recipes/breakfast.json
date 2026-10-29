@@ -42,8 +42,8 @@
       { "food": "egg_white", "g": 100, "min": 0, "max": 250 },
       { "food": "pepper_red", "g": 80, "min": 50, "max": 150 },
       { "food": "spinach", "g": 40, "min": 20, "max": 80 },
-      { "food": "bread_rye", "g": 80, "min": 40, "max": 140 },
-      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "bread_rye", "g": 80, "min": 0, "max": 140 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 12 },
       { "food": "salt", "g": 1, "min": 1, "max": 1 },
       { "food": "pepper_black", "g": 0.5, "min": 0.5, "max": 0.5 }
     ],
@@ -147,8 +147,8 @@
       { "food": "tofu", "g": 200, "min": 150, "max": 400 },
       { "food": "spinach", "g": 50, "min": 30, "max": 100 },
       { "food": "tomato", "g": 100, "min": 60, "max": 150 },
-      { "food": "bread_rye", "g": 80, "min": 40, "max": 140 },
-      { "food": "olive_oil", "g": 5, "min": 5, "max": 8 },
+      { "food": "bread_rye", "g": 80, "min": 0, "max": 140 },
+      { "food": "olive_oil", "g": 5, "min": 5, "max": 15 },
       { "food": "turmeric", "g": 1, "min": 1, "max": 1 },
       { "food": "salt", "g": 1, "min": 1, "max": 1 }
     ],
@@ -301,7 +301,7 @@
     "batch": { "ok": true, "keepsDays": 4 },
     "ingredients": [
       { "food": "egg", "g": 165, "min": 110, "max": 275 },
-      { "food": "bread_rye", "g": 80, "min": 40, "max": 140 },
+      { "food": "bread_rye", "g": 80, "min": 0, "max": 140 },
       { "food": "cucumber", "g": 100, "min": 50, "max": 200 },
       { "food": "pepper_yellow", "g": 80, "min": 50, "max": 150 },
       { "food": "cottage", "g": 0, "min": 0, "max": 200 },
@@ -319,8 +319,8 @@
     "batch": { "ok": false, "keepsDays": 1 },
     "ingredients": [
       { "food": "soy_yogurt", "g": 250, "min": 150, "max": 400 },
-      { "food": "oats", "g": 30, "min": 20, "max": 70 },
-      { "food": "hemp_seeds", "g": 20, "min": 10, "max": 40 },
+      { "food": "oats", "g": 30, "min": 0, "max": 70 },
+      { "food": "hemp_seeds", "g": 20, "min": 0, "max": 40 },
       { "food": "almonds", "g": 15, "min": 10, "max": 25 },
       { "food": "raspberry_frozen", "g": 80, "min": 50, "max": 150 }
     ],
@@ -337,7 +337,7 @@
     "ingredients": [
       { "food": "chia", "g": 30, "min": 20, "max": 40 },
       { "food": "soy_milk", "g": 250, "min": 200, "max": 400 },
-      { "food": "hemp_seeds", "g": 15, "min": 10, "max": 40 },
+      { "food": "hemp_seeds", "g": 15, "min": 0, "max": 40 },
       { "food": "raspberry_frozen", "g": 100, "min": 60, "max": 150 },
       { "food": "maple_syrup", "g": 10, "min": 5, "max": 15 }
     ],
@@ -428,7 +428,7 @@
       { "food": "egg_white", "g": 100, "min": 0, "max": 200 },
       { "food": "pepper_red", "g": 60, "min": 40, "max": 100 },
       { "food": "spinach", "g": 30, "min": 20, "max": 60 },
-      { "food": "edam", "g": 20, "min": 15, "max": 40 },
+      { "food": "edam", "g": 20, "min": 15, "max": 60 },
       { "food": "salt", "g": 1, "min": 1, "max": 1 }
     ],
     "steps": {

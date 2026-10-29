@@ -68,13 +68,13 @@
     "ingredients": [
       { "food": "beef_chuck", "g": 180, "min": 130, "max": 300 },
       { "food": "onion", "g": 100, "min": 60, "max": 120 },
-      { "food": "potato", "g": 100, "min": 50, "max": 200 },
+      { "food": "potato", "g": 100, "min": 0, "max": 200 },
       { "food": "tomato_paste", "g": 10, "min": 10, "max": 15 },
       { "food": "paprika", "g": 5, "min": 5, "max": 5 },
       { "food": "caraway", "g": 1, "min": 1, "max": 1 },
       { "food": "marjoram", "g": 1, "min": 1, "max": 1 },
       { "food": "garlic", "g": 5, "min": 5, "max": 5 },
-      { "food": "bread_rye", "g": 80, "min": 40, "max": 160 },
+      { "food": "bread_rye", "g": 80, "min": 0, "max": 160 },
       { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 }
     ],
@@ -115,7 +115,7 @@
       { "food": "frankfurter", "g": 50, "min": 0, "max": 100 },
       { "food": "mushroom", "g": 60, "min": 40, "max": 100 },
       { "food": "potato", "g": 100, "min": 50, "max": 200 },
-      { "food": "sour_cream", "g": 20, "min": 15, "max": 40 },
+      { "food": "sour_cream", "g": 20, "min": 15, "max": 60 },
       { "food": "paprika", "g": 2, "min": 2, "max": 2 },
       { "food": "bay_leaf", "g": 0.3, "min": 0.3, "max": 0.3 },
       { "food": "bread_rye", "g": 40, "min": 0, "max": 100 }
@@ -132,9 +132,9 @@
     "batch": { "ok": true, "keepsDays": 4 },
     "ingredients": [
       { "food": "chicken_breast", "g": 180, "min": 120, "max": 350 },
-      { "food": "rice", "g": 70, "min": 40, "max": 150 },
+      { "food": "rice", "g": 70, "min": 0, "max": 150 },
       { "food": "broccoli", "g": 150, "min": 100, "max": 300 },
-      { "food": "olive_oil", "g": 6, "min": 5, "max": 10 },
+      { "food": "olive_oil", "g": 6, "min": 5, "max": 15 },
       { "food": "paprika", "g": 1, "min": 1, "max": 1 },
       { "food": "garlic_powder", "g": 1, "min": 1, "max": 1 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 }
@@ -211,12 +211,12 @@
     "batch": { "ok": true, "keepsDays": 3 },
     "ingredients": [
       { "food": "chicken_leg", "g": 250, "min": 200, "max": 400 },
-      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "potato", "g": 250, "min": 0, "max": 350 },
       { "food": "caraway", "g": 1, "min": 1, "max": 1 },
       { "food": "paprika", "g": 2, "min": 2, "max": 2 },
       { "food": "garlic", "g": 5, "min": 5, "max": 5 },
       { "food": "cucumber", "g": 100, "min": 50, "max": 200 },
-      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 12 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 }
     ],
     "steps": {
@@ -231,10 +231,10 @@
     "batch": { "ok": true, "keepsDays": 3 },
     "ingredients": [
       { "food": "pork_tenderloin", "g": 180, "min": 130, "max": 320 },
-      { "food": "potato", "g": 200, "min": 100, "max": 300 },
+      { "food": "potato", "g": 200, "min": 0, "max": 300 },
       { "food": "carrot", "g": 100, "min": 60, "max": 150 },
       { "food": "zucchini", "g": 120, "min": 80, "max": 200 },
-      { "food": "olive_oil", "g": 8, "min": 6, "max": 10 },
+      { "food": "olive_oil", "g": 8, "min": 6, "max": 15 },
       { "food": "rosemary", "g": 1, "min": 1, "max": 1 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 },
       { "food": "pepper_black", "g": 0.5, "min": 0.5, "max": 0.5 }
@@ -296,7 +296,7 @@
       { "food": "breadcrumbs", "g": 10, "min": 10, "max": 15 },
       { "food": "passata", "g": 200, "min": 150, "max": 300 },
       { "food": "onion", "g": 40, "min": 30, "max": 50 },
-      { "food": "rice", "g": 70, "min": 40, "max": 140 },
+      { "food": "rice", "g": 70, "min": 0, "max": 140 },
       { "food": "sugar", "g": 3, "min": 3, "max": 3 },
       { "food": "basil_dried", "g": 0.5, "min": 0.5, "max": 0.5 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 }
@@ -313,7 +313,7 @@
     "batch": { "ok": false, "keepsDays": 1 },
     "ingredients": [
       { "food": "salmon", "g": 130, "min": 100, "max": 220 },
-      { "food": "potato", "g": 200, "min": 120, "max": 300 },
+      { "food": "potato", "g": 200, "min": 0, "max": 300 },
       { "food": "cucumber", "g": 150, "min": 100, "max": 250 },
       { "food": "greek_0", "g": 60, "min": 40, "max": 150 },
       { "food": "dill", "g": 3, "min": 3, "max": 3 },
@@ -332,7 +332,7 @@
     "batch": { "ok": false, "keepsDays": 1 },
     "ingredients": [
       { "food": "cod", "g": 200, "min": 150, "max": 350 },
-      { "food": "rice", "g": 70, "min": 40, "max": 140 },
+      { "food": "rice", "g": 70, "min": 0, "max": 140 },
       { "food": "peas_frozen", "g": 100, "min": 60, "max": 150 },
       { "food": "butter", "g": 8, "min": 6, "max": 10 },
       { "food": "lemon", "g": 10, "min": 10, "max": 10 },
@@ -378,7 +378,7 @@
       { "food": "mushroom", "g": 120, "min": 80, "max": 200 },
       { "food": "onion", "g": 40, "min": 30, "max": 60 },
       { "food": "cream_light", "g": 50, "min": 30, "max": 80 },
-      { "food": "rice", "g": 70, "min": 40, "max": 140 },
+      { "food": "rice", "g": 70, "min": 0, "max": 140 },
       { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
       { "food": "paprika", "g": 1, "min": 1, "max": 1 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 }
@@ -400,7 +400,7 @@
       { "food": "breadcrumbs", "g": 12, "min": 12, "max": 15 },
       { "food": "onion", "g": 30, "min": 30, "max": 40 },
       { "food": "mustard", "g": 5, "min": 5, "max": 5 },
-      { "food": "potato", "g": 250, "min": 150, "max": 350 },
+      { "food": "potato", "g": 250, "min": 0, "max": 350 },
       { "food": "milk_semi", "g": 60, "min": 50, "max": 80 },
       { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
       { "food": "marjoram", "g": 0.5, "min": 0.5, "max": 0.5 },
@@ -418,7 +418,7 @@
     "batch": { "ok": false, "keepsDays": 2 },
     "ingredients": [
       { "food": "potato", "g": 350, "min": 200, "max": 500 },
-      { "food": "quark_lean", "g": 250, "min": 150, "max": 500 },
+      { "food": "quark_lean", "g": 250, "min": 150, "max": 400 },
       { "food": "chives", "g": 5, "min": 5, "max": 5 },
       { "food": "garlic", "g": 3, "min": 3, "max": 3 },
       { "food": "flaxseed", "g": 0, "min": 0, "max": 15 },
@@ -500,10 +500,10 @@
     "ingredients": [
       { "food": "beef_ground_5", "g": 180, "min": 130, "max": 320 },
       { "food": "leek", "g": 150, "min": 100, "max": 250 },
-      { "food": "cream_cheese_light", "g": 40, "min": 30, "max": 60 },
+      { "food": "cream_cheese_light", "g": 40, "min": 30, "max": 100 },
       { "food": "broth_veg", "g": 80, "min": 80, "max": 100 },
       { "food": "nutmeg", "g": 0.3, "min": 0.3, "max": 0.3 },
-      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 12 },
       { "food": "salt", "g": 1, "min": 1, "max": 1 }
     ],
     "steps": {
@@ -538,8 +538,8 @@
     "batch": { "ok": false, "keepsDays": 1 },
     "ingredients": [
       { "food": "trout", "g": 180, "min": 140, "max": 300 },
-      { "food": "potato", "g": 220, "min": 150, "max": 320 },
-      { "food": "butter", "g": 8, "min": 6, "max": 10 },
+      { "food": "potato", "g": 220, "min": 0, "max": 320 },
+      { "food": "butter", "g": 8, "min": 6, "max": 15 },
       { "food": "parsley", "g": 5, "min": 5, "max": 5 },
       { "food": "lemon", "g": 15, "min": 15, "max": 15 },
       { "food": "lettuce_green", "g": 60, "min": 40, "max": 100 },
@@ -577,10 +577,10 @@
     "batch": { "ok": false, "keepsDays": 1 },
     "ingredients": [
       { "food": "pollock", "g": 200, "min": 150, "max": 380 },
-      { "food": "potato", "g": 200, "min": 100, "max": 300 },
+      { "food": "potato", "g": 200, "min": 0, "max": 300 },
       { "food": "zucchini", "g": 120, "min": 80, "max": 200 },
       { "food": "pepper_red", "g": 100, "min": 60, "max": 150 },
-      { "food": "olive_oil", "g": 8, "min": 6, "max": 10 },
+      { "food": "olive_oil", "g": 8, "min": 6, "max": 15 },
       { "food": "lemon", "g": 10, "min": 10, "max": 10 },
       { "food": "paprika", "g": 1, "min": 1, "max": 1 },
       { "food": "salt", "g": 2, "min": 2, "max": 2 }
@@ -639,7 +639,7 @@
     "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["budget", "classic", "high_protein"], "cuisine": "sk",
     "batch": { "ok": false, "keepsDays": 1 },
     "ingredients": [
-      { "food": "chicken_liver", "g": 180, "min": 130, "max": 300 },
+      { "food": "chicken_liver", "g": 180, "min": 130, "max": 220 },
       { "food": "onion", "g": 80, "min": 50, "max": 100 },
       { "food": "potato", "g": 250, "min": 150, "max": 350 },
       { "food": "milk_semi", "g": 60, "min": 50, "max": 80 },

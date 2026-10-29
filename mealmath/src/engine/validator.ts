@@ -8,6 +8,7 @@
  */
 import type { Allergen, Diet, Food, Macros, Plan, PlanDay, Recipe, Targets } from './types';
 import { foodFitsDiet, LOW_CARB_MAX_PER_MEAL } from './diet';
+import { portionMaxScale } from './config';
 
 export interface ValidationContext {
   foods: ReadonlyMap<string, Food>;
@@ -20,6 +21,8 @@ export interface ValidationContext {
   availableFoods?: ReadonlySet<string>;
   /** Slots that must be present each day (default breakfast, lunch, dinner). */
   requiredSlots?: readonly string[];
+  /** Factor applied to recipe maxima for big appetites; defaults to portionMaxScale(targets.kcal). */
+  maxScale?: number;
 }
 
 export type IssueCode =
@@ -65,6 +68,7 @@ export function validateDay(day: PlanDay, ctx: ValidationContext): DayReport {
   let kcal = 0, protein = 0, carbs = 0, fat = 0;
   let includesUserEstimate = false;
   const push = (i: Omit<Issue, 'date'>) => issues.push({ date: day.date, ...i });
+  const maxScale = ctx.maxScale ?? portionMaxScale(ctx.targets.kcal);
 
   for (const slot of ctx.requiredSlots ?? ['breakfast', 'lunch', 'dinner']) {
     if (!day.meals.some(m => m.slot === slot)) push({ code: 'missing_slot', slot });
@@ -88,7 +92,7 @@ export function validateDay(day: PlanDay, ctx: ValidationContext): DayReport {
 
       const ing = recipe.ingredients.find(i => i.food === foodId);
       if (!ing) push({ code: 'ingredient_not_in_recipe', ...at });
-      else if (grams < ing.min - 1e-6 || grams > ing.max + 1e-6) push({ code: 'grams_out_of_range', ...at });
+      else if (grams < ing.min - 1e-6 || grams > ing.max * maxScale + 1e-6) push({ code: 'grams_out_of_range', ...at });
 
       if (grams > 0) {
         for (const a of food.allergens) if (ctx.allergens.includes(a)) push({ code: 'allergen', ...at });

@@ -3,7 +3,7 @@
 Offline-first PWA na plánovanie jedál podľa makier, rozpočtu a obchodu (Lidl DE, Lidl SK, Kaufland SK).
 Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 
-> Stav: **etapa 2** – dáta, vzorce, validátor, cenové tabuľky a obchody. Plánovač a UI prídu v ďalších etapách.
+> Stav: **etapa 3** – dáta, vzorce, validátor, ceny, obchody a plánovač. UI príde v ďalších etapách.
 
 ## Hlavný princíp
 
@@ -28,7 +28,7 @@ npm run typecheck
 | `scripts/build-foods.ts` | Stiahne USDA SR Legacy + Foundation CSV a vytvorí `data/foods.json`. |
 | `data/foods.json` | Vygenerované, nikdy needitovať ručne. |
 | `data/foods-report.md` | Report párovania (presná / približná zhoda, fdcId, hodnoty). |
-| `data/recipes/*.json` | 96 ručne písaných receptov (SK + DE), gramy s rozsahom min–max. |
+| `data/recipes/*.json` | 115 ručne písaných receptov (SK + DE), gramy s rozsahom min–max. |
 
 ### Aktualizácia `foods.json`
 
@@ -49,7 +49,28 @@ Pridaj objekt do príslušného súboru v `data/recipes/` (raňajky, hlavné jed
 - `steps.sk` a `steps.de` s rovnakým počtom krokov,
 - alergény a diéty sa **nepíšu**, odvodzujú sa zo surovín.
 
-Potom spusti `npm test`.
+Potom spusti `npm run format:recipes` (zjednotí formát) a `npm test`.
+
+## Plánovač
+
+Deterministický, bez jazykového modelu (`src/engine/planner/`):
+
+1. **Filter**: recept zostane len vtedy, ak všetky jeho potrebné suroviny prejdú alergénmi, diétou,
+   nechcenými surovinami a dostupnosťou v obchode a ak máš potrebné vybavenie. Voliteľné suroviny
+   (`min = 0`) sa namiesto toho nastavia na 0 g.
+2. **Rozloženie týždňa**: greedy výber varení podľa hustoty bielkovín, ceny, obľúbených surovín a
+   pestrosti. Batch recept nakŕmi ďalšie jedlá v rámci trvanlivosti. Miera opakovania 0 – 3 určuje,
+   koľko porcií dá jeden hrniec.
+3. **LP pre celý týždeň** (`javascript-lp-solver`): nastaví gramy mojej porcie tak, aby **každý deň**
+   (nie priemer) mal bielkoviny v pásme floor až +7 % a kcal v pásme −5 % až 0 %. Porcie z jedného
+   hrnca sú rovnaké. Čo sa nedá splniť, zachytia penalizované odchýlky, takže výsledok je vždy
+   najlepší možný plán.
+4. **Lokálne prehľadávanie** vymieňa recepty v dňoch, ktoré nevyšli (časový limit 1,5 s).
+5. Gramy sa zaokrúhlia a **nezávislý validátor** plán prepočíta z `foods.json`. Ak deň nesedí, plán
+   vráti upozornenie „X dní nesplnených o Y g“, nikdy tichý úspech.
+
+Rozpočet je mäkké obmedzenie: plánovač ho nikdy nevymení za nesplnené bielkoviny, prekročenie ohlási.
+Konštanty sú v `src/engine/config.ts` (`CONFIG_PLANNER`).
 
 ## Obchody a ceny
 

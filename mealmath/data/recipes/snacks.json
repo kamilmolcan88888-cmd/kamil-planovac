@@ -116,5 +116,35 @@
       "sk": ["Plátky morčacieho natri krémovým syrom, vlož prúžok uhorky a zroluj."],
       "de": ["Putenscheiben mit Frischkäse bestreichen, einen Gurkenstreifen hineinlegen und aufrollen."]
     }
+  },
+  {
+    "id": "caprese-snack",
+    "name": { "en": "Caprese with olive oil", "sk": "Caprese s olivovým olejom", "de": "Caprese mit Olivenöl" },
+    "meals": ["snack"], "timeMin": 5, "equipment": [], "tags": ["low_carb", "no_cook", "quick"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "mozzarella_light", "g": 125, "min": 60, "max": 125 },
+      { "food": "tomato", "g": 120, "min": 80, "max": 200 },
+      { "food": "olive_oil", "g": 5, "min": 5, "max": 15 },
+      { "food": "basil", "g": 3, "min": 3, "max": 3 }
+    ],
+    "steps": {
+      "sk": ["Mozzarellu a paradajky nakrájaj, prelož bazalkou a pokvapkaj olejom."],
+      "de": ["Mozzarella und Tomaten schneiden, mit Basilikum belegen und mit Öl beträufeln."]
+    }
+  },
+  {
+    "id": "nut-mix-snack",
+    "name": { "en": "Handful of nuts", "sk": "Hrsť orechov", "de": "Eine Handvoll Nüsse" },
+    "meals": ["snack"], "timeMin": 1, "equipment": [], "tags": ["low_carb", "no_cook", "quick", "vegan"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "almonds", "g": 20, "min": 15, "max": 40 },
+      { "food": "walnuts", "g": 15, "min": 0, "max": 30 }
+    ],
+    "steps": {
+      "sk": ["Odváž si porciu orechov."],
+      "de": ["Eine Portion Nüsse abwiegen."]
+    }
   }
 ]

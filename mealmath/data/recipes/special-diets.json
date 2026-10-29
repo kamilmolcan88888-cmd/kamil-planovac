@@ -1,0 +1,374 @@
+[
+  {
+    "id": "egg-potato-hash",
+    "name": { "en": "Egg and potato hash with peppers", "sk": "Zemiakové hash s vajcom a paprikou", "de": "Kartoffel-Hash mit Ei und Paprika" },
+    "meals": ["breakfast", "dinner"], "timeMin": 20, "equipment": ["stove"], "tags": ["gluten_free", "dairy_free", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 275 },
+      { "food": "egg_white", "g": 0, "min": 0, "max": 250 },
+      { "food": "potato", "g": 150, "min": 0, "max": 300 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 150 },
+      { "food": "onion", "g": 40, "min": 30, "max": 60 },
+      { "food": "spinach", "g": 30, "min": 20, "max": 80 },
+      { "food": "rapeseed_oil", "g": 6, "min": 5, "max": 15 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Zemiaky nakrájaj na malé kocky a opekaj na oleji 10 minút do chrumkava.", "Pridaj cibuľu, papriku a mletú papriku, restuj 3 minúty.", "Pridaj špenát, urob jamky, vbi vajcia (a bielky) a pod pokrievkou nechaj stuhnúť."],
+      "de": ["Kartoffeln klein würfeln und im Öl 10 Minuten knusprig braten.", "Zwiebel, Paprika und Paprikapulver zugeben, 3 Minuten mitbraten.", "Spinat zugeben, Mulden formen, Eier (und Eiklar) hineingeben und zugedeckt stocken lassen."]
+    }
+  },
+  {
+    "id": "buckwheat-porridge-apple",
+    "name": { "en": "Buckwheat porridge with apple and walnuts", "sk": "Pohánková kaša s jablkom a orechmi", "de": "Buchweizenbrei mit Apfel und Walnüssen" },
+    "meals": ["breakfast"], "timeMin": 15, "equipment": ["stove"], "tags": ["gluten_free", "dairy_free", "vegan"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "buckwheat", "g": 60, "min": 40, "max": 110 },
+      { "food": "soy_milk", "g": 250, "min": 200, "max": 400 },
+      { "food": "tofu_regular", "g": 0, "min": 0, "max": 200 },
+      { "food": "apple", "g": 120, "min": 80, "max": 180 },
+      { "food": "walnuts", "g": 15, "min": 10, "max": 25 },
+      { "food": "cinnamon", "g": 1, "min": 1, "max": 1 },
+      { "food": "maple_syrup", "g": 5, "min": 0, "max": 10 }
+    ],
+    "steps": {
+      "sk": ["Pohánku var v sójovom nápoji 12 minút do zhustnutia.", "Jemné tofu (ak je v pláne) rozmixuj a vmiešaj.", "Pridaj nastrúhané jablko, škoricu a sirup, posyp orechmi. Vydrží 3 dni."],
+      "de": ["Buchweizen im Sojadrink 12 Minuten sämig kochen.", "Seidentofu (falls im Plan) pürieren und unterrühren.", "Geriebenen Apfel, Zimt und Sirup zugeben, mit Walnüssen bestreuen. Hält 3 Tage."]
+    }
+  },
+  {
+    "id": "oat-pb-soy-porridge",
+    "name": { "en": "Peanut butter oats with soy drink", "sk": "Ovsená kaša so sójovým nápojom a arašidovým maslom", "de": "Erdnuss-Porridge mit Sojadrink" },
+    "meals": ["breakfast"], "timeMin": 8, "equipment": ["stove"], "tags": ["vegan", "quick", "dairy_free"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "oats", "g": 60, "min": 40, "max": 110 },
+      { "food": "soy_milk", "g": 300, "min": 200, "max": 450 },
+      { "food": "peanut_butter", "g": 20, "min": 10, "max": 30 },
+      { "food": "banana", "g": 80, "min": 0, "max": 120 },
+      { "food": "chia", "g": 0, "min": 0, "max": 20 }
+    ],
+    "steps": {
+      "sk": ["Vločky (a chia) povar v sójovom nápoji 4 minúty.", "Vmiešaj arašidové maslo a navrch daj banán."],
+      "de": ["Haferflocken (und Chia) 4 Minuten im Sojadrink kochen.", "Erdnussbutter einrühren und Banane darauf geben."]
+    }
+  },
+  {
+    "id": "beans-tofu-toast",
+    "name": { "en": "Beans and tofu on toast", "sk": "Fazuľa a tofu na toaste", "de": "Bohnen und Tofu auf Toast" },
+    "meals": ["breakfast", "dinner"], "timeMin": 12, "equipment": ["stove"], "tags": ["vegan", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "baked_beans", "g": 200, "min": 150, "max": 300 },
+      { "food": "tofu", "g": 150, "min": 100, "max": 300 },
+      { "food": "bread_wholewheat", "g": 60, "min": 0, "max": 120 },
+      { "food": "spinach", "g": 30, "min": 20, "max": 60 },
+      { "food": "olive_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "paprika", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Tofu nakrájaj na kocky a opeč na oleji s paprikou dozlata.", "Fazuľu zohrej, pridaj špenát.", "Podávaj na opečenom chlebe s tofu."],
+      "de": ["Tofu würfeln und im Öl mit Paprika goldbraun braten.", "Bohnen erwärmen, Spinat zugeben.", "Auf geröstetem Brot mit dem Tofu servieren."]
+    }
+  },
+  {
+    "id": "millet-berry-porridge",
+    "name": { "en": "Millet porridge with berries", "sk": "Pšenová kaša s lesným ovocím", "de": "Hirsebrei mit Beeren" },
+    "meals": ["breakfast"], "timeMin": 20, "equipment": ["stove"], "tags": ["gluten_free", "dairy_free", "vegan", "meal_prep"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "millet", "g": 60, "min": 40, "max": 100 },
+      { "food": "soy_milk", "g": 250, "min": 200, "max": 400 },
+      { "food": "berries_frozen", "g": 100, "min": 60, "max": 150 },
+      { "food": "almonds", "g": 15, "min": 10, "max": 25 },
+      { "food": "pumpkin_seeds", "g": 10, "min": 0, "max": 25 }
+    ],
+    "steps": {
+      "sk": ["Pšeno prepláchni horúcou vodou a var v sójovom nápoji 15 minút.", "Pridaj ovocie a nechaj 2 minúty prehriať.", "Posyp mandľami a semienkami."],
+      "de": ["Hirse heiß abspülen und im Sojadrink 15 Minuten kochen.", "Beeren zugeben und 2 Minuten mitwärmen.", "Mit Mandeln und Kernen bestreuen."]
+    }
+  },
+  {
+    "id": "salmon-egg-plate",
+    "name": { "en": "Smoked salmon, eggs and avocado plate", "sk": "Tanier s údeným lososom, vajcami a avokádom", "de": "Teller mit Räucherlachs, Ei und Avocado" },
+    "meals": ["breakfast", "dinner"], "timeMin": 10, "equipment": ["stove"], "tags": ["low_carb", "gluten_free", "dairy_free", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 110, "min": 110, "max": 220 },
+      { "food": "salmon_smoked", "g": 80, "min": 50, "max": 150 },
+      { "food": "avocado", "g": 50, "min": 0, "max": 150 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 200 },
+      { "food": "lemon", "g": 5, "min": 5, "max": 5 },
+      { "food": "dill", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Vajcia uvar 7 minút.", "Na tanier daj lososa, plátky avokáda a uhorky.", "Pridaj vajcia, pokvapkaj citrónom a posyp kôprom."],
+      "de": ["Eier 7 Minuten kochen.", "Lachs, Avocado- und Gurkenscheiben auf einen Teller legen.", "Eier dazu, mit Zitrone beträufeln und Dill bestreuen."]
+    }
+  },
+  {
+    "id": "ham-veg-omelette",
+    "name": { "en": "Ham and vegetable omelette (low carb)", "sk": "Omeleta so šunkou a zeleninou (low carb)", "de": "Schinken-Gemüse-Omelett (Low Carb)" },
+    "meals": ["breakfast", "dinner"], "timeMin": 10, "equipment": ["stove"], "tags": ["low_carb", "gluten_free", "dairy_free", "high_protein", "quick"], "cuisine": "de",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 220 },
+      { "food": "egg_white", "g": 0, "min": 0, "max": 200 },
+      { "food": "ham", "g": 60, "min": 40, "max": 150 },
+      { "food": "pepper_green", "g": 60, "min": 40, "max": 100 },
+      { "food": "mushroom", "g": 60, "min": 40, "max": 100 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 15 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Huby a papriku opeč na oleji 4 minúty, pridaj šunku.", "Zalej rozšľahanými vajcami a nechaj stuhnúť, v polovici prelož."],
+      "de": ["Pilze und Paprika im Öl 4 Minuten braten, Schinken zugeben.", "Verquirlte Eier darübergießen, stocken lassen und zusammenklappen."]
+    }
+  },
+  {
+    "id": "red-lentil-dal-tofu",
+    "name": { "en": "Red lentil dal with tofu", "sk": "Dal z červenej šošovice s tofu", "de": "Rote-Linsen-Dal mit Tofu" },
+    "meals": ["lunch", "dinner"], "timeMin": 30, "equipment": ["stove"], "tags": ["vegan", "gluten_free", "meal_prep", "budget"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "lentils_red", "g": 80, "min": 60, "max": 140 },
+      { "food": "tofu", "g": 120, "min": 0, "max": 300 },
+      { "food": "tomato_canned", "g": 150, "min": 100, "max": 200 },
+      { "food": "spinach_frozen", "g": 80, "min": 50, "max": 150 },
+      { "food": "onion", "g": 50, "min": 40, "max": 60 },
+      { "food": "rice", "g": 50, "min": 0, "max": 110 },
+      { "food": "curry", "g": 3, "min": 3, "max": 3 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "ginger", "g": 5, "min": 5, "max": 5 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Na oleji speň cibuľu, cesnak, zázvor a kari.", "Pridaj šošovicu, paradajky a 300 ml vody, var 15 minút.", "Pridaj špenát a tofu na kocky, povar 5 minút.", "Podávaj s ryžou."],
+      "de": ["Zwiebel, Knoblauch, Ingwer und Curry im Öl anschwitzen.", "Linsen, Tomaten und 300 ml Wasser zugeben, 15 Minuten köcheln.", "Spinat und Tofuwürfel zugeben, 5 Minuten ziehen lassen.", "Mit Reis servieren."]
+    }
+  },
+  {
+    "id": "tofu-lentil-bolognese",
+    "name": { "en": "Tofu and lentil bolognese", "sk": "Bolognese z tofu a šošovice", "de": "Tofu-Linsen-Bolognese" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["stove"], "tags": ["vegan", "meal_prep", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 4 },
+    "ingredients": [
+      { "food": "tofu", "g": 180, "min": 100, "max": 320 },
+      { "food": "lentils_red", "g": 50, "min": 30, "max": 90 },
+      { "food": "passata", "g": 200, "min": 150, "max": 250 },
+      { "food": "carrot", "g": 50, "min": 30, "max": 80 },
+      { "food": "onion", "g": 40, "min": 30, "max": 50 },
+      { "food": "pasta_wholewheat", "g": 70, "min": 0, "max": 130 },
+      { "food": "oregano", "g": 1, "min": 1, "max": 1 },
+      { "food": "olive_oil", "g": 6, "min": 6, "max": 6 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Tofu rozdrob a opeč na oleji 6 minút do zlatista.", "Pridaj cibuľu a nastrúhanú mrkvu, potom šošovicu, passatu, oregano a 150 ml vody.", "Duste 15 minút a podávaj s cestovinami."],
+      "de": ["Tofu zerbröseln und im Öl 6 Minuten goldbraun braten.", "Zwiebel und geriebene Karotte zugeben, dann Linsen, Passata, Oregano und 150 ml Wasser.", "15 Minuten schmoren und mit Nudeln servieren."]
+    }
+  },
+  {
+    "id": "tofu-sweet-sour-rice",
+    "name": { "en": "Sweet and sour tofu with rice", "sk": "Sladkokyslé tofu s ryžou", "de": "Süß-saurer Tofu mit Reis" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["vegan", "gluten_free"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "tofu", "g": 200, "min": 150, "max": 380 },
+      { "food": "rice", "g": 60, "min": 0, "max": 120 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 120 },
+      { "food": "pineapple_can", "g": 60, "min": 40, "max": 100 },
+      { "food": "carrot", "g": 50, "min": 30, "max": 80 },
+      { "food": "sweet_sour_sauce", "g": 50, "min": 30, "max": 60 },
+      { "food": "cornstarch", "g": 8, "min": 8, "max": 8 },
+      { "food": "rapeseed_oil", "g": 6, "min": 6, "max": 6 }
+    ],
+    "steps": {
+      "sk": ["Ryžu uvar.", "Tofu na kocky obaľ v škrobe a opeč na oleji dochrumkava.", "Pridaj zeleninu a ananás, restuj 3 minúty, zalej omáčkou.", "Podávaj s ryžou."],
+      "de": ["Reis kochen.", "Tofuwürfel in Stärke wenden und im Öl knusprig braten.", "Gemüse und Ananas 3 Minuten mitbraten, mit der Sauce ablöschen.", "Mit Reis servieren."]
+    }
+  },
+  {
+    "id": "chicken-veg-stir-fry-lowcarb",
+    "name": { "en": "Chicken vegetable stir-fry (low carb)", "sk": "Kuracie so zeleninou na panvici (low carb)", "de": "Hähnchen-Gemüse-Pfanne (Low Carb)" },
+    "meals": ["lunch", "dinner"], "timeMin": 20, "equipment": ["stove"], "tags": ["low_carb", "gluten_free", "dairy_free", "high_protein", "quick"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "chicken_breast", "g": 200, "min": 140, "max": 380 },
+      { "food": "broccoli", "g": 150, "min": 100, "max": 250 },
+      { "food": "pepper_red", "g": 80, "min": 50, "max": 120 },
+      { "food": "zucchini", "g": 100, "min": 50, "max": 150 },
+      { "food": "cashews", "g": 15, "min": 0, "max": 40 },
+      { "food": "olive_oil", "g": 8, "min": 6, "max": 20 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "ginger", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Mäso na prúžky opeč na rozpálenom oleji 5 minút.", "Pridaj cesnak, zázvor a zeleninu, restuj 5 minút.", "Osoľ a posyp kešu."],
+      "de": ["Fleischstreifen im heißen Öl 5 Minuten braten.", "Knoblauch, Ingwer und Gemüse zugeben, 5 Minuten mitbraten.", "Salzen und mit Cashews bestreuen."]
+    }
+  },
+  {
+    "id": "pork-cabbage-pan-lowcarb",
+    "name": { "en": "Pork and cabbage pan (low carb)", "sk": "Bravčové s kapustou na panvici (low carb)", "de": "Schweinefleisch-Kohl-Pfanne (Low Carb)" },
+    "meals": ["lunch", "dinner"], "timeMin": 30, "equipment": ["stove"], "tags": ["low_carb", "gluten_free", "dairy_free", "budget"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "pork_tenderloin", "g": 180, "min": 130, "max": 320 },
+      { "food": "cabbage", "g": 200, "min": 150, "max": 300 },
+      { "food": "onion", "g": 40, "min": 30, "max": 50 },
+      { "food": "caraway", "g": 1, "min": 1, "max": 1 },
+      { "food": "paprika", "g": 2, "min": 2, "max": 2 },
+      { "food": "rapeseed_oil", "g": 8, "min": 6, "max": 20 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Mäso nakrájaj na kocky a opeč na oleji.", "Pridaj cibuľu, nakrájanú kapustu, rascu a papriku.", "Podlej trochou vody a duste 15 minút."],
+      "de": ["Fleisch würfeln und im Öl anbraten.", "Zwiebel, geschnittenen Kohl, Kümmel und Paprika zugeben.", "Etwas Wasser angießen und 15 Minuten dünsten."]
+    }
+  },
+  {
+    "id": "chickpea-tofu-salad",
+    "name": { "en": "Chickpea and tofu salad", "sk": "Šalát s cícerom a tofu", "de": "Kichererbsen-Tofu-Salat" },
+    "meals": ["lunch", "dinner"], "timeMin": 15, "equipment": ["stove"], "tags": ["vegan", "gluten_free", "high_protein"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "chickpeas_can", "g": 150, "min": 100, "max": 250 },
+      { "food": "tofu", "g": 150, "min": 100, "max": 300 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 150 },
+      { "food": "cherry_tomato", "g": 100, "min": 50, "max": 150 },
+      { "food": "red_onion", "g": 20, "min": 20, "max": 30 },
+      { "food": "pumpkin_seeds", "g": 10, "min": 0, "max": 25 },
+      { "food": "olive_oil", "g": 8, "min": 6, "max": 10 },
+      { "food": "lemon", "g": 10, "min": 10, "max": 10 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Tofu na kocky opeč dozlata.", "Cícer prepláchni, zeleninu nakrájaj.", "Všetko zmiešaj s olejom, citrónom a soľou, posyp semienkami."],
+      "de": ["Tofuwürfel goldbraun braten.", "Kichererbsen abspülen, Gemüse schneiden.", "Alles mit Öl, Zitrone und Salz mischen, mit Kernen bestreuen."]
+    }
+  },
+  {
+    "id": "bacon-eggs-avocado",
+    "name": { "en": "Eggs with bacon and avocado (low carb)", "sk": "Vajcia so slaninou a avokádom (low carb)", "de": "Eier mit Speck und Avocado (Low Carb)" },
+    "meals": ["breakfast"], "timeMin": 10, "equipment": ["stove"], "tags": ["low_carb", "gluten_free", "dairy_free"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 220 },
+      { "food": "bacon", "g": 30, "min": 20, "max": 60 },
+      { "food": "avocado", "g": 60, "min": 0, "max": 120 },
+      { "food": "cherry_tomato", "g": 80, "min": 50, "max": 120 },
+      { "food": "salt", "g": 0.5, "min": 0.5, "max": 0.5 }
+    ],
+    "steps": {
+      "sk": ["Slaninu opeč dochrumkava a vyber.", "Na vyškvarenom tuku priprav vajcia ako volské oko.", "Podávaj so slaninou, avokádom a paradajkami."],
+      "de": ["Speck knusprig braten und herausnehmen.", "Im ausgelassenen Fett Spiegeleier braten.", "Mit Speck, Avocado und Tomaten servieren."]
+    }
+  },
+  {
+    "id": "salmon-avocado-salad",
+    "name": { "en": "Salmon and avocado salad", "sk": "Šalát s lososom a avokádom", "de": "Lachs-Avocado-Salat" },
+    "meals": ["lunch", "dinner"], "timeMin": 20, "equipment": ["stove"], "tags": ["low_carb", "gluten_free", "dairy_free", "omega3"], "cuisine": "intl",
+    "batch": { "ok": false, "keepsDays": 1 },
+    "ingredients": [
+      { "food": "salmon", "g": 150, "min": 120, "max": 250 },
+      { "food": "avocado", "g": 80, "min": 50, "max": 150 },
+      { "food": "lettuce_green", "g": 80, "min": 50, "max": 120 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 150 },
+      { "food": "olive_oil", "g": 8, "min": 5, "max": 20 },
+      { "food": "pumpkin_seeds", "g": 10, "min": 0, "max": 25 },
+      { "food": "lemon", "g": 10, "min": 10, "max": 10 },
+      { "food": "salt", "g": 1, "min": 1, "max": 1 }
+    ],
+    "steps": {
+      "sk": ["Lososa osoľ a opeč na suchej panvici 4 minúty z každej strany.", "Šalát, uhorku a avokádo nakrájaj, zalej olejom a citrónom.", "Pridaj lososa a posyp semienkami."],
+      "de": ["Lachs salzen und in der trockenen Pfanne je Seite 4 Minuten braten.", "Salat, Gurke und Avocado schneiden, mit Öl und Zitrone anmachen.", "Lachs darauf und mit Kernen bestreuen."]
+    }
+  },
+  {
+    "id": "chicken-legs-cauliflower-tray",
+    "name": { "en": "Roast chicken legs with cauliflower (low carb)", "sk": "Pečené kuracie stehná s karfiolom (low carb)", "de": "Hähnchenschenkel mit Ofen-Blumenkohl (Low Carb)" },
+    "meals": ["lunch", "dinner"], "timeMin": 50, "equipment": ["oven"], "tags": ["low_carb", "gluten_free", "dairy_free", "meal_prep", "budget"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "chicken_leg", "g": 300, "min": 220, "max": 450 },
+      { "food": "cauliflower", "g": 200, "min": 150, "max": 300 },
+      { "food": "olive_oil", "g": 8, "min": 5, "max": 15 },
+      { "food": "paprika", "g": 2, "min": 2, "max": 2 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Rúru predhrej na 200 °C.", "Stehná potri cesnakom, paprikou a soľou, karfiol rozober na ružičky a premiešaj s olejom.", "Peč všetko 40–45 minút. Gramy mäsa sú s kosťou."],
+      "de": ["Ofen auf 200 °C vorheizen.", "Schenkel mit Knoblauch, Paprika und Salz einreiben, Blumenkohl in Röschen teilen und mit Öl mischen.", "Alles 40–45 Minuten backen. Fleischgewicht mit Knochen."]
+    }
+  },
+  {
+    "id": "egg-curry-rice",
+    "name": { "en": "Egg curry with spinach and rice", "sk": "Vajcové kari so špenátom a ryžou", "de": "Eier-Curry mit Spinat und Reis" },
+    "meals": ["lunch", "dinner"], "timeMin": 25, "equipment": ["stove"], "tags": ["vegetarian", "gluten_free", "high_protein", "budget"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 2 },
+    "ingredients": [
+      { "food": "egg", "g": 165, "min": 110, "max": 330 },
+      { "food": "tomato_canned", "g": 150, "min": 100, "max": 200 },
+      { "food": "spinach_frozen", "g": 100, "min": 50, "max": 150 },
+      { "food": "onion", "g": 50, "min": 40, "max": 60 },
+      { "food": "greek_0", "g": 80, "min": 0, "max": 200 },
+      { "food": "rice", "g": 50, "min": 0, "max": 110 },
+      { "food": "curry", "g": 3, "min": 3, "max": 3 },
+      { "food": "garlic", "g": 5, "min": 5, "max": 5 },
+      { "food": "rapeseed_oil", "g": 5, "min": 5, "max": 8 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Vajcia uvar natvrdo (9 minút) a ošúp.", "Na oleji speň cibuľu a cesnak, pridaj kari, paradajky a špenát, duste 8 minút.", "Odstav, vmiešaj jogurt a vajcia rozpolené. Podávaj s ryžou."],
+      "de": ["Eier hart kochen (9 Minuten) und schälen.", "Zwiebel und Knoblauch im Öl anschwitzen, Curry, Tomaten und Spinat zugeben, 8 Minuten schmoren.", "Vom Herd nehmen, Joghurt und halbierte Eier unterheben. Mit Reis servieren."]
+    }
+  },
+  {
+    "id": "cauliflower-cottage-bake",
+    "name": { "en": "Cauliflower bake with eggs and cottage cheese", "sk": "Zapekaný karfiol s vajcom a cottage", "de": "Blumenkohlauflauf mit Ei und Hüttenkäse" },
+    "meals": ["lunch", "dinner"], "timeMin": 40, "equipment": ["oven", "stove"], "tags": ["vegetarian", "low_carb", "gluten_free", "high_protein", "meal_prep"], "cuisine": "sk",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "cauliflower", "g": 250, "min": 200, "max": 350 },
+      { "food": "egg", "g": 110, "min": 110, "max": 165 },
+      { "food": "cottage", "g": 200, "min": 150, "max": 350 },
+      { "food": "edam", "g": 30, "min": 20, "max": 50 },
+      { "food": "potato", "g": 100, "min": 0, "max": 250 },
+      { "food": "nutmeg", "g": 0.3, "min": 0.3, "max": 0.3 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Karfiol (a zemiaky na plátky) predvar 6 minút.", "Vajcia rozšľahaj s cottage, muškátom a soľou.", "Zeleninu daj do formy, zalej zmesou, posyp syrom a peč 25 minút pri 190 °C."],
+      "de": ["Blumenkohl (und Kartoffelscheiben) 6 Minuten vorkochen.", "Eier mit Hüttenkäse, Muskat und Salz verquirlen.", "Gemüse in eine Form geben, mit der Masse übergießen, mit Käse bestreuen und 25 Minuten bei 190 °C backen."]
+    }
+  },
+  {
+    "id": "lentil-patties-yogurt",
+    "name": { "en": "Red lentil patties with yogurt dip", "sk": "Šošovicové placky s jogurtovým dipom", "de": "Linsenbratlinge mit Joghurtdip" },
+    "meals": ["lunch", "dinner"], "timeMin": 35, "equipment": ["stove"], "tags": ["vegetarian", "high_protein", "meal_prep", "budget"], "cuisine": "intl",
+    "batch": { "ok": true, "keepsDays": 3 },
+    "ingredients": [
+      { "food": "lentils_red", "g": 80, "min": 60, "max": 130 },
+      { "food": "egg", "g": 55, "min": 55, "max": 110 },
+      { "food": "breadcrumbs", "g": 20, "min": 15, "max": 30 },
+      { "food": "onion", "g": 30, "min": 30, "max": 40 },
+      { "food": "greek_0", "g": 150, "min": 100, "max": 300 },
+      { "food": "cucumber", "g": 100, "min": 50, "max": 150 },
+      { "food": "cumin", "g": 1, "min": 1, "max": 1 },
+      { "food": "rapeseed_oil", "g": 8, "min": 6, "max": 10 },
+      { "food": "garlic", "g": 3, "min": 3, "max": 3 },
+      { "food": "salt", "g": 2, "min": 2, "max": 2 }
+    ],
+    "steps": {
+      "sk": ["Šošovicu uvar doměkka (12 minút) a nechaj odkvapkať.", "Roztlač s vajcom, strúhankou, cibuľou, rascou a soľou, vytvaruj placky.", "Opeč na oleji 3–4 minúty z každej strany.", "Jogurt zmiešaj s nastrúhanou uhorkou a cesnakom a podávaj k plackám."],
+      "de": ["Linsen weich kochen (12 Minuten) und abtropfen lassen.", "Mit Ei, Paniermehl, Zwiebel, Kreuzkümmel und Salz zerdrücken, Bratlinge formen.", "Im Öl je Seite 3–4 Minuten braten.", "Joghurt mit geriebener Gurke und Knoblauch verrühren und dazu servieren."]
+    }
+  }
+]
