@@ -1,6 +1,6 @@
 # foods.json match report
 
-Generated 2026-10-28T20:53:28.184Z from: sr_legacy, foundation.
+Generated 2026-10-29T13:44:17.927Z from: sr_legacy, foundation.
 
 Matched: 372 / 372. Exact: 372, pinned: 0, fuzzy: 0, unmatched: 0.
 
