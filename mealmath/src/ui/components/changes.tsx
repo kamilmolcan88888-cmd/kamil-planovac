@@ -10,7 +10,7 @@ import type { AppSettings, StoredPlan } from '../../state/db';
 import { addDaysISO, localISO } from '../../state/dates';
 import { previewInWorker } from '../../state/planService';
 import { applyPlanChange, usePriceOverrides } from '../../state/store';
-import { bookFor, type ChangeJob } from '../../workers/planRequest';
+import { bookFor, type ChangeJob } from '../../workers/requestBase';
 import { cn } from '../lib/cn';
 import { useFormat } from '../lib/format';
 import { BottomSheet } from './BottomSheet';

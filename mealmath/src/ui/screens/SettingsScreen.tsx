@@ -10,7 +10,7 @@ import { exportAll, importAll } from '../../state/backup';
 import type { AppSettings, Theme } from '../../state/db';
 import { localISO } from '../../state/dates';
 import { updateSettings, usePriceOverrides } from '../../state/store';
-import { targetsFor } from '../../workers/planRequest';
+import { targetsFor } from '../../workers/requestBase';
 import { AppHeader } from '../components/AppShell';
 import { BottomSheet } from '../components/BottomSheet';
 import { SegmentedControl, Switch } from '../components/controls';
@@ -165,7 +165,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
         <Row icon={Info} label={t('settings.usda')} onClick={() => setInfo('usda')} />
         <Row icon={Store} label={t('settings.priceInfo')} onClick={() => setInfo('prices')} />
       </Section>
-      <p className="text-center text-caption text-text-2">MealMath · {t('settings.version', { v: '0.6' })} · {t('app.tagline')}</p>
+      <p className="text-center text-caption text-text-2">MealMath · {t('settings.version', { v: '1.0' })} · {t('app.tagline')}</p>
 
       <BottomSheet open={!!editor} onOpenChange={o => !o && setEditor(undefined)} title={editor?.title ?? ''}>
         {editor && (

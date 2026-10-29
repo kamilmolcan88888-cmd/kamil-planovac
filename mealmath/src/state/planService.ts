@@ -1,6 +1,6 @@
 import type { ChangePreview } from '../engine/changes';
 import type { PlanResult } from '../engine/planner';
-import type { ChangeRequest, PlanJob } from '../workers/planRequest';
+import type { ChangeRequest, PlanJob } from '../workers/requestBase';
 
 let worker: Worker | undefined;
 let seq = 0;

@@ -7,7 +7,7 @@ import { validatePlan } from '../../engine/validator';
 import type { AppSettings, StoredPlan } from '../../state/db';
 import { dayPart, localISO } from '../../state/dates';
 import { toggleDone, updateSettings, usePriceOverrides } from '../../state/store';
-import { bookFor } from '../../workers/planRequest';
+import { bookFor } from '../../workers/requestBase';
 import { AppHeader } from '../components/AppShell';
 import { MacroRing } from '../components/MacroRing';
 import { MealCard, MealRow } from '../components/meals';

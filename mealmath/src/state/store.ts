@@ -1,7 +1,8 @@
 // App state hooks backed by IndexedDB (Dexie). Everything stays on the device.
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS, type AppSettings, type StoredPlan } from './db';
-import { sessionsFromPlan, type ChangePreview } from '../engine/changes';
+import { sessionsFromPlan } from '../engine/planSessions';
+import type { ChangePreview } from '../engine/changes';
 import type { PlanWarning } from '../engine/planner/types';
 import type { PlanResult } from '../engine/planner';
 import { planInWorker } from './planService';

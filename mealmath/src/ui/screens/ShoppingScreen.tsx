@@ -7,7 +7,7 @@ import { buildShoppingList, displayName, planGrams, shareText, type ShareLabels,
 import { AISLES } from '../../engine/types';
 import type { AppSettings, StoredPlan } from '../../state/db';
 import { toggleChecked, updateSettings, usePriceOverrides } from '../../state/store';
-import { bookFor } from '../../workers/planRequest';
+import { bookFor } from '../../workers/requestBase';
 import { AppHeader } from '../components/AppShell';
 import { Switch } from '../components/controls';
 import { Banner, Card, EmptyState, LoadingState, SecondaryButton } from '../components/primitives';

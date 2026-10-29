@@ -4,7 +4,7 @@ import type { MealSlot, Recipe } from '../../engine/types';
 import { cn } from '../lib/cn';
 
 /**
- * Food visual. Real photos can be dropped into public/photos/<recipeId>.webp later; until then a
+ * Food visual. Real photos can be dropped into src/photos/<recipeId>.webp; until then a
  * calm, generated illustration (main ingredient icon on a tinted tile) is shown. It is clearly an
  * illustration, never a fake photo.
  */
@@ -32,7 +32,15 @@ const TINT: Record<MealSlot, string> = {
   snack: 'from-[color-mix(in_oklab,var(--c-warning)_30%,var(--c-surface))] to-[color-mix(in_oklab,var(--c-accent)_30%,var(--c-surface))]',
 };
 
+/** Own photos: drop src/photos/<recipeId>.webp (or .jpg) – picked up at build time and precached. */
+const PHOTOS: Record<string, string> = Object.fromEntries(
+  Object.entries(import.meta.glob<string>('../../photos/*.{webp,jpg,jpeg,png}', { eager: true, query: '?url', import: 'default' }))
+    .map(([path, url]) => [path.split('/').pop()!.replace(/\.[a-z]+$/, ''), url]),
+);
+
 export function RecipeVisual({ recipe, slot, foods, className, iconClass }: { recipe?: Recipe; slot: MealSlot; foods: FoodMap; className?: string; iconClass?: string }) {
+  const photo = recipe && PHOTOS[recipe.id];
+  if (photo) return <img src={photo} alt="" loading="lazy" decoding="async" className={cn('object-cover', className)} />;
   const Icon = iconFor(recipe, foods);
   return (
     <div aria-hidden className={cn('relative flex items-center justify-center overflow-hidden bg-gradient-to-br', TINT[slot], className)}>

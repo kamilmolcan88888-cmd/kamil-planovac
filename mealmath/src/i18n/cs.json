@@ -338,5 +338,13 @@
     "failed": "Změnu se nepodařilo spočítat.",
     "invalidNumbers": "Zadej kalorie (50–3000) a bílkoviny (0–300).",
     "price": "cena"
+  },
+  "pwa": {
+    "update": "Je připravena nová verze MealMath.",
+    "reload": "Načíst",
+    "offlineReady": "MealMath je připraven fungovat offline.",
+    "installTitle": "Přidej si MealMath na plochu",
+    "installText": "V Safari klepni na Sdílet a pak na „Přidat na plochu“. Aplikace se otevře na celou obrazovku a funguje i bez internetu.",
+    "ok": "Rozumím"
   }
 }

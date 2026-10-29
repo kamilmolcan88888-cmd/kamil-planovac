@@ -8,7 +8,7 @@ import { displayName } from '../../engine/shopping';
 import type { Macros } from '../../engine/types';
 import type { AppSettings, StoredPlan } from '../../state/db';
 import { updateSettings, usePriceOverrides } from '../../state/store';
-import { bookFor } from '../../workers/planRequest';
+import { bookFor } from '../../workers/requestBase';
 import { BottomSheet } from '../components/BottomSheet';
 import { SegmentedControl, Switch } from '../components/controls';
 import { Card, Chip, EmptyState, IconButton, PrimaryButton, SectionTitle } from '../components/primitives';

@@ -1,18 +1,20 @@
 import { CalendarDays, Construction, Settings, ShoppingBasket, Tag } from 'lucide-react';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { localISO } from './state/dates';
 import { createPlan, loadSettings, updateSettings, useCurrentPlan, useSettings } from './state/store';
 import { AppHeader, AppShell, type Tab } from './ui/components/AppShell';
 import { EmptyState, LoadingState } from './ui/components/primitives';
 import { HomeScreen } from './ui/screens/HomeScreen';
-import { RecipeScreen } from './ui/screens/RecipeScreen';
-import { WeekScreen } from './ui/screens/WeekScreen';
-import { ShoppingScreen } from './ui/screens/ShoppingScreen';
-import { PricesScreen } from './ui/screens/PricesScreen';
-import { SettingsScreen } from './ui/screens/SettingsScreen';
-import { TargetsScreen } from './ui/screens/TargetsScreen';
-import { Onboarding } from './ui/onboarding/Onboarding';
+
+// Everything except Home loads on demand (all of it is precached for offline use).
+const RecipeScreen = lazy(() => import('./ui/screens/RecipeScreen').then(m => ({ default: m.RecipeScreen })));
+const WeekScreen = lazy(() => import('./ui/screens/WeekScreen').then(m => ({ default: m.WeekScreen })));
+const ShoppingScreen = lazy(() => import('./ui/screens/ShoppingScreen').then(m => ({ default: m.ShoppingScreen })));
+const PricesScreen = lazy(() => import('./ui/screens/PricesScreen').then(m => ({ default: m.PricesScreen })));
+const SettingsScreen = lazy(() => import('./ui/screens/SettingsScreen').then(m => ({ default: m.SettingsScreen })));
+const TargetsScreen = lazy(() => import('./ui/screens/TargetsScreen').then(m => ({ default: m.TargetsScreen })));
+const Onboarding = lazy(() => import('./ui/onboarding/Onboarding').then(m => ({ default: m.Onboarding })));
 
 type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string }; targets?: boolean };
 const TABS: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
@@ -91,12 +93,14 @@ export function App() {
   }, [stored, generate, settings, showOnboarding]);
 
   if (!settings) return <div className="p-6"><LoadingState title={t('common.loading')} /></div>;
-  if (showOnboarding) return <Onboarding initial={settings} onDone={() => { setRedo(false); go('#/home'); }} />;
+  const loading = <LoadingState title={t('common.loading')} />;
+  if (showOnboarding) return <Suspense fallback={loading}><Onboarding initial={settings} onDone={() => { setRedo(false); go('#/home'); }} /></Suspense>;
   const openMeal = (id: string, date: string, slot: string) => go(`#/recipe/${encodeURIComponent(id)}/${date}/${slot}`);
   const back = () => (history.length > 1 ? history.back() : go('#/home'));
 
   return (
     <AppShell tab={activeTab} onTab={tab => go(`#/${tab}`)}>
+      <Suspense fallback={loading}>
       {route.recipe ? <RecipeScreen recipeId={route.recipe.id} date={route.recipe.date} slot={route.recipe.slot} settings={settings} stored={stored} onBack={back} />
         : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
           : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()}
@@ -107,6 +111,7 @@ export function App() {
             : route.tab === 'shopping' ? <ShoppingScreen settings={settings} stored={stored} busy={busy} onNewWeek={() => generate()} />
               : route.tab === 'prices' ? <PricesScreen settings={settings} />
                 : <ComingSoon tab={route.tab} />}
+      </Suspense>
     </AppShell>
   );
 }

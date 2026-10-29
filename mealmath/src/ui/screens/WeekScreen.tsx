@@ -6,7 +6,7 @@ import { validatePlan } from '../../engine/validator';
 import type { AppSettings, StoredPlan } from '../../state/db';
 import { localISO } from '../../state/dates';
 import { usePriceOverrides } from '../../state/store';
-import { bookFor } from '../../workers/planRequest';
+import { bookFor } from '../../workers/requestBase';
 import { AppHeader } from '../components/AppShell';
 import { bandState, MacroProgress, SegmentedControl } from '../components/controls';
 import { Banner, Card, Chip, EmptyState, IconButton, LoadingState, SecondaryButton } from '../components/primitives';

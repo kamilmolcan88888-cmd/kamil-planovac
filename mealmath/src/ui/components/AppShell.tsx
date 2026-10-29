@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useEffect, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../lib/cn';
+import { PwaNotices } from './PwaNotices';
 
 export type Tab = 'home' | 'week' | 'shopping' | 'prices' | 'settings';
 
@@ -50,7 +51,7 @@ export function OfflineIndicator() {
   if (online) return null;
   return (
     <div role="status" className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full bg-surface-2 px-3 py-1.5 text-caption font-medium text-text-2" title={t('offline.text')}>
-      <WifiOff aria-hidden className="size-3.5" /> {t('offline.badge')} · {t('offline.text')}
+      <WifiOff aria-hidden className="size-3.5" /> {t('offline.badge')}<span className="sr-only"> · {t('offline.text')}</span>
     </div>
   );
 }
@@ -64,6 +65,7 @@ export function AppShell({ tab, onTab, children }: { tab: Tab; onTab: (t: Tab) =
         style={{ paddingTop: 'calc(12px + var(--safe-top))', paddingBottom: 'calc(var(--tabbar-h) + 28px + var(--safe-bottom))' }}
       >
         <OfflineIndicator />
+        <PwaNotices />
         <motion.div key={tab} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.18, ease: [0.2, 0.8, 0.2, 1] }}>
           {children}
         </motion.div>

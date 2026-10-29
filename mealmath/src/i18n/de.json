@@ -504,5 +504,13 @@
     "all": "Alle",
     "version": "Version {{v}}",
     "dataTitle": "Daten"
+  },
+  "pwa": {
+    "update": "Eine neue Version von MealMath ist bereit.",
+    "reload": "Laden",
+    "offlineReady": "MealMath ist bereit für die Offline-Nutzung.",
+    "installTitle": "MealMath zum Home-Bildschirm hinzufügen",
+    "installText": "Tippe in Safari auf Teilen und dann auf „Zum Home-Bildschirm“. Die App öffnet sich im Vollbild und funktioniert auch ohne Internet.",
+    "ok": "Verstanden"
   }
 }

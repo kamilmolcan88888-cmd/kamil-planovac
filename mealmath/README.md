@@ -3,7 +3,7 @@
 Offline-first PWA na plánovanie jedál podľa makier, rozpočtu a obchodu (Lidl DE, Lidl SK, Kaufland SK).
 Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 
-> Stav: **etapa 6b** – kompletné UI: onboarding (14 krokov), Domov, Týždeň (so zmenami), Recept, Nákup, Ceny, Nastavenia. PWA a offline (etapa 7) ešte chýba.
+> Stav: **etapy 1 – 7 hotové** – dáta, vzorce, validátor, ceny a obchody, plánovač, celé UI (SK/DE, EN/CS pripravené, svetlý/tmavý režim), zmeny týždňa, PWA a offline.
 
 ![Domov – svetlý, tmavý režim, nemčina](docs/home-preview.png)
 
@@ -31,6 +31,38 @@ npm install
 npm run dev       # vývojový server (http://localhost:5173)
 npm test          # Vitest: vzorce, validátor, plánovač, ceny, integrita dát
 npm run build     # typecheck + produkčný build do dist/
+```
+
+## Inštalácia na iPhone
+
+1. Otvor nasadenú adresu (napr. `https://<používateľ>.github.io/kamil-planovac/`) v **Safari**.
+2. Ťukni na **Zdieľať** → **Pridať na plochu**.
+3. Appka sa spúšťa na celú obrazovku a po prvom otvorení funguje **úplne offline** – všetky súbory,
+   dáta (USDA, recepty, ceny) aj plánovač sú uložené v zariadení. Tvoje dáta ostávajú v IndexedDB
+   zariadenia a nikam sa neposielajú.
+
+Keď vyjde nová verzia, appka ponúkne „Načítať“ – nikdy sa neobnoví sama uprostred práce.
+
+## Nasadenie zadarmo
+
+Appka je čisto statická (žiadny server, žiadne účty), stačí hosting statických súborov.
+
+### GitHub Pages
+1. V repozitári: **Settings → Pages → Source: GitHub Actions**.
+2. Zmeny v `mealmath/` na vetve `main` spustia `.github/workflows/mealmath-pages.yml`
+   (testy → build → nasadenie). Dá sa spustiť aj ručne v záložke **Actions**.
+3. Adresa: `https://<používateľ>.github.io/<repozitár>/`. Build používa relatívne cesty (`base: './'`)
+   a hash routing, takže funguje v podpriečinku bez ďalších nastavení.
+
+### Cloudflare Pages
+1. **Workers & Pages → Create → Pages → Connect to Git**, vyber repozitár.
+2. Build command: `cd mealmath && npm ci && npm run build`
+3. Build output directory: `mealmath/dist`
+4. Environment variable `NODE_VERSION = 22`.
+
+### Lokálne
+```bash
+cd mealmath && npm run build && npm run preview   # http://localhost:4173
 ```
 
 ## Dáta
@@ -133,16 +165,45 @@ Nákupný zoznam zaokrúhľuje na celé balenia a ukazuje dve sumy: **jedlo tent
 toho, čo zješ, porovnaná s rozpočtom) a **spolu na pokladni** (celé balenia). Základné zásoby (soľ,
 korenie, olej, múka, cukor…) sú oddelené a do pokladne sa štandardne nerátajú.
 
-## UI
+## UI a architektúra
+
+```
+mealmath/
+  data/foods.json, data/recipes/*.json   ← USDA hodnoty (generované) a recepty
+  prices/<obchod>.json                   ← cenové tabuľky (ODHADY), automaticky načítané
+  scripts/                               ← build-foods (USDA), seed-prices, format-recipes
+  src/engine/                            ← čistý TypeScript: vzorce, validátor, plánovač, ceny, zmeny
+  src/data/                              ← načítanie dát a register obchodov
+  src/state/                             ← Dexie (IndexedDB), záloha, service worker
+  src/workers/                           ← plánovač vo Web Workeri (UI nezamŕza)
+  src/ui/                                ← tokeny, komponenty, obrazovky, onboarding
+  src/i18n/                              ← sk, de, en, cs
+```
 
 - `src/ui/tokens.css` – dizajnové tokeny (farby ako sémantické CSS premenné, svetlý/tmavý režim, typografia, radiusy). Komponenty nikdy nepoužívajú priame farby.
 - `src/ui/components/` – zdieľané komponenty (AppShell, BottomNavigation, StoreSelector, MacroRing, MealCard, WeeklyDayStrip, BottomSheet, …).
 - `src/i18n/` – texty SK, DE (hlavné), EN, CS. V komponentoch nie je žiadny napevno napísaný text.
 - Plánovač beží vo Web Workeri (`src/workers/`), dáta sú v IndexedDB (Dexie, `src/state/`).
-- Fotky jedál: zatiaľ generované ilustrácie. Vlastné fotky sa dajú doplniť ako `public/photos/<recipeId>.webp` (zapojenie v neskoršej etape).
+- Fotky jedál: generované ilustrácie, alebo vlastné fotky z `src/photos/<recipeId>.webp`.
+
+## Testy
+
+```bash
+npm test          # ~600 testov (Vitest)
+```
+- vzorce cieľov (Mifflin–St Jeor, aktivita, cieľ, bielkoviny, zaokrúhlenie),
+- nezávislý validátor (pásma, alergény, diéty, dostupnosť, rozsahy gramov, low-carb),
+- integrita dát (každá surovina z USDA, energia sedí s Atwaterom, recepty bez makier),
+- ceny a prepočet pri zmene obchodu (balenia, zvyšky, overrides, export/import),
+- plánovač na skutočných dátach (všetky obchody, diéty, alergie, rodina, rozpočet, determinizmus),
+- zmeny týždňa (náhľad nemení plán, výmena, jem vonku, vyradenie potraviny, konflikty obchodu).
+
+CI (`.github/workflows/mealmath-ci.yml`) spúšťa testy a build pri každej zmene.
 
 ## Obmedzenia
 
 - Výrobky v obchodoch sa líšia od USDA záznamov (napr. skyr je mapovaný na grécky jogurt 0 %, bryndza na fetu). Použitý USDA záznam sa vždy zobrazí v „Ako sme to spočítali“.
 - Alergény sú orientačné, vždy skontroluj etiketu výrobku.
 - Ceny (etapa 2) sú **odhady**, nie živé ceny obchodov.
+- Fotky jedál sú zatiaľ generované ilustrácie. Vlastnú fotku pridáš ako `src/photos/<recipeId>.webp` (napr. `src/photos/bryndza-halusky.webp`) – pri builde sa nájde sama a uloží aj pre offline.
+- Voliteľné návrhy receptov cez Claude API zatiaľ nie sú implementované.

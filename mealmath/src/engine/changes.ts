@@ -18,18 +18,8 @@ import { dayCost, storeConflicts } from './shopping';
 import type { MealSlot, Plan, PlannedMeal, Recipe } from './types';
 import { validatePlan, type PlanReport, type ValidationContext } from './validator';
 
-/** Cooking sessions as they are in a plan: one per pot (batchId) or per single meal. */
-export function sessionsFromPlan(plan: Plan): CookSession[] {
-  const map = new Map<string, CookSession>();
-  for (const d of plan.days) for (const m of d.meals) {
-    if (m.eatOut) continue;
-    const id = m.batchId ?? `m|${d.date}|${m.slot}`;
-    const s = map.get(id) ?? { id, recipeId: m.recipeId, portions: [] };
-    s.portions.push({ date: d.date, slot: m.slot });
-    map.set(id, s);
-  }
-  return [...map.values()];
-}
+export { sessionsFromPlan } from './planSessions';
+import { sessionsFromPlan } from './planSessions';
 
 export interface DayDiff { date: string; before: DaySnap; after: DaySnap }
 interface DaySnap { kcal: number; protein: number; cost: number; verified: boolean }
