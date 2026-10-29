@@ -13,7 +13,7 @@ export interface Candidate {
   /** EUR per 100 kcal at the default portion. */
   costPer100kcal: number;
   favorite: number;
-  /** Main protein food (for variety). */
+  /** Main protein family (for variety). */
   mainProtein: string;
   /** kcal the recipe can add without adding protein (fat, plus carbs unless low-carb), at max grams. */
   extraKcalMax: number;
@@ -66,8 +66,12 @@ export function filterRecipes(req: PlanRequest): Candidate[] {
     const def = at(i => i.g);
     if (def.kcal <= 0) continue;
 
-    const main = [...r.ingredients].filter(i => !forcedZero.has(i.food))
-      .sort((a, b) => (per(b.food).protein * b.g) - (per(a.food).protein * a.g))[0]!.food;
+    const mainFood = req.foods.get([...r.ingredients].filter(i => !forcedZero.has(i.food))
+      .sort((a, b) => (per(b.food).protein * b.g) - (per(a.food).protein * a.g))[0]!.food)!;
+    // Variety works on protein families (pork, beef, poultry, fish, egg, dairy, plant).
+    const fl = mainFood.flags;
+    const main = fl.includes('pork') ? 'pork' : fl.includes('red_meat') ? 'beef' : fl.includes('meat') ? 'poultry'
+      : fl.includes('fish') ? 'fish' : fl.includes('egg') ? 'egg' : fl.includes('dairy') ? 'dairy' : 'plant';
 
     const lowCarb = req.diets.includes('low_carb');
     let extraKcalMax = 0;

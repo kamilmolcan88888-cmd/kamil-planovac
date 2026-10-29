@@ -10,17 +10,39 @@
     "build:foods": "tsx scripts/build-foods.ts",
     "check:data": "tsx scripts/check-data.ts",
     "seed:prices": "tsx scripts/seed-prices.ts",
-    "format:recipes": "tsx scripts/format-recipes.ts"
+    "format:recipes": "tsx scripts/format-recipes.ts",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "fake-indexeddb": "^6.2.6",
     "fflate": "^0.8.3",
+    "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vite": "^6.4.5",
     "vitest": "^3.2.7"
   },
   "dependencies": {
-    "javascript-lp-solver": "^0.4.24"
+    "@fontsource-variable/inter": "^5.3.0",
+    "@radix-ui/react-dialog": "^1.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dexie": "^4.4.7",
+    "dexie-react-hooks": "^4.4.0",
+    "i18next": "^26.5.11",
+    "javascript-lp-solver": "^0.4.24",
+    "lucide-react": "^1.64.0",
+    "motion": "^14.7.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^17.1.9",
+    "tailwind-merge": "^3.7.0"
   }
 }

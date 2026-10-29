@@ -3,7 +3,9 @@
 Offline-first PWA na plánovanie jedál podľa makier, rozpočtu a obchodu (Lidl DE, Lidl SK, Kaufland SK).
 Bez účtov a bez predplatného, všetky dáta zostávajú v zariadení.
 
-> Stav: **etapa 3** – dáta, vzorce, validátor, ceny, obchody a plánovač. UI príde v ďalších etapách.
+> Stav: **etapa 4a** – engine (dáta, vzorce, validátor, ceny, plánovač) + dizajnový systém, navigácia a obrazovka Domov. Ostatné obrazovky prídu v ďalších etapách.
+
+![Domov – svetlý, tmavý režim, nemčina](docs/home-preview.png)
 
 ## Hlavný princíp
 
@@ -16,8 +18,9 @@ Recepty neobsahujú predpočítané makrá a test (`src/data/__tests__/data.test
 ```bash
 cd mealmath
 npm install
-npm test          # Vitest: vzorce, validátor, integrita dát
-npm run typecheck
+npm run dev       # vývojový server (http://localhost:5173)
+npm test          # Vitest: vzorce, validátor, plánovač, ceny, integrita dát
+npm run build     # typecheck + produkčný build do dist/
 ```
 
 ## Dáta
@@ -102,6 +105,14 @@ Plánovač nepoužije nedostupnú surovinu. Pri prepnutí obchodu sa plán nepre
 Nákupný zoznam zaokrúhľuje na celé balenia a ukazuje dve sumy: **jedlo tento týždeň** (pomerná cena
 toho, čo zješ, porovnaná s rozpočtom) a **spolu na pokladni** (celé balenia). Základné zásoby (soľ,
 korenie, olej, múka, cukor…) sú oddelené a do pokladne sa štandardne nerátajú.
+
+## UI
+
+- `src/ui/tokens.css` – dizajnové tokeny (farby ako sémantické CSS premenné, svetlý/tmavý režim, typografia, radiusy). Komponenty nikdy nepoužívajú priame farby.
+- `src/ui/components/` – zdieľané komponenty (AppShell, BottomNavigation, StoreSelector, MacroRing, MealCard, WeeklyDayStrip, BottomSheet, …).
+- `src/i18n/` – texty SK, DE (hlavné), EN, CS. V komponentoch nie je žiadny napevno napísaný text.
+- Plánovač beží vo Web Workeri (`src/workers/`), dáta sú v IndexedDB (Dexie, `src/state/`).
+- Fotky jedál: zatiaľ generované ilustrácie. Vlastné fotky sa dajú doplniť ako `public/photos/<recipeId>.webp` (zapojenie v neskoršej etape).
 
 ## Obmedzenia
 

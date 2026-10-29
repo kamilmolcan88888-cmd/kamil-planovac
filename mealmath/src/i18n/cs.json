@@ -1,0 +1,121 @@
+{
+  "app": {
+    "name": "MealMath",
+    "tagline": "Jez chytře. Utrácej méně."
+  },
+  "nav": {
+    "home": "Domů",
+    "week": "Týden",
+    "shopping": "Nákup",
+    "prices": "Ceny",
+    "settings": "Nastavení",
+    "label": "Hlavní navigace"
+  },
+  "greeting": {
+    "morning": "Dobré ráno",
+    "day": "Dobrý den",
+    "evening": "Dobrý večer",
+    "night": "Dobrou noc"
+  },
+  "slot": {
+    "breakfast": "Snídaně",
+    "lunch": "Oběd",
+    "dinner": "Večeře",
+    "snack": "Svačina"
+  },
+  "unit": {
+    "kcal": "kcal",
+    "g": "g",
+    "min": "min",
+    "minutes_one": "{{count}} minuta",
+    "minutes_few": "{{count}} minuty",
+    "minutes_many": "{{count}} minuty",
+    "minutes_other": "{{count}} minut"
+  },
+  "home": {
+    "today": "Dnes",
+    "calories": "Kalorie",
+    "protein": "Bílkoviny",
+    "of": "z {{target}}",
+    "eaten": "snědeno",
+    "ringKcalAria": "Kalorie: {{value}} z {{target}} kcal",
+    "ringProteinAria": "Bílkoviny: {{value}} z {{target}} g",
+    "statusDone": "Splněno",
+    "statusLeft": "Ještě {{value}}",
+    "statusOver": "O {{value}} víc",
+    "nextMeal": "Další jídlo",
+    "allDone": "Na dnes máš vše snědeno. Skvělá práce!",
+    "viewRecipe": "Zobrazit recept",
+    "week": "Tento týden",
+    "todaysMeals": "Dnešní jídla",
+    "markDone": "Označit {{meal}} jako snědené",
+    "markUndone": "Zrušit označení {{meal}}",
+    "streak_one": "{{count}} den v řadě",
+    "streak_few": "{{count}} dny v řadě",
+    "streak_many": "{{count}} dne v řadě",
+    "streak_other": "{{count}} dní v řadě",
+    "streakZero": "Začni sérii – odškrtni dnešní jídla",
+    "batch": "Z jednoho hrnce",
+    "eatOut": "Jím venku",
+    "userEstimate": "tvůj odhad",
+    "settings": "Nastavení",
+    "noPlanToday": "Dnešní den není v plánu.",
+    "generate": "Vytvořit nový týden",
+    "proteinInline": "bílkovin"
+  },
+  "dayStatus": {
+    "verified": "Ověřeno",
+    "outside": "Mimo cíle",
+    "incomplete": "Neúplné",
+    "none": "Nevytvořeno",
+    "legend": "Stav dnů"
+  },
+  "store": {
+    "title": "Obchod",
+    "switch": "Změnit obchod",
+    "current": "Aktuální obchod: {{name}}",
+    "estimate": "ODHAD",
+    "pricesAre": "Ceny jsou odhady, ne živé ceny obchodu.",
+    "conflicts_one": "{{count}} jídlo obsahuje surovinu, kterou zde neprodávají.",
+    "conflicts_few": "{{count}} jídla obsahují suroviny, které zde neprodávají.",
+    "conflicts_many": "{{count}} jídla obsahuje suroviny, které zde neprodávají.",
+    "conflicts_other": "{{count}} jídel obsahuje suroviny, které zde neprodávají.",
+    "conflictsHint": "Plán se nezměnil. Výměnu jídel nabídneme na obrazovce Týden.",
+    "items": "{{available}} z {{total}} surovin v sortimentu"
+  },
+  "plan": {
+    "generating": "Počítám tvůj týden…",
+    "generatingHint": "Gramy se počítají z hodnot USDA a každý den ověřuje nezávislý validátor.",
+    "error": "Plán se nepodařilo vytvořit.",
+    "retry": "Zkusit znovu",
+    "daysMissed_one": "{{count}} den nesplněn: bílkoviny chybí až {{protein}} g.",
+    "daysMissed_few": "{{count}} dny nesplněny: bílkoviny chybí až {{protein}} g.",
+    "daysMissed_many": "{{count}} dne nesplněno: bílkoviny chybí až {{protein}} g.",
+    "daysMissed_other": "{{count}} dní nesplněno: bílkoviny chybí až {{protein}} g.",
+    "daysMissedKcal": "Kalorie mimo pásmo nejvýše o {{kcal}} kcal.",
+    "overBudget": "Jídlo překračuje rozpočet o {{amount}}.",
+    "fewRecipes": "Tvým podmínkám vyhovuje jen {{count}} receptů.",
+    "noRecipesForSlot": "Pro {{slot}} není žádný vhodný recept."
+  },
+  "demo": {
+    "title": "Ukázkový profil",
+    "text": "Muž, 30 let, 180 cm, 80 kg, 3 tréninky, hubnutí. Čísla jsou skutečně spočítaná, profil si nastavíš v onboardingu."
+  },
+  "offline": {
+    "badge": "Offline",
+    "text": "Jsi offline – aplikace funguje dál, vše je v zařízení."
+  },
+  "common": {
+    "close": "Zavřít",
+    "back": "Zpět",
+    "continue": "Pokračovat",
+    "cancel": "Zrušit",
+    "confirm": "Potvrdit",
+    "loading": "Načítám…",
+    "comingSoon": "Připravujeme",
+    "comingSoonText": "Tato obrazovka přijde v další etapě."
+  },
+  "recipe": {
+    "title": "Recept"
+  }
+}

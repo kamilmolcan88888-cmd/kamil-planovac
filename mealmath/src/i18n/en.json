@@ -1,0 +1,113 @@
+{
+  "app": {
+    "name": "MealMath",
+    "tagline": "Eat smart. Spend less."
+  },
+  "nav": {
+    "home": "Home",
+    "week": "Week",
+    "shopping": "Shopping",
+    "prices": "Prices",
+    "settings": "Settings",
+    "label": "Main navigation"
+  },
+  "greeting": {
+    "morning": "Good morning",
+    "day": "Good afternoon",
+    "evening": "Good evening",
+    "night": "Good night"
+  },
+  "slot": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snack"
+  },
+  "unit": {
+    "kcal": "kcal",
+    "g": "g",
+    "min": "min",
+    "minutes_one": "{{count}} minute",
+    "minutes_other": "{{count}} minutes"
+  },
+  "home": {
+    "today": "Today",
+    "calories": "Calories",
+    "protein": "Protein",
+    "of": "of {{target}}",
+    "eaten": "eaten",
+    "ringKcalAria": "Calories: {{value}} of {{target}} kcal",
+    "ringProteinAria": "Protein: {{value}} of {{target}} g",
+    "statusDone": "Reached",
+    "statusLeft": "{{value}} to go",
+    "statusOver": "{{value}} over",
+    "nextMeal": "Next meal",
+    "allDone": "You've eaten everything for today. Great job!",
+    "viewRecipe": "View recipe",
+    "week": "This week",
+    "todaysMeals": "Today's meals",
+    "markDone": "Mark {{meal}} as eaten",
+    "markUndone": "Unmark {{meal}}",
+    "streak_one": "{{count}} day streak",
+    "streak_other": "{{count}} day streak",
+    "streakZero": "Start a streak – tick off today's meals",
+    "batch": "Batch cooked",
+    "eatOut": "Eating out",
+    "userEstimate": "your estimate",
+    "settings": "Settings",
+    "noPlanToday": "Today isn't in the plan.",
+    "generate": "Create a new week",
+    "proteinInline": "protein"
+  },
+  "dayStatus": {
+    "verified": "Verified",
+    "outside": "Outside targets",
+    "incomplete": "Incomplete",
+    "none": "Not generated",
+    "legend": "Day status"
+  },
+  "store": {
+    "title": "Store",
+    "switch": "Change store",
+    "current": "Current store: {{name}}",
+    "estimate": "ESTIMATE",
+    "pricesAre": "Prices are estimates, not live store prices.",
+    "conflicts_one": "{{count}} meal uses an ingredient this store doesn't sell.",
+    "conflicts_other": "{{count}} meals use ingredients this store doesn't sell.",
+    "conflictsHint": "Your plan wasn't changed. We'll offer swaps on the Week screen.",
+    "items": "{{available}} of {{total}} ingredients stocked"
+  },
+  "plan": {
+    "generating": "Calculating your week…",
+    "generatingHint": "Grams come from USDA values and an independent validator checks every day.",
+    "error": "The plan could not be created.",
+    "retry": "Try again",
+    "daysMissed_one": "{{count}} day missed: up to {{protein}} g protein short.",
+    "daysMissed_other": "{{count}} days missed: up to {{protein}} g protein short.",
+    "daysMissedKcal": "Calories outside the band by up to {{kcal}} kcal.",
+    "overBudget": "Food is over budget by {{amount}}.",
+    "fewRecipes": "Only {{count}} recipes fit your settings.",
+    "noRecipesForSlot": "No suitable recipe for {{slot}}."
+  },
+  "demo": {
+    "title": "Sample profile",
+    "text": "Male, 30 y, 180 cm, 80 kg, 3 workouts, losing weight. The numbers are really calculated; you'll set your own profile in onboarding."
+  },
+  "offline": {
+    "badge": "Offline",
+    "text": "You're offline – the app keeps working, everything is on this device."
+  },
+  "common": {
+    "close": "Close",
+    "back": "Back",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "loading": "Loading…",
+    "comingSoon": "Coming soon",
+    "comingSoonText": "This screen arrives in a later stage."
+  },
+  "recipe": {
+    "title": "Recipe"
+  }
+}

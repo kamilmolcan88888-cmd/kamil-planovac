@@ -1,0 +1,113 @@
+{
+  "app": {
+    "name": "MealMath",
+    "tagline": "Klug essen. Weniger ausgeben."
+  },
+  "nav": {
+    "home": "Start",
+    "week": "Woche",
+    "shopping": "Einkauf",
+    "prices": "Preise",
+    "settings": "Einstellungen",
+    "label": "Hauptnavigation"
+  },
+  "greeting": {
+    "morning": "Guten Morgen",
+    "day": "Guten Tag",
+    "evening": "Guten Abend",
+    "night": "Gute Nacht"
+  },
+  "slot": {
+    "breakfast": "Frühstück",
+    "lunch": "Mittagessen",
+    "dinner": "Abendessen",
+    "snack": "Snack"
+  },
+  "unit": {
+    "kcal": "kcal",
+    "g": "g",
+    "min": "Min.",
+    "minutes_one": "{{count}} Minute",
+    "minutes_other": "{{count}} Minuten"
+  },
+  "home": {
+    "today": "Heute",
+    "calories": "Kalorien",
+    "protein": "Eiweiß",
+    "of": "von {{target}}",
+    "eaten": "gegessen",
+    "ringKcalAria": "Kalorien: {{value}} von {{target}} kcal",
+    "ringProteinAria": "Eiweiß: {{value}} von {{target}} g",
+    "statusDone": "Erreicht",
+    "statusLeft": "Noch {{value}}",
+    "statusOver": "{{value}} darüber",
+    "nextMeal": "Nächste Mahlzeit",
+    "allDone": "Für heute ist alles gegessen. Super!",
+    "viewRecipe": "Rezept ansehen",
+    "week": "Diese Woche",
+    "todaysMeals": "Heutige Mahlzeiten",
+    "markDone": "{{meal}} als gegessen markieren",
+    "markUndone": "Markierung für {{meal}} aufheben",
+    "streak_one": "{{count}} Tag in Folge",
+    "streak_other": "{{count}} Tage in Folge",
+    "streakZero": "Starte deine Serie – hake die heutigen Mahlzeiten ab",
+    "batch": "Aus einem Topf",
+    "eatOut": "Auswärts essen",
+    "userEstimate": "deine Schätzung",
+    "settings": "Einstellungen",
+    "noPlanToday": "Der heutige Tag ist nicht im Plan.",
+    "generate": "Neue Woche erstellen",
+    "proteinInline": "Eiweiß"
+  },
+  "dayStatus": {
+    "verified": "Geprüft",
+    "outside": "Außerhalb der Ziele",
+    "incomplete": "Unvollständig",
+    "none": "Nicht erstellt",
+    "legend": "Status der Tage"
+  },
+  "store": {
+    "title": "Markt",
+    "switch": "Markt wechseln",
+    "current": "Aktueller Markt: {{name}}",
+    "estimate": "SCHÄTZUNG",
+    "pricesAre": "Preise sind Schätzungen, keine Live-Preise.",
+    "conflicts_one": "{{count}} Mahlzeit im Plan enthält eine Zutat, die es hier nicht gibt.",
+    "conflicts_other": "{{count}} Mahlzeiten im Plan enthalten Zutaten, die es hier nicht gibt.",
+    "conflictsHint": "Der Plan wurde nicht geändert. Den Tausch bieten wir unter „Woche“ an.",
+    "items": "{{available}} von {{total}} Zutaten im Sortiment"
+  },
+  "plan": {
+    "generating": "Deine Woche wird berechnet…",
+    "generatingHint": "Grammangaben stammen aus USDA-Werten, jeden Tag prüft ein unabhängiger Validator.",
+    "error": "Der Plan konnte nicht erstellt werden.",
+    "retry": "Erneut versuchen",
+    "daysMissed_one": "{{count}} Tag nicht erreicht: bis zu {{protein}} g Eiweiß fehlen.",
+    "daysMissed_other": "{{count}} Tage nicht erreicht: bis zu {{protein}} g Eiweiß fehlen.",
+    "daysMissedKcal": "Kalorien höchstens {{kcal}} kcal außerhalb des Bereichs.",
+    "overBudget": "Das Essen überschreitet das Budget um {{amount}}.",
+    "fewRecipes": "Nur {{count}} Rezepte passen zu deinen Vorgaben.",
+    "noRecipesForSlot": "Für {{slot}} gibt es kein passendes Rezept."
+  },
+  "demo": {
+    "title": "Beispielprofil",
+    "text": "Mann, 30 J., 180 cm, 80 kg, 3 Trainings, Abnehmen. Die Zahlen sind echt berechnet, dein Profil legst du im Onboarding an."
+  },
+  "offline": {
+    "badge": "Offline",
+    "text": "Du bist offline – die App funktioniert weiter, alles ist auf dem Gerät."
+  },
+  "common": {
+    "close": "Schließen",
+    "back": "Zurück",
+    "continue": "Weiter",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "loading": "Wird geladen…",
+    "comingSoon": "In Arbeit",
+    "comingSoonText": "Dieser Bildschirm kommt in einer der nächsten Etappen."
+  },
+  "recipe": {
+    "title": "Rezept"
+  }
+}
