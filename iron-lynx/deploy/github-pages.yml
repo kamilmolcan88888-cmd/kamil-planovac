@@ -1,0 +1,35 @@
+# ALTERNATÍVA: statická hra na GitHub Pages, signalizácia ostáva na mnxserveri.
+# Použitie: skopíruj tento súbor do .github/workflows/ironlynx-pages.yml (v koreni repozitára),
+# v GitHub → Settings → Pages nastav „Source: GitHub Actions“ a v Settings → Secrets and variables
+# → Actions → Variables pridaj SIGNAL_URL = wss://mnxserver.<tvoj-tailnet>.ts.net/ws
+# POZOR: ak už Pages používa iná appka v tomto repozitári, tento workflow ju nahradí.
+name: IRON LYNX → GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['iron-lynx/**']
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: iron-lynx } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: iron-lynx/package-lock.json }
+      - run: npm ci
+      - run: npm run build
+        env: { VITE_SIGNAL_URL: '${{ vars.SIGNAL_URL }}' }
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: iron-lynx/dist }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: '${{ steps.d.outputs.page_url }}' }
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4

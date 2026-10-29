@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <!-- zákaz zoomu, viewport-fit=cover kvôli výrezu (notch) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0e1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Iron Lynx">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <title>IRON LYNX: Karpatský úder</title>
+</head>
+<body>
+  <!-- herné plátno (Phaser) -->
+  <div id="game"></div>
+
+  <!-- dotykové ovládanie (DOM vrstva nad plátnom, multi-touch) -->
+  <div id="touch" class="hidden">
+    <div id="dpad" class="tc"><div class="dpad-knob"></div></div>
+    <div id="btns" class="tc">
+      <div id="btnFire" class="btn"><span>STREĽBA</span></div>
+      <div id="btnJump" class="btn"><span>SKOK</span></div>
+    </div>
+    <div id="btnPause" class="pause">II</div>
+    <div id="editBar" class="hidden">
+      Ťahaj ovládače na nové miesto
+      <button id="editMinus">−</button><button id="editPlus">+</button>
+      <button id="editReset">Reset</button><button id="editDone">Hotovo</button>
+    </div>
+  </div>
+
+  <!-- zadanie kódu miestnosti (systémová klávesnica iOS) -->
+  <form id="codeForm" class="hidden" autocomplete="off">
+    <label for="codeInput">KÓD MIESTNOSTI</label>
+    <input id="codeInput" maxlength="4" autocapitalize="characters" autocorrect="off" spellcheck="false" inputmode="text">
+    <div><button type="submit">PRIPOJIŤ</button><button type="button" id="codeCancel">SPÄŤ</button></div>
+  </form>
+
+  <!-- výzva na otočenie telefónu -->
+  <div id="rotate"><div class="phone"></div><p>Otoč telefón na šírku</p></div>
+
+  <div id="toast"></div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

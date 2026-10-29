@@ -1,0 +1,15 @@
+# Spustenie na mnxserveri:  docker compose up -d --build
+# Hra + signalizácia bežia na porte 8080; HTTPS/WSS zabezpečí `tailscale serve` (docs/DEPLOY.md).
+services:
+  ironlynx:
+    build: .
+    image: ironlynx:latest
+    container_name: ironlynx
+    restart: unless-stopped
+    ports:
+      - "8080:8080"        # LAN: http://192.168.8.170:8080 (iba test – PWA/Wake Lock potrebujú HTTPS)
+    environment:
+      - PORT=8080
+    logging:
+      driver: json-file
+      options: { max-size: "5m", max-file: "2" }
