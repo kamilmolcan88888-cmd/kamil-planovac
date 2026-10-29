@@ -1,4 +1,4 @@
-import { Activity, ShieldAlert as AllergenIcon, Ban, BookOpen, Calculator, ChefHat, ChevronRight, CookingPot, Database, Download, Globe, Info, Moon, RefreshCw, Ruler, Salad, Store, Tag, Target, Upload, Users, Wallet, WifiOff, type LucideIcon } from 'lucide-react';
+import { Activity, ShieldAlert as AllergenIcon, Ban, BookOpen, Calculator, ChefHat, ChevronRight, CookingPot, Database, Download, Globe, Info, Moon, RefreshCw, Ruler, Salad, Sparkles, Store, Tag, Target, Upload, Users, Wallet, WifiOff, type LucideIcon } from 'lucide-react';
 import { useRef, useState, type ReactNode } from 'react';
 import type React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -16,6 +16,7 @@ import { BottomSheet } from '../components/BottomSheet';
 import { SegmentedControl, Switch } from '../components/controls';
 import { Banner, Card, PrimaryButton, SecondaryButton } from '../components/primitives';
 import { StoreSelector } from '../components/StoreSelector';
+import { AiRecipesPanel } from '../components/aiRecipes';
 import { cn } from '../lib/cn';
 import { useFormat } from '../lib/format';
 import {
@@ -58,6 +59,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
   const [draft, setDraft] = useState<AppSettings>(settings);
   const [note, setNote] = useState<{ tone: 'info' | 'warning'; text: string }>();
   const [info, setInfo] = useState<'methodology' | 'usda' | 'prices' | 'offline'>();
+  const [ai, setAi] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
   const tg = targetsFor(settings);
   const p = settings.profile;
@@ -113,6 +115,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
         <Row icon={AllergenIcon} label={t('settings.allergies')} value={settings.allergens.length ? settings.allergens.map(a => t(`allergen.${a}`)).join(', ') : t('settings.none')} onClick={() => open(E(t('settings.allergies'), AllergyStep))} />
         <Row icon={Ban} label={t('settings.foods')} value={`${t('onboarding.favorites')}: ${settings.favoriteFoods.length} · ${t('onboarding.excluded')}: ${settings.excludedFoods.length}`} onClick={() => open(E(t('settings.foods'), FoodsStep))} />
         <Row icon={CookingPot} label={t('settings.equipment')} value={settings.equipment.map(e => t(`equipment.${e}`)).join(', ')} onClick={() => open(E(t('settings.equipment'), EquipmentStep))} />
+        <Row icon={Sparkles} label={t('ai.row')} value={settings.aiEnabled ? t('ai.on', { count: settings.customRecipes?.length ?? 0 }) : t('ai.off')} onClick={() => setAi(true)} />
       </Section>
 
       <section aria-label={t('settings.shopping')}>
@@ -165,7 +168,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
         <Row icon={Info} label={t('settings.usda')} onClick={() => setInfo('usda')} />
         <Row icon={Store} label={t('settings.priceInfo')} onClick={() => setInfo('prices')} />
       </Section>
-      <p className="text-center text-caption text-text-2">MealMath · {t('settings.version', { v: '1.0' })} · {t('app.tagline')}</p>
+      <p className="text-center text-caption text-text-2">MealMath · {t('settings.version', { v: '1.1' })} · {t('app.tagline')}</p>
 
       <BottomSheet open={!!editor} onOpenChange={o => !o && setEditor(undefined)} title={editor?.title ?? ''}>
         {editor && (
@@ -174,6 +177,10 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
             <PrimaryButton onClick={() => void save()}>{t('settings.save')}</PrimaryButton>
           </div>
         )}
+      </BottomSheet>
+
+      <BottomSheet open={ai} onOpenChange={setAi} title={t('ai.row')}>
+        {ai && <AiRecipesPanel settings={settings} />}
       </BottomSheet>
 
       <BottomSheet open={!!info} onOpenChange={o => !o && setInfo(undefined)} title={info ? t(info === 'methodology' ? 'settings.methodology' : info === 'usda' ? 'settings.usda' : info === 'prices' ? 'settings.priceInfo' : 'settings.offline') : ''}>

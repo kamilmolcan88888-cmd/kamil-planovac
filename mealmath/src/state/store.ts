@@ -7,6 +7,7 @@ import type { PlanWarning } from '../engine/planner/types';
 import type { PlanResult } from '../engine/planner';
 import { planInWorker } from './planService';
 import { localISO } from './dates';
+import { registerCustomRecipes } from '../data/catalog';
 import type { MealSlot, PriceOverride } from '../engine/types';
 
 export async function loadSettings(): Promise<AppSettings> {
@@ -16,7 +17,11 @@ export async function loadSettings(): Promise<AppSettings> {
   return DEFAULT_SETTINGS;
 }
 
-export const useSettings = () => useLiveQuery(() => db.settings.get('app').then(s => (s ? { ...DEFAULT_SETTINGS, ...s } : undefined)));
+export const useSettings = () => useLiveQuery(() => db.settings.get('app').then(s => {
+  if (!s) return undefined;
+  registerCustomRecipes(s.customRecipes); // before any screen looks up a custom recipe id
+  return { ...DEFAULT_SETTINGS, ...s };
+}));
 
 export const updateSettings = (patch: Partial<AppSettings>) => db.settings.update('app', patch);
 
@@ -36,8 +41,20 @@ export async function savePlanResult(r: PlanResult, settings: AppSettings, start
   await db.transaction('rw', db.plans, db.settings, async () => {
     await db.plans.put(stored);
     await db.settings.update('app', { ...settingsPatch, currentPlanId: stored.id, planStale: false });
+    await prunePlans(stored.id);
   });
   return stored;
+}
+
+/** How many older plans are kept next to the current one (IndexedDB would otherwise grow forever). */
+export const KEEP_OLD_PLANS = 4;
+
+/** Deletes all but the current plan and the KEEP_OLD_PLANS newest others. Returns the number deleted. */
+export async function prunePlans(currentId?: string, keep = KEEP_OLD_PLANS): Promise<number> {
+  const all = await db.plans.toArray();
+  const old = all.filter(p => p.id !== currentId).sort((a, b) => b.createdAt.localeCompare(a.createdAt)).slice(keep);
+  if (old.length) await db.plans.bulkDelete(old.map(p => p.id));
+  return old.length;
 }
 
 /** Generates a new week starting `startDate` with the current settings and makes it current. */

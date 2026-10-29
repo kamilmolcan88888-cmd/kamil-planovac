@@ -16,7 +16,9 @@ export interface Backup {
 
 export async function exportAll(): Promise<Backup> {
   const [settings, plans, priceOverrides] = await Promise.all([db.settings.get('app'), db.plans.toArray(), db.priceOverrides.toArray()]);
-  return { format: BACKUP_FORMAT, version: BACKUP_VERSION, exportedAt: new Date().toISOString(), settings: settings ?? DEFAULT_SETTINGS, plans, priceOverrides };
+  // The API key never leaves the device in a backup file.
+  const { aiKey: _key, ...safe } = settings ?? DEFAULT_SETTINGS;
+  return { format: BACKUP_FORMAT, version: BACKUP_VERSION, exportedAt: new Date().toISOString(), settings: safe as AppSettings, plans, priceOverrides };
 }
 
 /** Throws on anything that is not a MealMath backup. Replaces all local data in one transaction. */
@@ -27,8 +29,9 @@ export async function importAll(raw: unknown): Promise<void> {
   }
   if (b.plans.some(p => !p?.id || !p.plan?.days) || b.priceOverrides.some(o => !o?.storeId || !o.foodId || !(o.price > 0) || !(o.packG > 0))) throw new Error('invalid_backup');
   await db.transaction('rw', db.settings, db.plans, db.priceOverrides, async () => {
+    const keep = (await db.settings.get('app'))?.aiKey; // backups carry no key – keep this device's
     await Promise.all([db.settings.clear(), db.plans.clear(), db.priceOverrides.clear()]);
-    await db.settings.put({ ...DEFAULT_SETTINGS, ...b.settings, key: 'app' });
+    await db.settings.put({ ...DEFAULT_SETTINGS, ...b.settings, ...(keep ? { aiKey: keep } : {}), key: 'app' });
     await db.plans.bulkPut(b.plans!);
     await db.priceOverrides.bulkPut(b.priceOverrides!);
   });

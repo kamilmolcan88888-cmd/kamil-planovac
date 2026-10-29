@@ -512,5 +512,38 @@
     "installTitle": "Add MealMath to your Home Screen",
     "installText": "In Safari tap Share, then “Add to Home Screen”. The app opens full screen and works without internet.",
     "ok": "Got it"
+  },
+  "ai": {
+    "row": "Recipe suggestions (Claude)",
+    "off": "Off",
+    "on": "On · {{count}} saved",
+    "intro": "Optional. Claude proposes a new recipe using only foods in the app. Calories and macros are always computed by the app from USDA data – numbers from the model are never used. Only the allowed foods and your wish are sent (not your profile). You pay with your own API key from console.anthropic.com.",
+    "enable": "Allow recipe suggestions",
+    "enableHint": "Needs internet and your own API key",
+    "key": "Anthropic API key",
+    "keyHint": "Stored only on this device and left out of backups.",
+    "slot": "Meal",
+    "wish": "Wish (optional)",
+    "wishPlaceholder": "e.g. quick, with quark, no oven",
+    "suggest": "Suggest a recipe",
+    "working": "Claude is thinking…",
+    "preview": "Suggestion – check before saving",
+    "computed": "Computed from USDA data for the default portion; the planner scales it within its range.",
+    "macros": "{{kcal}} kcal · {{protein}} g protein · {{carbs}} g carbs · {{fat}} g fat",
+    "save": "Save to recipes",
+    "discard": "Discard",
+    "saved": "My recipes ({{count}})",
+    "inPlan": "in current plan",
+    "delete": "Delete {{name}}",
+    "err": {
+      "no_key": "Enter an API key.",
+      "auth": "The API key doesn't work. Check it at console.anthropic.com.",
+      "network": "Can't reach Anthropic. Try again online.",
+      "rate_limit": "Too many requests. Try again shortly.",
+      "refused": "The model declined. Try a different wish.",
+      "api": "API error.",
+      "invalid": "The suggestion was invalid and was rejected ({{list}}).",
+      "constraints": "The suggestion broke your restrictions ({{list}}) and was rejected."
+    }
   }
 }

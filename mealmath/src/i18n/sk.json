@@ -526,5 +526,38 @@
     "installTitle": "Pridaj si MealMath na plochu",
     "installText": "V Safari ťukni na Zdieľať a potom na „Pridať na plochu“. Appka sa otvorí na celú obrazovku a funguje aj bez internetu.",
     "ok": "Rozumiem"
+  },
+  "ai": {
+    "row": "Návrhy receptov (Claude)",
+    "off": "Vypnuté",
+    "on": "Zapnuté · {{count}} uložených",
+    "intro": "Voliteľné. Claude navrhne nový recept len z potravín v aplikácii. Kalórie a makrá vždy vypočíta aplikácia z USDA údajov – čísla od modelu sa nikdy nepoužijú. Odošle sa zoznam povolených potravín a tvoje prianie (nie tvoj profil). Platíš vlastným API kľúčom z console.anthropic.com.",
+    "enable": "Povoliť návrhy receptov",
+    "enableHint": "Vyžaduje internet a vlastný API kľúč",
+    "key": "Anthropic API kľúč",
+    "keyHint": "Uloží sa len v tomto zariadení a nie je súčasťou zálohy.",
+    "slot": "Jedlo",
+    "wish": "Prianie (nepovinné)",
+    "wishPlaceholder": "napr. rýchle, z tvarohu, bez rúry",
+    "suggest": "Navrhnúť recept",
+    "working": "Claude premýšľa…",
+    "preview": "Návrh – skontroluj pred uložením",
+    "computed": "Vypočítané z USDA pre predvolenú porciu; plánovač ju prispôsobí v rozsahu.",
+    "macros": "{{kcal}} kcal · {{protein}} g bielkovín · {{carbs}} g sacharidov · {{fat}} g tukov",
+    "save": "Uložiť do receptov",
+    "discard": "Zahodiť",
+    "saved": "Moje recepty ({{count}})",
+    "inPlan": "v aktuálnom pláne",
+    "delete": "Zmazať {{name}}",
+    "err": {
+      "no_key": "Zadaj API kľúč.",
+      "auth": "API kľúč nefunguje. Skontroluj ho v console.anthropic.com.",
+      "network": "Bez spojenia s Anthropic. Skús to znova online.",
+      "rate_limit": "Príliš veľa požiadaviek. Skús to o chvíľu.",
+      "refused": "Model návrh odmietol. Skús iné prianie.",
+      "api": "Chyba API.",
+      "invalid": "Návrh nebol platný a bol zamietnutý ({{list}}).",
+      "constraints": "Návrh porušil tvoje obmedzenia ({{list}}) a bol zamietnutý."
+    }
   }
 }

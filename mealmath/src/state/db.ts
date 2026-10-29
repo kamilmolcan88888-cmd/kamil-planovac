@@ -1,5 +1,5 @@
 import Dexie, { type Table } from 'dexie';
-import type { Allergen, BodyProfile, Diet, Equipment, Household, Lang, MealSlot, Plan, PriceOverride } from '../engine/types';
+import type { Allergen, BodyProfile, Diet, Equipment, Household, Lang, MealSlot, Plan, PriceOverride, Recipe } from '../engine/types';
 import type { CookSession, PlanWarning, RepetitionLevel } from '../engine/planner/types';
 
 export type Theme = 'auto' | 'light' | 'dark';
@@ -35,6 +35,12 @@ export interface AppSettings {
   planDays?: number;
   /** Count pantry staples (salt, oil, spices…) in the checkout total. */
   includePantry?: boolean;
+  /** Optional Claude recipe suggestions (off by default). */
+  aiEnabled?: boolean;
+  /** The user's own Anthropic API key. Stays on this device and is left out of backups. */
+  aiKey?: string;
+  /** Saved custom recipes (validated; macros always computed from foods.json). */
+  customRecipes?: Recipe[];
 }
 
 export interface StoredPlan {

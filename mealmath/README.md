@@ -133,6 +133,17 @@ vybavenie, domácnosť, ktoré jedlá si varíš (jedlá mimo domu sa rátajú a
 vypočítané ciele (s možnosťou ručnej úpravy a celým výpočtom „Ako sme to spočítali“) a ukážkový týždeň.
 Nastavenia používajú tie isté kroky. Zmena, ktorá ovplyvní plán, ho označí ako zastaraný a ponúkne nový týždeň.
 **Export/import všetkých dát** (nastavenia, plány, vlastné ceny) je jeden JSON súbor.
+Ukladá sa aktuálny plán + 4 posledné staršie; staršie sa pri novom pláne automaticky zmažú (`prunePlans`).
+
+### Návrhy receptov cez Claude (voliteľné, predvolene vypnuté)
+
+Nastavenia → Jedlo → *Návrhy receptov (Claude)*. Používateľ zadá vlastný Anthropic API kľúč (uložený len v zariadení,
+nie je v zálohe). Model `claude-opus-5-5` dostane iba zoznam **povolených** potravín (diéta, alergény, nechcené, dostupné
+v obchode) a prianie; cez structured outputs vráti JSON bez akýchkoľvek nutričných polí (`src/engine/aiRecipe.ts`).
+Kód potom: overí id potravín voči `foods.json` a gramáže (`parseAiRecipe`), znova skontroluje obmedzenia
+(`constraintViolations` v `src/state/ai.ts`) a makrá vypočíta z USDA. Neplatný návrh sa zamietne, nikdy „neopraví“.
+Uložené recepty (`settings.customRecipes`, id `ai-…`) sa pridajú ku katalógu (`registerCustomRecipes`) a plánovač
+ich používa ako ostatné. Recept v aktuálnom pláne sa nedá zmazať. SDK sa načíta až pri prvom návrhu.
 
 ## Obchody a ceny
 
@@ -206,4 +217,4 @@ CI (`.github/workflows/mealmath-ci.yml`) spúšťa testy a build pri každej zme
 - Alergény sú orientačné, vždy skontroluj etiketu výrobku.
 - Ceny (etapa 2) sú **odhady**, nie živé ceny obchodov.
 - Fotky jedál sú zatiaľ generované ilustrácie. Vlastnú fotku pridáš ako `src/photos/<recipeId>.webp` (napr. `src/photos/bryndza-halusky.webp`) – pri builde sa nájde sama a uloží aj pre offline.
-- Voliteľné návrhy receptov cez Claude API zatiaľ nie sú implementované.
+- Návrhy receptov cez Claude potrebujú internet a vlastný platený API kľúč.

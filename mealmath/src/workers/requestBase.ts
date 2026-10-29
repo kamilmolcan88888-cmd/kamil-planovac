@@ -1,5 +1,5 @@
 // Builds planner requests from stored settings. Light: no solver, safe for the main thread.
-import { FOOD_MAP, RECIPES } from '../data/catalog';
+import { FOOD_MAP, RECIPES, registerCustomRecipes } from '../data/catalog';
 import { PRICE_TABLES } from '../data/stores';
 import type { PlanRequest } from '../engine/planner/types';
 import { PriceBook } from '../engine/pricing';
@@ -31,6 +31,7 @@ export function externalLocked(s: AppSettings, startDate: string, days: number):
 }
 
 export function requestFor(s: AppSettings, overrides: PriceOverride[], startDate: string, seed = 1, targets?: Targets): PlanRequest {
+  registerCustomRecipes(s.customRecipes);
   const days = s.planDays ?? 7;
   const locked = externalLocked(s, startDate, days);
   return {

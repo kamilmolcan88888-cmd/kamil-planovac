@@ -512,5 +512,38 @@
     "installTitle": "MealMath zum Home-Bildschirm hinzufügen",
     "installText": "Tippe in Safari auf Teilen und dann auf „Zum Home-Bildschirm“. Die App öffnet sich im Vollbild und funktioniert auch ohne Internet.",
     "ok": "Verstanden"
+  },
+  "ai": {
+    "row": "Rezeptvorschläge (Claude)",
+    "off": "Aus",
+    "on": "An · {{count}} gespeichert",
+    "intro": "Optional. Claude schlägt ein neues Rezept nur aus Lebensmitteln der App vor. Kalorien und Makros berechnet immer die App aus USDA-Daten – Zahlen vom Modell werden nie verwendet. Gesendet werden die erlaubten Lebensmittel und dein Wunsch (nicht dein Profil). Du zahlst mit deinem eigenen API-Schlüssel von console.anthropic.com.",
+    "enable": "Rezeptvorschläge erlauben",
+    "enableHint": "Braucht Internet und einen eigenen API-Schlüssel",
+    "key": "Anthropic-API-Schlüssel",
+    "keyHint": "Wird nur auf diesem Gerät gespeichert und ist nicht Teil der Sicherung.",
+    "slot": "Mahlzeit",
+    "wish": "Wunsch (optional)",
+    "wishPlaceholder": "z. B. schnell, mit Quark, ohne Ofen",
+    "suggest": "Rezept vorschlagen",
+    "working": "Claude denkt nach…",
+    "preview": "Vorschlag – vor dem Speichern prüfen",
+    "computed": "Aus USDA-Daten für die Standardportion berechnet; der Planer passt sie im Bereich an.",
+    "macros": "{{kcal}} kcal · {{protein}} g Eiweiß · {{carbs}} g Kohlenhydrate · {{fat}} g Fett",
+    "save": "In Rezepte speichern",
+    "discard": "Verwerfen",
+    "saved": "Meine Rezepte ({{count}})",
+    "inPlan": "im aktuellen Plan",
+    "delete": "{{name}} löschen",
+    "err": {
+      "no_key": "Gib einen API-Schlüssel ein.",
+      "auth": "Der API-Schlüssel funktioniert nicht. Prüfe ihn auf console.anthropic.com.",
+      "network": "Keine Verbindung zu Anthropic. Versuch es online erneut.",
+      "rate_limit": "Zu viele Anfragen. Versuch es gleich nochmal.",
+      "refused": "Das Modell hat abgelehnt. Versuch einen anderen Wunsch.",
+      "api": "API-Fehler.",
+      "invalid": "Der Vorschlag war ungültig und wurde verworfen ({{list}}).",
+      "constraints": "Der Vorschlag verletzte deine Einschränkungen ({{list}}) und wurde verworfen."
+    }
   }
 }
