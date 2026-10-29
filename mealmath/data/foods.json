@@ -1,0 +1,8369 @@
+{
+ "source": "USDA FoodData Central (public domain), sr_legacy + foundation",
+ "generatedAt": "2026-10-28T20:53:28.185Z",
+ "foods": [
+  {
+   "id": "potato",
+   "fdcId": 170026,
+   "usdaDescription": "Potatoes, flesh and skin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Potatoes",
+    "sk": "Zemiaky",
+    "de": "Kartoffeln"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "pieceG": 150,
+   "per100": {
+    "kcal": 77,
+    "protein": 2.05,
+    "carbs": 17.49,
+    "fat": 0.09
+   }
+  },
+  {
+   "id": "sweet_potato",
+   "fdcId": 168482,
+   "usdaDescription": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sweet potato",
+    "sk": "Batáty",
+    "de": "Süßkartoffel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 250,
+   "per100": {
+    "kcal": 86,
+    "protein": 1.57,
+    "carbs": 20.12,
+    "fat": 0.05
+   }
+  },
+  {
+   "id": "carrot",
+   "fdcId": 170393,
+   "usdaDescription": "Carrots, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Carrots",
+    "sk": "Mrkva",
+    "de": "Karotten"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "pieceG": 80,
+   "per100": {
+    "kcal": 41,
+    "protein": 0.93,
+    "carbs": 9.58,
+    "fat": 0.24
+   }
+  },
+  {
+   "id": "onion",
+   "fdcId": 170000,
+   "usdaDescription": "Onions, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Onion",
+    "sk": "Cibuľa",
+    "de": "Zwiebel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "pieceG": 110,
+   "per100": {
+    "kcal": 40,
+    "protein": 1.1,
+    "carbs": 9.34,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "red_onion",
+   "fdcId": 170000,
+   "usdaDescription": "Onions, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Red onion",
+    "sk": "Červená cibuľa",
+    "de": "Rote Zwiebel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "pieceG": 110,
+   "per100": {
+    "kcal": 40,
+    "protein": 1.1,
+    "carbs": 9.34,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "spring_onion",
+   "fdcId": 170005,
+   "usdaDescription": "Onions, spring or scallions (includes tops and bulb), raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Spring onions",
+    "sk": "Jarná cibuľka",
+    "de": "Frühlingszwiebeln"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 15,
+   "per100": {
+    "kcal": 32,
+    "protein": 1.83,
+    "carbs": 7.34,
+    "fat": 0.19
+   }
+  },
+  {
+   "id": "garlic",
+   "fdcId": 169230,
+   "usdaDescription": "Garlic, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Garlic",
+    "sk": "Cesnak",
+    "de": "Knoblauch"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "pieceG": 5,
+   "per100": {
+    "kcal": 149,
+    "protein": 6.36,
+    "carbs": 33.06,
+    "fat": 0.5
+   }
+  },
+  {
+   "id": "shallot",
+   "fdcId": 170499,
+   "usdaDescription": "Shallots, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Shallots",
+    "sk": "Šalotka",
+    "de": "Schalotten"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "pieceG": 25,
+   "per100": {
+    "kcal": 72,
+    "protein": 2.5,
+    "carbs": 16.8,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "tomato",
+   "fdcId": 170457,
+   "usdaDescription": "Tomatoes, red, ripe, raw, year round average",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tomatoes",
+    "sk": "Paradajky",
+    "de": "Tomaten"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 120,
+   "per100": {
+    "kcal": 18,
+    "protein": 0.88,
+    "carbs": 3.89,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "cherry_tomato",
+   "fdcId": 170457,
+   "usdaDescription": "Tomatoes, red, ripe, raw, year round average",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cherry tomatoes",
+    "sk": "Cherry paradajky",
+    "de": "Cherrytomaten"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 15,
+   "per100": {
+    "kcal": 18,
+    "protein": 0.88,
+    "carbs": 3.89,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "cucumber",
+   "fdcId": 168409,
+   "usdaDescription": "Cucumber, with peel, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cucumber",
+    "sk": "Uhorka šalátová",
+    "de": "Salatgurke"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 400,
+   "per100": {
+    "kcal": 15,
+    "protein": 0.65,
+    "carbs": 3.63,
+    "fat": 0.11
+   }
+  },
+  {
+   "id": "pepper_red",
+   "fdcId": 170108,
+   "usdaDescription": "Peppers, sweet, red, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Red bell pepper",
+    "sk": "Paprika červená",
+    "de": "Paprika rot"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 160,
+   "per100": {
+    "kcal": 26,
+    "protein": 0.99,
+    "carbs": 6.03,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "pepper_green",
+   "fdcId": 170427,
+   "usdaDescription": "Peppers, sweet, green, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Green bell pepper",
+    "sk": "Paprika zelená",
+    "de": "Paprika grün"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 160,
+   "per100": {
+    "kcal": 20,
+    "protein": 0.86,
+    "carbs": 4.64,
+    "fat": 0.17
+   }
+  },
+  {
+   "id": "pepper_yellow",
+   "fdcId": 169383,
+   "usdaDescription": "Peppers, sweet, yellow, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Yellow bell pepper",
+    "sk": "Paprika žltá",
+    "de": "Paprika gelb"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 160,
+   "per100": {
+    "kcal": 27,
+    "protein": 1,
+    "carbs": 6.32,
+    "fat": 0.21
+   }
+  },
+  {
+   "id": "zucchini",
+   "fdcId": 169291,
+   "usdaDescription": "Squash, summer, zucchini, includes skin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Zucchini",
+    "sk": "Cuketa",
+    "de": "Zucchini"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 250,
+   "per100": {
+    "kcal": 17,
+    "protein": 1.21,
+    "carbs": 3.11,
+    "fat": 0.32
+   }
+  },
+  {
+   "id": "eggplant",
+   "fdcId": 169228,
+   "usdaDescription": "Eggplant, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Eggplant",
+    "sk": "Baklažán",
+    "de": "Aubergine"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 300,
+   "per100": {
+    "kcal": 25,
+    "protein": 0.98,
+    "carbs": 5.88,
+    "fat": 0.18
+   }
+  },
+  {
+   "id": "broccoli",
+   "fdcId": 170379,
+   "usdaDescription": "Broccoli, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Broccoli",
+    "sk": "Brokolica",
+    "de": "Brokkoli"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 400,
+   "per100": {
+    "kcal": 34,
+    "protein": 2.82,
+    "carbs": 6.64,
+    "fat": 0.37
+   }
+  },
+  {
+   "id": "cauliflower",
+   "fdcId": 169986,
+   "usdaDescription": "Cauliflower, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cauliflower",
+    "sk": "Karfiol",
+    "de": "Blumenkohl"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 600,
+   "per100": {
+    "kcal": 25,
+    "protein": 1.92,
+    "carbs": 4.97,
+    "fat": 0.28
+   }
+  },
+  {
+   "id": "cabbage",
+   "fdcId": 169975,
+   "usdaDescription": "Cabbage, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "White cabbage",
+    "sk": "Kapusta biela",
+    "de": "Weißkohl"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "per100": {
+    "kcal": 25,
+    "protein": 1.28,
+    "carbs": 5.8,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "red_cabbage",
+   "fdcId": 169977,
+   "usdaDescription": "Cabbage, red, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Red cabbage",
+    "sk": "Kapusta červená",
+    "de": "Rotkohl"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "per100": {
+    "kcal": 31,
+    "protein": 1.43,
+    "carbs": 7.37,
+    "fat": 0.16
+   }
+  },
+  {
+   "id": "savoy",
+   "fdcId": 170388,
+   "usdaDescription": "Cabbage, savoy, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Savoy cabbage",
+    "sk": "Kel",
+    "de": "Wirsing"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 27,
+    "protein": 2,
+    "carbs": 6.1,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "chinese_cabbage",
+   "fdcId": 169979,
+   "usdaDescription": "Cabbage, chinese (pe-tsai), raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chinese cabbage",
+    "sk": "Čínska kapusta",
+    "de": "Chinakohl"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 10,
+   "per100": {
+    "kcal": 16,
+    "protein": 1.2,
+    "carbs": 3.23,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "kohlrabi",
+   "fdcId": 168424,
+   "usdaDescription": "Kohlrabi, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Kohlrabi",
+    "sk": "Kaleráb",
+    "de": "Kohlrabi"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 300,
+   "per100": {
+    "kcal": 27,
+    "protein": 1.7,
+    "carbs": 6.2,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "spinach",
+   "fdcId": 168462,
+   "usdaDescription": "Spinach, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Baby spinach",
+    "sk": "Baby špenát",
+    "de": "Babyspinat"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 23,
+    "protein": 2.86,
+    "carbs": 3.63,
+    "fat": 0.39
+   }
+  },
+  {
+   "id": "iceberg",
+   "fdcId": 169248,
+   "usdaDescription": "Lettuce, iceberg (includes crisphead types), raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Iceberg lettuce",
+    "sk": "Ľadový šalát",
+    "de": "Eisbergsalat"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 500,
+   "per100": {
+    "kcal": 14,
+    "protein": 0.9,
+    "carbs": 2.97,
+    "fat": 0.14
+   }
+  },
+  {
+   "id": "romaine",
+   "fdcId": 169247,
+   "usdaDescription": "Lettuce, cos or romaine, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Romaine lettuce",
+    "sk": "Rímsky šalát",
+    "de": "Romanasalat"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 17,
+    "protein": 1.23,
+    "carbs": 3.29,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "lettuce_green",
+   "fdcId": 169249,
+   "usdaDescription": "Lettuce, green leaf, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Green leaf lettuce",
+    "sk": "Hlávkový šalát",
+    "de": "Kopfsalat"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 15,
+    "protein": 1.36,
+    "carbs": 2.87,
+    "fat": 0.15
+   }
+  },
+  {
+   "id": "cornsalad",
+   "fdcId": 169219,
+   "usdaDescription": "Cornsalad, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Lamb's lettuce",
+    "sk": "Polníček",
+    "de": "Feldsalat"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 21,
+    "protein": 2,
+    "carbs": 3.6,
+    "fat": 0.4
+   }
+  },
+  {
+   "id": "arugula",
+   "fdcId": 169387,
+   "usdaDescription": "Arugula, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rocket",
+    "sk": "Rukola",
+    "de": "Rucola"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 25,
+    "protein": 2.58,
+    "carbs": 3.65,
+    "fat": 0.66
+   }
+  },
+  {
+   "id": "kale",
+   "fdcId": 168421,
+   "usdaDescription": "Kale, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Kale",
+    "sk": "Kučeravý kel",
+    "de": "Grünkohl"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 35,
+    "protein": 2.92,
+    "carbs": 4.42,
+    "fat": 1.49
+   }
+  },
+  {
+   "id": "leek",
+   "fdcId": 169246,
+   "usdaDescription": "Leeks, (bulb and lower leaf-portion), raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Leek",
+    "sk": "Pór",
+    "de": "Lauch"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 10,
+   "pieceG": 200,
+   "per100": {
+    "kcal": 61,
+    "protein": 1.5,
+    "carbs": 14.15,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "celery_stalk",
+   "fdcId": 169988,
+   "usdaDescription": "Celery, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Celery",
+    "sk": "Stopkový zeler",
+    "de": "Staudensellerie"
+   },
+   "aisle": "produce",
+   "allergens": [
+    "celery"
+   ],
+   "flags": [],
+   "shelfDays": 10,
+   "per100": {
+    "kcal": 14,
+    "protein": 0.69,
+    "carbs": 2.97,
+    "fat": 0.17
+   }
+  },
+  {
+   "id": "celeriac",
+   "fdcId": 170400,
+   "usdaDescription": "Celeriac, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Celeriac",
+    "sk": "Zeler buľvový",
+    "de": "Knollensellerie"
+   },
+   "aisle": "produce",
+   "allergens": [
+    "celery"
+   ],
+   "flags": [],
+   "shelfDays": 21,
+   "per100": {
+    "kcal": 42,
+    "protein": 1.5,
+    "carbs": 9.2,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "parsnip",
+   "fdcId": 170417,
+   "usdaDescription": "Parsnips, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Parsnip",
+    "sk": "Paštrnák",
+    "de": "Pastinake"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "per100": {
+    "kcal": 75,
+    "protein": 1.2,
+    "carbs": 17.99,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "beetroot",
+   "fdcId": 169145,
+   "usdaDescription": "Beets, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Beetroot",
+    "sk": "Cvikla",
+    "de": "Rote Bete"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "pieceG": 150,
+   "per100": {
+    "kcal": 43,
+    "protein": 1.61,
+    "carbs": 9.56,
+    "fat": 0.17
+   }
+  },
+  {
+   "id": "radish",
+   "fdcId": 169276,
+   "usdaDescription": "Radishes, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Radishes",
+    "sk": "Reďkovky",
+    "de": "Radieschen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 16,
+    "protein": 0.68,
+    "carbs": 3.4,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "mushroom",
+   "fdcId": 169251,
+   "usdaDescription": "Mushrooms, white, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "White mushrooms",
+    "sk": "Šampiňóny",
+    "de": "Champignons"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 22,
+    "protein": 3.09,
+    "carbs": 3.26,
+    "fat": 0.34
+   }
+  },
+  {
+   "id": "mushroom_brown",
+   "fdcId": 168434,
+   "usdaDescription": "Mushrooms, brown, italian, or crimini, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Brown mushrooms",
+    "sk": "Hnedé šampiňóny",
+    "de": "Braune Champignons"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 22,
+    "protein": 2.5,
+    "carbs": 4.3,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "oyster_mushroom",
+   "fdcId": 168580,
+   "usdaDescription": "Mushrooms, oyster, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Oyster mushrooms",
+    "sk": "Hliva ustricová",
+    "de": "Austernpilze"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 33,
+    "protein": 3.31,
+    "carbs": 6.09,
+    "fat": 0.41
+   }
+  },
+  {
+   "id": "green_beans",
+   "fdcId": 169961,
+   "usdaDescription": "Beans, snap, green, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Green beans",
+    "sk": "Zelené fazuľky",
+    "de": "Grüne Bohnen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 31,
+    "protein": 1.83,
+    "carbs": 6.97,
+    "fat": 0.22
+   }
+  },
+  {
+   "id": "asparagus",
+   "fdcId": 168389,
+   "usdaDescription": "Asparagus, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Asparagus",
+    "sk": "Špargľa",
+    "de": "Spargel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 20,
+    "protein": 2.2,
+    "carbs": 3.88,
+    "fat": 0.12
+   }
+  },
+  {
+   "id": "brussels",
+   "fdcId": 170383,
+   "usdaDescription": "Brussels sprouts, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Brussels sprouts",
+    "sk": "Ružičkový kel",
+    "de": "Rosenkohl"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 43,
+    "protein": 3.38,
+    "carbs": 8.95,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "fennel",
+   "fdcId": 169385,
+   "usdaDescription": "Fennel, bulb, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Fennel",
+    "sk": "Fenikel",
+    "de": "Fenchel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 250,
+   "per100": {
+    "kcal": 31,
+    "protein": 1.24,
+    "carbs": 7.3,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "pumpkin",
+   "fdcId": 168448,
+   "usdaDescription": "Pumpkin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pumpkin (Hokkaido)",
+    "sk": "Tekvica Hokkaido",
+    "de": "Hokkaido-Kürbis"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 26,
+    "protein": 1,
+    "carbs": 6.5,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "butternut",
+   "fdcId": 169295,
+   "usdaDescription": "Squash, winter, butternut, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Butternut squash",
+    "sk": "Tekvica maslová",
+    "de": "Butternut-Kürbis"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 45,
+    "protein": 1,
+    "carbs": 11.69,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "chili",
+   "fdcId": 170106,
+   "usdaDescription": "Peppers, hot chili, red, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Red chili",
+    "sk": "Čili paprička",
+    "de": "Chilischote"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 10,
+   "pieceG": 10,
+   "per100": {
+    "kcal": 40,
+    "protein": 1.87,
+    "carbs": 8.81,
+    "fat": 0.44
+   }
+  },
+  {
+   "id": "ginger",
+   "fdcId": 169231,
+   "usdaDescription": "Ginger root, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ginger",
+    "sk": "Zázvor",
+    "de": "Ingwer"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "per100": {
+    "kcal": 80,
+    "protein": 1.82,
+    "carbs": 17.77,
+    "fat": 0.75
+   }
+  },
+  {
+   "id": "avocado",
+   "fdcId": 171705,
+   "usdaDescription": "Avocados, raw, all commercial varieties",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Avocado",
+    "sk": "Avokádo",
+    "de": "Avocado"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "pieceG": 170,
+   "per100": {
+    "kcal": 160,
+    "protein": 2,
+    "carbs": 8.53,
+    "fat": 14.66
+   }
+  },
+  {
+   "id": "corn_cob",
+   "fdcId": 169998,
+   "usdaDescription": "Corn, sweet, yellow, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sweet corn on the cob",
+    "sk": "Kukurica v klasoch",
+    "de": "Maiskolben"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "pieceG": 200,
+   "per100": {
+    "kcal": 86,
+    "protein": 3.27,
+    "carbs": 18.7,
+    "fat": 1.35
+   }
+  },
+  {
+   "id": "radicchio",
+   "fdcId": 168564,
+   "usdaDescription": "Radicchio, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Radicchio",
+    "sk": "Radicchio",
+    "de": "Radicchio"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 23,
+    "protein": 1.43,
+    "carbs": 4.48,
+    "fat": 0.25
+   }
+  },
+  {
+   "id": "chard",
+   "fdcId": 169991,
+   "usdaDescription": "Chard, swiss, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Swiss chard",
+    "sk": "Mangold",
+    "de": "Mangold"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 19,
+    "protein": 1.8,
+    "carbs": 3.74,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "endive",
+   "fdcId": 168412,
+   "usdaDescription": "Endive, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Endive",
+    "sk": "Endívia",
+    "de": "Endivie"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 17,
+    "protein": 1.25,
+    "carbs": 3.35,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "bean_sprouts",
+   "fdcId": 169957,
+   "usdaDescription": "Mung beans, mature seeds, sprouted, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mung bean sprouts",
+    "sk": "Klíčky mungo",
+    "de": "Mungobohnensprossen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 30,
+    "protein": 3.04,
+    "carbs": 5.94,
+    "fat": 0.18
+   }
+  },
+  {
+   "id": "turnip",
+   "fdcId": 170465,
+   "usdaDescription": "Turnips, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Turnip",
+    "sk": "Okrúhlica",
+    "de": "Speiserübe"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 28,
+    "protein": 0.9,
+    "carbs": 6.43,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "peas_snow",
+   "fdcId": 170010,
+   "usdaDescription": "Peas, edible-podded, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Snow peas",
+    "sk": "Cukrový hrášok",
+    "de": "Zuckerschoten"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 42,
+    "protein": 2.8,
+    "carbs": 7.55,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "okra",
+   "fdcId": 169260,
+   "usdaDescription": "Okra, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Okra",
+    "sk": "Okra",
+    "de": "Okra"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 33,
+    "protein": 1.93,
+    "carbs": 7.45,
+    "fat": 0.19
+   }
+  },
+  {
+   "id": "lemon",
+   "fdcId": 167746,
+   "usdaDescription": "Lemons, raw, without peel",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Lemon",
+    "sk": "Citrón",
+    "de": "Zitrone"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "pieceG": 60,
+   "per100": {
+    "kcal": 29,
+    "protein": 1.1,
+    "carbs": 9.32,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "lime",
+   "fdcId": 168155,
+   "usdaDescription": "Limes, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Lime",
+    "sk": "Limetka",
+    "de": "Limette"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "pieceG": 45,
+   "per100": {
+    "kcal": 30,
+    "protein": 0.7,
+    "carbs": 10.54,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "parsley",
+   "fdcId": 170416,
+   "usdaDescription": "Parsley, fresh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Parsley",
+    "sk": "Petržlenová vňať",
+    "de": "Petersilie"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 36,
+    "protein": 2.97,
+    "carbs": 6.33,
+    "fat": 0.79
+   }
+  },
+  {
+   "id": "dill",
+   "fdcId": 172233,
+   "usdaDescription": "Dill weed, fresh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dill",
+    "sk": "Kôpor",
+    "de": "Dill"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 43,
+    "protein": 3.46,
+    "carbs": 7.02,
+    "fat": 1.12
+   }
+  },
+  {
+   "id": "basil",
+   "fdcId": 172232,
+   "usdaDescription": "Basil, fresh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Basil",
+    "sk": "Bazalka",
+    "de": "Basilikum"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 23,
+    "protein": 3.15,
+    "carbs": 2.65,
+    "fat": 0.64
+   }
+  },
+  {
+   "id": "chives",
+   "fdcId": 169994,
+   "usdaDescription": "Chives, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chives",
+    "sk": "Pažítka",
+    "de": "Schnittlauch"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 30,
+    "protein": 3.27,
+    "carbs": 4.35,
+    "fat": 0.73
+   }
+  },
+  {
+   "id": "cilantro",
+   "fdcId": 169997,
+   "usdaDescription": "Coriander (cilantro) leaves, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Coriander leaves",
+    "sk": "Koriandrová vňať",
+    "de": "Koriander"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 23,
+    "protein": 2.13,
+    "carbs": 3.67,
+    "fat": 0.52
+   }
+  },
+  {
+   "id": "mint",
+   "fdcId": 173475,
+   "usdaDescription": "Spearmint, fresh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mint",
+    "sk": "Mäta",
+    "de": "Minze"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 44,
+    "protein": 3.29,
+    "carbs": 8.41,
+    "fat": 0.73
+   }
+  },
+  {
+   "id": "apple",
+   "fdcId": 171688,
+   "usdaDescription": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Apple",
+    "sk": "Jablko",
+    "de": "Apfel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "pieceG": 180,
+   "per100": {
+    "kcal": 52,
+    "protein": 0.26,
+    "carbs": 13.81,
+    "fat": 0.17
+   }
+  },
+  {
+   "id": "banana",
+   "fdcId": 173944,
+   "usdaDescription": "Bananas, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Banana",
+    "sk": "Banán",
+    "de": "Banane"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 120,
+   "per100": {
+    "kcal": 89,
+    "protein": 1.09,
+    "carbs": 22.84,
+    "fat": 0.33
+   }
+  },
+  {
+   "id": "orange",
+   "fdcId": 169097,
+   "usdaDescription": "Oranges, raw, all commercial varieties",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Orange",
+    "sk": "Pomaranč",
+    "de": "Orange"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 180,
+   "per100": {
+    "kcal": 47,
+    "protein": 0.94,
+    "carbs": 11.75,
+    "fat": 0.12
+   }
+  },
+  {
+   "id": "mandarin",
+   "fdcId": 169105,
+   "usdaDescription": "Tangerines, (mandarin oranges), raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mandarin",
+    "sk": "Mandarínka",
+    "de": "Mandarine"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 10,
+   "pieceG": 75,
+   "per100": {
+    "kcal": 53,
+    "protein": 0.81,
+    "carbs": 13.34,
+    "fat": 0.31
+   }
+  },
+  {
+   "id": "pear",
+   "fdcId": 169118,
+   "usdaDescription": "Pears, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pear",
+    "sk": "Hruška",
+    "de": "Birne"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 180,
+   "per100": {
+    "kcal": 57,
+    "protein": 0.36,
+    "carbs": 15.23,
+    "fat": 0.14
+   }
+  },
+  {
+   "id": "grapes",
+   "fdcId": 174683,
+   "usdaDescription": "Grapes, red or green (European type, such as Thompson seedless), raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Grapes",
+    "sk": "Hrozno",
+    "de": "Weintrauben"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 69,
+    "protein": 0.72,
+    "carbs": 18.1,
+    "fat": 0.16
+   }
+  },
+  {
+   "id": "strawberry",
+   "fdcId": 167762,
+   "usdaDescription": "Strawberries, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Strawberries",
+    "sk": "Jahody",
+    "de": "Erdbeeren"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 32,
+    "protein": 0.67,
+    "carbs": 7.68,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "blueberry",
+   "fdcId": 171711,
+   "usdaDescription": "Blueberries, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Blueberries",
+    "sk": "Čučoriedky",
+    "de": "Heidelbeeren"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 57,
+    "protein": 0.74,
+    "carbs": 14.49,
+    "fat": 0.33
+   }
+  },
+  {
+   "id": "raspberry",
+   "fdcId": 167755,
+   "usdaDescription": "Raspberries, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Raspberries",
+    "sk": "Maliny",
+    "de": "Himbeeren"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 52,
+    "protein": 1.2,
+    "carbs": 11.94,
+    "fat": 0.65
+   }
+  },
+  {
+   "id": "blackberry",
+   "fdcId": 173946,
+   "usdaDescription": "Blackberries, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Blackberries",
+    "sk": "Černice",
+    "de": "Brombeeren"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 43,
+    "protein": 1.39,
+    "carbs": 9.61,
+    "fat": 0.49
+   }
+  },
+  {
+   "id": "kiwi",
+   "fdcId": 168153,
+   "usdaDescription": "Kiwifruit, green, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Kiwi",
+    "sk": "Kiwi",
+    "de": "Kiwi"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 75,
+   "per100": {
+    "kcal": 61,
+    "protein": 1.14,
+    "carbs": 14.66,
+    "fat": 0.52
+   }
+  },
+  {
+   "id": "pineapple",
+   "fdcId": 169124,
+   "usdaDescription": "Pineapple, raw, all varieties",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pineapple",
+    "sk": "Ananás",
+    "de": "Ananas"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 50,
+    "protein": 0.54,
+    "carbs": 13.12,
+    "fat": 0.12
+   }
+  },
+  {
+   "id": "mango",
+   "fdcId": 169910,
+   "usdaDescription": "Mangos, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mango",
+    "sk": "Mango",
+    "de": "Mango"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "pieceG": 300,
+   "per100": {
+    "kcal": 60,
+    "protein": 0.82,
+    "carbs": 14.98,
+    "fat": 0.38
+   }
+  },
+  {
+   "id": "plum",
+   "fdcId": 169949,
+   "usdaDescription": "Plums, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Plums",
+    "sk": "Slivky",
+    "de": "Pflaumen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 60,
+   "per100": {
+    "kcal": 46,
+    "protein": 0.7,
+    "carbs": 11.42,
+    "fat": 0.28
+   }
+  },
+  {
+   "id": "apricot",
+   "fdcId": 171697,
+   "usdaDescription": "Apricots, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Apricots",
+    "sk": "Marhule",
+    "de": "Aprikosen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "pieceG": 35,
+   "per100": {
+    "kcal": 48,
+    "protein": 1.4,
+    "carbs": 11.12,
+    "fat": 0.39
+   }
+  },
+  {
+   "id": "peach",
+   "fdcId": 169928,
+   "usdaDescription": "Peaches, yellow, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Peach",
+    "sk": "Broskyňa",
+    "de": "Pfirsich"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "pieceG": 150,
+   "per100": {
+    "kcal": 39,
+    "protein": 0.91,
+    "carbs": 9.54,
+    "fat": 0.25
+   }
+  },
+  {
+   "id": "nectarine",
+   "fdcId": 169914,
+   "usdaDescription": "Nectarines, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Nectarine",
+    "sk": "Nektarinka",
+    "de": "Nektarine"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "pieceG": 140,
+   "per100": {
+    "kcal": 44,
+    "protein": 1.06,
+    "carbs": 10.55,
+    "fat": 0.32
+   }
+  },
+  {
+   "id": "cherry",
+   "fdcId": 171719,
+   "usdaDescription": "Cherries, sweet, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cherries",
+    "sk": "Čerešne",
+    "de": "Kirschen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 63,
+    "protein": 1.06,
+    "carbs": 16.01,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "watermelon",
+   "fdcId": 167765,
+   "usdaDescription": "Watermelon, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Watermelon",
+    "sk": "Melón vodový",
+    "de": "Wassermelone"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 30,
+    "protein": 0.61,
+    "carbs": 7.55,
+    "fat": 0.15
+   }
+  },
+  {
+   "id": "cantaloupe",
+   "fdcId": 169092,
+   "usdaDescription": "Melons, cantaloupe, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cantaloupe melon",
+    "sk": "Melón cukrový",
+    "de": "Honigmelone"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 34,
+    "protein": 0.84,
+    "carbs": 8.16,
+    "fat": 0.19
+   }
+  },
+  {
+   "id": "grapefruit",
+   "fdcId": 174673,
+   "usdaDescription": "Grapefruit, raw, pink and red, all areas",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Grapefruit",
+    "sk": "Grapefruit",
+    "de": "Grapefruit"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 250,
+   "per100": {
+    "kcal": 42,
+    "protein": 0.77,
+    "carbs": 10.66,
+    "fat": 0.14
+   }
+  },
+  {
+   "id": "pomegranate",
+   "fdcId": 169134,
+   "usdaDescription": "Pomegranates, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pomegranate",
+    "sk": "Granátové jablko",
+    "de": "Granatapfel"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 83,
+    "protein": 1.67,
+    "carbs": 18.7,
+    "fat": 1.17
+   }
+  },
+  {
+   "id": "fig",
+   "fdcId": 173021,
+   "usdaDescription": "Figs, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Figs",
+    "sk": "Figy",
+    "de": "Feigen"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "pieceG": 50,
+   "per100": {
+    "kcal": 74,
+    "protein": 0.75,
+    "carbs": 19.18,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "redcurrant",
+   "fdcId": 173964,
+   "usdaDescription": "Currants, red and white, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Redcurrants",
+    "sk": "Ríbezle",
+    "de": "Johannisbeeren"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 56,
+    "protein": 1.4,
+    "carbs": 13.8,
+    "fat": 0.2
+   }
+  },
+  {
+   "id": "gooseberry",
+   "fdcId": 173030,
+   "usdaDescription": "Gooseberries, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Gooseberries",
+    "sk": "Egreše",
+    "de": "Stachelbeeren"
+   },
+   "aisle": "produce",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 44,
+    "protein": 0.88,
+    "carbs": 10.18,
+    "fat": 0.58
+   }
+  },
+  {
+   "id": "raisins",
+   "fdcId": 168165,
+   "usdaDescription": "Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Raisins",
+    "sk": "Hrozienka",
+    "de": "Rosinen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 299,
+    "protein": 3.3,
+    "carbs": 79.32,
+    "fat": 0.25
+   }
+  },
+  {
+   "id": "dates",
+   "fdcId": 168191,
+   "usdaDescription": "Dates, medjool",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dates",
+    "sk": "Datle",
+    "de": "Datteln"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "pieceG": 24,
+   "per100": {
+    "kcal": 277,
+    "protein": 1.81,
+    "carbs": 74.97,
+    "fat": 0.15
+   }
+  },
+  {
+   "id": "dried_apricot",
+   "fdcId": 173941,
+   "usdaDescription": "Apricots, dried, sulfured, uncooked",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried apricots",
+    "sk": "Sušené marhule",
+    "de": "Getrocknete Aprikosen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 241,
+    "protein": 3.39,
+    "carbs": 62.64,
+    "fat": 0.51
+   }
+  },
+  {
+   "id": "dried_cranberry",
+   "fdcId": 171723,
+   "usdaDescription": "Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried cranberries",
+    "sk": "Sušené brusnice",
+    "de": "Getrocknete Cranberries"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 308,
+    "protein": 0.17,
+    "carbs": 82.8,
+    "fat": 1.09
+   }
+  },
+  {
+   "id": "prunes",
+   "fdcId": 168162,
+   "usdaDescription": "Plums, dried (prunes), uncooked",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Prunes",
+    "sk": "Sušené slivky",
+    "de": "Trockenpflaumen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 240,
+    "protein": 2.18,
+    "carbs": 63.88,
+    "fat": 0.38
+   }
+  },
+  {
+   "id": "dried_fig",
+   "fdcId": 174665,
+   "usdaDescription": "Figs, dried, uncooked",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried figs",
+    "sk": "Sušené figy",
+    "de": "Getrocknete Feigen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 249,
+    "protein": 3.3,
+    "carbs": 63.87,
+    "fat": 0.93
+   }
+  },
+  {
+   "id": "sauerkraut",
+   "fdcId": 169279,
+   "usdaDescription": "Sauerkraut, canned, solids and liquids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sauerkraut",
+    "sk": "Kyslá kapusta",
+    "de": "Sauerkraut"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 19,
+    "protein": 0.91,
+    "carbs": 4.28,
+    "fat": 0.14
+   }
+  },
+  {
+   "id": "mushroom_canned",
+   "fdcId": 169254,
+   "usdaDescription": "Mushrooms, canned, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Canned mushrooms",
+    "sk": "Šampiňóny v slanom náleve",
+    "de": "Champignons (Glas)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 25,
+    "protein": 1.87,
+    "carbs": 5.09,
+    "fat": 0.29
+   }
+  },
+  {
+   "id": "corn_canned",
+   "fdcId": 169214,
+   "usdaDescription": "Corn, sweet, yellow, canned, whole kernel, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sweet corn (can)",
+    "sk": "Kukurica sterilizovaná",
+    "de": "Mais (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 67,
+    "protein": 2.29,
+    "carbs": 14.34,
+    "fat": 1.22
+   }
+  },
+  {
+   "id": "pickles",
+   "fdcId": 168558,
+   "usdaDescription": "Pickles, cucumber, dill or kosher dill",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pickled gherkins",
+    "sk": "Sterilizované uhorky",
+    "de": "Gewürzgurken"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 12,
+    "protein": 0.5,
+    "carbs": 2.41,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "olives_black",
+   "fdcId": 169094,
+   "usdaDescription": "Olives, ripe, canned (small-extra large)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Black olives",
+    "sk": "Čierne olivy",
+    "de": "Schwarze Oliven"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 116,
+    "protein": 0.84,
+    "carbs": 6.04,
+    "fat": 10.9
+   }
+  },
+  {
+   "id": "olives_green",
+   "fdcId": 169096,
+   "usdaDescription": "Olives, pickled, canned or bottled, green",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Green olives",
+    "sk": "Zelené olivy",
+    "de": "Grüne Oliven"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 145,
+    "protein": 1.03,
+    "carbs": 3.84,
+    "fat": 15.32
+   }
+  },
+  {
+   "id": "sundried_tomato",
+   "fdcId": 169384,
+   "usdaDescription": "Tomatoes, sun-dried, packed in oil, drained",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sun-dried tomatoes",
+    "sk": "Sušené paradajky v oleji",
+    "de": "Getrocknete Tomaten in Öl"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 21,
+   "per100": {
+    "kcal": 213,
+    "protein": 5.06,
+    "carbs": 23.33,
+    "fat": 14.08
+   }
+  },
+  {
+   "id": "passata",
+   "fdcId": 170460,
+   "usdaDescription": "Tomato products, canned, puree, without salt added",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tomato passata",
+    "sk": "Paradajkový pretlak passata",
+    "de": "Passierte Tomaten"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 38,
+    "protein": 1.65,
+    "carbs": 8.98,
+    "fat": 0.21
+   }
+  },
+  {
+   "id": "tomato_canned",
+   "fdcId": 170051,
+   "usdaDescription": "Tomatoes, red, ripe, canned, packed in tomato juice",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chopped tomatoes (can)",
+    "sk": "Krájané paradajky v plechovke",
+    "de": "Gehackte Tomaten (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 16,
+    "protein": 0.79,
+    "carbs": 3.47,
+    "fat": 0.25
+   }
+  },
+  {
+   "id": "tomato_paste",
+   "fdcId": 170459,
+   "usdaDescription": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tomato paste",
+    "sk": "Paradajkový pretlak",
+    "de": "Tomatenmark"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 82,
+    "protein": 4.32,
+    "carbs": 18.91,
+    "fat": 0.47
+   }
+  },
+  {
+   "id": "roasted_pepper",
+   "fdcId": 168546,
+   "usdaDescription": "Peppers, sweet, red, canned, solids and liquids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Roasted peppers (jar)",
+    "sk": "Pečená paprika v náleve",
+    "de": "Geröstete Paprika (Glas)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 10,
+   "per100": {
+    "kcal": 18,
+    "protein": 0.8,
+    "carbs": 3.9,
+    "fat": 0.3
+   }
+  },
+  {
+   "id": "beetroot_jar",
+   "fdcId": 169966,
+   "usdaDescription": "Beets, canned, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pickled beetroot (jar)",
+    "sk": "Cvikla sterilizovaná",
+    "de": "Rote Bete (Glas)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 10,
+   "per100": {
+    "kcal": 31,
+    "protein": 0.91,
+    "carbs": 7.21,
+    "fat": 0.14
+   }
+  },
+  {
+   "id": "chickpeas_can",
+   "fdcId": 173801,
+   "usdaDescription": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained, rinsed in tap water",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chickpeas (can)",
+    "sk": "Cícer v plechovke",
+    "de": "Kichererbsen (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 138,
+    "protein": 7.04,
+    "carbs": 22.87,
+    "fat": 2.47
+   }
+  },
+  {
+   "id": "kidney_can",
+   "fdcId": 175243,
+   "usdaDescription": "Beans, kidney, red, mature seeds, canned, drained solids, rinsed in tap water",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Kidney beans (can)",
+    "sk": "Červená fazuľa v plechovke",
+    "de": "Kidneybohnen (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 121,
+    "protein": 8.12,
+    "carbs": 20.8,
+    "fat": 0.93
+   }
+  },
+  {
+   "id": "white_beans_can",
+   "fdcId": 175204,
+   "usdaDescription": "Beans, white, mature seeds, canned",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "White beans (can)",
+    "sk": "Biela fazuľa v plechovke",
+    "de": "Weiße Bohnen (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 114,
+    "protein": 7.26,
+    "carbs": 21.2,
+    "fat": 0.29
+   }
+  },
+  {
+   "id": "black_beans_can",
+   "fdcId": 175238,
+   "usdaDescription": "Beans, black, mature seeds, canned, low sodium",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Black beans (can)",
+    "sk": "Čierna fazuľa v plechovke",
+    "de": "Schwarze Bohnen (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 91,
+    "protein": 6.03,
+    "carbs": 16.55,
+    "fat": 0.29
+   }
+  },
+  {
+   "id": "baked_beans",
+   "fdcId": 175182,
+   "usdaDescription": "Beans, baked, canned, plain or vegetarian",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Baked beans",
+    "sk": "Fazuľa v paradajkovej omáčke",
+    "de": "Baked Beans"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 94,
+    "protein": 4.75,
+    "carbs": 21.14,
+    "fat": 0.37
+   }
+  },
+  {
+   "id": "lentils_can",
+   "fdcId": 172421,
+   "usdaDescription": "Lentils, mature seeds, cooked, boiled, without salt",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cooked lentils (can)",
+    "sk": "Šošovica v plechovke",
+    "de": "Linsen (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 116,
+    "protein": 9.02,
+    "carbs": 20.13,
+    "fat": 0.38
+   }
+  },
+  {
+   "id": "peas_can",
+   "fdcId": 170104,
+   "usdaDescription": "Peas, green, canned, no salt added, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Peas (can)",
+    "sk": "Hrášok sterilizovaný",
+    "de": "Erbsen (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 69,
+    "protein": 4.42,
+    "carbs": 12.58,
+    "fat": 0.35
+   }
+  },
+  {
+   "id": "peach_can",
+   "fdcId": 169930,
+   "usdaDescription": "Peaches, canned, juice pack, solids and liquids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Peaches in juice (can)",
+    "sk": "Broskyne v šťave",
+    "de": "Pfirsiche in Saft (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 44,
+    "protein": 0.63,
+    "carbs": 11.57,
+    "fat": 0.03
+   }
+  },
+  {
+   "id": "pineapple_can",
+   "fdcId": 169126,
+   "usdaDescription": "Pineapple, canned, juice pack, solids and liquids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pineapple in juice (can)",
+    "sk": "Ananás v šťave",
+    "de": "Ananas in Saft (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 60,
+    "protein": 0.42,
+    "carbs": 15.7,
+    "fat": 0.08
+   }
+  },
+  {
+   "id": "applesauce",
+   "fdcId": 171695,
+   "usdaDescription": "Applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Apple purée",
+    "sk": "Jablkové pyré",
+    "de": "Apfelmark"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 42,
+    "protein": 0.17,
+    "carbs": 11.27,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "coconut_milk",
+   "fdcId": 170173,
+   "usdaDescription": "Nuts, coconut milk, canned (liquid expressed from grated meat and water)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Coconut milk",
+    "sk": "Kokosové mlieko",
+    "de": "Kokosmilch"
+   },
+   "aisle": "canned",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 197,
+    "protein": 2.02,
+    "carbs": 2.81,
+    "fat": 21.33
+   }
+  },
+  {
+   "id": "tuna_water",
+   "fdcId": 173709,
+   "usdaDescription": "Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tuna in water (can)",
+    "sk": "Tuniak vo vlastnej šťave",
+    "de": "Thunfisch naturell"
+   },
+   "aisle": "canned",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 86,
+    "protein": 19.44,
+    "carbs": 0,
+    "fat": 0.96
+   }
+  },
+  {
+   "id": "tuna_oil",
+   "fdcId": 173708,
+   "usdaDescription": "Fish, tuna, light, canned in oil, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tuna in oil (can)",
+    "sk": "Tuniak v oleji",
+    "de": "Thunfisch in Öl"
+   },
+   "aisle": "canned",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 198,
+    "protein": 29.13,
+    "carbs": 0,
+    "fat": 8.21
+   }
+  },
+  {
+   "id": "sardines",
+   "fdcId": 175139,
+   "usdaDescription": "Fish, sardine, Atlantic, canned in oil, drained solids with bone",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sardines in oil",
+    "sk": "Sardinky v oleji",
+    "de": "Sardinen in Öl"
+   },
+   "aisle": "canned",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 208,
+    "protein": 24.62,
+    "carbs": 0,
+    "fat": 11.45
+   }
+  },
+  {
+   "id": "mackerel_can",
+   "fdcId": 175121,
+   "usdaDescription": "Fish, mackerel, jack, canned, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mackerel fillets (can)",
+    "sk": "Makrela v plechovke",
+    "de": "Makrelenfilets (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 156,
+    "protein": 23.19,
+    "carbs": 0,
+    "fat": 6.3
+   }
+  },
+  {
+   "id": "salmon_can",
+   "fdcId": 175175,
+   "usdaDescription": "Fish, salmon, pink, canned, drained solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Salmon (can)",
+    "sk": "Losos v plechovke",
+    "de": "Lachs (Dose)"
+   },
+   "aisle": "canned",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 138,
+    "protein": 23.1,
+    "carbs": 0,
+    "fat": 5.02
+   }
+  },
+  {
+   "id": "chicken_breast",
+   "fdcId": 171077,
+   "usdaDescription": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken breast fillet",
+    "sk": "Kuracie prsia",
+    "de": "Hähnchenbrustfilet"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 120,
+    "protein": 22.5,
+    "carbs": 0,
+    "fat": 2.62
+   }
+  },
+  {
+   "id": "chicken_thigh",
+   "fdcId": 173627,
+   "usdaDescription": "Chicken, broilers or fryers, dark meat, thigh, meat only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken thigh fillet",
+    "sk": "Kuracie stehná bez kosti",
+    "de": "Hähnchenschenkelfilet"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 121,
+    "protein": 19.66,
+    "carbs": 0,
+    "fat": 4.12
+   }
+  },
+  {
+   "id": "chicken_drumstick",
+   "fdcId": 172373,
+   "usdaDescription": "Chicken, broilers or fryers, drumstick, meat and skin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken drumsticks",
+    "sk": "Kuracie paličky",
+    "de": "Hähnchenunterschenkel"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 161,
+    "protein": 18.08,
+    "carbs": 0.11,
+    "fat": 9.2
+   }
+  },
+  {
+   "id": "chicken_leg",
+   "fdcId": 172378,
+   "usdaDescription": "Chicken, broilers or fryers, leg, meat and skin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken legs",
+    "sk": "Kuracie stehná",
+    "de": "Hähnchenschenkel"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 214,
+    "protein": 16.37,
+    "carbs": 0.17,
+    "fat": 15.95
+   }
+  },
+  {
+   "id": "chicken_wing",
+   "fdcId": 172390,
+   "usdaDescription": "Chicken, broilers or fryers, wing, meat and skin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken wings",
+    "sk": "Kuracie krídla",
+    "de": "Hähnchenflügel"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 191,
+    "protein": 17.52,
+    "carbs": 0,
+    "fat": 12.85
+   }
+  },
+  {
+   "id": "chicken_whole",
+   "fdcId": 171447,
+   "usdaDescription": "Chicken, broilers or fryers, meat and skin, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Whole chicken",
+    "sk": "Celé kura",
+    "de": "Ganzes Hähnchen"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 215,
+    "protein": 18.6,
+    "carbs": 0,
+    "fat": 15.06
+   }
+  },
+  {
+   "id": "chicken_ground",
+   "fdcId": 171116,
+   "usdaDescription": "Chicken, ground, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground chicken",
+    "sk": "Mleté kuracie mäso",
+    "de": "Hähnchenhackfleisch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 143,
+    "protein": 17.44,
+    "carbs": 0.04,
+    "fat": 8.1
+   }
+  },
+  {
+   "id": "chicken_liver",
+   "fdcId": 171060,
+   "usdaDescription": "Chicken, liver, all classes, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken liver",
+    "sk": "Kuracia pečeň",
+    "de": "Hähnchenleber"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 119,
+    "protein": 16.92,
+    "carbs": 0.73,
+    "fat": 4.83
+   }
+  },
+  {
+   "id": "turkey_breast",
+   "fdcId": 171098,
+   "usdaDescription": "Turkey, whole, breast, meat only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Turkey breast fillet",
+    "sk": "Morčacie prsia",
+    "de": "Putenbrustfilet"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 114,
+    "protein": 23.66,
+    "carbs": 0.14,
+    "fat": 1.48
+   }
+  },
+  {
+   "id": "turkey_ground",
+   "fdcId": 171505,
+   "usdaDescription": "Turkey, Ground, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground turkey",
+    "sk": "Mleté morčacie mäso",
+    "de": "Putenhackfleisch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 148,
+    "protein": 19.66,
+    "carbs": 0,
+    "fat": 7.66
+   }
+  },
+  {
+   "id": "turkey_ham",
+   "fdcId": 168092,
+   "usdaDescription": "Ham, turkey, sliced, extra lean, prepackaged or deli",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Turkey ham (sliced)",
+    "sk": "Morčacia šunka",
+    "de": "Putenschinken"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 134,
+    "protein": 19.6,
+    "carbs": 0.93,
+    "fat": 5.8
+   }
+  },
+  {
+   "id": "turkey_deli",
+   "fdcId": 174572,
+   "usdaDescription": "Turkey breast, low salt, prepackaged or deli, luncheon meat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Turkey breast (sliced)",
+    "sk": "Morčacie prsia nárezové",
+    "de": "Putenbrust Aufschnitt"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 109,
+    "protein": 21.81,
+    "carbs": 3.51,
+    "fat": 0.83
+   }
+  },
+  {
+   "id": "chicken_deli",
+   "fdcId": 173874,
+   "usdaDescription": "Chicken breast, deli, rotisserie seasoned, sliced, prepackaged",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken breast (sliced)",
+    "sk": "Kuracie prsia nárezové",
+    "de": "Hähnchenbrust Aufschnitt"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 98,
+    "protein": 17.4,
+    "carbs": 2.92,
+    "fat": 1.86
+   }
+  },
+  {
+   "id": "beef_ground_5",
+   "fdcId": 171790,
+   "usdaDescription": "Beef, ground, 95% lean meat / 5% fat, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Lean ground beef (5 %)",
+    "sk": "Mleté hovädzie chudé",
+    "de": "Rinderhack mager"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 137,
+    "protein": 21.41,
+    "carbs": 0,
+    "fat": 5
+   }
+  },
+  {
+   "id": "beef_ground_20",
+   "fdcId": 174036,
+   "usdaDescription": "Beef, ground, 80% lean meat / 20% fat, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground beef (20 %)",
+    "sk": "Mleté hovädzie 20 %",
+    "de": "Rinderhack 20 %"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 254,
+    "protein": 17.17,
+    "carbs": 0,
+    "fat": 20
+   }
+  },
+  {
+   "id": "beef_sirloin",
+   "fdcId": 174763,
+   "usdaDescription": "Beef, top sirloin, steak, separable lean only, trimmed to 1/8\" fat, choice, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Beef steak (sirloin)",
+    "sk": "Hovädzí steak",
+    "de": "Rindersteak"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 135,
+    "protein": 21.91,
+    "carbs": 0,
+    "fat": 4.62
+   }
+  },
+  {
+   "id": "beef_chuck",
+   "fdcId": 174056,
+   "usdaDescription": "Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8\" fat, choice, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Beef for stew (chuck)",
+    "sk": "Hovädzie pliecko na guláš",
+    "de": "Rindergulasch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 139,
+    "protein": 21.96,
+    "carbs": 0,
+    "fat": 5.05
+   }
+  },
+  {
+   "id": "beef_round",
+   "fdcId": 171758,
+   "usdaDescription": "Beef, round, top round steak, boneless, separable lean only, trimmed to 0\" fat, choice, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Beef topside",
+    "sk": "Hovädzie stehno",
+    "de": "Rinderoberschale"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 124,
+    "protein": 23.59,
+    "carbs": 0,
+    "fat": 3.26
+   }
+  },
+  {
+   "id": "beef_flank",
+   "fdcId": 168609,
+   "usdaDescription": "Beef, flank, steak, separable lean only, trimmed to 0\" fat, choice, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Beef flank steak",
+    "sk": "Hovädzí flank steak",
+    "de": "Flanksteak"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 149,
+    "protein": 21.72,
+    "carbs": 0,
+    "fat": 6.29
+   }
+  },
+  {
+   "id": "pork_ground",
+   "fdcId": 167902,
+   "usdaDescription": "Pork, fresh, ground, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground pork",
+    "sk": "Mleté bravčové",
+    "de": "Schweinehackfleisch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 263,
+    "protein": 16.88,
+    "carbs": 0,
+    "fat": 21.19
+   }
+  },
+  {
+   "id": "pork_tenderloin",
+   "fdcId": 168249,
+   "usdaDescription": "Pork, fresh, loin, tenderloin, separable lean only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pork tenderloin",
+    "sk": "Bravčová panenka",
+    "de": "Schweinefilet"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 109,
+    "protein": 20.95,
+    "carbs": 0,
+    "fat": 2.17
+   }
+  },
+  {
+   "id": "pork_loin",
+   "fdcId": 168263,
+   "usdaDescription": "Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pork loin (boneless)",
+    "sk": "Bravčové karé bez kosti",
+    "de": "Schweinelachs"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 123,
+    "protein": 23.75,
+    "carbs": 0,
+    "fat": 3.09
+   }
+  },
+  {
+   "id": "pork_shoulder",
+   "fdcId": 167845,
+   "usdaDescription": "Pork, fresh, shoulder, whole, separable lean only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pork shoulder",
+    "sk": "Bravčové pliecko",
+    "de": "Schweineschulter"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 148,
+    "protein": 19.55,
+    "carbs": 0,
+    "fat": 7.14
+   }
+  },
+  {
+   "id": "pork_belly",
+   "fdcId": 167812,
+   "usdaDescription": "Pork, fresh, belly, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pork belly",
+    "sk": "Bravčový bôčik",
+    "de": "Schweinebauch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 518,
+    "protein": 9.34,
+    "carbs": 0,
+    "fat": 53.01
+   }
+  },
+  {
+   "id": "pork_leg",
+   "fdcId": 168224,
+   "usdaDescription": "Pork, fresh, leg (ham), whole, separable lean only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pork leg",
+    "sk": "Bravčové stehno",
+    "de": "Schweineoberschale"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 136,
+    "protein": 20.48,
+    "carbs": 0,
+    "fat": 5.41
+   }
+  },
+  {
+   "id": "bacon",
+   "fdcId": 168277,
+   "usdaDescription": "Pork, cured, bacon, unprepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bacon",
+    "sk": "Slanina",
+    "de": "Bacon"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 393,
+    "protein": 13.66,
+    "carbs": 0,
+    "fat": 37.13
+   }
+  },
+  {
+   "id": "ham",
+   "fdcId": 173863,
+   "usdaDescription": "Ham, sliced, pre-packaged, deli meat (96%fat free, water added)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cooked ham (sliced)",
+    "sk": "Šunka výberová",
+    "de": "Kochschinken"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 107,
+    "protein": 16.85,
+    "carbs": 0.7,
+    "fat": 4.04
+   }
+  },
+  {
+   "id": "ham_cured",
+   "fdcId": 167871,
+   "usdaDescription": "Pork, cured, ham, boneless, extra lean (approximately 5% fat), roasted",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Smoked ham",
+    "sk": "Údená šunka",
+    "de": "Schinken geräuchert"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 145,
+    "protein": 20.93,
+    "carbs": 1.5,
+    "fat": 5.53
+   }
+  },
+  {
+   "id": "frankfurter",
+   "fdcId": 172968,
+   "usdaDescription": "Frankfurter, meat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frankfurters",
+    "sk": "Párky",
+    "de": "Wiener Würstchen"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 7,
+   "pieceG": 50,
+   "per100": {
+    "kcal": 290,
+    "protein": 10.26,
+    "carbs": 4.17,
+    "fat": 25.76
+   }
+  },
+  {
+   "id": "bratwurst",
+   "fdcId": 171620,
+   "usdaDescription": "Bratwurst, pork, cooked",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bratwurst",
+    "sk": "Klobása na gril",
+    "de": "Bratwurst"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 4,
+   "pieceG": 100,
+   "per100": {
+    "kcal": 333,
+    "protein": 13.72,
+    "carbs": 2.85,
+    "fat": 29.18
+   }
+  },
+  {
+   "id": "salami",
+   "fdcId": 174603,
+   "usdaDescription": "Salami, Italian, pork",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Salami",
+    "sk": "Saláma",
+    "de": "Salami"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 425,
+    "protein": 21.7,
+    "carbs": 1.2,
+    "fat": 37
+   }
+  },
+  {
+   "id": "lamb_ground",
+   "fdcId": 174370,
+   "usdaDescription": "Lamb, ground, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground lamb",
+    "sk": "Mleté jahňacie",
+    "de": "Lammhackfleisch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 282,
+    "protein": 16.56,
+    "carbs": 0,
+    "fat": 23.41
+   }
+  },
+  {
+   "id": "duck_breast",
+   "fdcId": 172410,
+   "usdaDescription": "Duck, domesticated, meat only, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Duck breast",
+    "sk": "Kačacie prsia",
+    "de": "Entenbrust"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 135,
+    "protein": 18.28,
+    "carbs": 0.94,
+    "fat": 5.95
+   }
+  },
+  {
+   "id": "venison",
+   "fdcId": 173855,
+   "usdaDescription": "Game meat, deer, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Venison",
+    "sk": "Divina (jelenie)",
+    "de": "Hirschfleisch"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "red_meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 120,
+    "protein": 22.96,
+    "carbs": 0,
+    "fat": 2.42
+   }
+  },
+  {
+   "id": "rabbit",
+   "fdcId": 172521,
+   "usdaDescription": "Game meat, rabbit, domesticated, composite of cuts, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rabbit",
+    "sk": "Králik",
+    "de": "Kaninchen"
+   },
+   "aisle": "meat",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 136,
+    "protein": 20.05,
+    "carbs": 0,
+    "fat": 5.55
+   }
+  },
+  {
+   "id": "salmon",
+   "fdcId": 175167,
+   "usdaDescription": "Fish, salmon, Atlantic, farmed, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Salmon fillet",
+    "sk": "Losos filet",
+    "de": "Lachsfilet"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 208,
+    "protein": 20.42,
+    "carbs": 0,
+    "fat": 13.42
+   }
+  },
+  {
+   "id": "salmon_smoked",
+   "fdcId": 173687,
+   "usdaDescription": "Fish, salmon, chinook, smoked",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Smoked salmon",
+    "sk": "Údený losos",
+    "de": "Räucherlachs"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 117,
+    "protein": 18.28,
+    "carbs": 0,
+    "fat": 4.32
+   }
+  },
+  {
+   "id": "cod",
+   "fdcId": 171955,
+   "usdaDescription": "Fish, cod, Atlantic, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cod fillet",
+    "sk": "Treska filet",
+    "de": "Kabeljaufilet"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 82,
+    "protein": 17.81,
+    "carbs": 0,
+    "fat": 0.67
+   }
+  },
+  {
+   "id": "pollock",
+   "fdcId": 173725,
+   "usdaDescription": "Fish, pollock, Alaska, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Alaska pollock fillet",
+    "sk": "Aljašská treska",
+    "de": "Alaska-Seelachsfilet"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 76,
+    "protein": 17.17,
+    "carbs": 0,
+    "fat": 0.82
+   }
+  },
+  {
+   "id": "tilapia",
+   "fdcId": 175176,
+   "usdaDescription": "Fish, tilapia, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tilapia fillet",
+    "sk": "Tilápia filet",
+    "de": "Tilapiafilet"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 96,
+    "protein": 20.08,
+    "carbs": 0,
+    "fat": 1.7
+   }
+  },
+  {
+   "id": "trout",
+   "fdcId": 173717,
+   "usdaDescription": "Fish, trout, rainbow, farmed, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rainbow trout",
+    "sk": "Pstruh dúhový",
+    "de": "Regenbogenforelle"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 141,
+    "protein": 19.94,
+    "carbs": 0,
+    "fat": 6.18
+   }
+  },
+  {
+   "id": "herring_pickled",
+   "fdcId": 175118,
+   "usdaDescription": "Fish, herring, Atlantic, pickled",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pickled herring",
+    "sk": "Sleď v náleve",
+    "de": "Bismarckhering"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 262,
+    "protein": 14.19,
+    "carbs": 9.64,
+    "fat": 18
+   }
+  },
+  {
+   "id": "mackerel",
+   "fdcId": 175119,
+   "usdaDescription": "Fish, mackerel, Atlantic, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mackerel",
+    "sk": "Makrela",
+    "de": "Makrele"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 205,
+    "protein": 18.6,
+    "carbs": 0,
+    "fat": 13.89
+   }
+  },
+  {
+   "id": "carp",
+   "fdcId": 171952,
+   "usdaDescription": "Fish, carp, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Carp",
+    "sk": "Kapor",
+    "de": "Karpfen"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 127,
+    "protein": 17.83,
+    "carbs": 0,
+    "fat": 5.6
+   }
+  },
+  {
+   "id": "hake",
+   "fdcId": 173713,
+   "usdaDescription": "Fish, whiting, mixed species, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Hake / whiting fillet",
+    "sk": "Merlúza filet",
+    "de": "Seehechtfilet"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 90,
+    "protein": 18.31,
+    "carbs": 0,
+    "fat": 1.31
+   }
+  },
+  {
+   "id": "shrimp",
+   "fdcId": 175179,
+   "usdaDescription": "Crustaceans, shrimp, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Shrimps",
+    "sk": "Krevety",
+    "de": "Garnelen"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "crustaceans"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 85,
+    "protein": 20.1,
+    "carbs": 0,
+    "fat": 0.51
+   }
+  },
+  {
+   "id": "fish_sticks",
+   "fdcId": 174195,
+   "usdaDescription": "Fish, fish sticks, frozen, prepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Fish fingers",
+    "sk": "Rybie prsty",
+    "de": "Fischstäbchen"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "fish",
+    "gluten"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 277,
+    "protein": 11.01,
+    "carbs": 21.66,
+    "fat": 16.23
+   }
+  },
+  {
+   "id": "mussels",
+   "fdcId": 174216,
+   "usdaDescription": "Mollusks, mussel, blue, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mussels",
+    "sk": "Mušle",
+    "de": "Miesmuscheln"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "molluscs"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 86,
+    "protein": 11.9,
+    "carbs": 3.69,
+    "fat": 2.24
+   }
+  },
+  {
+   "id": "squid",
+   "fdcId": 174223,
+   "usdaDescription": "Mollusks, squid, mixed species, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Squid",
+    "sk": "Kalamáre",
+    "de": "Tintenfisch"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "molluscs"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 92,
+    "protein": 15.58,
+    "carbs": 3.08,
+    "fat": 1.38
+   }
+  },
+  {
+   "id": "surimi",
+   "fdcId": 173702,
+   "usdaDescription": "Fish, surimi",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Surimi sticks",
+    "sk": "Surimi tyčinky",
+    "de": "Surimi-Sticks"
+   },
+   "aisle": "fish",
+   "allergens": [
+    "fish",
+    "eggs"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 99,
+    "protein": 15.18,
+    "carbs": 6.85,
+    "fat": 0.9
+   }
+  },
+  {
+   "id": "milk_semi",
+   "fdcId": 171267,
+   "usdaDescription": "Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Semi-skimmed milk",
+    "sk": "Mlieko polotučné",
+    "de": "Fettarme Milch"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 50,
+    "protein": 3.3,
+    "carbs": 4.8,
+    "fat": 1.98
+   }
+  },
+  {
+   "id": "milk_whole",
+   "fdcId": 171265,
+   "usdaDescription": "Milk, whole, 3.25% milkfat, with added vitamin D",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Whole milk",
+    "sk": "Mlieko plnotučné",
+    "de": "Vollmilch"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 61,
+    "protein": 3.15,
+    "carbs": 4.8,
+    "fat": 3.25
+   }
+  },
+  {
+   "id": "milk_skim",
+   "fdcId": 171269,
+   "usdaDescription": "Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Skimmed milk",
+    "sk": "Mlieko odtučnené",
+    "de": "Magermilch"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 34,
+    "protein": 3.37,
+    "carbs": 4.96,
+    "fat": 0.08
+   }
+  },
+  {
+   "id": "buttermilk",
+   "fdcId": 170874,
+   "usdaDescription": "Milk, buttermilk, fluid, cultured, lowfat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Buttermilk",
+    "sk": "Cmar",
+    "de": "Buttermilch"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 40,
+    "protein": 3.31,
+    "carbs": 4.79,
+    "fat": 1.07
+   }
+  },
+  {
+   "id": "kefir",
+   "fdcId": 170904,
+   "usdaDescription": "Kefir, lowfat, plain, LIFEWAY",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Kefir",
+    "sk": "Kefír",
+    "de": "Kefir"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 43,
+    "protein": 3.79,
+    "carbs": 4.77,
+    "fat": 1.02
+   }
+  },
+  {
+   "id": "yogurt_plain",
+   "fdcId": 171284,
+   "usdaDescription": "Yogurt, plain, whole milk",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Plain yogurt",
+    "sk": "Biely jogurt",
+    "de": "Naturjoghurt"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 61,
+    "protein": 3.47,
+    "carbs": 4.66,
+    "fat": 3.25
+   }
+  },
+  {
+   "id": "yogurt_low",
+   "fdcId": 170886,
+   "usdaDescription": "Yogurt, plain, low fat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Low-fat yogurt",
+    "sk": "Biely jogurt nízkotučný",
+    "de": "Fettarmer Joghurt"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 63,
+    "protein": 5.25,
+    "carbs": 7.04,
+    "fat": 1.55
+   }
+  },
+  {
+   "id": "greek_0",
+   "fdcId": 170894,
+   "usdaDescription": "Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Greek yogurt 0 %",
+    "sk": "Grécky jogurt 0 %",
+    "de": "Griechischer Joghurt 0 %"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 59,
+    "protein": 10.19,
+    "carbs": 3.6,
+    "fat": 0.39
+   }
+  },
+  {
+   "id": "greek_full",
+   "fdcId": 171304,
+   "usdaDescription": "Yogurt, Greek, plain, whole milk",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Greek yogurt 10 %",
+    "sk": "Grécky jogurt 10 %",
+    "de": "Griechischer Joghurt 10 %"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 97,
+    "protein": 9,
+    "carbs": 3.98,
+    "fat": 5
+   }
+  },
+  {
+   "id": "skyr",
+   "fdcId": 170894,
+   "usdaDescription": "Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Skyr",
+    "sk": "Skyr",
+    "de": "Skyr"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 59,
+    "protein": 10.19,
+    "carbs": 3.6,
+    "fat": 0.39
+   }
+  },
+  {
+   "id": "quark_lean",
+   "fdcId": 172181,
+   "usdaDescription": "Cheese, cottage, nonfat, uncreamed, dry, large or small curd",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Low-fat quark",
+    "sk": "Tvaroh jemný netučný",
+    "de": "Magerquark"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 72,
+    "protein": 10.34,
+    "carbs": 6.66,
+    "fat": 0.29
+   }
+  },
+  {
+   "id": "cottage",
+   "fdcId": 172182,
+   "usdaDescription": "Cheese, cottage, lowfat, 2% milkfat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cottage cheese (light)",
+    "sk": "Cottage cheese light",
+    "de": "Hüttenkäse light"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 81,
+    "protein": 10.45,
+    "carbs": 4.76,
+    "fat": 2.27
+   }
+  },
+  {
+   "id": "cottage_full",
+   "fdcId": 172179,
+   "usdaDescription": "Cheese, cottage, creamed, large or small curd",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cottage cheese",
+    "sk": "Cottage cheese",
+    "de": "Hüttenkäse"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 98,
+    "protein": 11.12,
+    "carbs": 3.38,
+    "fat": 4.3
+   }
+  },
+  {
+   "id": "mozzarella",
+   "fdcId": 170845,
+   "usdaDescription": "Cheese, mozzarella, whole milk",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mozzarella",
+    "sk": "Mozzarella",
+    "de": "Mozzarella"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 3,
+   "pieceG": 125,
+   "per100": {
+    "kcal": 299,
+    "protein": 22.17,
+    "carbs": 2.4,
+    "fat": 22.14
+   }
+  },
+  {
+   "id": "mozzarella_light",
+   "fdcId": 170847,
+   "usdaDescription": "Cheese, mozzarella, part skim milk",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mozzarella light",
+    "sk": "Mozzarella light",
+    "de": "Mozzarella light"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 3,
+   "pieceG": 125,
+   "per100": {
+    "kcal": 254,
+    "protein": 24.26,
+    "carbs": 2.77,
+    "fat": 15.92
+   }
+  },
+  {
+   "id": "feta",
+   "fdcId": 173420,
+   "usdaDescription": "Cheese, feta",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Feta",
+    "sk": "Feta",
+    "de": "Feta"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 265,
+    "protein": 14.21,
+    "carbs": 3.88,
+    "fat": 21.49
+   }
+  },
+  {
+   "id": "bryndza",
+   "fdcId": 173420,
+   "usdaDescription": "Cheese, feta",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bryndza (sheep cheese)",
+    "sk": "Bryndza",
+    "de": "Brimsen (Schafskäse)"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 265,
+    "protein": 14.21,
+    "carbs": 3.88,
+    "fat": 21.49
+   }
+  },
+  {
+   "id": "edam",
+   "fdcId": 173419,
+   "usdaDescription": "Cheese, edam",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Edam",
+    "sk": "Eidam",
+    "de": "Edamer"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 357,
+    "protein": 24.99,
+    "carbs": 1.43,
+    "fat": 28.57
+   }
+  },
+  {
+   "id": "gouda",
+   "fdcId": 171241,
+   "usdaDescription": "Cheese, gouda",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Gouda",
+    "sk": "Gouda",
+    "de": "Gouda"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 356,
+    "protein": 24.94,
+    "carbs": 2.22,
+    "fat": 27.44
+   }
+  },
+  {
+   "id": "emmental",
+   "fdcId": 171251,
+   "usdaDescription": "Cheese, swiss",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Emmental",
+    "sk": "Ementál",
+    "de": "Emmentaler"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 393,
+    "protein": 26.96,
+    "carbs": 1.44,
+    "fat": 30.99
+   }
+  },
+  {
+   "id": "parmesan",
+   "fdcId": 170848,
+   "usdaDescription": "Cheese, parmesan, hard",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Parmesan",
+    "sk": "Parmezán",
+    "de": "Parmesan"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 392,
+    "protein": 35.75,
+    "carbs": 3.22,
+    "fat": 25
+   }
+  },
+  {
+   "id": "cheddar",
+   "fdcId": 173414,
+   "usdaDescription": "Cheese, cheddar (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cheddar",
+    "sk": "Čedar",
+    "de": "Cheddar"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 403,
+    "protein": 22.87,
+    "carbs": 3.37,
+    "fat": 33.31
+   }
+  },
+  {
+   "id": "cream_cheese",
+   "fdcId": 173418,
+   "usdaDescription": "Cheese, cream",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cream cheese",
+    "sk": "Krémový syr",
+    "de": "Frischkäse"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 350,
+    "protein": 6.15,
+    "carbs": 5.52,
+    "fat": 34.44
+   }
+  },
+  {
+   "id": "cream_cheese_light",
+   "fdcId": 169079,
+   "usdaDescription": "Cheese, cream, low fat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Light cream cheese",
+    "sk": "Krémový syr light",
+    "de": "Frischkäse light"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 208,
+    "protein": 7.85,
+    "carbs": 6.73,
+    "fat": 16.67
+   }
+  },
+  {
+   "id": "ricotta",
+   "fdcId": 170851,
+   "usdaDescription": "Cheese, ricotta, whole milk",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ricotta",
+    "sk": "Ricotta",
+    "de": "Ricotta"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 150,
+    "protein": 7.54,
+    "carbs": 7.27,
+    "fat": 10.18
+   }
+  },
+  {
+   "id": "camembert",
+   "fdcId": 172178,
+   "usdaDescription": "Cheese, camembert",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Camembert",
+    "sk": "Camembert",
+    "de": "Camembert"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 300,
+    "protein": 19.8,
+    "carbs": 0.46,
+    "fat": 24.26
+   }
+  },
+  {
+   "id": "brie",
+   "fdcId": 172177,
+   "usdaDescription": "Cheese, brie",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Brie",
+    "sk": "Brie",
+    "de": "Brie"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 334,
+    "protein": 20.75,
+    "carbs": 0.45,
+    "fat": 27.68
+   }
+  },
+  {
+   "id": "blue_cheese",
+   "fdcId": 172175,
+   "usdaDescription": "Cheese, blue",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Blue cheese",
+    "sk": "Plesňový syr",
+    "de": "Blauschimmelkäse"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 10,
+   "per100": {
+    "kcal": 353,
+    "protein": 21.4,
+    "carbs": 2.34,
+    "fat": 28.74
+   }
+  },
+  {
+   "id": "provolone",
+   "fdcId": 170850,
+   "usdaDescription": "Cheese, provolone",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Smoked cheese (oštiepok style)",
+    "sk": "Údený syr (oštiepok)",
+    "de": "Räucherkäse"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 14,
+   "per100": {
+    "kcal": 351,
+    "protein": 25.58,
+    "carbs": 2.14,
+    "fat": 26.62
+   }
+  },
+  {
+   "id": "butter",
+   "fdcId": 173430,
+   "usdaDescription": "Butter, without salt",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Butter",
+    "sk": "Maslo",
+    "de": "Butter"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 717,
+    "protein": 0.85,
+    "carbs": 0.06,
+    "fat": 81.11
+   }
+  },
+  {
+   "id": "sour_cream",
+   "fdcId": 171257,
+   "usdaDescription": "Cream, sour, cultured",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sour cream",
+    "sk": "Kyslá smotana",
+    "de": "Saure Sahne"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 198,
+    "protein": 2.44,
+    "carbs": 4.63,
+    "fat": 19.35
+   }
+  },
+  {
+   "id": "cream_light",
+   "fdcId": 170857,
+   "usdaDescription": "Cream, fluid, light (coffee cream or table cream)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cooking cream",
+    "sk": "Smotana na varenie",
+    "de": "Kochsahne"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 195,
+    "protein": 2.96,
+    "carbs": 3.66,
+    "fat": 19.1
+   }
+  },
+  {
+   "id": "cream_heavy",
+   "fdcId": 170859,
+   "usdaDescription": "Cream, fluid, heavy whipping",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Whipping cream",
+    "sk": "Šľahačková smotana",
+    "de": "Schlagsahne"
+   },
+   "aisle": "dairy",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 340,
+    "protein": 2.84,
+    "carbs": 2.84,
+    "fat": 36.08
+   }
+  },
+  {
+   "id": "whey",
+   "fdcId": 173180,
+   "usdaDescription": "Beverages, Protein powder whey based",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Whey protein powder",
+    "sk": "Srvátkový proteín",
+    "de": "Whey-Proteinpulver"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "milk"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 352,
+    "protein": 78.13,
+    "carbs": 6.25,
+    "fat": 1.56
+   }
+  },
+  {
+   "id": "egg",
+   "fdcId": 171287,
+   "usdaDescription": "Egg, whole, raw, fresh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Eggs",
+    "sk": "Vajcia",
+    "de": "Eier"
+   },
+   "aisle": "eggs",
+   "allergens": [
+    "eggs"
+   ],
+   "flags": [
+    "egg"
+   ],
+   "shelfDays": 21,
+   "pieceG": 55,
+   "per100": {
+    "kcal": 143,
+    "protein": 12.56,
+    "carbs": 0.72,
+    "fat": 9.51
+   }
+  },
+  {
+   "id": "egg_white",
+   "fdcId": 172183,
+   "usdaDescription": "Egg, white, raw, fresh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Liquid egg white",
+    "sk": "Tekuté vaječné bielky",
+    "de": "Flüssiges Eiklar"
+   },
+   "aisle": "eggs",
+   "allergens": [
+    "eggs"
+   ],
+   "flags": [
+    "egg"
+   ],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 52,
+    "protein": 10.9,
+    "carbs": 0.73,
+    "fat": 0.17
+   }
+  },
+  {
+   "id": "bread_rye",
+   "fdcId": 172684,
+   "usdaDescription": "Bread, rye",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rye bread",
+    "sk": "Ražný chlieb",
+    "de": "Roggenbrot"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 40,
+   "per100": {
+    "kcal": 259,
+    "protein": 8.5,
+    "carbs": 48.3,
+    "fat": 3.3
+   }
+  },
+  {
+   "id": "bread_wholewheat",
+   "fdcId": 172688,
+   "usdaDescription": "Bread, whole-wheat, commercially prepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Wholemeal bread",
+    "sk": "Celozrnný chlieb",
+    "de": "Vollkornbrot"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 40,
+   "per100": {
+    "kcal": 252,
+    "protein": 12.45,
+    "carbs": 42.71,
+    "fat": 3.5
+   }
+  },
+  {
+   "id": "bread_white",
+   "fdcId": 174924,
+   "usdaDescription": "Bread, white, commercially prepared (includes soft bread crumbs)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Toast bread",
+    "sk": "Toastový chlieb",
+    "de": "Toastbrot"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 7,
+   "pieceG": 25,
+   "per100": {
+    "kcal": 266,
+    "protein": 8.85,
+    "carbs": 49.42,
+    "fat": 3.33
+   }
+  },
+  {
+   "id": "bread_multigrain",
+   "fdcId": 168013,
+   "usdaDescription": "Bread, multi-grain (includes whole-grain)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Multigrain bread",
+    "sk": "Viaczrnný chlieb",
+    "de": "Mehrkornbrot"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 40,
+   "per100": {
+    "kcal": 265,
+    "protein": 13.36,
+    "carbs": 43.34,
+    "fat": 4.23
+   }
+  },
+  {
+   "id": "pumpernickel",
+   "fdcId": 174918,
+   "usdaDescription": "Bread, pumpernickel",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pumpernickel",
+    "sk": "Pumpernikel",
+    "de": "Pumpernickel"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 50,
+   "per100": {
+    "kcal": 250,
+    "protein": 8.7,
+    "carbs": 47.5,
+    "fat": 3.1
+   }
+  },
+  {
+   "id": "roll",
+   "fdcId": 175031,
+   "usdaDescription": "Rolls, hard (includes kaiser)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bread roll",
+    "sk": "Rožok / žemľa",
+    "de": "Brötchen"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 2,
+   "pieceG": 50,
+   "per100": {
+    "kcal": 293,
+    "protein": 9.9,
+    "carbs": 52.7,
+    "fat": 4.3
+   }
+  },
+  {
+   "id": "roll_wholewheat",
+   "fdcId": 172794,
+   "usdaDescription": "Rolls, dinner, whole-wheat",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Wholemeal roll",
+    "sk": "Celozrnný rožok",
+    "de": "Vollkornbrötchen"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 2,
+   "pieceG": 60,
+   "per100": {
+    "kcal": 266,
+    "protein": 8.7,
+    "carbs": 51.1,
+    "fat": 4.7
+   }
+  },
+  {
+   "id": "tortilla",
+   "fdcId": 175037,
+   "usdaDescription": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Wheat tortilla wraps",
+    "sk": "Pšeničné tortilly",
+    "de": "Weizentortillas"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 14,
+   "pieceG": 60,
+   "per100": {
+    "kcal": 306,
+    "protein": 8.2,
+    "carbs": 49.38,
+    "fat": 7.99
+   }
+  },
+  {
+   "id": "pita",
+   "fdcId": 174915,
+   "usdaDescription": "Bread, pita, white, enriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pita bread",
+    "sk": "Pita chlieb",
+    "de": "Pitabrot"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "pieceG": 60,
+   "per100": {
+    "kcal": 275,
+    "protein": 9.1,
+    "carbs": 55.7,
+    "fat": 1.2
+   }
+  },
+  {
+   "id": "crispbread",
+   "fdcId": 172744,
+   "usdaDescription": "Crackers, rye, wafers, plain",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rye crispbread",
+    "sk": "Ražné chrumkavé plátky",
+    "de": "Knäckebrot"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 60,
+   "pieceG": 10,
+   "per100": {
+    "kcal": 334,
+    "protein": 9.6,
+    "carbs": 80.4,
+    "fat": 0.9
+   }
+  },
+  {
+   "id": "rice_cakes",
+   "fdcId": 170250,
+   "usdaDescription": "Snacks, rice cakes, brown rice, plain, unsalted",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rice cakes",
+    "sk": "Ryžové chlebíky",
+    "de": "Reiswaffeln"
+   },
+   "aisle": "bakery",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 60,
+   "pieceG": 8,
+   "per100": {
+    "kcal": 387,
+    "protein": 8.2,
+    "carbs": 81.5,
+    "fat": 2.8
+   }
+  },
+  {
+   "id": "pretzel",
+   "fdcId": 169064,
+   "usdaDescription": "Pretzels, soft",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Soft pretzel",
+    "sk": "Praclík",
+    "de": "Laugenbrezel"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 1,
+   "pieceG": 90,
+   "per100": {
+    "kcal": 338,
+    "protein": 8.2,
+    "carbs": 69.39,
+    "fat": 3.1
+   }
+  },
+  {
+   "id": "bagel",
+   "fdcId": 174899,
+   "usdaDescription": "Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bagel",
+    "sk": "Bagel",
+    "de": "Bagel"
+   },
+   "aisle": "bakery",
+   "allergens": [
+    "gluten",
+    "sesame"
+   ],
+   "flags": [],
+   "shelfDays": 4,
+   "pieceG": 90,
+   "per100": {
+    "kcal": 264,
+    "protein": 10.56,
+    "carbs": 52.38,
+    "fat": 1.32
+   }
+  },
+  {
+   "id": "oats",
+   "fdcId": 173904,
+   "usdaDescription": "Cereals, oats, regular and quick, not fortified, dry",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rolled oats",
+    "sk": "Ovsené vločky",
+    "de": "Haferflocken"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 379,
+    "protein": 13.15,
+    "carbs": 67.7,
+    "fat": 6.52
+   }
+  },
+  {
+   "id": "granola",
+   "fdcId": 171646,
+   "usdaDescription": "Cereals ready-to-eat, granola, homemade",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Granola / crunchy muesli",
+    "sk": "Granola",
+    "de": "Knuspermüsli"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten",
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 489,
+    "protein": 13.67,
+    "carbs": 53.88,
+    "fat": 24.31
+   }
+  },
+  {
+   "id": "rice",
+   "fdcId": 168877,
+   "usdaDescription": "Rice, white, long-grain, regular, raw, enriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Long-grain rice",
+    "sk": "Ryža dlhozrnná",
+    "de": "Langkornreis"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 365,
+    "protein": 7.13,
+    "carbs": 79.95,
+    "fat": 0.66
+   }
+  },
+  {
+   "id": "rice_basmati",
+   "fdcId": 169756,
+   "usdaDescription": "Rice, white, long-grain, regular, raw, unenriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Basmati rice",
+    "sk": "Ryža basmati",
+    "de": "Basmatireis"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 365,
+    "protein": 7.13,
+    "carbs": 79.95,
+    "fat": 0.66
+   }
+  },
+  {
+   "id": "rice_brown",
+   "fdcId": 2512380,
+   "usdaDescription": "Rice, brown, long grain, unenriched, raw",
+   "usdaDataType": "foundation_food",
+   "name": {
+    "en": "Brown rice",
+    "sk": "Natural ryža",
+    "de": "Naturreis"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 368.3584745,
+    "protein": 7.25305,
+    "carbs": 76.68795,
+    "fat": 3.306
+   }
+  },
+  {
+   "id": "rice_round",
+   "fdcId": 168931,
+   "usdaDescription": "Rice, white, short-grain, raw, unenriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Risotto / pudding rice",
+    "sk": "Guľatozrnná ryža",
+    "de": "Rundkornreis"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 358,
+    "protein": 6.5,
+    "carbs": 79.15,
+    "fat": 0.52
+   }
+  },
+  {
+   "id": "pasta",
+   "fdcId": 169736,
+   "usdaDescription": "Pasta, dry, enriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pasta",
+    "sk": "Cestoviny",
+    "de": "Nudeln"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 371,
+    "protein": 13.04,
+    "carbs": 74.67,
+    "fat": 1.51
+   }
+  },
+  {
+   "id": "pasta_wholewheat",
+   "fdcId": 169738,
+   "usdaDescription": "Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Wholewheat pasta",
+    "sk": "Celozrnné cestoviny",
+    "de": "Vollkornnudeln"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 352,
+    "protein": 13.87,
+    "carbs": 73.37,
+    "fat": 2.93
+   }
+  },
+  {
+   "id": "egg_noodles",
+   "fdcId": 169731,
+   "usdaDescription": "Noodles, egg, dry, enriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Egg noodles",
+    "sk": "Vaječné cestoviny",
+    "de": "Eiernudeln"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten",
+    "eggs"
+   ],
+   "flags": [
+    "egg"
+   ],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 384,
+    "protein": 14.16,
+    "carbs": 71.27,
+    "fat": 4.44
+   }
+  },
+  {
+   "id": "rice_noodles",
+   "fdcId": 169742,
+   "usdaDescription": "Rice noodles, dry",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rice noodles",
+    "sk": "Ryžové rezance",
+    "de": "Reisnudeln"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 364,
+    "protein": 5.95,
+    "carbs": 80.18,
+    "fat": 0.56
+   }
+  },
+  {
+   "id": "couscous",
+   "fdcId": 169699,
+   "usdaDescription": "Couscous, dry",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Couscous",
+    "sk": "Kuskus",
+    "de": "Couscous"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 376,
+    "protein": 12.76,
+    "carbs": 77.43,
+    "fat": 0.64
+   }
+  },
+  {
+   "id": "bulgur",
+   "fdcId": 170688,
+   "usdaDescription": "Bulgur, dry",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bulgur",
+    "sk": "Bulgur",
+    "de": "Bulgur"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 342,
+    "protein": 12.29,
+    "carbs": 75.87,
+    "fat": 1.33
+   }
+  },
+  {
+   "id": "quinoa",
+   "fdcId": 168874,
+   "usdaDescription": "Quinoa, uncooked",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Quinoa",
+    "sk": "Quinoa",
+    "de": "Quinoa"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 368,
+    "protein": 14.12,
+    "carbs": 64.16,
+    "fat": 6.07
+   }
+  },
+  {
+   "id": "millet",
+   "fdcId": 169702,
+   "usdaDescription": "Millet, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Millet",
+    "sk": "Pšeno",
+    "de": "Hirse"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 378,
+    "protein": 11.02,
+    "carbs": 72.85,
+    "fat": 4.22
+   }
+  },
+  {
+   "id": "buckwheat",
+   "fdcId": 170685,
+   "usdaDescription": "Buckwheat groats, roasted, dry",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Buckwheat",
+    "sk": "Pohánka",
+    "de": "Buchweizen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 346,
+    "protein": 11.73,
+    "carbs": 74.95,
+    "fat": 2.71
+   }
+  },
+  {
+   "id": "barley",
+   "fdcId": 170284,
+   "usdaDescription": "Barley, pearled, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pearl barley",
+    "sk": "Krúpy",
+    "de": "Perlgraupen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 352,
+    "protein": 9.91,
+    "carbs": 77.72,
+    "fat": 1.16
+   }
+  },
+  {
+   "id": "semolina",
+   "fdcId": 169715,
+   "usdaDescription": "Semolina, enriched",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Semolina",
+    "sk": "Detská krupica",
+    "de": "Grieß"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 360,
+    "protein": 12.68,
+    "carbs": 72.83,
+    "fat": 1.05
+   }
+  },
+  {
+   "id": "polenta",
+   "fdcId": 168867,
+   "usdaDescription": "Cornmeal, degermed, enriched, yellow",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Polenta",
+    "sk": "Kukuričná krupica",
+    "de": "Polenta"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 370,
+    "protein": 7.11,
+    "carbs": 79.45,
+    "fat": 1.75
+   }
+  },
+  {
+   "id": "flour",
+   "fdcId": 168894,
+   "usdaDescription": "Wheat flour, white, all-purpose, enriched, bleached",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Plain flour",
+    "sk": "Múka hladká",
+    "de": "Weizenmehl 405"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 364,
+    "protein": 10.33,
+    "carbs": 76.31,
+    "fat": 0.98
+   }
+  },
+  {
+   "id": "flour_wholewheat",
+   "fdcId": 168893,
+   "usdaDescription": "Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Wholewheat flour",
+    "sk": "Celozrnná múka",
+    "de": "Vollkornmehl"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 340,
+    "protein": 13.21,
+    "carbs": 71.97,
+    "fat": 2.5
+   }
+  },
+  {
+   "id": "flour_rye",
+   "fdcId": 168885,
+   "usdaDescription": "Rye flour, dark",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rye flour",
+    "sk": "Ražná múka",
+    "de": "Roggenmehl"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 325,
+    "protein": 15.91,
+    "carbs": 68.63,
+    "fat": 2.22
+   }
+  },
+  {
+   "id": "cornstarch",
+   "fdcId": 169698,
+   "usdaDescription": "Cornstarch",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Corn starch",
+    "sk": "Kukuričný škrob",
+    "de": "Speisestärke"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 381,
+    "protein": 0.26,
+    "carbs": 91.27,
+    "fat": 0.05
+   }
+  },
+  {
+   "id": "breadcrumbs",
+   "fdcId": 174928,
+   "usdaDescription": "Bread, crumbs, dry, grated, plain",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Breadcrumbs",
+    "sk": "Strúhanka",
+    "de": "Paniermehl"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 395,
+    "protein": 13.35,
+    "carbs": 71.98,
+    "fat": 5.3
+   }
+  },
+  {
+   "id": "wheat_bran",
+   "fdcId": 169722,
+   "usdaDescription": "Wheat bran, crude",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Wheat bran",
+    "sk": "Pšeničné otruby",
+    "de": "Weizenkleie"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 216,
+    "protein": 15.55,
+    "carbs": 64.51,
+    "fat": 4.25
+   }
+  },
+  {
+   "id": "oat_bran",
+   "fdcId": 168872,
+   "usdaDescription": "Oat bran, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Oat bran",
+    "sk": "Ovsené otruby",
+    "de": "Haferkleie"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 246,
+    "protein": 17.3,
+    "carbs": 66.22,
+    "fat": 7.03
+   }
+  },
+  {
+   "id": "cornflakes",
+   "fdcId": 174648,
+   "usdaDescription": "Cereals ready-to-eat, RALSTON Corn Flakes",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Corn flakes",
+    "sk": "Kukuričné lupienky",
+    "de": "Cornflakes"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 384,
+    "protein": 5.9,
+    "carbs": 88.01,
+    "fat": 0.91
+   }
+  },
+  {
+   "id": "puffed_rice",
+   "fdcId": 173912,
+   "usdaDescription": "Cereals ready-to-eat, rice, puffed, fortified",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Puffed rice",
+    "sk": "Pufovaná ryža",
+    "de": "Puffreis"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 402,
+    "protein": 6.3,
+    "carbs": 89.8,
+    "fat": 0.5
+   }
+  },
+  {
+   "id": "potato_flakes",
+   "fdcId": 170445,
+   "usdaDescription": "Potatoes, mashed, dehydrated, flakes without milk, dry form",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mashed potato flakes",
+    "sk": "Zemiaková kaša sušená",
+    "de": "Kartoffelpüree-Flocken"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 354,
+    "protein": 8.34,
+    "carbs": 81.17,
+    "fat": 0.41
+   }
+  },
+  {
+   "id": "lentils_red",
+   "fdcId": 174284,
+   "usdaDescription": "Lentils, pink or red, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Red lentils",
+    "sk": "Červená šošovica",
+    "de": "Rote Linsen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 358,
+    "protein": 23.91,
+    "carbs": 63.1,
+    "fat": 2.17
+   }
+  },
+  {
+   "id": "lentils",
+   "fdcId": 172420,
+   "usdaDescription": "Lentils, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Brown lentils",
+    "sk": "Šošovica",
+    "de": "Tellerlinsen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 352,
+    "protein": 24.63,
+    "carbs": 63.35,
+    "fat": 1.06
+   }
+  },
+  {
+   "id": "chickpeas",
+   "fdcId": 173756,
+   "usdaDescription": "Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried chickpeas",
+    "sk": "Cícer sušený",
+    "de": "Kichererbsen getrocknet"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 378,
+    "protein": 20.47,
+    "carbs": 62.95,
+    "fat": 6.04
+   }
+  },
+  {
+   "id": "white_beans",
+   "fdcId": 175202,
+   "usdaDescription": "Beans, white, mature seeds, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried white beans",
+    "sk": "Biela fazuľa sušená",
+    "de": "Weiße Bohnen getrocknet"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 333,
+    "protein": 23.36,
+    "carbs": 60.27,
+    "fat": 0.85
+   }
+  },
+  {
+   "id": "kidney_beans",
+   "fdcId": 173744,
+   "usdaDescription": "Beans, kidney, red, mature seeds, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried kidney beans",
+    "sk": "Červená fazuľa sušená",
+    "de": "Kidneybohnen getrocknet"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 337,
+    "protein": 22.53,
+    "carbs": 61.29,
+    "fat": 1.06
+   }
+  },
+  {
+   "id": "split_peas",
+   "fdcId": 172428,
+   "usdaDescription": "Peas, green, split, mature seeds, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Split peas",
+    "sk": "Lúpaný hrach",
+    "de": "Schälerbsen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 364,
+    "protein": 23.12,
+    "carbs": 61.63,
+    "fat": 3.89
+   }
+  },
+  {
+   "id": "mung_beans",
+   "fdcId": 174256,
+   "usdaDescription": "Mung beans, mature seeds, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mung beans",
+    "sk": "Mungo fazuľa",
+    "de": "Mungbohnen"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 347,
+    "protein": 23.86,
+    "carbs": 62.62,
+    "fat": 1.15
+   }
+  },
+  {
+   "id": "sugar",
+   "fdcId": 169655,
+   "usdaDescription": "Sugars, granulated",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sugar",
+    "sk": "Cukor",
+    "de": "Zucker"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 387,
+    "protein": 0,
+    "carbs": 99.98,
+    "fat": 0
+   }
+  },
+  {
+   "id": "sugar_powdered",
+   "fdcId": 169656,
+   "usdaDescription": "Sugars, powdered",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Icing sugar",
+    "sk": "Práškový cukor",
+    "de": "Puderzucker"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 389,
+    "protein": 0,
+    "carbs": 99.77,
+    "fat": 0
+   }
+  },
+  {
+   "id": "honey",
+   "fdcId": 169640,
+   "usdaDescription": "Honey",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Honey",
+    "sk": "Med",
+    "de": "Honig"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [
+    "honey"
+   ],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 304,
+    "protein": 0.3,
+    "carbs": 82.4,
+    "fat": 0
+   }
+  },
+  {
+   "id": "maple_syrup",
+   "fdcId": 169661,
+   "usdaDescription": "Syrups, maple",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Maple syrup",
+    "sk": "Javorový sirup",
+    "de": "Ahornsirup"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 260,
+    "protein": 0.04,
+    "carbs": 67.04,
+    "fat": 0.06
+   }
+  },
+  {
+   "id": "jam",
+   "fdcId": 169641,
+   "usdaDescription": "Jams and preserves",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Jam",
+    "sk": "Džem",
+    "de": "Konfitüre"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 278,
+    "protein": 0.37,
+    "carbs": 68.86,
+    "fat": 0.07
+   }
+  },
+  {
+   "id": "cocoa",
+   "fdcId": 169593,
+   "usdaDescription": "Cocoa, dry powder, unsweetened",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cocoa powder",
+    "sk": "Kakao",
+    "de": "Kakaopulver"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 228,
+    "protein": 19.6,
+    "carbs": 57.9,
+    "fat": 13.7
+   }
+  },
+  {
+   "id": "chocolate_dark",
+   "fdcId": 170273,
+   "usdaDescription": "Chocolate, dark, 70-85% cacao solids",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dark chocolate 70 %+",
+    "sk": "Horká čokoláda 70 %",
+    "de": "Zartbitterschokolade 70 %"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "milk",
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 598,
+    "protein": 7.79,
+    "carbs": 45.9,
+    "fat": 42.63
+   }
+  },
+  {
+   "id": "chocolate_milk",
+   "fdcId": 167587,
+   "usdaDescription": "Candies, milk chocolate",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Milk chocolate",
+    "sk": "Mliečna čokoláda",
+    "de": "Vollmilchschokolade"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "milk",
+    "soy"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 535,
+    "protein": 7.65,
+    "carbs": 59.4,
+    "fat": 29.66
+   }
+  },
+  {
+   "id": "nutella",
+   "fdcId": 168000,
+   "usdaDescription": "Chocolate-flavored hazelnut spread",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Hazelnut cocoa spread",
+    "sk": "Orieškovo-kakaová nátierka",
+    "de": "Nuss-Nougat-Creme"
+   },
+   "aisle": "dry_goods",
+   "allergens": [
+    "milk",
+    "nuts",
+    "soy"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 539,
+    "protein": 5.41,
+    "carbs": 62.36,
+    "fat": 29.73
+   }
+  },
+  {
+   "id": "baking_powder",
+   "fdcId": 172803,
+   "usdaDescription": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Baking powder",
+    "sk": "Prášok do pečiva",
+    "de": "Backpulver"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 53,
+    "protein": 0,
+    "carbs": 27.7,
+    "fat": 0
+   }
+  },
+  {
+   "id": "yeast",
+   "fdcId": 175043,
+   "usdaDescription": "Leavening agents, yeast, baker's, active dry",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dry yeast",
+    "sk": "Sušené droždie",
+    "de": "Trockenhefe"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 325,
+    "protein": 40.44,
+    "carbs": 41.22,
+    "fat": 7.61
+   }
+  },
+  {
+   "id": "vanilla",
+   "fdcId": 173471,
+   "usdaDescription": "Vanilla extract",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Vanilla extract",
+    "sk": "Vanilkový extrakt",
+    "de": "Vanilleextrakt"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 288,
+    "protein": 0.06,
+    "carbs": 12.65,
+    "fat": 0.06
+   }
+  },
+  {
+   "id": "gelatin",
+   "fdcId": 169599,
+   "usdaDescription": "Gelatins, dry powder, unsweetened",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Gelatine",
+    "sk": "Želatína",
+    "de": "Gelatine"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 335,
+    "protein": 85.6,
+    "carbs": 0,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "pudding_powder",
+   "fdcId": 169609,
+   "usdaDescription": "Puddings, vanilla, dry mix, regular",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Vanilla pudding powder",
+    "sk": "Vanilkový puding (prášok)",
+    "de": "Vanillepuddingpulver"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 379,
+    "protein": 0.3,
+    "carbs": 93.5,
+    "fat": 0.4
+   }
+  },
+  {
+   "id": "popcorn",
+   "fdcId": 167959,
+   "usdaDescription": "Snacks, popcorn, air-popped",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Popcorn kernels",
+    "sk": "Popcorn (zrná)",
+    "de": "Popcornmais"
+   },
+   "aisle": "dry_goods",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 387,
+    "protein": 12.94,
+    "carbs": 77.78,
+    "fat": 4.54
+   }
+  },
+  {
+   "id": "almonds",
+   "fdcId": 170567,
+   "usdaDescription": "Nuts, almonds",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Almonds",
+    "sk": "Mandle",
+    "de": "Mandeln"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 579,
+    "protein": 21.15,
+    "carbs": 21.55,
+    "fat": 49.93
+   }
+  },
+  {
+   "id": "walnuts",
+   "fdcId": 170187,
+   "usdaDescription": "Nuts, walnuts, english",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Walnuts",
+    "sk": "Vlašské orechy",
+    "de": "Walnüsse"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 654,
+    "protein": 15.23,
+    "carbs": 13.71,
+    "fat": 65.21
+   }
+  },
+  {
+   "id": "hazelnuts",
+   "fdcId": 170581,
+   "usdaDescription": "Nuts, hazelnuts or filberts",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Hazelnuts",
+    "sk": "Lieskovce",
+    "de": "Haselnüsse"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 628,
+    "protein": 14.95,
+    "carbs": 16.7,
+    "fat": 60.75
+   }
+  },
+  {
+   "id": "cashews",
+   "fdcId": 170162,
+   "usdaDescription": "Nuts, cashew nuts, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cashews",
+    "sk": "Kešu",
+    "de": "Cashewkerne"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 553,
+    "protein": 18.22,
+    "carbs": 30.19,
+    "fat": 43.85
+   }
+  },
+  {
+   "id": "pistachios",
+   "fdcId": 170184,
+   "usdaDescription": "Nuts, pistachio nuts, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pistachios",
+    "sk": "Pistácie",
+    "de": "Pistazien"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 560,
+    "protein": 20.16,
+    "carbs": 27.17,
+    "fat": 45.32
+   }
+  },
+  {
+   "id": "pine_nuts",
+   "fdcId": 170591,
+   "usdaDescription": "Nuts, pine nuts, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pine nuts",
+    "sk": "Píniové oriešky",
+    "de": "Pinienkerne"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 673,
+    "protein": 13.69,
+    "carbs": 13.08,
+    "fat": 68.37
+   }
+  },
+  {
+   "id": "peanuts",
+   "fdcId": 172430,
+   "usdaDescription": "Peanuts, all types, raw",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Peanuts",
+    "sk": "Arašidy",
+    "de": "Erdnüsse"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "peanuts"
+   ],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 567,
+    "protein": 25.8,
+    "carbs": 16.13,
+    "fat": 49.24
+   }
+  },
+  {
+   "id": "peanuts_roasted",
+   "fdcId": 174262,
+   "usdaDescription": "Peanuts, all types, dry-roasted, with salt",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Roasted peanuts",
+    "sk": "Pražené arašidy",
+    "de": "Geröstete Erdnüsse"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "peanuts"
+   ],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 587,
+    "protein": 24.35,
+    "carbs": 21.26,
+    "fat": 49.66
+   }
+  },
+  {
+   "id": "peanut_butter",
+   "fdcId": 172470,
+   "usdaDescription": "Peanut butter, smooth style, without salt",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Peanut butter",
+    "sk": "Arašidové maslo",
+    "de": "Erdnussbutter"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "peanuts"
+   ],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 598,
+    "protein": 22.21,
+    "carbs": 22.31,
+    "fat": 51.36
+   }
+  },
+  {
+   "id": "almond_butter",
+   "fdcId": 168588,
+   "usdaDescription": "Nuts, almond butter, plain, without salt added",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Almond butter",
+    "sk": "Mandľové maslo",
+    "de": "Mandelmus"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 614,
+    "protein": 20.96,
+    "carbs": 18.82,
+    "fat": 55.5
+   }
+  },
+  {
+   "id": "sunflower_seeds",
+   "fdcId": 170562,
+   "usdaDescription": "Seeds, sunflower seed kernels, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sunflower seeds",
+    "sk": "Slnečnicové semienka",
+    "de": "Sonnenblumenkerne"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 584,
+    "protein": 20.78,
+    "carbs": 20,
+    "fat": 51.46
+   }
+  },
+  {
+   "id": "pumpkin_seeds",
+   "fdcId": 170556,
+   "usdaDescription": "Seeds, pumpkin and squash seed kernels, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Pumpkin seeds",
+    "sk": "Tekvicové semienka",
+    "de": "Kürbiskerne"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 559,
+    "protein": 30.23,
+    "carbs": 10.71,
+    "fat": 49.05
+   }
+  },
+  {
+   "id": "chia",
+   "fdcId": 170554,
+   "usdaDescription": "Seeds, chia seeds, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chia seeds",
+    "sk": "Chia semienka",
+    "de": "Chiasamen"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 486,
+    "protein": 16.54,
+    "carbs": 42.12,
+    "fat": 30.74
+   }
+  },
+  {
+   "id": "flaxseed",
+   "fdcId": 169414,
+   "usdaDescription": "Seeds, flaxseed",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Linseed",
+    "sk": "Ľanové semienko",
+    "de": "Leinsamen"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 534,
+    "protein": 18.29,
+    "carbs": 28.88,
+    "fat": 42.16
+   }
+  },
+  {
+   "id": "sesame",
+   "fdcId": 170150,
+   "usdaDescription": "Seeds, sesame seeds, whole, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sesame seeds",
+    "sk": "Sezam",
+    "de": "Sesam"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "sesame"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 573,
+    "protein": 17.73,
+    "carbs": 23.45,
+    "fat": 49.67
+   }
+  },
+  {
+   "id": "tahini",
+   "fdcId": 170189,
+   "usdaDescription": "Seeds, sesame butter, tahini, from roasted and toasted kernels (most common type)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tahini",
+    "sk": "Tahini",
+    "de": "Tahini"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [
+    "sesame"
+   ],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 595,
+    "protein": 17,
+    "carbs": 21.19,
+    "fat": 53.76
+   }
+  },
+  {
+   "id": "coconut_desiccated",
+   "fdcId": 170170,
+   "usdaDescription": "Nuts, coconut meat, dried (desiccated), not sweetened",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Desiccated coconut",
+    "sk": "Kokosová strúhanka",
+    "de": "Kokosraspeln"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 660,
+    "protein": 6.88,
+    "carbs": 23.65,
+    "fat": 64.53
+   }
+  },
+  {
+   "id": "hemp_seeds",
+   "fdcId": 170148,
+   "usdaDescription": "Seeds, hemp seed, hulled",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Hemp seeds",
+    "sk": "Konopné semienka",
+    "de": "Hanfsamen"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 553,
+    "protein": 31.56,
+    "carbs": 8.67,
+    "fat": 48.75
+   }
+  },
+  {
+   "id": "poppy",
+   "fdcId": 171330,
+   "usdaDescription": "Spices, poppy seed",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Poppy seeds",
+    "sk": "Mak",
+    "de": "Mohn"
+   },
+   "aisle": "nuts_seeds",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 525,
+    "protein": 17.99,
+    "carbs": 28.13,
+    "fat": 41.56
+   }
+  },
+  {
+   "id": "tofu",
+   "fdcId": 172448,
+   "usdaDescription": "Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Firm tofu",
+    "sk": "Tofu natural",
+    "de": "Tofu natur"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 78,
+    "protein": 9.04,
+    "carbs": 2.85,
+    "fat": 4.17
+   }
+  },
+  {
+   "id": "tofu_regular",
+   "fdcId": 172476,
+   "usdaDescription": "Tofu, raw, regular, prepared with calcium sulfate",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Silken / soft tofu",
+    "sk": "Tofu jemné",
+    "de": "Seidentofu"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 76,
+    "protein": 8.08,
+    "carbs": 1.87,
+    "fat": 4.78
+   }
+  },
+  {
+   "id": "tempeh",
+   "fdcId": 174272,
+   "usdaDescription": "Tempeh",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tempeh",
+    "sk": "Tempeh",
+    "de": "Tempeh"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 192,
+    "protein": 20.29,
+    "carbs": 7.64,
+    "fat": 10.8
+   }
+  },
+  {
+   "id": "soy_milk",
+   "fdcId": 172446,
+   "usdaDescription": "Soymilk, original and vanilla, unfortified",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Soy drink",
+    "sk": "Sójový nápoj",
+    "de": "Sojadrink"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 54,
+    "protein": 3.27,
+    "carbs": 6.28,
+    "fat": 1.75
+   }
+  },
+  {
+   "id": "almond_milk",
+   "fdcId": 174832,
+   "usdaDescription": "Beverages, almond milk, unsweetened, shelf stable",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Almond drink",
+    "sk": "Mandľový nápoj",
+    "de": "Mandeldrink"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "nuts"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 15,
+    "protein": 0.4,
+    "carbs": 1.31,
+    "fat": 0.96
+   }
+  },
+  {
+   "id": "soy_chunks",
+   "fdcId": 174275,
+   "usdaDescription": "Soy flour, defatted",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Soy chunks (textured)",
+    "sk": "Sójové kúsky",
+    "de": "Sojaschnetzel"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 327,
+    "protein": 51.46,
+    "carbs": 33.92,
+    "fat": 1.22
+   }
+  },
+  {
+   "id": "edamame",
+   "fdcId": 168410,
+   "usdaDescription": "Edamame, frozen, unprepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Edamame (frozen)",
+    "sk": "Edamame mrazené",
+    "de": "Edamame TK"
+   },
+   "aisle": "frozen",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 109,
+    "protein": 11.22,
+    "carbs": 7.61,
+    "fat": 4.73
+   }
+  },
+  {
+   "id": "hummus",
+   "fdcId": 174289,
+   "usdaDescription": "Hummus, commercial",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Hummus",
+    "sk": "Hummus",
+    "de": "Hummus"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "sesame"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 237,
+    "protein": 7.78,
+    "carbs": 15,
+    "fat": 17.82
+   }
+  },
+  {
+   "id": "soy_yogurt",
+   "fdcId": 167722,
+   "usdaDescription": "Tofu yogurt",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Soy yogurt alternative",
+    "sk": "Sójový jogurt",
+    "de": "Soja-Joghurtalternative"
+   },
+   "aisle": "plant_protein",
+   "allergens": [
+    "soy"
+   ],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 94,
+    "protein": 3.5,
+    "carbs": 15.96,
+    "fat": 1.8
+   }
+  },
+  {
+   "id": "peas_frozen",
+   "fdcId": 170016,
+   "usdaDescription": "Peas, green, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen peas",
+    "sk": "Mrazený hrášok",
+    "de": "Erbsen TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 77,
+    "protein": 5.22,
+    "carbs": 13.62,
+    "fat": 0.4
+   }
+  },
+  {
+   "id": "corn_frozen",
+   "fdcId": 168398,
+   "usdaDescription": "Corn, sweet, yellow, frozen, kernels cut off cob, unprepared (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen sweet corn",
+    "sk": "Mrazená kukurica",
+    "de": "Mais TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 88,
+    "protein": 3.02,
+    "carbs": 20.71,
+    "fat": 0.78
+   }
+  },
+  {
+   "id": "mixed_veg_frozen",
+   "fdcId": 170471,
+   "usdaDescription": "Vegetables, mixed, frozen, unprepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen mixed vegetables",
+    "sk": "Mrazená zeleninová zmes",
+    "de": "Gemüsemischung TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 72,
+    "protein": 3.33,
+    "carbs": 13.47,
+    "fat": 0.52
+   }
+  },
+  {
+   "id": "broccoli_frozen",
+   "fdcId": 169968,
+   "usdaDescription": "Broccoli, frozen, chopped, unprepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen broccoli",
+    "sk": "Mrazená brokolica",
+    "de": "Brokkoli TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 26,
+    "protein": 2.81,
+    "carbs": 4.78,
+    "fat": 0.29
+   }
+  },
+  {
+   "id": "spinach_frozen",
+   "fdcId": 169287,
+   "usdaDescription": "Spinach, frozen, chopped or leaf, unprepared (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen spinach",
+    "sk": "Mrazený špenát",
+    "de": "Blattspinat TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 29,
+    "protein": 3.63,
+    "carbs": 4.21,
+    "fat": 0.57
+   }
+  },
+  {
+   "id": "green_beans_frozen",
+   "fdcId": 169962,
+   "usdaDescription": "Beans, snap, green, frozen, all styles, unprepared (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen green beans",
+    "sk": "Mrazené zelené fazuľky",
+    "de": "Grüne Bohnen TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 33,
+    "protein": 1.79,
+    "carbs": 7.54,
+    "fat": 0.21
+   }
+  },
+  {
+   "id": "cauliflower_frozen",
+   "fdcId": 170398,
+   "usdaDescription": "Cauliflower, frozen, unprepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen cauliflower",
+    "sk": "Mrazený karfiol",
+    "de": "Blumenkohl TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 24,
+    "protein": 2.01,
+    "carbs": 4.68,
+    "fat": 0.27
+   }
+  },
+  {
+   "id": "berries_frozen",
+   "fdcId": 173950,
+   "usdaDescription": "Blueberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen blueberries",
+    "sk": "Mrazené čučoriedky",
+    "de": "Heidelbeeren TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 51,
+    "protein": 0.42,
+    "carbs": 12.17,
+    "fat": 0.64
+   }
+  },
+  {
+   "id": "strawberry_frozen",
+   "fdcId": 168173,
+   "usdaDescription": "Strawberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen strawberries",
+    "sk": "Mrazené jahody",
+    "de": "Erdbeeren TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 35,
+    "protein": 0.43,
+    "carbs": 9.13,
+    "fat": 0.11
+   }
+  },
+  {
+   "id": "raspberry_frozen",
+   "fdcId": 168209,
+   "usdaDescription": "Raspberries, frozen, red, unsweetened",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen raspberries",
+    "sk": "Mrazené maliny",
+    "de": "Himbeeren TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 56,
+    "protein": 1.15,
+    "carbs": 12.55,
+    "fat": 0.81
+   }
+  },
+  {
+   "id": "fries_frozen",
+   "fdcId": 170523,
+   "usdaDescription": "Potatoes, french fried, all types, salt not added in processing, frozen, as purchased",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Frozen oven fries",
+    "sk": "Mrazené hranolky",
+    "de": "Pommes frites TK"
+   },
+   "aisle": "frozen",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 2,
+   "per100": {
+    "kcal": 147,
+    "protein": 2.24,
+    "carbs": 24.81,
+    "fat": 4.66
+   }
+  },
+  {
+   "id": "olive_oil",
+   "fdcId": 171413,
+   "usdaDescription": "Oil, olive, salad or cooking",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Olive oil",
+    "sk": "Olivový olej",
+    "de": "Olivenöl"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100
+   }
+  },
+  {
+   "id": "rapeseed_oil",
+   "fdcId": 172336,
+   "usdaDescription": "Oil, canola",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rapeseed oil",
+    "sk": "Repkový olej",
+    "de": "Rapsöl"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100
+   }
+  },
+  {
+   "id": "sunflower_oil",
+   "fdcId": 171025,
+   "usdaDescription": "Oil, sunflower, linoleic, (approx. 65%)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sunflower oil",
+    "sk": "Slnečnicový olej",
+    "de": "Sonnenblumenöl"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100
+   }
+  },
+  {
+   "id": "coconut_oil",
+   "fdcId": 171412,
+   "usdaDescription": "Oil, coconut",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Coconut oil",
+    "sk": "Kokosový olej",
+    "de": "Kokosöl"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 892,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 99.06
+   }
+  },
+  {
+   "id": "sesame_oil",
+   "fdcId": 171016,
+   "usdaDescription": "Oil, sesame, salad or cooking",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sesame oil",
+    "sk": "Sezamový olej",
+    "de": "Sesamöl"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "sesame"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100
+   }
+  },
+  {
+   "id": "lard",
+   "fdcId": 171401,
+   "usdaDescription": "Lard",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Lard",
+    "sk": "Bravčová masť",
+    "de": "Schweineschmalz"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [
+    "meat",
+    "pork",
+    "red_meat"
+   ],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 902,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100
+   }
+  },
+  {
+   "id": "mayonnaise",
+   "fdcId": 171009,
+   "usdaDescription": "Salad dressing, mayonnaise, regular",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mayonnaise",
+    "sk": "Majonéza",
+    "de": "Mayonnaise"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "eggs",
+    "mustard"
+   ],
+   "flags": [
+    "egg"
+   ],
+   "shelfDays": 60,
+   "per100": {
+    "kcal": 680,
+    "protein": 0.96,
+    "carbs": 0.57,
+    "fat": 74.85
+   }
+  },
+  {
+   "id": "mayo_light",
+   "fdcId": 173594,
+   "usdaDescription": "Salad dressing, mayonnaise, light",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Light mayonnaise",
+    "sk": "Majonéza light",
+    "de": "Salatcreme light"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "eggs",
+    "mustard"
+   ],
+   "flags": [
+    "egg"
+   ],
+   "shelfDays": 60,
+   "per100": {
+    "kcal": 238,
+    "protein": 0.37,
+    "carbs": 9.23,
+    "fat": 22.22
+   }
+  },
+  {
+   "id": "mustard",
+   "fdcId": 172234,
+   "usdaDescription": "Mustard, prepared, yellow",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mustard",
+    "sk": "Horčica",
+    "de": "Senf"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "mustard"
+   ],
+   "flags": [],
+   "shelfDays": 90,
+   "per100": {
+    "kcal": 60,
+    "protein": 3.74,
+    "carbs": 5.83,
+    "fat": 3.34
+   }
+  },
+  {
+   "id": "soy_sauce",
+   "fdcId": 174277,
+   "usdaDescription": "Soy sauce made from soy and wheat (shoyu)",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Soy sauce",
+    "sk": "Sójová omáčka",
+    "de": "Sojasauce"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "soy",
+    "gluten"
+   ],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 53,
+    "protein": 8.14,
+    "carbs": 4.93,
+    "fat": 0.57
+   }
+  },
+  {
+   "id": "vinegar",
+   "fdcId": 173469,
+   "usdaDescription": "Vinegar, cider",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cider vinegar",
+    "sk": "Jablčný ocot",
+    "de": "Apfelessig"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 21,
+    "protein": 0,
+    "carbs": 0.93,
+    "fat": 0
+   }
+  },
+  {
+   "id": "vinegar_spirit",
+   "fdcId": 172237,
+   "usdaDescription": "Vinegar, distilled",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Spirit vinegar",
+    "sk": "Kvasný ocot",
+    "de": "Branntweinessig"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 18,
+    "protein": 0,
+    "carbs": 0.04,
+    "fat": 0
+   }
+  },
+  {
+   "id": "balsamic",
+   "fdcId": 172241,
+   "usdaDescription": "Vinegar, balsamic",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Balsamic vinegar",
+    "sk": "Balzamikový ocot",
+    "de": "Balsamico"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 88,
+    "protein": 0.49,
+    "carbs": 17.03,
+    "fat": 0
+   }
+  },
+  {
+   "id": "ketchup",
+   "fdcId": 168556,
+   "usdaDescription": "Catsup",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ketchup",
+    "sk": "Kečup",
+    "de": "Ketchup"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 60,
+   "per100": {
+    "kcal": 101,
+    "protein": 1.04,
+    "carbs": 27.4,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "pesto",
+   "fdcId": 171579,
+   "usdaDescription": "Sauce, pesto, ready-to-serve, refrigerated",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Basil pesto",
+    "sk": "Bazalkové pesto",
+    "de": "Pesto Genovese"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "milk",
+    "nuts"
+   ],
+   "flags": [
+    "dairy"
+   ],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 418,
+    "protein": 9.83,
+    "carbs": 10.09,
+    "fat": 37.6
+   }
+  },
+  {
+   "id": "pasta_sauce",
+   "fdcId": 171192,
+   "usdaDescription": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tomato pasta sauce",
+    "sk": "Paradajková omáčka na cestoviny",
+    "de": "Tomatensauce"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 50,
+    "protein": 1.39,
+    "carbs": 7.43,
+    "fat": 1.61
+   }
+  },
+  {
+   "id": "bbq_sauce",
+   "fdcId": 174523,
+   "usdaDescription": "Sauce, barbecue",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "BBQ sauce",
+    "sk": "BBQ omáčka",
+    "de": "Barbecuesauce"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 60,
+   "per100": {
+    "kcal": 172,
+    "protein": 0.82,
+    "carbs": 40.77,
+    "fat": 0.63
+   }
+  },
+  {
+   "id": "sriracha",
+   "fdcId": 171186,
+   "usdaDescription": "Sauce, hot chile, sriracha",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sriracha",
+    "sk": "Sriracha",
+    "de": "Sriracha"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 93,
+    "protein": 1.93,
+    "carbs": 19.16,
+    "fat": 0.93
+   }
+  },
+  {
+   "id": "sweet_sour_sauce",
+   "fdcId": 174543,
+   "usdaDescription": "Sauce, sweet and sour, prepared-from-recipe",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sweet & sour sauce",
+    "sk": "Sladkokyslá omáčka",
+    "de": "Süß-Sauer-Sauce"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 60,
+   "per100": {
+    "kcal": 79,
+    "protein": 1.84,
+    "carbs": 16.72,
+    "fat": 0.58
+   }
+  },
+  {
+   "id": "horseradish",
+   "fdcId": 173472,
+   "usdaDescription": "Horseradish, prepared",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Horseradish",
+    "sk": "Chren",
+    "de": "Meerrettich"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 30,
+   "per100": {
+    "kcal": 48,
+    "protein": 1.18,
+    "carbs": 11.29,
+    "fat": 0.69
+   }
+  },
+  {
+   "id": "worcestershire",
+   "fdcId": 171610,
+   "usdaDescription": "Sauce, worcestershire",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Worcestershire sauce",
+    "sk": "Worcestrová omáčka",
+    "de": "Worcestershiresauce"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "fish"
+   ],
+   "flags": [
+    "fish"
+   ],
+   "shelfDays": 365,
+   "per100": {
+    "kcal": 77,
+    "protein": 0,
+    "carbs": 19.17,
+    "fat": 0
+   }
+  },
+  {
+   "id": "broth_veg",
+   "fdcId": 171583,
+   "usdaDescription": "Soup, vegetable broth, ready to serve",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Vegetable stock",
+    "sk": "Zeleninový vývar",
+    "de": "Gemüsebrühe"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "celery"
+   ],
+   "flags": [],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 5,
+    "protein": 0.24,
+    "carbs": 0.93,
+    "fat": 0.07
+   }
+  },
+  {
+   "id": "broth_chicken",
+   "fdcId": 174536,
+   "usdaDescription": "Soup, chicken broth, ready-to-serve",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chicken stock",
+    "sk": "Kurací vývar",
+    "de": "Hühnerbrühe"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "celery"
+   ],
+   "flags": [
+    "meat"
+   ],
+   "shelfDays": 3,
+   "per100": {
+    "kcal": 6,
+    "protein": 0.64,
+    "carbs": 0.44,
+    "fat": 0.21
+   }
+  },
+  {
+   "id": "salsa",
+   "fdcId": 174524,
+   "usdaDescription": "Sauce, salsa, ready-to-serve",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tomato salsa",
+    "sk": "Salsa",
+    "de": "Salsa"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 7,
+   "per100": {
+    "kcal": 29,
+    "protein": 1.52,
+    "carbs": 6.64,
+    "fat": 0.17
+   }
+  },
+  {
+   "id": "hot_sauce",
+   "fdcId": 174527,
+   "usdaDescription": "Sauce, ready-to-serve, pepper or hot",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Hot pepper sauce",
+    "sk": "Pálivá omáčka",
+    "de": "Scharfe Soße"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 180,
+   "per100": {
+    "kcal": 11,
+    "protein": 0.51,
+    "carbs": 1.75,
+    "fat": 0.37
+   }
+  },
+  {
+   "id": "curry_ketchup",
+   "fdcId": 168556,
+   "usdaDescription": "Catsup",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Curry ketchup",
+    "sk": "Kari kečup",
+    "de": "Curry-Ketchup"
+   },
+   "aisle": "oils_sauces",
+   "allergens": [
+    "mustard"
+   ],
+   "flags": [],
+   "shelfDays": 60,
+   "per100": {
+    "kcal": 101,
+    "protein": 1.04,
+    "carbs": 27.4,
+    "fat": 0.1
+   }
+  },
+  {
+   "id": "salt",
+   "fdcId": 173468,
+   "usdaDescription": "Salt, table",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Salt",
+    "sk": "Soľ",
+    "de": "Salz"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 3650,
+   "per100": {
+    "kcal": 0,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 0
+   }
+  },
+  {
+   "id": "pepper_black",
+   "fdcId": 170931,
+   "usdaDescription": "Spices, pepper, black",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Black pepper",
+    "sk": "Čierne korenie",
+    "de": "Schwarzer Pfeffer"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 251,
+    "protein": 10.39,
+    "carbs": 63.95,
+    "fat": 3.26
+   }
+  },
+  {
+   "id": "paprika",
+   "fdcId": 171329,
+   "usdaDescription": "Spices, paprika",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sweet paprika",
+    "sk": "Mletá sladká paprika",
+    "de": "Paprika edelsüß"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 282,
+    "protein": 14.14,
+    "carbs": 53.99,
+    "fat": 12.89
+   }
+  },
+  {
+   "id": "cumin",
+   "fdcId": 170923,
+   "usdaDescription": "Spices, cumin seed",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cumin",
+    "sk": "Rímsky rasca",
+    "de": "Kreuzkümmel"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 375,
+    "protein": 17.81,
+    "carbs": 44.24,
+    "fat": 22.27
+   }
+  },
+  {
+   "id": "caraway",
+   "fdcId": 170918,
+   "usdaDescription": "Spices, caraway seed",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Caraway",
+    "sk": "Rasca",
+    "de": "Kümmel"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 333,
+    "protein": 19.77,
+    "carbs": 49.9,
+    "fat": 14.59
+   }
+  },
+  {
+   "id": "marjoram",
+   "fdcId": 170928,
+   "usdaDescription": "Spices, marjoram, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Marjoram",
+    "sk": "Majorán",
+    "de": "Majoran"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 271,
+    "protein": 12.66,
+    "carbs": 60.56,
+    "fat": 7.04
+   }
+  },
+  {
+   "id": "oregano",
+   "fdcId": 171328,
+   "usdaDescription": "Spices, oregano, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Oregano",
+    "sk": "Oregano",
+    "de": "Oregano"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 265,
+    "protein": 9,
+    "carbs": 68.92,
+    "fat": 4.28
+   }
+  },
+  {
+   "id": "thyme",
+   "fdcId": 170938,
+   "usdaDescription": "Spices, thyme, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Thyme",
+    "sk": "Tymián",
+    "de": "Thymian"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 276,
+    "protein": 9.11,
+    "carbs": 63.94,
+    "fat": 7.43
+   }
+  },
+  {
+   "id": "basil_dried",
+   "fdcId": 171317,
+   "usdaDescription": "Spices, basil, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried basil",
+    "sk": "Sušená bazalka",
+    "de": "Basilikum getrocknet"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 233,
+    "protein": 22.98,
+    "carbs": 47.75,
+    "fat": 4.07
+   }
+  },
+  {
+   "id": "cinnamon",
+   "fdcId": 171320,
+   "usdaDescription": "Spices, cinnamon, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cinnamon",
+    "sk": "Škorica",
+    "de": "Zimt"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 247,
+    "protein": 3.99,
+    "carbs": 80.59,
+    "fat": 1.24
+   }
+  },
+  {
+   "id": "curry",
+   "fdcId": 170924,
+   "usdaDescription": "Spices, curry powder",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Curry powder",
+    "sk": "Kari korenie",
+    "de": "Currypulver"
+   },
+   "aisle": "spices",
+   "allergens": [
+    "mustard"
+   ],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 325,
+    "protein": 14.29,
+    "carbs": 55.83,
+    "fat": 14.01
+   }
+  },
+  {
+   "id": "turmeric",
+   "fdcId": 172231,
+   "usdaDescription": "Spices, turmeric, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Turmeric",
+    "sk": "Kurkuma",
+    "de": "Kurkuma"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 312,
+    "protein": 9.68,
+    "carbs": 67.14,
+    "fat": 3.25
+   }
+  },
+  {
+   "id": "garlic_powder",
+   "fdcId": 171325,
+   "usdaDescription": "Spices, garlic powder",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Garlic powder",
+    "sk": "Cesnak sušený",
+    "de": "Knoblauchpulver"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 331,
+    "protein": 16.55,
+    "carbs": 72.73,
+    "fat": 0.73
+   }
+  },
+  {
+   "id": "chili_powder",
+   "fdcId": 171319,
+   "usdaDescription": "Spices, chili powder",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chili powder",
+    "sk": "Čili korenie",
+    "de": "Chilipulver"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 282,
+    "protein": 13.46,
+    "carbs": 49.7,
+    "fat": 14.28
+   }
+  },
+  {
+   "id": "cayenne",
+   "fdcId": 170932,
+   "usdaDescription": "Spices, pepper, red or cayenne",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cayenne / hot paprika",
+    "sk": "Pálivá paprika",
+    "de": "Paprika scharf"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 318,
+    "protein": 12.01,
+    "carbs": 56.63,
+    "fat": 17.27
+   }
+  },
+  {
+   "id": "bay_leaf",
+   "fdcId": 170917,
+   "usdaDescription": "Spices, bay leaf",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Bay leaves",
+    "sk": "Bobkový list",
+    "de": "Lorbeerblätter"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 313,
+    "protein": 7.61,
+    "carbs": 74.97,
+    "fat": 8.36
+   }
+  },
+  {
+   "id": "nutmeg",
+   "fdcId": 171326,
+   "usdaDescription": "Spices, nutmeg, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Nutmeg",
+    "sk": "Muškátový orech",
+    "de": "Muskatnuss"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 525,
+    "protein": 5.84,
+    "carbs": 49.29,
+    "fat": 36.31
+   }
+  },
+  {
+   "id": "rosemary",
+   "fdcId": 171333,
+   "usdaDescription": "Spices, rosemary, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Rosemary",
+    "sk": "Rozmarín",
+    "de": "Rosmarin"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 331,
+    "protein": 4.88,
+    "carbs": 64.06,
+    "fat": 15.22
+   }
+  },
+  {
+   "id": "ginger_ground",
+   "fdcId": 170926,
+   "usdaDescription": "Spices, ginger, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground ginger",
+    "sk": "Mletý zázvor",
+    "de": "Ingwerpulver"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 335,
+    "protein": 8.98,
+    "carbs": 71.62,
+    "fat": 4.24
+   }
+  },
+  {
+   "id": "parsley_dried",
+   "fdcId": 170930,
+   "usdaDescription": "Spices, parsley, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried parsley",
+    "sk": "Sušená petržlenová vňať",
+    "de": "Petersilie getrocknet"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 292,
+    "protein": 26.63,
+    "carbs": 50.64,
+    "fat": 5.48
+   }
+  },
+  {
+   "id": "dill_dried",
+   "fdcId": 171322,
+   "usdaDescription": "Spices, dill weed, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Dried dill",
+    "sk": "Sušený kôpor",
+    "de": "Dill getrocknet"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 253,
+    "protein": 19.96,
+    "carbs": 55.82,
+    "fat": 4.36
+   }
+  },
+  {
+   "id": "allspice",
+   "fdcId": 171315,
+   "usdaDescription": "Spices, allspice, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Allspice",
+    "sk": "Nové korenie",
+    "de": "Piment"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 263,
+    "protein": 6.09,
+    "carbs": 72.12,
+    "fat": 8.69
+   }
+  },
+  {
+   "id": "coriander_seed",
+   "fdcId": 170922,
+   "usdaDescription": "Spices, coriander seed",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Ground coriander",
+    "sk": "Mletý koriander",
+    "de": "Koriander gemahlen"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 298,
+    "protein": 12.37,
+    "carbs": 54.99,
+    "fat": 17.77
+   }
+  },
+  {
+   "id": "chili_flakes",
+   "fdcId": 170932,
+   "usdaDescription": "Spices, pepper, red or cayenne",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Chili flakes",
+    "sk": "Čili vločky",
+    "de": "Chiliflocken"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 318,
+    "protein": 12.01,
+    "carbs": 56.63,
+    "fat": 17.27
+   }
+  },
+  {
+   "id": "onion_powder",
+   "fdcId": 171327,
+   "usdaDescription": "Spices, onion powder",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Onion powder",
+    "sk": "Cibuľa sušená",
+    "de": "Zwiebelpulver"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 341,
+    "protein": 10.41,
+    "carbs": 79.12,
+    "fat": 1.04
+   }
+  },
+  {
+   "id": "mustard_seed",
+   "fdcId": 170929,
+   "usdaDescription": "Spices, mustard seed, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Mustard seed",
+    "sk": "Horčičné semienko",
+    "de": "Senfsaat"
+   },
+   "aisle": "spices",
+   "allergens": [
+    "mustard"
+   ],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 508,
+    "protein": 26.08,
+    "carbs": 28.09,
+    "fat": 36.24
+   }
+  },
+  {
+   "id": "cloves",
+   "fdcId": 171321,
+   "usdaDescription": "Spices, cloves, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Cloves",
+    "sk": "Klinčeky",
+    "de": "Nelken"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 274,
+    "protein": 5.97,
+    "carbs": 65.53,
+    "fat": 13
+   }
+  },
+  {
+   "id": "sage",
+   "fdcId": 170935,
+   "usdaDescription": "Spices, sage, ground",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Sage",
+    "sk": "Šalvia",
+    "de": "Salbei"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 315,
+    "protein": 10.63,
+    "carbs": 60.73,
+    "fat": 12.75
+   }
+  },
+  {
+   "id": "tarragon",
+   "fdcId": 170937,
+   "usdaDescription": "Spices, tarragon, dried",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tarragon",
+    "sk": "Estragón",
+    "de": "Estragon"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 295,
+    "protein": 22.77,
+    "carbs": 50.22,
+    "fat": 7.24
+   }
+  },
+  {
+   "id": "fennel_seed",
+   "fdcId": 171323,
+   "usdaDescription": "Spices, fennel seed",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Fennel seed",
+    "sk": "Feniklové semienko",
+    "de": "Fenchelsamen"
+   },
+   "aisle": "spices",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 730,
+   "per100": {
+    "kcal": 345,
+    "protein": 15.8,
+    "carbs": 52.29,
+    "fat": 14.87
+   }
+  },
+  {
+   "id": "orange_juice",
+   "fdcId": 169100,
+   "usdaDescription": "Orange juice, chilled, includes from concentrate",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Orange juice",
+    "sk": "Pomarančový džús",
+    "de": "Orangensaft"
+   },
+   "aisle": "drinks",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 49,
+    "protein": 0.68,
+    "carbs": 11.54,
+    "fat": 0.12
+   }
+  },
+  {
+   "id": "apple_juice",
+   "fdcId": 173933,
+   "usdaDescription": "Apple juice, canned or bottled, unsweetened, without added ascorbic acid",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Apple juice",
+    "sk": "Jablkový džús",
+    "de": "Apfelsaft"
+   },
+   "aisle": "drinks",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 5,
+   "per100": {
+    "kcal": 46,
+    "protein": 0.1,
+    "carbs": 11.3,
+    "fat": 0.13
+   }
+  },
+  {
+   "id": "tomato_juice",
+   "fdcId": 170545,
+   "usdaDescription": "Tomato juice, canned, without salt added",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Tomato juice",
+    "sk": "Paradajková šťava",
+    "de": "Tomatensaft"
+   },
+   "aisle": "drinks",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 4,
+   "per100": {
+    "kcal": 17,
+    "protein": 0.85,
+    "carbs": 3.53,
+    "fat": 0.29
+   }
+  },
+  {
+   "id": "coffee",
+   "fdcId": 171890,
+   "usdaDescription": "Beverages, coffee, brewed, prepared with tap water",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Coffee (brewed)",
+    "sk": "Káva",
+    "de": "Kaffee"
+   },
+   "aisle": "drinks",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 1,
+    "protein": 0.12,
+    "carbs": 0,
+    "fat": 0.02
+   }
+  },
+  {
+   "id": "tea",
+   "fdcId": 173227,
+   "usdaDescription": "Beverages, tea, black, brewed, prepared with tap water",
+   "usdaDataType": "sr_legacy_food",
+   "name": {
+    "en": "Black tea",
+    "sk": "Čierny čaj",
+    "de": "Schwarzer Tee"
+   },
+   "aisle": "drinks",
+   "allergens": [],
+   "flags": [],
+   "shelfDays": 1,
+   "per100": {
+    "kcal": 1,
+    "protein": 0,
+    "carbs": 0.3,
+    "fat": 0
+   }
+  }
+ ]
+}
