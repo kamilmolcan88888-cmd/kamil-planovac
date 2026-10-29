@@ -65,9 +65,11 @@ export function NumberField({ label, value, onChange, unit, min, max, id }: {
             setText(e.target.value);
             const n = Number(e.target.value.replace(',', '.'));
             const ok = e.target.value !== '' && !Number.isNaN(n) && (min === undefined || n >= min) && (max === undefined || n <= max);
-            const next = ok ? n : undefined;
-            setLast(next);
-            onChange(next);
+            // Only a valid number changes the parent's value. For a half-typed or empty field the
+            // parent keeps its old value, so `last` must stay in step with it – otherwise the sync
+            // above would overwrite what the user is typing.
+            if (ok) setLast(n);
+            onChange(ok ? n : undefined);
           }}
           className={cn('num h-12 w-full rounded-input border bg-surface px-4 pr-14 text-body text-text outline-none focus:border-primary', invalid ? 'border-error' : 'border-border')} />
         {unit && <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-support text-text-2">{unit}</span>}
