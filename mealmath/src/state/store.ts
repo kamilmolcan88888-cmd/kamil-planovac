@@ -3,7 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS, type AppSettings, type StoredPlan } from './db';
 import { planInWorker } from './planService';
 import { localISO } from './dates';
-import type { MealSlot } from '../engine/types';
+import type { MealSlot, PriceOverride } from '../engine/types';
 
 export async function loadSettings(): Promise<AppSettings> {
   const s = await db.settings.get('app');
@@ -51,3 +51,21 @@ export async function toggleDone(planId: string, date: string, slot: MealSlot) {
     await db.plans.put(p);
   });
 }
+
+// ---- shopping list ----
+
+export async function toggleChecked(planId: string, foodId: string) {
+  await db.transaction('rw', db.plans, async () => {
+    const p = await db.plans.get(planId);
+    if (!p) return;
+    const set = new Set(p.checked ?? []);
+    if (set.has(foodId)) set.delete(foodId); else set.add(foodId);
+    await db.plans.update(planId, { checked: [...set] });
+  });
+}
+
+// ---- price overrides (local edits always win over the bundled table) ----
+
+export const saveOverride = (o: PriceOverride) => db.priceOverrides.put(o);
+export const resetOverride = (storeId: string, foodId: string) => db.priceOverrides.delete([storeId, foodId]);
+export const saveOverrides = (list: PriceOverride[]) => db.priceOverrides.bulkPut(list);

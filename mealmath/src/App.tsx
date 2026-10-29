@@ -8,6 +8,8 @@ import { EmptyState, LoadingState } from './ui/components/primitives';
 import { HomeScreen } from './ui/screens/HomeScreen';
 import { RecipeScreen } from './ui/screens/RecipeScreen';
 import { WeekScreen } from './ui/screens/WeekScreen';
+import { ShoppingScreen } from './ui/screens/ShoppingScreen';
+import { PricesScreen } from './ui/screens/PricesScreen';
 
 type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string } };
 const TABS: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
@@ -89,7 +91,9 @@ export function App() {
       {route.recipe ? <RecipeScreen recipeId={route.recipe.id} date={route.recipe.date} slot={route.recipe.slot} settings={settings} stored={stored} onBack={back} />
         : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
           : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()} />
-            : <ComingSoon tab={route.tab} />}
+            : route.tab === 'shopping' ? <ShoppingScreen settings={settings} stored={stored} busy={busy} onNewWeek={() => generate()} />
+              : route.tab === 'prices' ? <PricesScreen settings={settings} />
+                : <ComingSoon tab={route.tab} />}
     </AppShell>
   );
 }

@@ -25,6 +25,8 @@ export interface AppSettings {
   repetition: RepetitionLevel;
   slots: MealSlot[];
   currentPlanId?: string;
+  /** Count pantry staples (salt, oil, spices…) in the checkout total. */
+  includePantry?: boolean;
 }
 
 export interface StoredPlan {
@@ -38,6 +40,8 @@ export interface StoredPlan {
   sessions: CookSession[];
   warnings: PlanWarning[];
   foodCost: number;
+  /** Shopping list: food ids already in the basket. */
+  checked?: string[];
 }
 
 class MealMathDB extends Dexie {
