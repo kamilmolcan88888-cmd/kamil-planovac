@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: 'prompt',      // never reload under the user's feet – we ask first
+      registerType: 'autoUpdate',  // new version installs itself on the next open (testing phase: no stale builds)
       injectRegister: null,        // registered in src/state/pwa.ts
       includeAssets: ['icons/*.png', 'icons/*.svg'],
       manifest: {
@@ -36,6 +36,8 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,
+        skipWaiting: true,
+        clientsClaim: true,
       },
     }),
   ],
