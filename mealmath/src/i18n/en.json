@@ -576,5 +576,30 @@
     "reminder": "Your data lives only on this phone. Make a backup so you don't lose it (for example when changing phones).",
     "now": "Back up now",
     "later": "Later"
+  },
+  "lock": {
+    "title": "Unlock MealMath",
+    "enter": "Enter PIN",
+    "wrong": "Wrong PIN",
+    "wait": "Too many attempts. Try again in {{seconds}} s.",
+    "entered": "{{count}} of {{total}} digits entered",
+    "delete": "Delete last digit",
+    "forgot": "Forgot PIN",
+    "forgotText": "Without the PIN you can't get into the app. You can erase all data on this device and start over (a backup stays, if you made one).",
+    "forgotWipe": "Erase data and start over",
+    "forgotConfirm": "Really erase all MealMath data on this device? This can't be undone.",
+    "row": "PIN lock",
+    "on": "On",
+    "off": "Off",
+    "scope": "The lock hides the app from someone holding your unlocked phone. It does not encrypt the data on the device. If you forget the PIN, the data has to be erased (so keep backups).",
+    "isOn": "The lock is on. The app locks after 30 seconds in the background.",
+    "change": "Change PIN",
+    "remove": "Turn lock off",
+    "current": "Enter current PIN",
+    "length": "PIN length",
+    "digits": "{{count}} digits",
+    "newPin": "Enter a new PIN",
+    "confirmPin": "Enter the PIN again",
+    "mismatch": "The PINs don't match. Try again."
   }
 }

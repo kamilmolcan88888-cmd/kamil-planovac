@@ -5,6 +5,8 @@ import { localISO } from './state/dates';
 import { createPlan, loadSettings, updateSettings, useCurrentPlan, useSettings } from './state/store';
 import { AppHeader, AppShell, type Tab } from './ui/components/AppShell';
 import { EmptyState, LoadingState } from './ui/components/primitives';
+import { LockScreen } from './ui/components/LockScreen';
+import { shouldRelock } from './state/pin';
 import { HomeScreen } from './ui/screens/HomeScreen';
 
 // Everything except Home loads on demand (all of it is precached for offline use).
@@ -55,6 +57,27 @@ function useThemeAndLang(theme: string | undefined, lang: string | undefined) {
   }, [theme]);
 }
 
+/**
+ * Locked at start (when a PIN exists) and again after the app was in the background for a while.
+ * A PIN created during this session must not lock the app straight away, so the start state is
+ * captured once, when settings first load.
+ */
+function useAppLock(hasPin: boolean | undefined) {
+  const [forced, setForced] = useState<boolean | undefined>(undefined);
+  const atStart = useRef<boolean | undefined>(undefined);
+  if (hasPin !== undefined && atStart.current === undefined) atStart.current = hasPin;
+  const hiddenAt = useRef<number | undefined>(undefined);
+  useEffect(() => {
+    const on = () => {
+      if (document.visibilityState === 'hidden') hiddenAt.current = Date.now();
+      else { if (shouldRelock(hiddenAt.current, Date.now())) setForced(true); hiddenAt.current = undefined; }
+    };
+    document.addEventListener('visibilitychange', on);
+    return () => document.removeEventListener('visibilitychange', on);
+  }, []);
+  return [!!hasPin && (forced ?? atStart.current ?? false), () => setForced(false)] as const;
+}
+
 function ComingSoon({ tab }: { tab: Tab }) {
   const { t } = useTranslation();
   const icon = { week: CalendarDays, shopping: ShoppingBasket, prices: Tag, settings: Settings, home: Construction }[tab];
@@ -71,6 +94,7 @@ export function App() {
   const settings = useSettings();
   useThemeAndLang(settings?.theme, settings?.lang);
   const [route, go] = useHashRoute();
+  const [locked, unlock] = useAppLock(settings ? !!settings.pinHash : undefined);
   // A recipe keeps the tab it was opened from highlighted.
   const lastTab = useRef<Tab>('home');
   if (!route.recipe && !route.targets && !route.progress) lastTab.current = route.tab;
@@ -94,6 +118,9 @@ export function App() {
     if (stored === null && !started.current && settings && !showOnboarding) { started.current = true; generate(1); }
   }, [stored, generate, settings, showOnboarding]);
 
+  if (settings && locked && settings.pinHash && settings.pinSalt) {
+    return <LockScreen salt={settings.pinSalt} hash={settings.pinHash} length={settings.pinLength ?? 4} onUnlock={unlock} />;
+  }
   if (!settings) return <div className="p-6"><LoadingState title={t('common.loading')} /></div>;
   const loading = <LoadingState title={t('common.loading')} />;
   if (showOnboarding) return <Suspense fallback={loading}><Onboarding initial={settings} onDone={() => { setRedo(false); go('#/home'); }} /></Suspense>;

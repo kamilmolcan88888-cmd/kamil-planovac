@@ -36,6 +36,10 @@ export interface AppSettings {
   planDays?: number;
   /** Count pantry staples (salt, oil, spices…) in the checkout total. */
   includePantry?: boolean;
+  /** App lock (see state/pin.ts). The PIN itself is never stored. */
+  pinSalt?: string;
+  pinHash?: string;
+  pinLength?: 4 | 6;
   /** When the user last exported a backup (ISO timestamp). */
   lastBackupAt?: string;
   /** Backup reminder is hidden until this ISO timestamp. */

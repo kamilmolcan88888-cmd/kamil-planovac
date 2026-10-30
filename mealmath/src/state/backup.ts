@@ -20,7 +20,7 @@ export interface Backup {
 export async function exportAll(): Promise<Backup> {
   const [settings, plans, priceOverrides, weights] = await Promise.all([db.settings.get('app'), db.plans.toArray(), db.priceOverrides.toArray(), db.weights.toArray()]);
   // The API key never leaves the device in a backup file.
-  const { aiKey: _key, ...safe } = settings ?? DEFAULT_SETTINGS;
+  const { aiKey: _key, pinHash: _h, pinSalt: _s, pinLength: _l, ...safe } = settings ?? DEFAULT_SETTINGS;
   return { format: BACKUP_FORMAT, version: BACKUP_VERSION, exportedAt: new Date().toISOString(), settings: safe as AppSettings, plans, priceOverrides, weights };
 }
 
@@ -33,9 +33,11 @@ export async function importAll(raw: unknown): Promise<void> {
   if (b.plans.some(p => !p?.id || !p.plan?.days) || b.priceOverrides.some(o => !o?.storeId || !o.foodId || !(o.price > 0) || !(o.packG > 0))) throw new Error('invalid_backup');
   const weights = Array.isArray(b.weights) ? b.weights.filter(x => typeof x?.date === 'string' && x.kg > 0) : [];
   await db.transaction('rw', db.settings, db.plans, db.priceOverrides, db.weights, async () => {
-    const keep = (await db.settings.get('app'))?.aiKey; // backups carry no key – keep this device's
+    const cur = await db.settings.get('app'); // backups carry no key or PIN – keep this device's
+    const keep = cur?.aiKey;
     await Promise.all([db.settings.clear(), db.plans.clear(), db.priceOverrides.clear(), db.weights.clear()]);
-    await db.settings.put({ ...DEFAULT_SETTINGS, ...b.settings, ...(keep ? { aiKey: keep } : {}), key: 'app' });
+    await db.settings.put({ ...DEFAULT_SETTINGS, ...b.settings, ...(keep ? { aiKey: keep } : {}),
+      ...(cur?.pinHash ? { pinHash: cur.pinHash, pinSalt: cur.pinSalt, pinLength: cur.pinLength } : {}), key: 'app' });
     await db.plans.bulkPut(b.plans!);
     await db.priceOverrides.bulkPut(b.priceOverrides!);
     await db.weights.bulkPut(weights);

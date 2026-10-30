@@ -1,4 +1,4 @@
-import { Activity, ShieldAlert as AllergenIcon, Ban, BookOpen, Calculator, ChefHat, ChevronRight, CookingPot, Database, Download, Globe, Info, Moon, RefreshCw, Ruler, Salad, Sparkles, Store, Tag, Target, TrendingDown, Upload, Users, Wallet, WifiOff, type LucideIcon } from 'lucide-react';
+import { Activity, ShieldAlert as AllergenIcon, Ban, BookOpen, Calculator, ChefHat, ChevronRight, CookingPot, Database, Download, Globe, Info, Lock, Moon, RefreshCw, Ruler, Salad, Sparkles, Store, Tag, Target, TrendingDown, Upload, Users, Wallet, WifiOff, type LucideIcon } from 'lucide-react';
 import { useRef, useState, type ReactNode } from 'react';
 import type React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -15,6 +15,7 @@ import { BottomSheet } from '../components/BottomSheet';
 import { SegmentedControl, Switch } from '../components/controls';
 import { Banner, Card, PrimaryButton, SecondaryButton } from '../components/primitives';
 import { StoreSelector } from '../components/StoreSelector';
+import { PinSettings } from '../components/PinSettings';
 import { AiRecipesPanel } from '../components/aiRecipes';
 import { cn } from '../lib/cn';
 import { useFormat } from '../lib/format';
@@ -59,6 +60,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenProgress, onOpen
   const [note, setNote] = useState<{ tone: 'info' | 'warning'; text: string }>();
   const [info, setInfo] = useState<'methodology' | 'usda' | 'prices' | 'offline'>();
   const [ai, setAi] = useState(false);
+  const [pinOpen, setPinOpen] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
   const tg = targetsFor(settings);
   const p = settings.profile;
@@ -151,6 +153,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenProgress, onOpen
           {note && <div role="status"><Banner tone={note.tone}>{note.text}</Banner></div>}
         </Card>
         <Card className="p-0"><ul className="divide-y divide-border">
+          <Row icon={Lock} label={t('lock.row')} value={settings.pinHash ? t('lock.on') : t('lock.off')} onClick={() => setPinOpen(true)} />
           <Row icon={WifiOff} label={t('settings.offline')} onClick={() => setInfo('offline')} />
           <Row icon={RefreshCw} label={t('settings.redoOnboarding')} onClick={onRedoOnboarding} />
         </ul></Card>
@@ -170,6 +173,10 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenProgress, onOpen
             <PrimaryButton onClick={() => void save()}>{t('settings.save')}</PrimaryButton>
           </div>
         )}
+      </BottomSheet>
+
+      <BottomSheet open={pinOpen} onOpenChange={setPinOpen} title={t('lock.row')}>
+        {pinOpen && <PinSettings settings={settings} onDone={() => setPinOpen(false)} />}
       </BottomSheet>
 
       <BottomSheet open={ai} onOpenChange={setAi} title={t('ai.row')}>

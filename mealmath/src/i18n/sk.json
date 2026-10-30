@@ -590,5 +590,30 @@
     "reminder": "Údaje sú iba v tomto telefóne. Urob zálohu, aby si o ne neprišiel (napr. pri výmene telefónu).",
     "now": "Zálohovať teraz",
     "later": "Neskôr"
+  },
+  "lock": {
+    "title": "Odomkni MealMath",
+    "enter": "Zadaj PIN",
+    "wrong": "Nesprávny PIN",
+    "wait": "Príliš veľa pokusov. Skús znova o {{seconds}} s.",
+    "entered": "Zadané {{count}} z {{total}} číslic",
+    "delete": "Zmazať poslednú číslicu",
+    "forgot": "Zabudol som PIN",
+    "forgotText": "Bez PIN-u sa do aplikácie nedá dostať. Môžeš zmazať všetky údaje v tomto zariadení a začať odznova (záloha ostáva, ak si ju urobil).",
+    "forgotWipe": "Zmazať údaje a začať odznova",
+    "forgotConfirm": "Naozaj zmazať všetky údaje MealMath v tomto zariadení? Nedá sa to vrátiť.",
+    "row": "Zámok PIN",
+    "on": "Zapnutý",
+    "off": "Vypnutý",
+    "scope": "Zámok skryje aplikáciu pred niekým, kto má odomknutý tvoj telefón. Údaje v zariadení nešifruje. Ak PIN zabudneš, treba údaje zmazať (preto si rob zálohy).",
+    "isOn": "Zámok je zapnutý. Aplikácia sa zamkne po 30 sekundách na pozadí.",
+    "change": "Zmeniť PIN",
+    "remove": "Vypnúť zámok",
+    "current": "Zadaj aktuálny PIN",
+    "length": "Dĺžka PIN-u",
+    "digits": "{{count}}-miestny",
+    "newPin": "Zadaj nový PIN",
+    "confirmPin": "Zadaj PIN ešte raz",
+    "mismatch": "PIN-y sa nezhodujú. Skús znova."
   }
 }
