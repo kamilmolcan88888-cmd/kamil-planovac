@@ -1,10 +1,11 @@
 /**
  * One-off seeding of prices/*.json from scripts/price-seed.txt (rough ESTIMATES).
- * After seeding, edit prices/*.json directly – re-running this OVERWRITES them.
+ * After seeding, edit prices/*.json directly. Existing files are NOT overwritten, so adding a store
+ * here only creates the new file. Pass --force to regenerate everything.
  *
- *   npm run seed:prices
+ *   npm run seed:prices [-- --force]
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseFoodList } from './build-foods';
@@ -20,7 +21,20 @@ const STORES: StoreInfo[] = [
   { id: 'lidl-sk', name: 'Lidl Slovensko', chain: 'lidl', country: 'SK', lang: 'sk', currency: 'EUR', aisleOrder: AISLE_ORDER },
   { id: 'kaufland-sk', name: 'Kaufland Slovensko', chain: 'kaufland', country: 'SK', lang: 'sk', currency: 'EUR',
     aisleOrder: ['produce', 'bakery', 'meat', 'fish', 'dairy', 'eggs', 'plant_protein', 'frozen', 'dry_goods', 'canned', 'nuts_seeds', 'oils_sauces', 'spices', 'drinks'] },
+  { id: 'billa-sk', name: 'Billa Slovensko', chain: 'billa', country: 'SK', lang: 'sk', currency: 'EUR', aisleOrder: AISLE_ORDER },
+  { id: 'tesco-sk', name: 'Tesco Slovensko', chain: 'tesco', country: 'SK', lang: 'sk', currency: 'EUR', aisleOrder: AISLE_ORDER },
+  { id: 'aldi-de', name: 'Aldi Süd Deutschland', chain: 'aldi', country: 'DE', lang: 'de', currency: 'EUR', aisleOrder: AISLE_ORDER },
 ];
+
+/**
+ * Rough price level and range of the newer stores relative to the base store they are seeded from
+ * (Billa and Tesco follow Kaufland SK's range and prices, Aldi follows Lidl DE).
+ */
+const NEW_STORES = [
+  { id: 'billa-sk', like: 'kaufland-sk', factor: 1.1 },
+  { id: 'tesco-sk', like: 'kaufland-sk', factor: 1.02 },
+  { id: 'aldi-de', like: 'lidl-de', factor: 0.98 },
+] as const;
 
 /** Lidl SK vs Lidl DE, by aisle (rough). */
 const SK_FACTOR: Record<Aisle, number> = {
@@ -69,14 +83,24 @@ function main() {
     };
     put('lidl-de', food.de, packG, priceDE);
     put('lidl-sk', food.sk, skPack, skPrice);
-    put('kaufland-sk', food.sk, skPack, kPrice ?? shelfPrice(skPrice * KAUFLAND_FACTOR));
+    const kauflandPrice = kPrice ?? shelfPrice(skPrice * KAUFLAND_FACTOR);
+    put('kaufland-sk', food.sk, skPack, kauflandPrice);
+    for (const n of NEW_STORES) {
+      const base = n.like === 'lidl-de' ? priceDE : kauflandPrice;
+      const pack = n.like === 'lidl-de' ? packG : skPack;
+      const name = n.like === 'lidl-de' ? food.de : food.sk;
+      if (missing.has(n.like)) tables[n.id]!.items[id] = { unavailable: true, ...(missing.get(n.like) ? { substitute: missing.get(n.like)! } : {}), updated: UPDATED };
+      else tables[n.id]!.items[id] = { name, packG: pack, price: shelfPrice(base * n.factor), updated: UPDATED };
+    }
   });
 
   const uncovered = foods.filter(f => !seen.has(f.id)).map(f => f.id);
   if (uncovered.length) throw new Error(`No price seed for: ${uncovered.join(', ')}`);
 
   mkdirSync(join(ROOT, 'prices'), { recursive: true });
+  const force = process.argv.includes('--force');
   for (const t of Object.values(tables)) {
+    if (!force && existsSync(join(ROOT, `prices/${t.store.id}.json`))) { console.log(`· prices/${t.store.id}.json exists – kept`); continue; }
     writeFileSync(join(ROOT, `prices/${t.store.id}.json`), JSON.stringify(t, null, 1) + '\n');
     const n = Object.values(t.items).filter(x => !('unavailable' in x)).length;
     console.log(`✓ prices/${t.store.id}.json – ${n} available, ${Object.keys(t.items).length - n} unavailable`);
