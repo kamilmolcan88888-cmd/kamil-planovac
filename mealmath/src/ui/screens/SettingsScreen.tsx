@@ -164,7 +164,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenProgress, onOpen
         <Row icon={Info} label={t('settings.usda')} onClick={() => setInfo('usda')} />
         <Row icon={Store} label={t('settings.priceInfo')} onClick={() => setInfo('prices')} />
       </Section>
-      <p className="text-center text-caption text-text-2">MealMath · {t('settings.version', { v: '1.1' })} · {t('app.tagline')}</p>
+      <p className="text-center text-caption text-text-2">MealMath · {t('settings.version', { v: '1.2' })} · {t('app.tagline')}</p>
 
       <BottomSheet open={!!editor} onOpenChange={o => !o && setEditor(undefined)} title={editor?.title ?? ''}>
         {editor && (

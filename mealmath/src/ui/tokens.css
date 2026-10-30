@@ -27,7 +27,7 @@
 
 :root {
   color-scheme: light;
-  --c-primary: #168a4a;
+  --c-primary: #117a3c; /* brand #168A4A darkened a little so white text on it and green text on light backgrounds reach 4.5:1 */
   --c-primary-strong: #0e6338;
   --c-on-primary: #ffffff;
   --c-accent: #c8f36b;
@@ -36,11 +36,11 @@
   --c-surface: #ffffff;
   --c-surface-2: #f0f3ee;
   --c-text: #17231b;
-  --c-text-2: #69766e;
+  --c-text-2: #5f6c65;
   --c-border: #e5eae4;
   --c-protein: #3478f6;
   --c-kcal: #168a4a;
-  --c-warning: #f2a23a;
+  --c-warning: #9a5a00; /* darker than the original amber so warning text reaches 4.5:1 */
   --c-warning-bg: #fdf1df;
   --c-error: #dc5252;
   --c-error-bg: #fbe7e7;

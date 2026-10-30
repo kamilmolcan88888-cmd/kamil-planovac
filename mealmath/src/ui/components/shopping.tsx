@@ -76,9 +76,9 @@ export function ShoppingAisle({ aisle, count, children }: { aisle: Aisle; count:
   const { t } = useTranslation();
   return (
     <section aria-label={t(`aisle.${aisle}`)}>
-      <h3 className="mb-2 flex items-center justify-between px-1 text-caption font-semibold uppercase tracking-wide text-text-2">
+      <h2 className="mb-2 flex items-center justify-between px-1 text-caption font-semibold uppercase tracking-wide text-text-2">
         <span>{t(`aisle.${aisle}`)}</span><span className="num">{count}</span>
-      </h3>
+      </h2>
       <Card className="p-0"><ul className="divide-y divide-border">{children}</ul></Card>
     </section>
   );

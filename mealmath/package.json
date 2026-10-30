@@ -1,7 +1,7 @@
 {
   "name": "mealmath",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "test": "vitest run",
@@ -13,7 +13,8 @@
     "format:recipes": "tsx scripts/format-recipes.ts",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:a11y": "node scripts/a11y-check.cjs"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -21,6 +22,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^4.7.0",
+    "axe-core": "^4.14.0",
     "fake-indexeddb": "^6.2.6",
     "fflate": "^0.8.3",
     "tailwindcss": "^4.3.3",
