@@ -545,5 +545,36 @@
       "invalid": "Der Vorschlag war ungültig und wurde verworfen ({{list}}).",
       "constraints": "Der Vorschlag verletzte deine Einschränkungen ({{list}}) und wurde verworfen."
     }
+  },
+  "progress": {
+    "title": "Fortschritt und Kosten",
+    "weight": "Gewicht verfolgen",
+    "date": "Datum",
+    "save": "Gewicht speichern",
+    "invalid": "Gib Gewicht (35–250 kg) und Datum ein.",
+    "empty": "Trag dein Gewicht mindestens einmal pro Woche ein, damit ein Trend sichtbar wird. Am besten morgens unter gleichen Bedingungen wiegen.",
+    "summary": "{{from}} → {{to}} kg ({{change}} kg)",
+    "perWeek": "{{value}} kg pro Woche",
+    "chartLabel": "Gewichtsdiagramm, {{count}} Messungen",
+    "delete": "Gewicht vom {{date}} löschen",
+    "useInProfile": "Das letzte Gewicht ist {{kg}} kg. Im Profil übernehmen und Ziele neu berechnen?",
+    "apply": "Im Profil übernehmen",
+    "pace": {
+      "few_data": "Für einen Trend braucht es mindestens 3 Messungen innerhalb einer Woche.",
+      "on_track": "Das Tempo passt zu deinem Ziel.",
+      "too_fast": "Die Änderung ist schneller als empfohlen. Überlege, mehr zu essen, oder frag eine Fachperson.",
+      "too_slow": "Die Änderung ist langsamer als dein Ziel. Warte noch ein paar Wochen oder passe die Ziele in den Einstellungen an.",
+      "wrong_direction": "Das Gewicht geht in die andere Richtung als dein Ziel. Prüfe, ob du dich an den Plan hältst, oder passe die Ziele an."
+    },
+    "costs": "Lebensmittelkosten",
+    "noPlans": "Noch kein Plan vorhanden.",
+    "days": "{{count}} Tage",
+    "perDay": "{{value}} / Tag",
+    "row": "Fortschritt und Kosten"
+  },
+  "backup": {
+    "reminder": "Deine Daten liegen nur auf diesem Telefon. Mach eine Sicherung, damit sie nicht verloren gehen (z. B. beim Telefonwechsel).",
+    "now": "Jetzt sichern",
+    "later": "Später"
   }
 }

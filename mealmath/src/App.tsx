@@ -14,9 +14,10 @@ const ShoppingScreen = lazy(() => import('./ui/screens/ShoppingScreen').then(m =
 const PricesScreen = lazy(() => import('./ui/screens/PricesScreen').then(m => ({ default: m.PricesScreen })));
 const SettingsScreen = lazy(() => import('./ui/screens/SettingsScreen').then(m => ({ default: m.SettingsScreen })));
 const TargetsScreen = lazy(() => import('./ui/screens/TargetsScreen').then(m => ({ default: m.TargetsScreen })));
+const ProgressScreen = lazy(() => import('./ui/screens/ProgressScreen').then(m => ({ default: m.ProgressScreen })));
 const Onboarding = lazy(() => import('./ui/onboarding/Onboarding').then(m => ({ default: m.Onboarding })));
 
-type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string }; targets?: boolean };
+type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string }; targets?: boolean; progress?: boolean };
 const TABS: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
 
 /** Hash routes keep working on GitHub Pages / Cloudflare Pages without server rewrites. */
@@ -24,6 +25,7 @@ function parseHash(): Route {
   const [, a, b, c, d] = (location.hash || '#/home').split('/').map(decodeURIComponent);
   if (a === 'recipe' && b) return { tab: 'home', recipe: { id: b, date: c, slot: d } };
   if (a === 'targets') return { tab: 'settings', targets: true };
+  if (a === 'progress') return { tab: 'settings', progress: true };
   return { tab: TABS.includes(a as Tab) ? (a as Tab) : 'home' };
 }
 
@@ -71,7 +73,7 @@ export function App() {
   const [route, go] = useHashRoute();
   // A recipe keeps the tab it was opened from highlighted.
   const lastTab = useRef<Tab>('home');
-  if (!route.recipe && !route.targets) lastTab.current = route.tab;
+  if (!route.recipe && !route.targets && !route.progress) lastTab.current = route.tab;
   const activeTab = route.recipe ? lastTab.current : route.tab;
   const [redo, setRedo] = useState(false);
   const showOnboarding = !!settings && ((settings.profileIsDemo && !settings.onboardingSkipped) || redo);
@@ -102,11 +104,12 @@ export function App() {
     <AppShell tab={activeTab} onTab={tab => go(`#/${tab}`)}>
       <Suspense fallback={loading}>
       {route.recipe ? <RecipeScreen recipeId={route.recipe.id} date={route.recipe.date} slot={route.recipe.slot} settings={settings} stored={stored} onBack={back} />
-        : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
+        : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} onOpenProgress={() => go('#/progress')} />
           : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()}
             onNewPlan={(start, days) => void updateSettings({ planDays: days }).then(() => generate(undefined, start))} />
             : route.targets ? <TargetsScreen settings={settings} onBack={back} />
-            : route.tab === 'settings' ? <SettingsScreen settings={settings} onOpenTargets={() => go('#/targets')} onOpenPrices={() => go('#/prices')}
+            : route.progress ? <ProgressScreen settings={settings} onBack={back} />
+            : route.tab === 'settings' ? <SettingsScreen settings={settings} onOpenTargets={() => go('#/targets')} onOpenProgress={() => go('#/progress')} onOpenPrices={() => go('#/prices')}
                 onRegenerate={() => { generate(); go('#/home'); }} onRedoOnboarding={() => setRedo(true)} />
             : route.tab === 'shopping' ? <ShoppingScreen settings={settings} stored={stored} busy={busy} onNewWeek={() => generate()} />
               : route.tab === 'prices' ? <PricesScreen settings={settings} />

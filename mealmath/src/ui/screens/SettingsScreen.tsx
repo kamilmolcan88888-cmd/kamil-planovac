@@ -1,4 +1,4 @@
-import { Activity, ShieldAlert as AllergenIcon, Ban, BookOpen, Calculator, ChefHat, ChevronRight, CookingPot, Database, Download, Globe, Info, Moon, RefreshCw, Ruler, Salad, Sparkles, Store, Tag, Target, Upload, Users, Wallet, WifiOff, type LucideIcon } from 'lucide-react';
+import { Activity, ShieldAlert as AllergenIcon, Ban, BookOpen, Calculator, ChefHat, ChevronRight, CookingPot, Database, Download, Globe, Info, Moon, RefreshCw, Ruler, Salad, Sparkles, Store, Tag, Target, TrendingDown, Upload, Users, Wallet, WifiOff, type LucideIcon } from 'lucide-react';
 import { useRef, useState, type ReactNode } from 'react';
 import type React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -6,9 +6,8 @@ import { FOODS_GENERATED_AT, FOODS_SOURCE } from '../../data/catalog';
 import { STORES } from '../../data/stores';
 import { LANGS } from '../../i18n';
 import type { Lang } from '../../engine/types';
-import { exportAll, importAll } from '../../state/backup';
+import { importAll, saveBackupFile } from '../../state/backup';
 import type { AppSettings, Theme } from '../../state/db';
-import { localISO } from '../../state/dates';
 import { updateSettings, usePriceOverrides } from '../../state/store';
 import { targetsFor } from '../../workers/requestBase';
 import { AppHeader } from '../components/AppShell';
@@ -49,8 +48,8 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   );
 }
 
-export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegenerate, onRedoOnboarding }: {
-  settings: AppSettings; onOpenTargets: () => void; onOpenPrices: () => void; onRegenerate: () => void; onRedoOnboarding: () => void;
+export function SettingsScreen({ settings, onOpenTargets, onOpenProgress, onOpenPrices, onRegenerate, onRedoOnboarding }: {
+  settings: AppSettings; onOpenTargets: () => void; onOpenProgress: () => void; onOpenPrices: () => void; onRegenerate: () => void; onRedoOnboarding: () => void;
 }) {
   const { t } = useTranslation();
   const f = useFormat();
@@ -72,14 +71,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
     setEditor(undefined);
   };
 
-  const doExport = async () => {
-    const name = `mealmath-backup-${localISO()}.json`;
-    const file = new File([JSON.stringify(await exportAll(), null, 1)], name, { type: 'application/json' });
-    try { if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], title: name }); return; } } catch { return; }
-    const url = URL.createObjectURL(file);
-    Object.assign(document.createElement('a'), { href: url, download: name }).click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  };
+  const doExport = () => void saveBackupFile();
   const doImport = async (file: File) => {
     if (!window.confirm(t('settings.importConfirm'))) return;
     try { await importAll(JSON.parse(await file.text())); setNote({ tone: 'info', text: t('settings.imported') }); }
@@ -104,6 +96,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
       <Section title={t('settings.personal')}>
         <Row icon={Target} label={t('settings.goals')} value={t('settings.goalsValue', { kcal: f.int(tg.kcal), protein: tg.protein })} onClick={() => open(E(t('settings.goals'), p2 => <><GoalStep {...p2} /><div className="mt-6"><TargetsStep {...p2} /></div></>))} />
         <Row icon={Calculator} label={t('targets.title')} onClick={onOpenTargets} />
+        <Row icon={TrendingDown} label={t('progress.row')} onClick={onOpenProgress} />
         <Row icon={Ruler} label={t('settings.body')} value={`${t(`onboarding.${p.sex}`)}, ${p.age} ${t('onboarding.years')}, ${p.heightCm} cm, ${f.dec1(p.weightKg)} kg`} onClick={() => open(E(t('settings.body'), BodyStep))} />
         <Row icon={Activity} label={t('settings.activity')} value={`${p.workoutsPerWeek} ×`} onClick={() => open(E(t('settings.activity'), ActivityStep))} />
         <Row icon={Users} label={t('settings.household')} value={t('shopping.household', { adults: settings.household.adults, kids: settings.household.kids })} onClick={() => open(E(t('settings.household'), HouseholdStep))} />
@@ -150,7 +143,7 @@ export function SettingsScreen({ settings, onOpenTargets, onOpenPrices, onRegene
         <Card className="flex flex-col gap-2.5">
           <p className="flex items-center gap-2 text-support font-semibold"><Database aria-hidden className="size-[18px] text-primary" />{t('settings.dataTitle')}</p>
           <div className="flex flex-col gap-2.5">
-            <SecondaryButton size="md" icon={Download} onClick={() => void doExport()}>{t('settings.export')}</SecondaryButton>
+            <SecondaryButton size="md" icon={Download} onClick={doExport}>{t('settings.export')}</SecondaryButton>
             <SecondaryButton size="md" icon={Upload} onClick={() => fileRef.current?.click()}>{t('settings.import')}</SecondaryButton>
           </div>
           <input ref={fileRef} type="file" accept="application/json,.json" className="sr-only" tabIndex={-1} aria-hidden

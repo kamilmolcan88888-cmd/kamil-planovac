@@ -1,5 +1,6 @@
 import Dexie, { type Table } from 'dexie';
 import type { Allergen, BodyProfile, Diet, Equipment, Household, Lang, MealSlot, Plan, PriceOverride, Recipe } from '../engine/types';
+import type { WeightEntry } from '../engine/progress';
 import type { CookSession, PlanWarning, RepetitionLevel } from '../engine/planner/types';
 
 export type Theme = 'auto' | 'light' | 'dark';
@@ -35,6 +36,10 @@ export interface AppSettings {
   planDays?: number;
   /** Count pantry staples (salt, oil, spices…) in the checkout total. */
   includePantry?: boolean;
+  /** When the user last exported a backup (ISO timestamp). */
+  lastBackupAt?: string;
+  /** Backup reminder is hidden until this ISO timestamp. */
+  backupSnoozeUntil?: string;
   /** Optional Claude recipe suggestions (off by default). */
   aiEnabled?: boolean;
   /** The user's own Anthropic API key. Stays on this device and is left out of backups. */
@@ -62,6 +67,7 @@ class MealMathDB extends Dexie {
   settings!: Table<AppSettings, string>;
   plans!: Table<StoredPlan, string>;
   priceOverrides!: Table<PriceOverride, [string, string]>;
+  weights!: Table<WeightEntry, string>;
 
   constructor() {
     super('mealmath');
@@ -69,6 +75,13 @@ class MealMathDB extends Dexie {
       settings: 'key',
       plans: 'id, startDate',
       priceOverrides: '[storeId+foodId], storeId',
+    });
+    // v2: body-weight log (one entry per day).
+    this.version(2).stores({
+      settings: 'key',
+      plans: 'id, startDate',
+      priceOverrides: '[storeId+foodId], storeId',
+      weights: 'date',
     });
   }
 }

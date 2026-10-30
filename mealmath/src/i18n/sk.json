@@ -559,5 +559,36 @@
       "invalid": "Návrh nebol platný a bol zamietnutý ({{list}}).",
       "constraints": "Návrh porušil tvoje obmedzenia ({{list}}) a bol zamietnutý."
     }
+  },
+  "progress": {
+    "title": "Pokrok a náklady",
+    "weight": "Sledovanie váhy",
+    "date": "Dátum",
+    "save": "Uložiť váhu",
+    "invalid": "Zadaj váhu (35–250 kg) a dátum.",
+    "empty": "Zapíš váhu aspoň raz za týždeň, aby sa dal ukázať trend. Vážiť sa treba ráno, za rovnakých podmienok.",
+    "summary": "{{from}} → {{to}} kg ({{change}} kg)",
+    "perWeek": "{{value}} kg týždenne",
+    "chartLabel": "Graf váhy, {{count}} meraní",
+    "delete": "Zmazať váhu z {{date}}",
+    "useInProfile": "Posledná váha je {{kg}} kg. Použiť ju v profile a prepočítať ciele?",
+    "apply": "Použiť v profile",
+    "pace": {
+      "few_data": "Na trend treba aspoň 3 merania v rozpätí týždňa.",
+      "on_track": "Tempo zodpovedá tvojmu cieľu.",
+      "too_fast": "Zmena je rýchlejšia, než je odporúčané. Zváž vyšší príjem alebo sa poraď s odborníkom.",
+      "too_slow": "Zmena je pomalšia než cieľ. Počkaj ešte pár týždňov alebo uprav ciele v Nastaveniach.",
+      "wrong_direction": "Váha ide opačným smerom než tvoj cieľ. Skontroluj, či sa držíš plánu, alebo uprav ciele."
+    },
+    "costs": "Náklady na jedlo",
+    "noPlans": "Zatiaľ nie je žiadny plán.",
+    "days": "{{count}} dní",
+    "perDay": "{{value}} / deň",
+    "row": "Pokrok a náklady"
+  },
+  "backup": {
+    "reminder": "Údaje sú iba v tomto telefóne. Urob zálohu, aby si o ne neprišiel (napr. pri výmene telefónu).",
+    "now": "Zálohovať teraz",
+    "later": "Neskôr"
   }
 }
