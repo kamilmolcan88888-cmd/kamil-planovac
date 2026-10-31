@@ -1,0 +1,25 @@
+{
+  "name": "mealmath-desktop",
+  "productName": "MealMath",
+  "version": "1.2.0",
+  "description": "MealMath for Windows – the same offline app in its own window",
+  "private": true,
+  "main": "main.cjs",
+  "author": "MealMath",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "app.mealmath.desktop",
+    "productName": "MealMath",
+    "files": ["main.cjs", "app/**/*"],
+    "directories": { "output": "release" },
+    "win": { "icon": "icon.png", "target": [{ "target": "portable", "arch": ["x64"] }] },
+    "artifactName": "MealMath-${version}-Windows.${ext}"
+  }
+}

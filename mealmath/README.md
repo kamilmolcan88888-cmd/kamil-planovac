@@ -43,6 +43,21 @@ npm run build     # typecheck + produkčný build do dist/
 
 Keď vyjde nová verzia, appka ponúkne „Načítať“ – nikdy sa neobnoví sama uprostred práce.
 
+## Windows (PC)
+
+Tri spôsoby, od najjednoduchšieho:
+
+1. **Inštalácia z prehliadača (Edge alebo Chrome):** otvor adresu aplikácie a klikni na ikonu inštalácie v adresnom riadku
+   (alebo ⋯ → Aplikácie → Nainštalovať túto stránku ako aplikáciu). Dostaneš ikonu v ponuke Štart, vlastné okno a offline režim.
+2. **Samostatný `.exe` (bez prehliadača):** na GitHube v *Actions → MealMath – Windows app → Run workflow* sa zostaví
+   `MealMath-<verzia>-Windows.exe` (prenosný, bez inštalácie), stiahneš ho z *Artifacts*. Ak pushneš tag `mealmath-v1.2.0`,
+   `.exe` sa objaví aj na stránke *Releases*. Súbor nie je podpísaný, preto Windows ukáže „Windows chránil váš počítač“:
+   *Ďalšie informácie → Napriek tomu spustiť*.
+3. **Lokálne:** `cd desktop && npm install && npm start` (po `npm run build` a skopírovaní `dist` do `desktop/app`).
+
+Desktopová aplikácia je tá istá webová aplikácia v Electrone (`desktop/main.cjs`, adresa `app://mealmath`). Dáta sú v
+profile `%APPDATA%\MealMath` a sú oddelené od telefónu aj od prehliadača, prenášajú sa cez **Export/Import** v Nastaveniach.
+
 ## Nasadenie zadarmo
 
 Appka je čisto statická (žiadny server, žiadne účty), stačí hosting statických súborov.

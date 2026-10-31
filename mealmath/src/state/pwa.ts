@@ -10,7 +10,8 @@ const emit = (patch: Partial<State>) => { state = { ...state, ...patch }; listen
 let update: ((reload?: boolean) => Promise<void>) | undefined;
 
 export function initPwa() {
-  if (!('serviceWorker' in navigator)) return;
+  // The desktop app (Electron) serves everything locally and doesn't need a service worker.
+  if (!('serviceWorker' in navigator) || /Electron/i.test(navigator.userAgent)) return;
   update = registerSW({
     immediate: true,
     onNeedRefresh: () => emit({ needRefresh: true }),
