@@ -114,3 +114,10 @@ export async function applyPlanChange(planId: string, preview: ChangePreview, se
     if (settingsPatch) await db.settings.update('app', settingsPatch);
   });
 }
+
+export const useWeights = () => useLiveQuery(() => db.weights.orderBy('date').toArray());
+export const usePlanHistory = () => useLiveQuery(() => db.plans.orderBy('startDate').reverse().toArray());
+
+/** One entry per day: logging again on the same day replaces it. */
+export const saveWeight = (entry: { date: string; kg: number }) => db.weights.put(entry);
+export const deleteWeight = (date: string) => db.weights.delete(date);

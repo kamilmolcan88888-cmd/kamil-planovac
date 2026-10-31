@@ -1,4 +1,4 @@
-import { CalendarPlus, Flame, Settings, Sparkles, UserRound } from 'lucide-react';
+import { CalendarPlus, ChevronRight, Flame, HardDriveDownload, Settings, Sparkles, TrendingDown, UserRound } from 'lucide-react';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FOOD_MAP, RECIPE_MAP } from '../../data/catalog';
@@ -6,7 +6,8 @@ import { storeConflicts } from '../../engine/shopping';
 import { validatePlan } from '../../engine/validator';
 import type { AppSettings, StoredPlan } from '../../state/db';
 import { dayPart, localISO } from '../../state/dates';
-import { toggleDone, updateSettings, usePriceOverrides } from '../../state/store';
+import { backupDue, saveBackupFile } from '../../state/backup';
+import { toggleDone, updateSettings, usePriceOverrides, usePlanHistory } from '../../state/store';
 import { bookFor } from '../../workers/requestBase';
 import { AppHeader } from '../components/AppShell';
 import { MacroRing } from '../components/MacroRing';
@@ -25,15 +26,18 @@ function RingStatus({ value, target, unit }: { value: number; target: number; un
   return <p className="num mt-2 text-center text-caption font-medium text-text-2">{text}</p>;
 }
 
-export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRecipe, onOpenSettings }: {
+export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRecipe, onOpenSettings, onOpenProgress }: {
   settings: AppSettings; stored: StoredPlan | undefined | null; busy: boolean; error?: string; onGenerate: () => void;
-  onOpenRecipe: (recipeId: string, date: string, slot: string) => void; onOpenSettings: () => void;
+  onOpenRecipe: (recipeId: string, date: string, slot: string) => void; onOpenSettings: () => void; onOpenProgress: () => void;
 }) {
   const { t } = useTranslation();
   const f = useFormat();
   const today = localISO();
   const overrides = usePriceOverrides(settings.storeId) ?? [];
   const generate = onGenerate;
+  const history = usePlanHistory();
+  const oldestPlanAt = history?.reduce<string | undefined>((m, p) => (!m || p.createdAt < m ? p.createdAt : m), undefined);
+  const showBackup = !settings.profileIsDemo && backupDue(Date.now(), { lastBackupAt: settings.lastBackupAt, oldestPlanAt, snoozeUntil: settings.backupSnoozeUntil });
 
   const plan = stored?.plan;
   const meals = useMemo(() => dayMeals(plan, today, RECIPE_MAP, FOOD_MAP), [plan, today]);
@@ -63,12 +67,13 @@ export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRe
 
   const target = stored.plan.targets;
   const w = stored.warnings;
+  const snooze = () => void updateSettings({ backupSnoozeUntil: new Date(Date.now() + 3 * 86_400_000).toISOString() });
 
   return (
     <div className="flex flex-col gap-6">
       <div>{header}</div>
 
-      {(settings.profileIsDemo || w.length > 0 || conflicts > 0 || settings.planStale) && (
+      {(settings.profileIsDemo || w.length > 0 || conflicts > 0 || settings.planStale || showBackup) && (
         <div className="-mt-3 flex flex-col gap-2.5">
           {settings.planStale && (
             <Banner tone="warning">
@@ -87,6 +92,15 @@ export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRe
               {x.code === 'no_recipes_for_slot' && t('plan.noRecipesForSlot', { slot: t(`slot.${x.slot}`) })}
             </Banner>
           ))}
+          {showBackup && (
+            <Banner tone="info" icon={HardDriveDownload}>
+              {t('backup.reminder')}
+              <span className="mt-2 flex flex-wrap gap-2">
+                <button type="button" onClick={() => void saveBackupFile()} className="pressable h-9 rounded-xl bg-primary px-3 text-caption font-semibold text-on-primary">{t('backup.now')}</button>
+                <button type="button" onClick={snooze} className="pressable h-9 rounded-xl px-3 text-caption font-semibold text-primary">{t('backup.later')}</button>
+              </span>
+            </Banner>
+          )}
           {conflicts > 0 && <Banner tone="warning">{t('store.conflicts', { count: conflicts })} {t('store.conflictsHint')}</Banner>}
         </div>
       )}
@@ -130,6 +144,12 @@ export function HomeScreen({ settings, stored, busy, error, onGenerate, onOpenRe
               <div className="px-2"><DayStatusLegend /></div>
             </Card>
           </section>
+
+          <button type="button" onClick={onOpenProgress} className="pressable flex min-h-14 items-center gap-3 rounded-card bg-surface px-4 py-3 text-left shadow-card">
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-surface-2 text-primary"><TrendingDown aria-hidden className="size-[18px]" /></span>
+            <span className="min-w-0 flex-1 text-support font-semibold">{t('progress.row')}</span>
+            <ChevronRight aria-hidden className="size-4 shrink-0 text-text-2" />
+          </button>
 
           <section aria-labelledby="meals-title">
             <SectionTitle><span id="meals-title">{t('home.todaysMeals')}</span></SectionTitle>

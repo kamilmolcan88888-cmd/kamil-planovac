@@ -5,6 +5,8 @@ import { localISO } from './state/dates';
 import { createPlan, loadSettings, updateSettings, useCurrentPlan, useSettings } from './state/store';
 import { AppHeader, AppShell, type Tab } from './ui/components/AppShell';
 import { EmptyState, LoadingState } from './ui/components/primitives';
+import { LockScreen } from './ui/components/LockScreen';
+import { shouldRelock } from './state/pin';
 import { HomeScreen } from './ui/screens/HomeScreen';
 
 // Everything except Home loads on demand (all of it is precached for offline use).
@@ -14,9 +16,10 @@ const ShoppingScreen = lazy(() => import('./ui/screens/ShoppingScreen').then(m =
 const PricesScreen = lazy(() => import('./ui/screens/PricesScreen').then(m => ({ default: m.PricesScreen })));
 const SettingsScreen = lazy(() => import('./ui/screens/SettingsScreen').then(m => ({ default: m.SettingsScreen })));
 const TargetsScreen = lazy(() => import('./ui/screens/TargetsScreen').then(m => ({ default: m.TargetsScreen })));
+const ProgressScreen = lazy(() => import('./ui/screens/ProgressScreen').then(m => ({ default: m.ProgressScreen })));
 const Onboarding = lazy(() => import('./ui/onboarding/Onboarding').then(m => ({ default: m.Onboarding })));
 
-type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string }; targets?: boolean };
+type Route = { tab: Tab; recipe?: { id: string; date?: string; slot?: string }; targets?: boolean; progress?: boolean };
 const TABS: Tab[] = ['home', 'week', 'shopping', 'prices', 'settings'];
 
 /** Hash routes keep working on GitHub Pages / Cloudflare Pages without server rewrites. */
@@ -24,6 +27,7 @@ function parseHash(): Route {
   const [, a, b, c, d] = (location.hash || '#/home').split('/').map(decodeURIComponent);
   if (a === 'recipe' && b) return { tab: 'home', recipe: { id: b, date: c, slot: d } };
   if (a === 'targets') return { tab: 'settings', targets: true };
+  if (a === 'progress') return { tab: 'settings', progress: true };
   return { tab: TABS.includes(a as Tab) ? (a as Tab) : 'home' };
 }
 
@@ -53,6 +57,27 @@ function useThemeAndLang(theme: string | undefined, lang: string | undefined) {
   }, [theme]);
 }
 
+/**
+ * Locked at start (when a PIN exists) and again after the app was in the background for a while.
+ * A PIN created during this session must not lock the app straight away, so the start state is
+ * captured once, when settings first load.
+ */
+function useAppLock(hasPin: boolean | undefined) {
+  const [forced, setForced] = useState<boolean | undefined>(undefined);
+  const atStart = useRef<boolean | undefined>(undefined);
+  if (hasPin !== undefined && atStart.current === undefined) atStart.current = hasPin;
+  const hiddenAt = useRef<number | undefined>(undefined);
+  useEffect(() => {
+    const on = () => {
+      if (document.visibilityState === 'hidden') hiddenAt.current = Date.now();
+      else { if (shouldRelock(hiddenAt.current, Date.now())) setForced(true); hiddenAt.current = undefined; }
+    };
+    document.addEventListener('visibilitychange', on);
+    return () => document.removeEventListener('visibilitychange', on);
+  }, []);
+  return [!!hasPin && (forced ?? atStart.current ?? false), () => setForced(false)] as const;
+}
+
 function ComingSoon({ tab }: { tab: Tab }) {
   const { t } = useTranslation();
   const icon = { week: CalendarDays, shopping: ShoppingBasket, prices: Tag, settings: Settings, home: Construction }[tab];
@@ -69,9 +94,10 @@ export function App() {
   const settings = useSettings();
   useThemeAndLang(settings?.theme, settings?.lang);
   const [route, go] = useHashRoute();
+  const [locked, unlock] = useAppLock(settings ? !!settings.pinHash : undefined);
   // A recipe keeps the tab it was opened from highlighted.
   const lastTab = useRef<Tab>('home');
-  if (!route.recipe && !route.targets) lastTab.current = route.tab;
+  if (!route.recipe && !route.targets && !route.progress) lastTab.current = route.tab;
   const activeTab = route.recipe ? lastTab.current : route.tab;
   const [redo, setRedo] = useState(false);
   const showOnboarding = !!settings && ((settings.profileIsDemo && !settings.onboardingSkipped) || redo);
@@ -92,6 +118,9 @@ export function App() {
     if (stored === null && !started.current && settings && !showOnboarding) { started.current = true; generate(1); }
   }, [stored, generate, settings, showOnboarding]);
 
+  if (settings && locked && settings.pinHash && settings.pinSalt) {
+    return <LockScreen salt={settings.pinSalt} hash={settings.pinHash} length={settings.pinLength ?? 4} onUnlock={unlock} />;
+  }
   if (!settings) return <div className="p-6"><LoadingState title={t('common.loading')} /></div>;
   const loading = <LoadingState title={t('common.loading')} />;
   if (showOnboarding) return <Suspense fallback={loading}><Onboarding initial={settings} onDone={() => { setRedo(false); go('#/home'); }} /></Suspense>;
@@ -102,11 +131,12 @@ export function App() {
     <AppShell tab={activeTab} onTab={tab => go(`#/${tab}`)}>
       <Suspense fallback={loading}>
       {route.recipe ? <RecipeScreen recipeId={route.recipe.id} date={route.recipe.date} slot={route.recipe.slot} settings={settings} stored={stored} onBack={back} />
-        : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} />
+        : route.tab === 'home' ? <HomeScreen settings={settings} stored={stored} busy={busy} error={error} onGenerate={() => generate()} onOpenRecipe={openMeal} onOpenSettings={() => go('#/settings')} onOpenProgress={() => go('#/progress')} />
           : route.tab === 'week' ? <WeekScreen settings={settings} stored={stored} busy={busy} onOpenMeal={openMeal} onNewWeek={() => generate()}
             onNewPlan={(start, days) => void updateSettings({ planDays: days }).then(() => generate(undefined, start))} />
             : route.targets ? <TargetsScreen settings={settings} onBack={back} />
-            : route.tab === 'settings' ? <SettingsScreen settings={settings} onOpenTargets={() => go('#/targets')} onOpenPrices={() => go('#/prices')}
+            : route.progress ? <ProgressScreen settings={settings} onBack={back} />
+            : route.tab === 'settings' ? <SettingsScreen settings={settings} onOpenTargets={() => go('#/targets')} onOpenProgress={() => go('#/progress')} onOpenPrices={() => go('#/prices')}
                 onRegenerate={() => { generate(); go('#/home'); }} onRedoOnboarding={() => setRedo(true)} />
             : route.tab === 'shopping' ? <ShoppingScreen settings={settings} stored={stored} busy={busy} onNewWeek={() => generate()} />
               : route.tab === 'prices' ? <PricesScreen settings={settings} />

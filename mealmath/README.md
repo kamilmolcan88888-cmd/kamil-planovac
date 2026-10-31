@@ -43,6 +43,21 @@ npm run build     # typecheck + produkčný build do dist/
 
 Keď vyjde nová verzia, appka ponúkne „Načítať“ – nikdy sa neobnoví sama uprostred práce.
 
+## Windows (PC)
+
+Tri spôsoby, od najjednoduchšieho:
+
+1. **Inštalácia z prehliadača (Edge alebo Chrome):** otvor adresu aplikácie a klikni na ikonu inštalácie v adresnom riadku
+   (alebo ⋯ → Aplikácie → Nainštalovať túto stránku ako aplikáciu). Dostaneš ikonu v ponuke Štart, vlastné okno a offline režim.
+2. **Samostatný `.exe` (bez prehliadača):** na GitHube v *Actions → MealMath – Windows app → Run workflow* sa zostaví
+   `MealMath-<verzia>-Windows.exe` (prenosný, bez inštalácie), stiahneš ho z *Artifacts*. Ak pushneš tag `mealmath-v1.2.0`,
+   `.exe` sa objaví aj na stránke *Releases*. Súbor nie je podpísaný, preto Windows ukáže „Windows chránil váš počítač“:
+   *Ďalšie informácie → Napriek tomu spustiť*.
+3. **Lokálne:** `cd desktop && npm install && npm start` (po `npm run build` a skopírovaní `dist` do `desktop/app`).
+
+Desktopová aplikácia je tá istá webová aplikácia v Electrone (`desktop/main.cjs`, adresa `app://mealmath`). Dáta sú v
+profile `%APPDATA%\MealMath` a sú oddelené od telefónu aj od prehliadača, prenášajú sa cez **Export/Import** v Nastaveniach.
+
 ## Nasadenie zadarmo
 
 Appka je čisto statická (žiadny server, žiadne účty), stačí hosting statických súborov.
@@ -132,8 +147,20 @@ Konštanty sú v `src/engine/config.ts` (`CONFIG_PLANNER`).
 vybavenie, domácnosť, ktoré jedlá si varíš (jedlá mimo domu sa rátajú ako tvoj bežný odhad), miera opakovania,
 vypočítané ciele (s možnosťou ručnej úpravy a celým výpočtom „Ako sme to spočítali“) a ukážkový týždeň.
 Nastavenia používajú tie isté kroky. Zmena, ktorá ovplyvní plán, ho označí ako zastaraný a ponúkne nový týždeň.
-**Export/import všetkých dát** (nastavenia, plány, vlastné ceny) je jeden JSON súbor.
+**Export/import všetkých dát** (nastavenia, plány, vlastné ceny, záznam váhy) je jeden JSON súbor. API kľúč a PIN v ňom nie sú. Na Domov sa po týždni bez zálohy ukáže pripomienka.
 Ukladá sa aktuálny plán + 4 posledné staršie; staršie sa pri novom pláne automaticky zmažú (`prunePlans`).
+
+### Pokrok, PIN a ďalšie obchody (verzia 1.2)
+
+- **Pokrok a náklady** (`#/progress`): záznam váhy s grafom, trendom a posúdením tempa voči cieľu (`src/engine/progress.ts`),
+  možnosť prepísať váhu v profile; zoznam nákladov na jedlo za uložené plány.
+- **Zámok PIN** (Nastavenia → Aplikácia): 4 alebo 6 číslic, uložený len ako soľou posolený PBKDF2 hash (`src/state/pin.ts`).
+  Aplikácia sa zamkne pri štarte a po 30 s na pozadí; po 5 chybách sa čaká 30 s a viac. Zámok skrýva aplikáciu pred cudzou osobou
+  s odomknutým telefónom, údaje v IndexedDB **nešifruje**. Zabudnutý PIN = zmazať údaje (záloha ostáva).
+- **Obchody**: pribudli Billa SK, Tesco SK a Aldi Süd DE (odhady ako ostatné). `npm run seed:prices` už existujúce súbory neprepíše (`-- --force` ich prepíše).
+- **Čeština** je kompletná; test `src/i18n/__tests__` stráži, aby mal každý jazyk všetky kľúče aj rovnaké `{{premenné}}`.
+- **Prístupnosť**: `npm run check:a11y` (axe-core, WCAG A/AA) prejde všetky obrazovky vo svetlom aj tmavom režime. Farby `--c-primary`, `--c-text-2` a `--c-warning`
+  sú oproti pôvodnému zadaniu mierne stmavené, aby spĺňali kontrast 4,5 : 1.
 
 ### Návrhy receptov cez Claude (voliteľné, predvolene vypnuté)
 

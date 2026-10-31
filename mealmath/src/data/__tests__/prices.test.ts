@@ -4,8 +4,9 @@ import { PRICE_TABLES, STORES } from '../stores';
 import { checkPriceTable, PriceBook } from '../../engine/pricing';
 
 describe('price tables', () => {
-  it('ships exactly the three initial stores', () => {
-    expect(STORES.map(s => s.id).sort()).toEqual(['kaufland-sk', 'lidl-de', 'lidl-sk']);
+  it('ships the expected stores', () => {
+    expect(STORES.map(s => s.id).sort()).toEqual(['aldi-de', 'billa-sk', 'kaufland-sk', 'lidl-de', 'lidl-sk', 'tesco-sk']);
+    expect(STORES.find(s => s.id === 'aldi-de')!.lang).toBe('de');
     expect(STORES.find(s => s.id === 'lidl-de')!.lang).toBe('de');
     expect(STORES.find(s => s.id === 'kaufland-sk')!.lang).toBe('sk');
   });

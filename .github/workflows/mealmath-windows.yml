@@ -1,0 +1,51 @@
+# Builds the Windows app (single portable MealMath-<version>-Windows.exe) from the same web build.
+# Run by hand: Actions → "MealMath – Windows app" → Run workflow, then download the artifact.
+# Or push a tag named mealmath-v1.2.0 to also publish the .exe on the GitHub Releases page.
+name: MealMath – Windows app
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['mealmath-v*']
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            mealmath/package-lock.json
+            mealmath/desktop/package-lock.json
+      - name: Build the web app
+        working-directory: mealmath
+        run: |
+          npm ci
+          npm test
+          npm run build
+      - name: Copy the build into the desktop shell
+        shell: bash
+        run: |
+          rm -rf mealmath/desktop/app
+          cp -r mealmath/dist mealmath/desktop/app
+      - name: Package for Windows
+        working-directory: mealmath/desktop
+        run: |
+          npm ci
+          npm run dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MealMath-Windows
+          path: mealmath/desktop/release/*.exe
+          if-no-files-found: error
+      - name: Publish on the Releases page (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: mealmath/desktop/release/*.exe

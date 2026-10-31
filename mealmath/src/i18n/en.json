@@ -545,5 +545,61 @@
       "invalid": "The suggestion was invalid and was rejected ({{list}}).",
       "constraints": "The suggestion broke your restrictions ({{list}}) and was rejected."
     }
+  },
+  "progress": {
+    "title": "Progress and costs",
+    "weight": "Weight tracking",
+    "date": "Date",
+    "save": "Save weight",
+    "invalid": "Enter a weight (35–250 kg) and a date.",
+    "empty": "Log your weight at least once a week so a trend can show. Weigh yourself in the morning under the same conditions.",
+    "summary": "{{from}} → {{to}} kg ({{change}} kg)",
+    "perWeek": "{{value}} kg per week",
+    "chartLabel": "Weight chart, {{count}} measurements",
+    "delete": "Delete weight from {{date}}",
+    "useInProfile": "Your latest weight is {{kg}} kg. Use it in your profile and recalculate targets?",
+    "apply": "Use in profile",
+    "pace": {
+      "few_data": "A trend needs at least 3 measurements within a week.",
+      "on_track": "The pace matches your goal.",
+      "too_fast": "The change is faster than recommended. Consider eating more or ask a professional.",
+      "too_slow": "The change is slower than your goal. Wait a few more weeks or adjust your targets in Settings.",
+      "wrong_direction": "Your weight is moving against your goal. Check that you follow the plan, or adjust your targets."
+    },
+    "costs": "Food costs",
+    "noPlans": "No plan yet.",
+    "days": "{{count}} days",
+    "perDay": "{{value}} / day",
+    "row": "Progress and costs"
+  },
+  "backup": {
+    "reminder": "Your data lives only on this phone. Make a backup so you don't lose it (for example when changing phones).",
+    "now": "Back up now",
+    "later": "Later"
+  },
+  "lock": {
+    "title": "Unlock MealMath",
+    "enter": "Enter PIN",
+    "wrong": "Wrong PIN",
+    "wait": "Too many attempts. Try again in {{seconds}} s.",
+    "entered": "{{count}} of {{total}} digits entered",
+    "delete": "Delete last digit",
+    "forgot": "Forgot PIN",
+    "forgotText": "Without the PIN you can't get into the app. You can erase all data on this device and start over (a backup stays, if you made one).",
+    "forgotWipe": "Erase data and start over",
+    "forgotConfirm": "Really erase all MealMath data on this device? This can't be undone.",
+    "row": "PIN lock",
+    "on": "On",
+    "off": "Off",
+    "scope": "The lock hides the app from someone holding your unlocked phone. It does not encrypt the data on the device. If you forget the PIN, the data has to be erased (so keep backups).",
+    "isOn": "The lock is on. The app locks after 30 seconds in the background.",
+    "change": "Change PIN",
+    "remove": "Turn lock off",
+    "current": "Enter current PIN",
+    "length": "PIN length",
+    "digits": "{{count}} digits",
+    "newPin": "Enter a new PIN",
+    "confirmPin": "Enter the PIN again",
+    "mismatch": "The PINs don't match. Try again."
   }
 }

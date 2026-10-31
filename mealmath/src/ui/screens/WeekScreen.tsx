@@ -158,7 +158,7 @@ function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal, onMeal
     <li>
       <Card className={cn('p-4', isToday && 'ring-2 ring-primary')}>
         <div className="mb-3 flex items-center justify-between gap-2">
-          <h3 className="text-card font-semibold">{f.longDate(day.date)}</h3>
+          <h2 className="text-card font-semibold">{f.longDate(day.date)}</h2>
           <span className={cn('inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-caption font-semibold', cls)}>
             <Icon aria-hidden className="size-3.5" strokeWidth={3} />{t(`dayStatus.${day.status}`)}
           </span>
@@ -174,9 +174,9 @@ function DayCard({ day, metric, today, targets, perDayBudget, onOpenMeal, onMeal
                   <span className="flex items-center gap-1.5 text-caption font-semibold uppercase tracking-wide text-text-2">
                     {t(`slot.${m.meal.slot}`)}
                     {m.batch && (
-                      <span className="inline-flex items-center gap-1 normal-case tracking-normal" style={{ color: POT[(m.batch.n - 1) % POT.length] }}
+                      <span className="inline-flex items-center gap-1 normal-case tracking-normal"
                         title={t('week.batchOf', { n: m.batch.n, i: m.batch.i, total: m.batch.total })}>
-                        <Layers aria-hidden className="size-3" />{m.batch.n} · {m.batch.i}/{m.batch.total}
+                        <Layers aria-hidden className="size-3" style={{ color: POT[(m.batch.n - 1) % POT.length] }} />{m.batch.n} · {m.batch.i}/{m.batch.total}
                         <span className="sr-only">{t('week.batchOf', { n: m.batch.n, i: m.batch.i, total: m.batch.total })}</span>
                       </span>
                     )}
