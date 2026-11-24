@@ -1,0 +1,105 @@
+{
+  "name": "Sabinov – Komenského 18 (testovacia ulica)",
+  "version": 1,
+  "placeholder": true,
+  "source": "Ručne nakreslená schéma. Rozmery sú realistické (1 jednotka = 1 m), ale polohy a tvary budov NIE SÚ zamerané. Nahraď výstupom tools/osm_import.py.",
+  "origin": {"lat": 49.1028, "lon": 21.0988, "note": "Približný stred Sabinova, nie presná poloha adresy."},
+  "focus_address": "Komenského 18",
+  "roads": [
+    {"name": "Komenského", "kind": "residential", "width": 6.5, "points": [[-120, 0], [-40, 0], [40, 3], [120, 8.7]]},
+    {"name": "Bočná ulica (schéma)", "kind": "residential", "width": 5.5, "points": [[40, 3], [44, -90]]}
+  ],
+  "sidewalks": [
+    {"width": 2.0, "points": [[-120.0, 4.25], [-40.08, 4.25], [39.77, 7.24], [119.7, 12.94]]},
+    {"width": 2.0, "points": [[-120, -4.25], [-39.92, -4.25], [37.5, -1.34]]},
+    {"width": 2.0, "points": [[43.0, -1.04], [120, 4.44]]},
+    {"width": 2.0, "points": [[36.48, -2.3], [40.25, -90]]},
+    {"width": 2.0, "points": [[43.98, -2.3], [47.75, -90]]}
+  ],
+  "areas": [
+    {"kind": "parking", "polygon": [[-14, 8], [22, 8], [22, 14], [-14, 14]]},
+    {"kind": "paved", "polygon": [[2, 14], [6, 14], [6, 16], [2, 16]]},
+    {"kind": "playground", "polygon": [[-10, 34], [10, 34], [10, 46], [-10, 46]]},
+    {"kind": "paved", "name": "Testovacia plocha", "polygon": [[14, 48], [82, 48], [82, 82], [14, 82]]}
+  ],
+  "buildings": [
+    {"address": "Komenského 14", "kind": "apartments", "levels": 4, "height": 12.5, "footprint": [[-112, 15], [-72, 15], [-72, 27], [-112, 27]]},
+    {"address": "Komenského 16", "kind": "apartments", "levels": 4, "height": 12.5, "footprint": [[-64, 15], [-24, 15], [-24, 27], [-64, 27]]},
+    {"address": "Komenského 18", "kind": "apartments", "levels": 4, "height": 12.5, "footprint": [[-16, 16], [24, 16], [24, 28], [-16, 28]]},
+    {"address": "Komenského 20", "kind": "apartments", "levels": 4, "height": 12.5, "footprint": [[34, 19], [74, 19], [74, 31], [34, 31]]},
+    {"address": "Komenského 22", "kind": "apartments", "levels": 4, "height": 12.5, "footprint": [[84, 22], [116, 22], [116, 34], [84, 34]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[-110, -21], [-100, -21], [-100, -12], [-110, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[-108, -31], [-102, -31], [-102, -27], [-108, -27]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[-88, -21], [-78, -21], [-78, -12], [-88, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[-86, -31], [-80, -31], [-80, -27], [-86, -27]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[-66, -21], [-56, -21], [-56, -12], [-66, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[-64, -31], [-58, -31], [-58, -27], [-64, -27]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[-44, -21], [-34, -21], [-34, -12], [-44, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[-42, -31], [-36, -31], [-36, -27], [-42, -27]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[-22, -21], [-12, -21], [-12, -12], [-22, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[-20, -31], [-14, -31], [-14, -27], [-20, -27]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[0, -21], [10, -21], [10, -12], [0, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[2, -31], [8, -31], [8, -27], [2, -27]]},
+    {"kind": "house", "levels": 2, "height": 7.0, "footprint": [[20, -21], [30, -21], [30, -12], [20, -12]]},
+    {"kind": "garage", "levels": 1, "height": 3.0, "footprint": [[22, -31], [28, -31], [28, -27], [22, -27]]},
+    {
+      "name": "Obchod (schéma)",
+      "kind": "shop",
+      "levels": 1,
+      "height": 4.5,
+      "footprint": [[54, -8], [78, -8], [78, -20], [66, -20], [66, -14], [54, -14]]
+    }
+  ],
+  "props": [
+    {"kind": "tree", "pos": [-104, 10.5]},
+    {"kind": "tree", "pos": [-84, 10.5]},
+    {"kind": "tree", "pos": [-66, 10.5]},
+    {"kind": "tree", "pos": [-44, 10.5]},
+    {"kind": "tree", "pos": [-20, 11.25]},
+    {"kind": "tree", "pos": [30, 13.12]},
+    {"kind": "tree", "pos": [52, 14.35]},
+    {"kind": "tree", "pos": [78, 16.21]},
+    {"kind": "tree", "pos": [100, 17.77]},
+    {"kind": "lamp", "pos": [-105, -5.55]},
+    {"kind": "lamp", "pos": [-70, -5.55]},
+    {"kind": "lamp", "pos": [-35, -5.37]},
+    {"kind": "lamp", "pos": [0, -4.05]},
+    {"kind": "lamp", "pos": [30, -2.93]},
+    {"kind": "lamp", "pos": [60, -1.14]},
+    {"kind": "lamp", "pos": [95, 1.35]},
+    {"kind": "bench", "pos": [-4, 15.2], "heading": 180},
+    {"kind": "bench", "pos": [12, 15.2], "heading": 180},
+    {"kind": "bin", "pos": [-6.2, 15.2]},
+    {"kind": "bin", "pos": [14.2, 15.2]},
+    {"kind": "ball", "pos": [0, 40]},
+    {"kind": "ball", "pos": [3, 42]},
+    {"kind": "ramp", "pos": [40, 56], "heading": 90, "angle": 12},
+    {"kind": "stairs", "pos": [30, 72], "heading": 0, "steps": 6},
+    {"kind": "crate", "pos": [62, 54.0]},
+    {"kind": "crate", "pos": [62, 54.7]},
+    {"kind": "crate", "pos": [62, 55.4]},
+    {"kind": "crate", "pos": [62, 56.1]},
+    {"kind": "crate", "pos": [62, 56.8]},
+    {"kind": "crate", "pos": [62, 57.5]},
+    {"kind": "crate", "pos": [20.0, 66]},
+    {"kind": "crate", "pos": [21.5, 66]},
+    {"kind": "crate", "pos": [23.0, 66]}
+  ],
+  "npc_routes": [[[-105, 4.25], [-40.08, 4.25], [39.77, 7.24], [105, 11.89]], [[-105, -4.25], [-39.92, -4.25], [34, -1.47]]],
+  "spawns": {
+    "player": {"pos": [2, 10.5], "heading": 180},
+    "cars": [
+      {"pos": [-8, 11], "heading": 90},
+      {"pos": [14, 11], "heading": 270},
+      {"pos": [-30, -1.6], "heading": 90},
+      {"pos": [20, 56], "heading": 90}
+    ],
+    "npcs": [
+      {"pos": [7, 11.5], "route": -1, "aggressive": true},
+      {"pos": [-60, 4.25], "route": 0, "aggressive": true},
+      {"pos": [50, 7.97], "route": 0, "aggressive": false},
+      {"pos": [-80, -4.25], "route": 1, "aggressive": false},
+      {"pos": [10, -2.38], "route": 1, "aggressive": true}
+    ]
+  }
+}

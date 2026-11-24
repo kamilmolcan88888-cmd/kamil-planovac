@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1060" width="1400" height="1060" font-family="sans-serif">
+<rect width="100%" height="100%" fill="#557842"/>
+<polygon points="630.0,470.0 810.0,470.0 810.0,440.0 630.0,440.0" fill="#4d4d52"/>
+<polygon points="710.0,440.0 730.0,440.0 730.0,430.0 710.0,430.0" fill="#999999"/>
+<polygon points="650.0,340.0 750.0,340.0 750.0,280.0 650.0,280.0" fill="#c7b380"/>
+<polygon points="770.0,270.0 1110.0,270.0 1110.0,100.0 770.0,100.0" fill="#999999"/>
+<polyline points="100.0,488.8 499.6,488.8 898.9,473.8 1298.5,445.3" fill="none" stroke="#b5b2aa" stroke-width="10.0"/>
+<polyline points="100.0,531.2 500.4,531.2 887.5,516.7" fill="none" stroke="#b5b2aa" stroke-width="10.0"/>
+<polyline points="915.0,515.2 1300.0,487.8" fill="none" stroke="#b5b2aa" stroke-width="10.0"/>
+<polyline points="882.4,521.5 901.2,960.0" fill="none" stroke="#b5b2aa" stroke-width="10.0"/>
+<polyline points="919.9,521.5 938.8,960.0" fill="none" stroke="#b5b2aa" stroke-width="10.0"/>
+<polyline points="100.0,510.0 500.0,510.0 900.0,495.0 1300.0,466.5" fill="none" stroke="#333338" stroke-width="32.5" stroke-linejoin="round"/>
+<polyline points="900.0,495.0 920.0,960.0" fill="none" stroke="#333338" stroke-width="27.5" stroke-linejoin="round"/>
+<text x="300.0" y="510.0" fill="#ffffff" font-size="13" text-anchor="middle" dominant-baseline="middle" transform="rotate(-0.0 300.0 510.0)">Komenského</text>
+<text x="910.0" y="727.5" fill="#ffffff" font-size="13" text-anchor="middle" dominant-baseline="middle" transform="rotate(87.5 910.0 727.5)">Bočná ulica (schéma)</text>
+<polygon points="140.0,435.0 340.0,435.0 340.0,375.0 140.0,375.0" fill="#c7bda8" stroke="#40382e" stroke-width="1"/>
+<text x="240.0" y="405.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#1f1a14">Komenského 14</text>
+<polygon points="380.0,435.0 580.0,435.0 580.0,375.0 380.0,375.0" fill="#c7bda8" stroke="#40382e" stroke-width="1"/>
+<text x="480.0" y="405.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#1f1a14">Komenského 16</text>
+<polygon points="620.0,430.0 820.0,430.0 820.0,370.0 620.0,370.0" fill="#db9e5c" stroke="#40382e" stroke-width="1"/>
+<text x="720.0" y="400.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#1f1a14">Komenského 18</text>
+<polygon points="870.0,415.0 1070.0,415.0 1070.0,355.0 870.0,355.0" fill="#c7bda8" stroke="#40382e" stroke-width="1"/>
+<text x="970.0" y="385.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#1f1a14">Komenského 20</text>
+<polygon points="1120.0,400.0 1280.0,400.0 1280.0,340.0 1120.0,340.0" fill="#c7bda8" stroke="#40382e" stroke-width="1"/>
+<text x="1200.0" y="370.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#1f1a14">Komenského 22</text>
+<polygon points="150.0,615.0 200.0,615.0 200.0,570.0 150.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="160.0,665.0 190.0,665.0 190.0,645.0 160.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="260.0,615.0 310.0,615.0 310.0,570.0 260.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="270.0,665.0 300.0,665.0 300.0,645.0 270.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="370.0,615.0 420.0,615.0 420.0,570.0 370.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="380.0,665.0 410.0,665.0 410.0,645.0 380.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="480.0,615.0 530.0,615.0 530.0,570.0 480.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="490.0,665.0 520.0,665.0 520.0,645.0 490.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="590.0,615.0 640.0,615.0 640.0,570.0 590.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="600.0,665.0 630.0,665.0 630.0,645.0 600.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="700.0,615.0 750.0,615.0 750.0,570.0 700.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="710.0,665.0 740.0,665.0 740.0,645.0 710.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="800.0,615.0 850.0,615.0 850.0,570.0 800.0,570.0" fill="#d9cdb3" stroke="#40382e" stroke-width="1"/>
+<polygon points="810.0,665.0 840.0,665.0 840.0,645.0 810.0,645.0" fill="#8c8c8c" stroke="#40382e" stroke-width="1"/>
+<polygon points="970.0,550.0 1090.0,550.0 1090.0,610.0 1030.0,610.0 1030.0,580.0 970.0,580.0" fill="#b3bfcc" stroke="#40382e" stroke-width="1"/>
+<text x="1030.0" y="580.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#1f1a14">Obchod (schéma)</text>
+<circle cx="180.0" cy="457.5" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="280.0" cy="457.5" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="370.0" cy="457.5" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="480.0" cy="457.5" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="600.0" cy="453.8" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="850.0" cy="444.4" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="960.0" cy="438.2" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="1090.0" cy="428.9" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="1200.0" cy="421.2" r="9.0" fill="#2f6b2e" stroke="#000000" stroke-width="0.5"><title>tree</title></circle>
+<circle cx="175.0" cy="537.8" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="350.0" cy="537.8" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="525.0" cy="536.9" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="700.0" cy="530.2" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="850.0" cy="524.7" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="1000.0" cy="515.7" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="1175.0" cy="503.2" r="3.0" fill="#f2d24b" stroke="#000000" stroke-width="0.5"><title>lamp</title></circle>
+<circle cx="680.0" cy="434.0" r="3.0" fill="#73492e" stroke="#000000" stroke-width="0.5"><title>bench</title></circle>
+<circle cx="760.0" cy="434.0" r="3.0" fill="#73492e" stroke="#000000" stroke-width="0.5"><title>bench</title></circle>
+<circle cx="669.0" cy="434.0" r="3.0" fill="#335940" stroke="#000000" stroke-width="0.5"><title>bin</title></circle>
+<circle cx="771.0" cy="434.0" r="3.0" fill="#335940" stroke="#000000" stroke-width="0.5"><title>bin</title></circle>
+<circle cx="700.0" cy="310.0" r="3.0" fill="#ffffff" stroke="#000000" stroke-width="0.5"><title>ball</title></circle>
+<circle cx="715.0" cy="300.0" r="3.0" fill="#ffffff" stroke="#000000" stroke-width="0.5"><title>ball</title></circle>
+<circle cx="900.0" cy="230.0" r="3.0" fill="#bf8c33" stroke="#000000" stroke-width="0.5"><title>ramp</title></circle>
+<circle cx="850.0" cy="150.0" r="3.0" fill="#a8a8a8" stroke="#000000" stroke-width="0.5"><title>stairs</title></circle>
+<circle cx="1010.0" cy="240.0" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="1010.0" cy="236.5" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="1010.0" cy="233.0" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="1010.0" cy="229.5" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="1010.0" cy="226.0" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="1010.0" cy="222.5" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="800.0" cy="180.0" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="807.5" cy="180.0" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<circle cx="815.0" cy="180.0" r="3.0" fill="#99733f" stroke="#000000" stroke-width="0.5"><title>crate</title></circle>
+<rect x="655.5" y="444.5" width="9" height="21" fill="#8c1a1a" stroke="#000" transform="rotate(90.0 660.0 455.0)"><title>auto</title></rect>
+<rect x="765.5" y="444.5" width="9" height="21" fill="#8c1a1a" stroke="#000" transform="rotate(270.0 770.0 455.0)"><title>auto</title></rect>
+<rect x="545.5" y="507.5" width="9" height="21" fill="#8c1a1a" stroke="#000" transform="rotate(90.0 550.0 518.0)"><title>auto</title></rect>
+<rect x="795.5" y="219.5" width="9" height="21" fill="#8c1a1a" stroke="#000" transform="rotate(90.0 800.0 230.0)"><title>auto</title></rect>
+<circle cx="735.0" cy="452.5" r="3.5" fill="#e0b040" stroke="#000"><title>chodec</title></circle>
+<circle cx="400.0" cy="488.8" r="3.5" fill="#e0b040" stroke="#000"><title>chodec</title></circle>
+<circle cx="950.0" cy="470.1" r="3.5" fill="#e0b040" stroke="#000"><title>chodec</title></circle>
+<circle cx="300.0" cy="531.2" r="3.5" fill="#e0b040" stroke="#000"><title>chodec</title></circle>
+<circle cx="750.0" cy="521.9" r="3.5" fill="#e0b040" stroke="#000"><title>chodec</title></circle>
+<circle cx="710.0" cy="457.5" r="5" fill="#3a66d6" stroke="#fff" stroke-width="1.5"><title>hráč</title></circle>
+<line x1="20" y1="1042.0" x2="270.0" y2="1042.0" stroke="#fff" stroke-width="3"/>
+<text x="145.0" y="1035.0" fill="#fff" font-size="13" text-anchor="middle">50 m</text>
+<text x="1376" y="28" fill="#fff" font-size="18" text-anchor="middle">S ↑</text>
+<text x="20" y="26" fill="#ffe08a" font-size="15">SCHÉMA – nie je zameraná podľa skutočnosti</text>
+</svg>
